@@ -14,7 +14,7 @@ export const translations = {
     hero: {
       badge: 'Seit 25+ Jahren internationale Erfahrung – Bansko, Bulgarien',
       headline: 'Wenn das Fundament wackelt –\u00A0wir halten stand',
-      crisis: 'Ukrainekrieg direkt an der EU-Grenze. Raketenangriffe im Nahen Osten. Europas Energieinfrastruktur ist Angriffsziel. Blackout-Szenarien werden von Regierungen als reale Bedrohung eingestuft. Versorgungsengpässe bei Lebensmitteln, Wasser und Medikamenten sind keine Fiktion mehr. Die Frage ist nicht ob – sondern wann.',
+      crisis: 'Ukrainekrieg direkt an der EU-Grenze. Raketenangriffe im Nahen Osten. Energieinfrastruktur als Angriffsziel. Versorgungsengpässe bei Lebensmitteln und Medikamenten. Inflation und drohende Bankenkrisen. Die Frage ist nicht ob – sondern wann.',
       sub: 'Schimmelschutz, Gebäudesanierung und Krisenvorsorge aus einer Hand – 25+ Jahre internationale Erfahrung, Bansko, Bulgarien.',
       btnEbooks: 'E-Books sofort kaufen',
       btnVideo: 'Videoanalyse buchen',
@@ -179,6 +179,28 @@ export const translations = {
       related: 'Weitere Artikel',
     },
 
+    // Urgency Bar
+    urgencyBar: {
+      text: '⚠ Angesichts der aktuellen Weltlage: Jetzt für den Ernstfall vorbereiten',
+      dismiss: '×',
+    },
+
+    // Crisis Section (Homepage – above e-books)
+    crisisSection: {
+      headline: 'Europa steht vor der größten Bewährungsprobe seit dem Zweiten Weltkrieg',
+      sub: 'Während Politiker beruhigen, bereiten sich kluge Familien vor. Sind Sie und Ihre Familie geschützt – wenn der Strom ausfällt, die Regale leer sind oder Sie evakuieren müssen?',
+      bullets: [
+        '72 Stunden ohne Strom – was passiert in Ihrer Wohnung?',
+        'Kein Bargeld, keine Karte, kein Internet – wie zahlen Sie?',
+        'Medikamente für nur 3 Tage vorrätig – was dann?',
+        'Evakuierung in 1 Stunde – haben Sie einen Plan?',
+        'Ihr Erspartes verliert täglich an Wert – handeln Sie jetzt',
+      ],
+      ctaText: 'Jetzt E-Book kaufen: Krisensicheres Zuhause',
+      ctaPrice: '17 €',
+      ctaSubtext: 'Sofort als PDF verfügbar · Sicher über Stripe',
+    },
+
     // Success page
     success: {
       headline: 'Zahlung erfolgreich!',
@@ -202,7 +224,7 @@ export const translations = {
     hero: {
       badge: '25+ years of international experience – Bansko, Bulgaria',
       headline: 'When the Foundation Shakes –\u00A0We Hold Steady',
-      crisis: 'War at the EU border. Iranian missile strikes in the Middle East. Europe\'s energy infrastructure is under attack. Governments now classify blackout scenarios as real threats. Food, water and medicine shortages are no longer theoretical. The question is not if – but when.',
+      crisis: 'War at the EU border. Iranian missile strikes in the Middle East. Energy infrastructure under attack. Food and medicine supply shortages. Inflation and looming banking crises. The question is not if – but when.',
       sub: 'Mold protection, building renovation and crisis preparedness under one roof – 25+ years of international experience, Bansko, Bulgaria.',
       btnEbooks: 'Buy E-Books Now',
       btnVideo: 'Book Video Analysis',
@@ -350,6 +372,26 @@ export const translations = {
       ctaBtn: 'Book Video Analysis',
       related: 'More Articles',
     },
+    urgencyBar: {
+      text: '⚠ In view of the current world situation: Prepare for emergencies now',
+      dismiss: '×',
+    },
+
+    crisisSection: {
+      headline: 'Europe faces its greatest test since World War II',
+      sub: 'While politicians reassure, smart families prepare. Are you and your family protected – if the power goes out, shelves are empty, or you must evacuate?',
+      bullets: [
+        '72 hours without power – what happens in your home?',
+        'No cash, no card, no internet – how do you pay?',
+        'Only 3 days of medication left – what then?',
+        'Evacuation in 1 hour – do you have a plan?',
+        'Your savings lose value every day – act now',
+      ],
+      ctaText: 'Buy E-Book: Crisis-Proof Home',
+      ctaPrice: '€17',
+      ctaSubtext: 'Instantly available as PDF · Secure via Stripe',
+    },
+
     success: {
       headline: 'Payment Successful!',
       msg: 'Thank you for your purchase. Your e-book will be sent to you by email shortly.',
@@ -372,7 +414,7 @@ export const translations = {
     hero: {
       badge: '25+ години международен опит – Банско, България',
       headline: 'Когато основите се клатят –\u00A0ние устояваме',
-      crisis: 'Война на границата на ЕС. Ракетни удари в Близкия изток. Енергийната инфраструктура на Европа е под атака. Правителствата вече класифицират блекаут сценариите като реална заплаха. Недостигът на храна, вода и медикаменти вече не е теория. Въпросът не е дали – а кога.',
+      crisis: 'Война на границата на ЕС. Ракетни удари в Близкия изток. Енергийна инфраструктура под атака. Недостиг на храна и медикаменти. Инфлация и заплаха от банкова криза. Въпросът не е дали – а кога.',
       sub: 'Защита от мухъл, саниране на сгради и кризисна готовност под един покрив – 25+ години международен опит, Банско, България.',
       btnEbooks: 'Купи е-книги сега',
       btnVideo: 'Запази видеоанализ',
@@ -520,6 +562,26 @@ export const translations = {
       ctaBtn: 'Запази видеоанализ',
       related: 'Още статии',
     },
+    urgencyBar: {
+      text: '⚠ С оглед на актуалната световна обстановка: Подгответе се за извънредни ситуации сега',
+      dismiss: '×',
+    },
+
+    crisisSection: {
+      headline: 'Европа е изправена пред най-голямото изпитание от Втората световна война насам',
+      sub: 'Докато политиците успокояват, умните семейства се подготвят. Защитени ли сте вие и семейството ви – ако токът спре, рафтовете се изпразнят или трябва да евакуирате?',
+      bullets: [
+        '72 часа без ток – какво се случва в дома ви?',
+        'Без пари, без карта, без интернет – как плащате?',
+        'Медикаменти за само 3 дни – какво след това?',
+        'Евакуация за 1 час – имате ли план?',
+        'Спестяванията ви губят стойност всеки ден – действайте сега',
+      ],
+      ctaText: 'Купи е-книга: Кризисно устойчив дом',
+      ctaPrice: '17 €',
+      ctaSubtext: 'Незабавно достъпна като PDF · Сигурно чрез Stripe',
+    },
+
     success: {
       headline: 'Плащането е успешно!',
       msg: 'Благодарим за покупката. Вашата е-книга ще бъде изпратена на имейла ви.',

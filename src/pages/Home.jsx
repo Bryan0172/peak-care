@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import Hero from '../components/Hero'
+import CrisisSection from '../components/CrisisSection'
 import EbooksHomeSection from '../components/EbooksHomeSection'
 import ServiceCards from '../components/ServiceCards'
 import NewsBlock from '../components/NewsBlock'
@@ -89,14 +90,19 @@ export default function Home() {
 
   return (
     <>
+      {/* 1. Hero */}
       <Hero />
 
-      {/* E-Books — immediately below hero, maximum visibility */}
+      {/* 2. Crisis Section – emotional hook, direct CTA for crisis e-book */}
+      <CrisisSection onBuyCrisis={handleBuy} />
+
+      {/* 3. All E-Books – full shop section */}
       <EbooksHomeSection onBuy={handleBuy} />
 
+      {/* 4. Services */}
       <ServiceCards />
 
-      {/* Stats bar */}
+      {/* 5. Stats */}
       <section className="py-14 bg-teal-600">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
@@ -104,7 +110,7 @@ export default function Home() {
               { value: '500+', label: t.stats.objects },
               { value: '25+', label: t.stats.years },
               { value: '98%', label: t.stats.satisfaction },
-              { value: '24h', label: t.stats.response },
+              { value: '30 min', label: t.stats.response },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-4xl font-extrabold text-white mb-1">{s.value}</div>
@@ -115,9 +121,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 6. Blog / News */}
       <NewsBlock />
+
+      {/* 7. Contact */}
       <ContactSection />
 
+      {/* Checkout modal */}
       {checkout && (
         <CheckoutModal
           productId={checkout.productId}

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './context/LanguageContext'
+import UrgencyBar from './components/UrgencyBar'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -13,6 +14,7 @@ export default function App() {
     <LanguageProvider>
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
+          <UrgencyBar />
           <Header />
           <main className="flex-grow">
             <Routes>
