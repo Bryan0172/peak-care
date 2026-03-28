@@ -3,7 +3,9 @@
   publish   = "dist"
   functions = "netlify/functions"
 
+# SPA fallback – rewrites all routes to index.html (status 200 = rewrite, NOT redirect)
 [[redirects]]
-  from = "/*"
-  to   = "/index.html"
+  from   = "/*"
+  to     = "/index.html"
   status = 200
+  force  = false
