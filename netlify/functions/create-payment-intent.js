@@ -3,12 +3,17 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const PRODUCTS = {
   ebook_schimmel: {
     name: 'Schimmel und Feuchtigkeit im Griff',
-    amount: 1200, // cents
+    amount: 1200,
     currency: 'eur',
   },
   ebook_krisen: {
-    name: 'Krisensicheres Zuhause',
+    name: 'Krisensicheres Zuhause – Notfallvorsorge für Familien',
     amount: 1700,
+    currency: 'eur',
+  },
+  ebook_bundle: {
+    name: 'Bundle: Schimmel & Krisensicheres Zuhause',
+    amount: 2200,
     currency: 'eur',
   },
 }
@@ -23,7 +28,10 @@ exports.handler = async (event) => {
     const product = PRODUCTS[productId]
 
     if (!product) {
-      return { statusCode: 400, body: JSON.stringify({ error: 'Unbekanntes Produkt' }) }
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: 'Unbekanntes Produkt' }),
+      }
     }
 
     const paymentIntent = await stripe.paymentIntents.create({
