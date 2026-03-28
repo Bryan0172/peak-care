@@ -102,7 +102,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
             {[
               { value: '500+', label: t.stats.objects },
-              { value: '25', label: t.stats.years },
+              { value: '25+', label: t.stats.years },
               { value: '98%', label: t.stats.satisfaction },
               { value: '24h', label: t.stats.response },
             ].map((s) => (
