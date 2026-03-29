@@ -112,8 +112,8 @@ Die Sprache wird aus `LanguageContext` gelesen und automatisch angehängt.
 | TXT | `_dmarc.peak-care.com` | `v=DMARC1; p=none` | ✅ gesetzt |
 | MX | `resend.peak-care.com` | feedback-smtp.us-east-1.amazonses.com | ✅ gesetzt (alt) |
 | TXT | `resend.peak-care.com` | `v=spf1 include:amazonses.com ~all` | ✅ gesetzt (alt) |
-| MX | `send.peak-care.com` | feedback-smtp.eu-west-1.amazonses.com | ✅ neu gesetzt |
-| TXT | `send.peak-care.com` | `v=spf1 include:amazonses.com ~all` | ✅ neu gesetzt |
+| MX | `send.peak-care.com` | feedback-smtp.eu-west-1.amazonses.com | ✅ verified |
+| TXT | `send.peak-care.com` | `v=spf1 include:amazonses.com ~all` | ✅ verified |
 
 **DNS-Records verwalten:** via Netlify CLI:
 ```bash
@@ -137,7 +137,7 @@ netlify api createDnsRecord --data '{"zone_id":"69c7e1bff9e81ceb463393d3","body"
 
 ## 8. OFFENE TASKS
 
-- [ ] **Resend Domain-Verifikation** für `send.peak-care.com` in Resend Dashboard bestätigen
+- [x] **Resend Domain-Verifikation** — `send.peak-care.com` vollständig verified (DKIM, MX, SPF), E-Mail-Versand über `peakcare@peak-care.com` aktiv
 - [ ] **Stripe Webhook testen** — nach echtem Kauf prüfen ob Download-E-Mail ankommt
 - [x] **Webhook-Produkt-IDs angleichen** — `stripe-webhook.js` auf `ebook_schimmel_de` etc. aktualisiert, `product_id` → `productId` Metadata-Key-Bug behoben
 - [ ] **PDF-Dateien** für E-Books bereitstellen (aktuell nur Platzhalter-URLs in Webhook)
