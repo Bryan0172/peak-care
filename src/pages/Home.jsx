@@ -75,17 +75,18 @@ function CheckoutModal({ productId, productName, onClose }) {
 }
 
 export default function Home() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [checkout, setCheckout] = useState(null)
 
   const PRODUCT_NAMES = {
-    ebook_schimmel: t.ebooksHome.ebook1Title,
-    ebook_krisen: t.ebooksHome.ebook2Title,
-    ebook_bundle: t.ebooksHome.bundleTitle,
+    [`ebook_schimmel_${lang}`]: t.ebooksHome.ebook1Title,
+    [`ebook_krisen_${lang}`]:   t.ebooksHome.ebook2Title,
+    [`ebook_bundle_${lang}`]:   t.ebooksHome.bundleTitle,
   }
 
   function handleBuy(productId) {
-    setCheckout({ productId, productName: PRODUCT_NAMES[productId] })
+    const langProductId = `${productId}_${lang}`
+    setCheckout({ productId: langProductId, productName: PRODUCT_NAMES[langProductId] })
   }
 
   return (
