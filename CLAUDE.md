@@ -108,7 +108,7 @@ Die Sprache wird aus `LanguageContext` gelesen und automatisch angehängt.
 |--------|----------|------|--------|
 | NETLIFY | `peak-care.com` | peak-care.netlify.app | ✅ aktiv |
 | NETLIFY | `www.peak-care.com` | peak-care.netlify.app | ✅ aktiv |
-| TXT | `resend._domainkey.peak-care.com` | DKIM Key | ✅ gesetzt |
+| TXT | `resend._domainkey.peak-care.com` | DKIM Key | ✅ verified |
 | TXT | `_dmarc.peak-care.com` | `v=DMARC1; p=none` | ✅ gesetzt |
 | MX | `resend.peak-care.com` | feedback-smtp.us-east-1.amazonses.com | ✅ gesetzt (alt) |
 | TXT | `resend.peak-care.com` | `v=spf1 include:amazonses.com ~all` | ✅ gesetzt (alt) |
@@ -156,6 +156,31 @@ netlify api createDnsRecord --data '{"zone_id":"69c7e1bff9e81ceb463393d3","body"
 | Stripe Dashboard | https://dashboard.stripe.com |
 | Resend Dashboard | https://resend.com/domains |
 | Netlify Deploy Logs | https://app.netlify.com/projects/peak-care/deploys |
+
+---
+
+## 11. SOCIAL MEDIA & VERMARKTUNG
+
+**Aktuelle Reichweite:**
+
+| Kanal | Follower | Notizen |
+|-------|----------|---------|
+| Facebook Business-Seite | ~50 | Organisch, noch im Aufbau |
+| Instagram | 15–20 | Noch sehr klein |
+| Private Facebook-Seite (Inhaber) | 300+ | Größte aktuelle Reichweite |
+
+**Strategie:**
+- Private Facebook-Seite (300+ Follower) ist kurzfristig der stärkste Kanal für erste E-Book-Verkäufe
+- Inhalte: Schimmel-Tipps, Krisenvorsorge, Vorher-Nachher-Bilder, Kundenstimmen
+- Ziel: Traffic auf peak-care.com → E-Books-Seite
+- Sprachen priorisieren: DE und BG zuerst (Kernzielgruppe)
+- Organisches Wachstum über Mehrwert-Content, kein bezahltes Advertising in Phase 1
+
+**Nächste Schritte Social Media:**
+- [ ] Erste Posts auf privater Facebook-Seite mit Link zur E-Book-Seite
+- [ ] Facebook Business-Seite mit Inhalten bestücken
+- [ ] Instagram auf gleiches Branding wie Website bringen
+- [ ] Kundenbewertungen sammeln und posten
 
 ---
 
