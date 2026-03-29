@@ -1,21 +1,12 @@
+import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
-
-const PAYMENT_LINKS = {
-  ebook_schimmel_de: 'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_krisen_de:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_bundle_de:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_schimmel_en: 'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_krisen_en:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_bundle_en:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_schimmel_bg: 'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_krisen_bg:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-  ebook_bundle_bg:   'https://buy.stripe.com/test_14AdRb5QI8Ox8Le1cn1Jm00',
-}
+import CheckoutModal from '../components/CheckoutModal'
 
 export default function Ebooks() {
   const { t, lang } = useLang()
   const e = t.ebooks
   const h = t.ebooksHome
+  const [checkout, setCheckout] = useState(null)
 
   const ebooks = [
     {
@@ -53,6 +44,10 @@ export default function Ebooks() {
       isBundle: true,
     },
   ]
+
+  function handleBuy(book) {
+    setCheckout({ productId: `${book.id}_${lang}`, productName: book.title })
+  }
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -96,18 +91,16 @@ export default function Ebooks() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={PAYMENT_LINKS[`${book.id}_${lang}`]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`w-full font-bold py-3 rounded-xl transition-all text-sm text-center block ${
+                <button
+                  onClick={() => handleBuy(book)}
+                  className={`w-full font-bold py-3 rounded-xl transition-all text-sm text-center ${
                     book.isBundle
                       ? 'bg-yellow-400 hover:bg-yellow-300 text-gray-900'
                       : 'btn-primary'
                   }`}
                 >
                   {e.buyNow} - {book.price}
-                </a>
+                </button>
                 <p className="text-xs text-center text-gray-400 mt-2">{book.pages}</p>
               </div>
             </div>
@@ -126,6 +119,14 @@ export default function Ebooks() {
           ))}
         </div>
       </div>
+
+      {checkout && (
+        <CheckoutModal
+          productId={checkout.productId}
+          productName={checkout.productName}
+          onClose={() => setCheckout(null)}
+        />
+      )}
     </div>
   )
 }
