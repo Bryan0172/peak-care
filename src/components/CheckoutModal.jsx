@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import CheckoutForm from './CheckoutForm'
@@ -10,7 +10,7 @@ export default function CheckoutModal({ productId, productName, onClose }) {
   const [loading, setLoading] = useState(true)
   const [fetchError, setFetchError] = useState(null)
 
-  useState(() => {
+  useEffect(() => {
     async function init() {
       try {
         const res = await fetch('/.netlify/functions/create-payment-intent', {
