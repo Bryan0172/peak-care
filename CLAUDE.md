@@ -139,7 +139,7 @@ netlify api createDnsRecord --data '{"zone_id":"69c7e1bff9e81ceb463393d3","body"
 
 - [ ] **Resend Domain-Verifikation** für `send.peak-care.com` in Resend Dashboard bestätigen
 - [ ] **Stripe Webhook testen** — nach echtem Kauf prüfen ob Download-E-Mail ankommt
-- [ ] **Webhook-Produkt-IDs angleichen** — `stripe-webhook.js` nutzt noch `ebook1_de` statt `ebook_schimmel_de` (muss mit `create-payment-intent.js` synchronisiert werden)
+- [x] **Webhook-Produkt-IDs angleichen** — `stripe-webhook.js` auf `ebook_schimmel_de` etc. aktualisiert, `product_id` → `productId` Metadata-Key-Bug behoben
 - [ ] **PDF-Dateien** für E-Books bereitstellen (aktuell nur Platzhalter-URLs in Webhook)
 - [ ] **Ebooks.jsx.backup** löschen (unnötige Datei im Repo)
 

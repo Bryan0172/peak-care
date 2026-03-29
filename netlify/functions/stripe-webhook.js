@@ -4,15 +4,15 @@ const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const PRODUCT_FILES = {
-  'ebook1_de': 'ebook1_de.pdf',
-  'ebook2_de': 'ebook2_de.pdf',
-  'ebook1_en': 'ebook1_en.pdf',
-  'ebook2_en': 'ebook2_en.pdf',
-  'ebook1_bg': 'ebook1_bg.pdf',
-  'ebook2_bg': 'ebook2_bg.pdf',
-  'bundle_de': ['ebook1_de.pdf', 'ebook2_de.pdf'],
-  'bundle_en': ['ebook1_en.pdf', 'ebook2_en.pdf'],
-  'bundle_bg': ['ebook1_bg.pdf', 'ebook2_bg.pdf'],
+  'ebook_schimmel_de': 'ebook_schimmel_de.pdf',
+  'ebook_krisen_de':   'ebook_krisen_de.pdf',
+  'ebook_bundle_de':   ['ebook_schimmel_de.pdf', 'ebook_krisen_de.pdf'],
+  'ebook_schimmel_en': 'ebook_schimmel_en.pdf',
+  'ebook_krisen_en':   'ebook_krisen_en.pdf',
+  'ebook_bundle_en':   ['ebook_schimmel_en.pdf', 'ebook_krisen_en.pdf'],
+  'ebook_schimmel_bg': 'ebook_schimmel_bg.pdf',
+  'ebook_krisen_bg':   'ebook_krisen_bg.pdf',
+  'ebook_bundle_bg':   ['ebook_schimmel_bg.pdf', 'ebook_krisen_bg.pdf'],
 };
 
 function getEmailContent(lang, downloadLinks) {
@@ -59,7 +59,7 @@ exports.handler = async (event) => {
 
   const session = stripeEvent.data.object;
   const customerEmail = session.customer_details?.email;
-  const productId = session.metadata?.product_id || 'ebook1_de';
+  const productId = session.metadata?.productId || 'ebook_schimmel_de';
   const lang = session.metadata?.lang || 'de';
 
   const baseUrl = 'https://www.peak-care.com/ebooks';
