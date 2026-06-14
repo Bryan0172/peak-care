@@ -22,6 +22,17 @@ const POST_IMAGES = {
   'schimmel-im-winter-erkennen': 'https://images.unsplash.com/photo-1599619585752-c3edb42a414c?auto=format&fit=crop&w=1200&q=80',
   'feuchtigkeit-im-keller-beseitigen': 'https://images.unsplash.com/photo-1581578731-9cdff5a47e16?auto=format&fit=crop&w=1200&q=80',
   'krisensicheres-zuhause-fuer-familien': 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80',
+  'schimmel-badezimmer-ursachen-loesungen': 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80',
+  'wasservorrat-anlegen-krisenvorsorge': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80',
+  'immobilien-bulgarien-kaufen-auslaender': 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+  'blackout-vorbereitung-72-stunden': 'https://images.unsplash.com/photo-1497435334941-8c899a9bd771?auto=format&fit=crop&w=1200&q=80',
+  'blackout-vorbereitung-zuhause-72-stunden': 'https://images.unsplash.com/photo-1497435334941-8c899a9bd771?auto=format&fit=crop&w=1200&q=80',
+  'immobilien-bulgarien-kaufen-auslaender-leitfaden': 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+  'wasservorrat-anlegen-krisenvorsorge-anleitung': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80',
+  'blackout-preparation-home-72-hour-checklist': 'https://images.unsplash.com/photo-1497435334941-8c899a9bd771?auto=format&fit=crop&w=1200&q=80',
+  'buying-property-bulgaria-foreigners-honest-guide': 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+  'mold-bathroom-causes-permanent-solutions': 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80',
+  'emergency-water-supply-crisis-preparedness-guide': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80',
 }
 
 export default function BlogPost() {
@@ -33,7 +44,9 @@ export default function BlogPost() {
   useSEO({
     title: post ? `${post.title} | Peak Care` : 'Ratgeber | Peak Care',
     description: post?.excerpt,
-    canonical: `https://www.peak-care.com/blog/${slug}`,
+    canonical: `https://peak-care.com/blog/${slug}`,
+    image: POST_IMAGES[slug],
+    type: 'article',
   })
 
   if (!post) {

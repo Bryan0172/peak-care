@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useSEO } from '../hooks/useSEO'
 import { useLang } from '../context/LanguageContext'
 import { allPosts } from '../data/posts'
 import { useSEO } from '../hooks/useSEO'
@@ -32,6 +33,12 @@ export default function Blog() {
     canonical: 'https://www.peak-care.com/blog',
   })
   const b = t.blog
+
+  useSEO({
+    title: lang === 'en' ? 'Guides: Mould, Damp & Crisis Preparedness | Peak Care' : 'Ratgeber: Schimmelschutz, Feuchte & Krisenvorsorge | Peak Care',
+    description: lang === 'en' ? 'Practical guides on mould, basement damp and crisis preparedness for property owners in Bulgaria and Europe. Peak Care.' : 'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Krisenvorsorge für Eigentümer in Bulgarien und Europa. Peak Care.',
+    canonical: 'https://peak-care.com/blog',
+  })
 
   return (
     <div className="min-h-screen bg-gray-50">
