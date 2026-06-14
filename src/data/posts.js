@@ -4,8 +4,11 @@ import feuchtigkeitKeller from '../posts/feuchtigkeit-im-keller.md?raw'
 import krisensicheresZuhause from '../posts/krisensicheres-zuhause.md?raw'
 
 function parseFrontmatter(raw) {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
-  if (!match) return { data: {}, content: raw }
+  // Normalize CRLF -> LF so frontmatter parsing is robust regardless of
+  // how the .md files are checked out (Windows git autocrlf can introduce \r\n).
+  const normalized = raw.replace(/\r\n/g, '\n')
+  const match = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  if (!match) return { data: {}, content: normalized }
   const lines = match[1].split('\n')
   const data = {}
   lines.forEach((line) => {
