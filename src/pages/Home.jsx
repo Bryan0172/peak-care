@@ -7,10 +7,18 @@ import NewsBlock from '../components/NewsBlock'
 import ContactSection from '../components/ContactSection'
 import CheckoutModal from '../components/CheckoutModal'
 import { useLang } from '../context/LanguageContext'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Home() {
   const { t, lang } = useLang()
   const [checkout, setCheckout] = useState(null)
+
+  useSEO({
+    title: 'Schimmelsanierung & Krisenvorsorge in Bulgarien | Peak Care',
+    description:
+      'Peak Care: professionelle Schimmelsanierung, Feuchtigkeitsschutz und Krisenvorsorge für Eigentümer in Bulgarien und Europa — Ursache beheben, dauerhaft schützen.',
+    canonical: 'https://www.peak-care.com/',
+  })
 
   const PRODUCT_NAMES = {
     [`ebook_schimmel_${lang}`]: t.ebooksHome.ebook1Title,

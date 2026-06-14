@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 import { allPosts } from '../data/posts'
+import { useSEO } from '../hooks/useSEO'
 
 function formatDate(dateStr, lang) {
   return new Date(dateStr).toLocaleDateString(
@@ -23,6 +24,13 @@ const POST_IMAGES = {
 
 export default function Blog() {
   const { lang, t } = useLang()
+
+  useSEO({
+    title: 'Ratgeber: Schimmelschutz, Feuchte & Krisenvorsorge | Peak Care',
+    description:
+      'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Krisenvorsorge für Haus- und Ferienhaus-Eigentümer in Bulgarien. Peak Care.',
+    canonical: 'https://www.peak-care.com/blog',
+  })
   const b = t.blog
 
   return (

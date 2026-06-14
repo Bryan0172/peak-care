@@ -1,12 +1,20 @@
 import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 import CheckoutModal from '../components/CheckoutModal'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Ebooks() {
   const { t, lang } = useLang()
   const e = t.ebooks
   const h = t.ebooksHome
   const [checkout, setCheckout] = useState(null)
+
+  useSEO({
+    title: 'E-Books: Schimmel & Krisenvorsorge als Sofort-Download | Peak Care',
+    description:
+      'Digitale Ratgeber von Peak Care: Schimmel und Feuchtigkeit in den Griff bekommen und ein krisensicheres Zuhause schaffen. Sofort-Download in DE, EN und BG.',
+    canonical: 'https://www.peak-care.com/ebooks',
+  })
 
   const ebooks = [
     {

@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useLang } from '../context/LanguageContext'
 import { getPostBySlug, allPosts } from '../data/posts'
+import { useSEO } from '../hooks/useSEO'
 
 function formatDate(dateStr, lang) {
   return new Date(dateStr).toLocaleDateString(
@@ -28,6 +29,12 @@ export default function BlogPost() {
   const { lang, t } = useLang()
   const b = t.blog
   const post = getPostBySlug(slug)
+
+  useSEO({
+    title: post ? `${post.title} | Peak Care` : 'Ratgeber | Peak Care',
+    description: post?.excerpt,
+    canonical: `https://www.peak-care.com/blog/${slug}`,
+  })
 
   if (!post) {
     return (
