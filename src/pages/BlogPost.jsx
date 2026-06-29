@@ -19,6 +19,7 @@ const categoryColors = {
 }
 
 const POST_IMAGES = {
+  'waermeplanung-2026-heizung-feuchte': '/images/covers/waermeplanung-2026.jpg',
   'schimmel-im-winter-erkennen': 'https://images.unsplash.com/photo-1599619585752-c3edb42a414c?auto=format&fit=crop&w=1200&q=80',
   'feuchtigkeit-im-keller-beseitigen': 'https://images.unsplash.com/photo-1581578731-9cdff5a47e16?auto=format&fit=crop&w=1200&q=80',
   'krisensicheres-zuhause-fuer-familien': 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80',
@@ -42,7 +43,8 @@ export default function BlogPost() {
   const post = getPostBySlug(slug)
 
   useSEO({
-    title: post ? `${post.title} | Peak Care` : 'Ratgeber | Peak Care',
+    // Suffix einmal normalisieren: einige Frontmatter-Titel enthalten "| Peak Care" bereits → sonst Dopplung.
+    title: post ? `${post.title.replace(/\s*\|\s*Peak Care\s*$/i, '')} | Peak Care` : 'Ratgeber | Peak Care',
     description: post?.excerpt,
     canonical: `https://peak-care.com/blog/${slug}`,
     image: POST_IMAGES[slug],
@@ -129,6 +131,24 @@ export default function BlogPost() {
           <h3 className="text-xl font-bold text-white mb-2">{b.ctaHeadline}</h3>
           <p className="text-gray-400 mb-5">{b.ctaSub}</p>
           <a href="/#kontakt" className="btn-primary">{b.ctaBtn}</a>
+        </div>
+
+        {/* Money-Page-Verlinkung (REFOCUS Cluster-Rebalancing): rankende Blog-Sichtbarkeit auf Hoch-Wert-Leistungen leiten */}
+        <div className="mt-10 border border-gray-200 rounded-2xl p-6 bg-gray-50">
+          <h3 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wide">
+            {lang === 'en' ? 'Our services for property buyers & owners' : lang === 'bg' ? 'Нашите услуги за купувачи и собственици' : 'Unsere Leistungen für Käufer & Eigentümer'}
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {[
+              { to: lang === 'en' ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien', label: lang === 'en' ? 'Pre-Purchase Building Inspection' : lang === 'bg' ? 'Техническа проверка преди покупка' : 'Bauinspektion vor dem Kauf' },
+              { to: lang === 'en' ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien', label: lang === 'en' ? 'Technical Property Oversight' : lang === 'bg' ? 'Технически надзор на имоти' : 'Technische Immobilienüberwachung' },
+              { to: '/service/renovierung-umbau-ausbau-bulgarien', label: lang === 'en' ? 'Renovation & Conversion' : lang === 'bg' ? 'Саниране и преустройство' : 'Renovierung & Umbau' },
+            ].map((s) => (
+              <Link key={s.to} to={s.to} className="block bg-white border border-gray-200 rounded-lg p-4 text-sm font-medium text-gray-800 hover:border-teal-500 hover:text-teal-600 transition-colors">
+                {s.label} →
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Related */}

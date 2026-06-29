@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
-import CrisisSection from '../components/CrisisSection'
 import EbooksHomeSection from '../components/EbooksHomeSection'
 import ServiceCards from '../components/ServiceCards'
 import NewsBlock from '../components/NewsBlock'
@@ -16,8 +15,8 @@ export default function Home() {
   const [checkout, setCheckout] = useState(null)
 
   useSEO({
-    title: lang === 'en' ? 'Mould Remediation & Crisis Preparedness in Bulgaria | Peak Care' : 'Schimmelsanierung & Krisenvorsorge in Bulgarien | Peak Care',
-    description: lang === 'en' ? 'Peak Care: professional mould remediation, moisture protection and crisis preparedness for property owners in Bulgaria and Europe.' : 'Peak Care: professionelle Schimmelsanierung, Feuchtigkeitsschutz und Krisenvorsorge für Eigentümer in Bulgarien und Europa — Ursache beheben, dauerhaft schützen.',
+    title: lang === 'en' ? 'Technical Property Expertise & Renovation in Bulgaria | Peak Care' : 'Technische Immobilien-Expertise & Sanierung in Bulgarien | Peak Care',
+    description: lang === 'en' ? 'Peak Care: technical property expertise for investors and owners in Bulgaria — pre-purchase building assessment, renovation, conversion and remote property oversight. Mold, moisture and sound insulation as specialties.' : 'Peak Care: technische Immobilien-Expertise für Investoren und Eigentümer in Bulgarien — Bausubstanz-Begutachtung vor dem Kauf, Renovierung, Um- & Ausbau, technische Immobilienüberwachung. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
     canonical: 'https://peak-care.com/',
   })
 
@@ -314,9 +313,6 @@ export default function Home() {
 
       {/* 6. All E-Books – full shop section */}
       <EbooksHomeSection onBuy={handleBuy} />
-
-      {/* 7. Crisis Section */}
-      <CrisisSection onBuyCrisis={handleBuy} />
 
       {/* 8. Blog / News */}
       <NewsBlock />

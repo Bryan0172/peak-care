@@ -4,7 +4,18 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(winget install:*)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(netlify:*)",
+      "Bash(npm install:*)",
+      "Bash(nslookup -type=MX send.peak-care.com)",
+      "Bash(nslookup -type=TXT send.peak-care.com)",
+      "Bash(nslookup -type=MX send.peak-care.com dns1.p02.nsone.net)",
+      "Bash(nslookup -type=TXT send.peak-care.com dns1.p02.nsone.net)",
+      "Bash(nslookup -type=MX send.peak-care.com 8.8.8.8)",
+      "Bash(nslookup -type=TXT send.peak-care.com 8.8.8.8)",
+      "Bash(nslookup:*)"
     ]
   }
 }

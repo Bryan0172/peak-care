@@ -1,14 +1,18 @@
 import { useLang } from '../context/LanguageContext'
 
 const SERVICE_IMAGES = [
-  'https://images.unsplash.com/photo-1581578731-9cdff5a47e16?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80',
+  '/images/Schimmelbeseitigung.jpeg',
+  '/images/Gebäuderenovierung.jpeg',
 ]
 
+const VIDEO_SRC = '/Videoanalyse.mp4'
+
 export default function ServiceCards() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const s = t.services
+  const oversightUrl = lang === 'en' ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien'
+  const surveyUrl = lang === 'en' ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien'
+  const moreText = lang === 'en' ? 'Learn more →' : lang === 'bg' ? 'Научете повече →' : 'Mehr erfahren →'
 
   const services = [
     {
@@ -18,22 +22,23 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.069A1 1 0 0121 8.82V15.18a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
         </svg>
       ),
-      img: SERVICE_IMAGES[0],
-      imgAlt: 'Videoanalyse Schimmel',
+      img: SERVICE_IMAGES[1],
+      imgAlt: 'Begutachtung per Videoanalyse',
       highlight: true,
       data: s.videoAnalysis,
     },
     {
-      key: 'mold',
+      key: 'inspection',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      img: SERVICE_IMAGES[1],
-      imgAlt: 'Schimmel an der Wand',
+      img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80',
+      imgAlt: 'Bausubstanz-Begutachtung vor dem Kauf',
       highlight: false,
-      data: s.mold,
+      data: s.inspection,
+      link: surveyUrl,
     },
     {
       key: 'renovation',
@@ -42,22 +47,48 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
         </svg>
       ),
-      img: SERVICE_IMAGES[2],
+      img: SERVICE_IMAGES[1],
       imgAlt: 'Gebäudesanierung',
       highlight: false,
       data: s.renovation,
     },
     {
-      key: 'crisis',
+      key: 'oversight',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
         </svg>
       ),
-      img: 'https://images.unsplash.com/photo-1526779259212-939e64788e3c?auto=format&fit=crop&w=800&q=80',
-      imgAlt: 'Krisenvorsorge Notfallausrüstung',
+      img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+      imgAlt: 'Technische Immobilienüberwachung',
       highlight: false,
-      data: s.crisis,
+      data: s.oversight,
+      link: oversightUrl,
+    },
+    {
+      key: 'soundInsulation',
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.536 8.464a5 5 0 010 7.072M12 6v12m0 0l-3-3m3 3l3-3M6.343 9.657a8 8 0 000 4.686M4.929 7.929a10 10 0 000 8.142" />
+        </svg>
+      ),
+      img: '/images/Schallschutz.jpeg',
+      imgAlt: 'Schallschutz Wohnung Lärmschutz',
+      highlight: false,
+      data: s.soundInsulation,
+    },
+    {
+      key: 'mold',
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      ),
+      img: SERVICE_IMAGES[0],
+      imgAlt: 'Schimmel- & Feuchtigkeitssanierung',
+      highlight: false,
+      data: s.mold,
     },
   ]
 
@@ -72,11 +103,15 @@ export default function ServiceCards() {
         {/* Video Analysis – full-width highlight card */}
         <div className="card overflow-hidden mb-8 md:flex">
           <div className="md:w-2/5 relative overflow-hidden min-h-48">
-            <img
-              src={services[0].img}
-              alt={services[0].imgAlt}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src={VIDEO_SRC} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-gradient-to-r from-teal-700/60 to-transparent" />
             <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full">
               ● Online
@@ -136,9 +171,15 @@ export default function ServiceCards() {
                     </li>
                   ))}
                 </ul>
-                <a href="#kontakt" className="btn-secondary text-center text-sm">
-                  {t.contact.bookVideo}
-                </a>
+                {svc.link ? (
+                  <a href={svc.link} className="btn-secondary text-center text-sm">
+                    {moreText}
+                  </a>
+                ) : (
+                  <a href="#kontakt" className="btn-secondary text-center text-sm">
+                    {t.contact.bookVideo}
+                  </a>
+                )}
               </div>
             </div>
           ))}

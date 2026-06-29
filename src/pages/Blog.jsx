@@ -18,6 +18,7 @@ const categoryColors = {
 }
 
 const POST_IMAGES = {
+  'waermeplanung-2026-heizung-feuchte': '/images/covers/waermeplanung-2026.jpg',
   'schimmel-im-winter-erkennen': 'https://images.unsplash.com/photo-1599619585752-c3edb42a414c?auto=format&fit=crop&w=1200&q=80',
   'feuchtigkeit-im-keller-beseitigen': 'https://images.unsplash.com/photo-1581578731-9cdff5a47e16?auto=format&fit=crop&w=1200&q=80',
   'krisensicheres-zuhause-fuer-familien': 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80',

@@ -15,9 +15,27 @@ export default function ContactSection() {
   async function handleSubmit(e) {
     e.preventDefault()
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 900))
-    setSent(true)
-    setLoading(false)
+    // Uebermittlung an die Brevo-Lead-Funktion (garantierte Inbox-Zustellung an peakcare@peak-care.com).
+    // BREVO_API_KEY ist 24.06. in der PC-Netlify-Site gesetzt (All scopes). res.ok pruefen -> kein falsches
+    // "gesendet" bei Fehler (kein stiller Verlust).
+    const enc = (d) => Object.keys(d).map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(d[k])).join('&')
+    try {
+      const res = await fetch('/.netlify/functions/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: enc({ 'form-name': 'kontakt', ...form }),
+      })
+      if (!res.ok) throw new Error('lead submit failed: ' + res.status)
+      setSent(true)
+      // GA4 Lead-Conversion-Event (Consent-Mode-aware)
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', { form_name: 'kontakt' })
+      }
+    } catch (err) {
+      console.error('Kontaktformular-Uebermittlung fehlgeschlagen', err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -45,7 +63,7 @@ export default function ContactSection() {
                   <h3 className="text-white font-bold text-lg">{c.videoTitle}</h3>
                   <p className="text-gray-400 text-sm mt-1 leading-relaxed">{c.videoDesc}</p>
                   <a
-                    href="mailto:info@peak-care.com?subject=Videoanalyse buchen"
+                    href="mailto:peakcare@peak-care.com?subject=Videoanalyse buchen"
                     className="inline-block mt-4 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
                   >
                     {c.bookVideo}
@@ -70,8 +88,8 @@ export default function ContactSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   ),
                   label: c.email,
-                  value: 'info@peak-care.com',
-                  href: 'mailto:info@peak-care.com',
+                  value: 'peakcare@peak-care.com',
+                  href: 'mailto:peakcare@peak-care.com',
                 },
                 {
                   icon: (

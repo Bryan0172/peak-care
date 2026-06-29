@@ -1,0 +1,154 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Peak Care//Social Media Planer Woche 1//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Peak Care – Social Media Woche 1
+X-WR-TIMEZONE:Europe/Sofia
+BEGIN:VTIMEZONE
+TZID:Europe/Sofia
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260331T090000
+DTEND;TZID=Europe/Sofia:20260331T093000
+SUMMARY:[FB Business DE] Was ist Schimmel – und warum ist er gefährlich?
+DESCRIPTION:Kanal: Facebook Business-Seite (Deutsch)\nInhalt: Aufklärungspost – Schimmel erkennen\, Gesundheitsrisiken\, Wann professionelle Hilfe?\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260331T120000
+DTEND;TZID=Europe/Sofia:20260331T123000
+SUMMARY:[Andreas privat DE] Mein Tipp: Schimmel entdeckt? Das sind deine ersten Schritte
+DESCRIPTION:Kanal: Andreas private Facebook-Seite (Deutsch)\nInhalt: Persönlicher Post – authentisch\, mit Profi-Tipp\, CTA: E-Book\nLink: https://www.peak-care.com/ebooks\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260331T190000
+DTEND;TZID=Europe/Sofia:20260331T193000
+SUMMARY:[IG EN] Mold Tip #1 – How to spot it early
+DESCRIPTION:Kanal: Instagram (Englisch)\nInhalt: Visual-Post – Schimmel früh erkennen\, Before/After\nLink in Bio: peak-care.com\nSprache: EN
+CATEGORIES:Social Media,Instagram,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260401T093000
+DTEND;TZID=Europe/Sofia:20260401T100000
+SUMMARY:[Private Gruppe DE] Tipp: Feuchtigkeit im Keller erkennen und stoppen
+DESCRIPTION:Kanal: Private Facebook-Gruppe (Deutsch)\nInhalt: Mehrwert-Tipp\, Fragen einladen\, Community-Aufbau\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260401T130000
+DTEND;TZID=Europe/Sofia:20260401T133000
+SUMMARY:[FB Business EN] E-Book: "Mold and Moisture Under Control" – €12
+DESCRIPTION:Kanal: Facebook Business-Seite (Englisch)\nInhalt: E-Book-Promo mit Nutzen\, Preis\, direkter Kauflink\nLink: https://www.peak-care.com/ebooks\nSprache: EN
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260401T183000
+DTEND;TZID=Europe/Sofia:20260401T190000
+SUMMARY:[Andreas privat EN] Are you prepared for the next crisis?
+DESCRIPTION:Kanal: Andreas private Facebook-Seite (Englisch)\nInhalt: Krisenvorsorge-Tipp\, E-Book "Crisis-Proof Home" vorstellen\nLink: https://www.peak-care.com/ebooks\nSprache: EN
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260402T090000
+DTEND;TZID=Europe/Sofia:20260402T093000
+SUMMARY:[IG EN] E-Book Feature: "Crisis-Proof Home" – Be ready for anything
+DESCRIPTION:Kanal: Instagram (Englisch)\nInhalt: E-Book-Highlight mit starkem Visual\, Nutzen betonen\, CTA\nLink in Bio: peak-care.com/ebooks\nSprache: EN
+CATEGORIES:Social Media,Instagram,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260402T120000
+DTEND;TZID=Europe/Sofia:20260402T123000
+SUMMARY:[FB Business DE] FAQ: Was kostet Schimmelsanierung wirklich?
+DESCRIPTION:Kanal: Facebook Business-Seite (Deutsch)\nInhalt: Vertrauensaufbau – Kosten transparent erklären\, Dienstleistungsangebot\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260402T190000
+DTEND;TZID=Europe/Sofia:20260402T193000
+SUMMARY:[Private Gruppe DE] Frage an die Community: Habt ihr Schimmelprobleme?
+DESCRIPTION:Kanal: Private Facebook-Gruppe (Deutsch)\nInhalt: Community-Diskussion anstoßen\, Erfahrungen teilen\, Engagement\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260403T083000
+DTEND;TZID=Europe/Sofia:20260403T090000
+SUMMARY:[Andreas privat DE] Richtiges Lüften – der einfachste Schutz gegen Schimmel
+DESCRIPTION:Kanal: Andreas private Facebook-Seite (Deutsch)\nInhalt: Praxis-Tipp fürs Wochenende\, kurz und prägnant\, teilen-würdig\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260403T130000
+DTEND;TZID=Europe/Sofia:20260403T133000
+SUMMARY:[FB Business EN] Bundle Deal: Both E-Books for only €22 – Save €7!
+DESCRIPTION:Kanal: Facebook Business-Seite (Englisch)\nInhalt: Bundle-Angebot promoten\, Ersparnis betonen\, zeitlich begrenzt wirken lassen\nLink: https://www.peak-care.com/ebooks\nSprache: EN
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260403T180000
+DTEND;TZID=Europe/Sofia:20260403T183000
+SUMMARY:[IG EN] Ready to protect your home? Visit peak-care.com
+DESCRIPTION:Kanal: Instagram (Englisch)\nInhalt: Starker CTA-Post\, Vertrauen + Dringlichkeit\nLink in Bio: peak-care.com\nSprache: EN
+CATEGORIES:Social Media,Instagram,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260404T100000
+DTEND;TZID=Europe/Sofia:20260404T103000
+SUMMARY:[Andreas privat DE] Schimmel im Bad – so verhinderst du ihn dauerhaft
+DESCRIPTION:Kanal: Andreas private Facebook-Seite (Deutsch)\nInhalt: Wochenend-Tipp\, Badezimmer-fokussiert\, sehr alltagsnah\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260404T150000
+DTEND;TZID=Europe/Sofia:20260404T153000
+SUMMARY:[Private Gruppe DE+EN] Das Peak Care Bundle – beide E-Books, ein Preis
+DESCRIPTION:Kanal: Private Facebook-Gruppe (Deutsch + Englisch)\nInhalt: Bundle vorstellen\, Mehrwert erklären\, direkter Kauflink\nLink: https://www.peak-care.com/ebooks\nSprache: DE + EN
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260405T110000
+DTEND;TZID=Europe/Sofia:20260405T113000
+SUMMARY:[FB Business DE] Rückblick Woche 1 – Danke für eure Unterstützung!
+DESCRIPTION:Kanal: Facebook Business-Seite (Deutsch)\nInhalt: Wochenrückblick\, Dankbarkeit zeigen\, Follower einladen mehr zu teilen\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Sofia:20260405T170000
+DTEND;TZID=Europe/Sofia:20260405T173000
+SUMMARY:[Andreas privat DE] Diese Woche war der Start – nächste Woche wird noch besser
+DESCRIPTION:Kanal: Andreas private Facebook-Seite (Deutsch)\nInhalt: Persönlicher Abschluss-Post\, Vorfreude auf Woche 2 wecken\, authentisch\nLink: https://www.peak-care.com\nSprache: DE
+CATEGORIES:Social Media,Facebook,Peak Care
+END:VEVENT
+
+END:VCALENDAR

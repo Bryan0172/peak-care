@@ -54,3 +54,12 @@ Bei hohem Grundwasserstand oder bei starken Regenfällen drückt Wasser von auß
 Wenn trotz Sofortmaßnahmen die Feuchtigkeit wiederkehrt oder der Schaden sichtbar groß ist, ist professionelle Hilfe notwendig. Peak Care analysiert die Ursache mit Feuchtigkeitsmessgeräten und erarbeitet ein dauerhaftes Sanierungskonzept – von der Horizontalsperre bis zur vollständigen Kellersanierung.
 
 **Eine professionelle Analyse kostet wenig. Ein übersehener Feuchtigkeitsschaden kann Ihr Gebäude zerstören.**
+
+---
+
+## Weiterführende Artikel
+
+- [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung – die vollständige Anleitung](/blog/feuchtigkeit-keller-ursachen-abdichtung)
+- [Schimmel im Keller: Ursachen und dauerhafte Beseitigung](/blog/schimmel-keller-ursachen-beseitigung)
+- [Schimmelflecken an der Wand dauerhaft entfernen](/blog/schimmelflecken-wand-entfernen-dauerhaft)
+- [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)

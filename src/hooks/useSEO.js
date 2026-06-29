@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 // verified in dev AND prod build, incl. the pre-existing Helmet pages).
 // This hook sets <title>, meta description, canonical and OG tags directly
 // per route via useEffect. Googlebot executes JS and picks these up.
-export function useSEO({ title, description, canonical, image, type = 'website' }) {
+export function useSEO({ title, description, canonical, image, type = 'website', jsonLd }) {
   useEffect(() => {
     if (title) {
       document.title = title
@@ -25,7 +25,19 @@ export function useSEO({ title, description, canonical, image, type = 'website' 
       setMeta('name', 'twitter:card', 'summary_large_image')
       setMeta('name', 'twitter:image', image)
     }
-  }, [title, description, canonical, image, type])
+    // JSON-LD structured data — replace any prior on route change
+    document.head.querySelectorAll('script[data-seo-jsonld]').forEach((s) => s.remove())
+    if (jsonLd) {
+      for (const obj of (Array.isArray(jsonLd) ? jsonLd : [jsonLd])) {
+        if (!obj) continue
+        const s = document.createElement('script')
+        s.type = 'application/ld+json'
+        s.setAttribute('data-seo-jsonld', '')
+        s.textContent = JSON.stringify(obj)
+        document.head.appendChild(s)
+      }
+    }
+  }, [title, description, canonical, image, type, jsonLd])
 }
 
 function setMeta(attr, key, content) {

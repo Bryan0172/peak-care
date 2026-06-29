@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /erfolg
 
 Sitemap: https://www.peak-care.com/sitemap.xml

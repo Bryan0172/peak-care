@@ -1,15 +1,11 @@
 import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 
-const EBOOK_IMAGES = {
-  ebook_schimmel: 'https://images.unsplash.com/photo-1599619585752-c3edb42a414c?auto=format&fit=crop&w=600&q=80',
-  ebook_krisen: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80',
-  ebook_bundle: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80',
-}
-
 export default function EbooksHomeSection({ onBuy }) {
-  const { t } = useLang()
-  const e = t.ebooksHome
+  const { t, tBooks, lang } = useLang()
+  const e = tBooks.ebooksHome
+  // BG visitors see EN book covers (books not available in Bulgarian)
+  const coverSuffix = lang === 'en' || lang === 'bg' ? 'en' : 'de'
 
   const books = [
     {
@@ -17,10 +13,9 @@ export default function EbooksHomeSection({ onBuy }) {
       title: e.ebook1Title,
       desc: e.ebook1Desc,
       price: e.ebook1Price,
-      badge: t.ebooks.bestseller,
+      badge: tBooks.ebooks.bestseller,
       badgeClass: 'bg-teal-500 text-white',
-      icon: '🍃',
-      gradient: 'from-teal-600 to-teal-800',
+      cover: `/images/covers/schimmel-${coverSuffix}.jpg`,
       btn: e.buyBtn,
     },
     {
@@ -28,10 +23,9 @@ export default function EbooksHomeSection({ onBuy }) {
       title: e.ebook2Title,
       desc: e.ebook2Desc,
       price: e.ebook2Price,
-      badge: t.ebooks.recommended,
+      badge: tBooks.ebooks.recommended,
       badgeClass: 'bg-orange-500 text-white',
-      icon: '🏠',
-      gradient: 'from-orange-600 to-red-700',
+      cover: `/images/covers/krisensicher-${coverSuffix}.jpg`,
       btn: e.buyBtn,
     },
     {
@@ -41,8 +35,7 @@ export default function EbooksHomeSection({ onBuy }) {
       price: e.bundlePrice,
       badge: e.bundleBadge,
       badgeClass: 'bg-yellow-400 text-gray-900',
-      icon: '📦',
-      gradient: 'from-yellow-500 to-orange-600',
+      cover: `/images/covers/bundle-${coverSuffix}.jpg`,
       btn: e.bundleBtn,
       isBundle: true,
     },
@@ -81,15 +74,17 @@ export default function EbooksHomeSection({ onBuy }) {
                   : 'border-white/10'
               } bg-gray-900`}
             >
-              {/* Header */}
-              <div className={`bg-gradient-to-br ${book.gradient} p-8 text-white relative text-center`}>
-                <span className={`absolute top-3 right-3 text-xs font-bold px-2.5 py-1 rounded-full ${book.badgeClass}`}>
+              {/* Cover Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={book.cover}
+                  alt={book.title}
+                  className="w-full object-cover"
+                  style={{ aspectRatio: '2/3', objectPosition: 'top' }}
+                />
+                <span className={`absolute top-3 right-3 text-xs font-bold px-2.5 py-1 rounded-full shadow ${book.badgeClass}`}>
                   {book.badge}
                 </span>
-                <div className="text-5xl mb-3">{book.icon}</div>
-                <h3 className="font-bold text-xl leading-snug">{book.title}</h3>
-                <div className="text-4xl font-extrabold mt-3">{book.price}</div>
-                <div className="text-white/60 text-xs mt-1">{t.ebooks.oneTime}</div>
               </div>
 
               {/* Body */}
@@ -113,9 +108,9 @@ export default function EbooksHomeSection({ onBuy }) {
         {/* Trust bar */}
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
           {[
-            { icon: '🔒', text: t.ebooks.trustSSL },
-            { icon: '⚡', text: t.ebooks.trustDownload },
-            { icon: '💳', text: t.ebooks.trustStripe },
+            { icon: '🔒', text: tBooks.ebooks.trustSSL },
+            { icon: '⚡', text: tBooks.ebooks.trustDownload },
+            { icon: '💳', text: tBooks.ebooks.trustStripe },
           ].map((item) => (
             <div key={item.text} className="flex items-center gap-2">
               <span>{item.icon}</span>

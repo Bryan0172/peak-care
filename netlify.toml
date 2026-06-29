@@ -2,6 +2,67 @@
   command   = "npm run build"
   publish   = "dist"
   functions = "netlify/functions"
+  edge_functions = "netlify/edge-functions"
+
+# Edge function injects OG meta tags server-side for LinkedIn/social scrapers
+[[edge_functions]]
+  path = "/mentaler-schutzschild"
+  function = "og-inject"
+
+[[edge_functions]]
+  path = "/krisensicheres-zuhause-fuer-familien"
+  function = "og-inject"
+
+# Language prefix redirects — /bg/ and /de/ are not URL-based routes, redirect to root
+[[redirects]]
+  from   = "/bg"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/bg/*"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/de"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/de/*"
+  to     = "/"
+  status = 301
+  force  = true
+
+# Canonical redirect — /e-books is duplicate of /ebooks
+[[redirects]]
+  from   = "/e-books"
+  to     = "/ebooks"
+  status = 301
+  force  = true
+
+# Renamed blog slugs — 301 to preserve link equity (2026-06-21, Sitemap-Soft-404-Fix)
+[[redirects]]
+  from   = "/blog/schimmel-im-winter"
+  to     = "/blog/schimmel-im-winter-erkennen"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/feuchtigkeit-im-keller"
+  to     = "/blog/feuchtigkeit-im-keller-beseitigen"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/krisensicheres-zuhause"
+  to     = "/blog/krisensicheres-zuhause-fuer-familien"
+  status = 301
+  force  = true
 
 # SPA fallback – rewrites all routes to index.html (status 200 = rewrite, NOT redirect)
 [[redirects]]

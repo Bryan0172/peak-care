@@ -56,3 +56,12 @@ Kleine Flächen (unter 0,5 m²) können mit geeigneten Mitteln selbst behandelt 
 Peak Care führt eine kostenlose Erstbegutachtung durch und erstellt Ihnen ein transparentes Sanierungsangebot.
 
 **Handeln Sie früh – Schimmel wächst schneller als man denkt.**
+
+---
+
+## Weiterführende Artikel
+
+- [Immobilien in Bulgarien kaufen als Ausländer: Der ehrliche Leitfaden](/blog/immobilien-bulgarien-kaufen-auslaender-leitfaden)
+- [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)
+- [Schallschutz in der Wohnung: Lösungen gegen Lärm](/blog/schallschutz-wohnung-laerm-nachbarn-loesungen)
+- [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung](/blog/feuchtigkeit-keller-ursachen-abdichtung)

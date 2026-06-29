@@ -150,3 +150,12 @@ Wir begleiten Sie nicht nur mit Wissen – wir machen Ihr Gebäude krisenfest:
 - **Videoanalyse Ihres Objekts** – bequem von zu Hause, in 30 Minuten
 
 **Warten Sie nicht auf den Ernstfall. Der kommt unangekündigt.**
+
+---
+
+## Weiterführende Artikel
+
+- [Blackout-Vorbereitung: Die 72-Stunden-Checkliste für Ihr Zuhause](/blog/blackout-vorbereitung-zuhause-72-stunden)
+- [Wasservorrat anlegen: Schritt-für-Schritt-Anleitung](/blog/wasservorrat-anlegen-krisenvorsorge)
+- [Rückstauklappe: Warum jeder Hausbesitzer eine braucht](/blog/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht)
+- [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung](/blog/feuchtigkeit-keller-ursachen-abdichtung)

@@ -13,6 +13,9 @@ const PRODUCT_FILES = {
   'ebook_schimmel_bg': 'ebook_schimmel_bg.pdf',
   'ebook_krisen_bg':   'ebook_krisen_bg.pdf',
   'ebook_bundle_bg':   ['ebook_schimmel_bg.pdf', 'ebook_krisen_bg.pdf'],
+  // Mentaler Schutzschild 2026
+  'ebook_schutzschild_de': 'mentaler-schutzschild-de.pdf',
+  'ebook_schutzschild_en': 'mental-shield-en.pdf',
 };
 
 function getEmailContent(lang, downloadLinks) {
@@ -55,12 +58,20 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: `Webhook Error: ${err.message}` };
   }
 
-  if (stripeEvent.type !== 'checkout.session.completed') return { statusCode: 200, body: 'OK' };
+  if (stripeEvent.type !== 'payment_intent.succeeded') return { statusCode: 200, body: 'OK' };
 
-  const session = stripeEvent.data.object;
-  const customerEmail = session.customer_details?.email;
-  const productId = session.metadata?.productId || 'ebook_schimmel_de';
-  const lang = session.metadata?.lang || 'de';
+  const paymentIntent = stripeEvent.data.object;
+  const productId = paymentIntent.metadata?.productId || 'ebook_schimmel_de';
+  const lang = productId.endsWith('_en') ? 'en' : productId.endsWith('_bg') ? 'bg' : 'de';
+
+  // E-Mail aus Charge-Billing-Details holen
+  let customerEmail = paymentIntent.receipt_email;
+  if (!customerEmail && paymentIntent.latest_charge) {
+    const charge = await stripe.charges.retrieve(paymentIntent.latest_charge);
+    customerEmail = charge.billing_details?.email;
+  }
+
+  if (!customerEmail) return { statusCode: 200, body: 'No email found, skipping' };
 
   const baseUrl = 'https://www.peak-care.com/ebooks';
   const files = PRODUCT_FILES[productId];
@@ -76,6 +87,15 @@ exports.handler = async (event) => {
       subject: email.subject,
       html: email.html,
     });
+
+    // Trigger Brevo follow-up sequence (fire & forget)
+    const customerName = paymentIntent.shipping?.name || '';
+    fetch(`${process.env.URL}/.netlify/functions/followup-email`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: customerEmail, name: customerName, productId, lang }),
+    }).catch(err => console.error('Follow-up trigger error:', err));
+
     return { statusCode: 200, body: 'OK' };
   } catch (err) {
     return { statusCode: 500, body: 'Error sending email' };

@@ -3,7 +3,7 @@ import { useLang } from '../context/LanguageContext'
 const BULLET_ICONS = ['⚡', '💳', '💊', '🚨', '📉']
 
 export default function CrisisSection({ onBuyCrisis }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const cs = t.crisisSection
 
   return (
@@ -70,7 +70,7 @@ export default function CrisisSection({ onBuyCrisis }) {
 
               {/* Urgency badge */}
               <div className="absolute -top-3 -right-3 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg border border-red-400">
-                Jetzt handeln
+                {lang === 'en' ? 'Act now' : lang === 'bg' ? 'Действайте сега' : 'Jetzt handeln'}
               </div>
             </div>
 

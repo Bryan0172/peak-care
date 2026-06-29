@@ -1,39 +1,296 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Hauptseiten -->
   <url>
     <loc>https://www.peak-care.com/</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.peak-care.com/blog</loc>
-    <lastmod>2026-02-20</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.peak-care.com/ebooks</loc>
-    <lastmod>2026-02-20</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.peak-care.com/blog/krisensicheres-zuhause-fuer-familien</loc>
-    <lastmod>2026-02-20</lastmod>
+    <loc>https://www.peak-care.com/schimmel-sofort-check</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog-Artikel (Deutsch) -->
+  <url>
+    <loc>https://www.peak-care.com/blog/schimmel-im-winter-erkennen</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.peak-care.com/blog/feuchtigkeit-im-keller-beseitigen</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.peak-care.com/blog/schimmel-im-winter-erkennen</loc>
-    <lastmod>2025-12-10</lastmod>
+    <loc>https://www.peak-care.com/blog/krisensicheres-zuhause-fuer-familien</loc>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/waermeplanung-2026-heizung-feuchte</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/schimmel-badezimmer-ursachen-loesungen</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/wasservorrat-anlegen-krisenvorsorge</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/immobilien-bulgarien-kaufen-auslaender</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/blackout-vorbereitung-72-stunden</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/blackout-vorbereitung-zuhause-72-stunden</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/immobilien-bulgarien-kaufen-auslaender-leitfaden</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/wasservorrat-anlegen-krisenvorsorge-anleitung</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog-Artikel (Deutsch) — neu -->
+  <url>
+    <loc>https://www.peak-care.com/blog/feuchtigkeit-keller-ursachen-abdichtung</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/schimmel-keller-ursachen-beseitigung</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/schallschutz-wohnung-laerm-nachbarn-loesungen</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/schimmel-beseitigen-bulgarien</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/schimmelflecken-wand-entfernen-dauerhaft</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog-Artikel (Englisch) -->
+  <url>
+    <loc>https://www.peak-care.com/blog/blackout-preparation-home-72-hour-checklist</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/buying-property-bulgaria-foreigners-honest-guide</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/mold-bathroom-causes-permanent-solutions</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/emergency-water-supply-crisis-preparedness-guide</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/damp-basement-causes-permanent-waterproofing</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/mold-basement-removal-causes-solutions</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/sound-insulation-apartment-noise-neighbours-solutions</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/backflow-preventer-why-every-homeowner-needs-one</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service-Seiten (Zipper) -->
+  <url>
+    <loc>https://www.peak-care.com/service/schimmelbeseitigung-bansko</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/schimmelbeseitigung-sofia</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/kellerabdichtung-bansko</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/gebaudesanierung-bansko</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/mold-removal-bansko</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/mold-removal-sofia</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/building-renovation-bansko</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/service/renovierung-umbau-ausbau-bulgarien</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/technical-property-oversight-bulgaria</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/technische-immobilienueberwachung-bulgarien</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/bauinspektion-vor-dem-kauf-bulgarien</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/pre-purchase-building-inspection-bulgaria</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/renovierung-umbau-ausbau-bulgarien</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/wasservorrat-anlegen</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/blackout-ferienhaus-bulgarien</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/property-inspection-buying-bulgaria</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/renovation-company-bulgaria-foreign-owners</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.peak-care.com/blog/renovation-costs-bulgaria-guide</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>

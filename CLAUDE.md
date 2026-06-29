@@ -161,25 +161,33 @@ netlify api createDnsRecord --data '{"zone_id":"69c7e1bff9e81ceb463393d3","body"
 
 ## 11. SOCIAL MEDIA & VERMARKTUNG
 
-**Aktuelle Reichweite:**
+**Status:** Boosting-Strategie erarbeitet (2026-03-30)
 
-| Kanal | Follower | Notizen |
-|-------|----------|---------|
-| Facebook Business-Seite | ~50 | Organisch, noch im Aufbau |
-| Instagram | 15–20 | Noch sehr klein |
-| Private Facebook-Seite (Inhaber) | 300+ | Größte aktuelle Reichweite |
+### Kanäle (4 aktiv bespielt)
 
-**Strategie:**
-- Private Facebook-Seite (300+ Follower) ist kurzfristig der stärkste Kanal für erste E-Book-Verkäufe
-- Inhalte: Schimmel-Tipps, Krisenvorsorge, Vorher-Nachher-Bilder, Kundenstimmen
-- Ziel: Traffic auf peak-care.com → E-Books-Seite
-- Sprachen priorisieren: DE und BG zuerst (Kernzielgruppe)
-- Organisches Wachstum über Mehrwert-Content, kein bezahltes Advertising in Phase 1
+| Kanal | Sprache | Notizen |
+|-------|---------|---------|
+| Instagram (Peak Care) | EN | Unternehmenskanal |
+| Facebook Business-Seite | DE + EN | Unternehmenskanal |
+| Andreas privat (Facebook) | DE + EN | 300+ Follower — stärkster Kanal |
+| Private Facebook-Gruppe | DE + EN | Community/Nische |
 
-**Nächste Schritte Social Media:**
-- [ ] Erste Posts auf privater Facebook-Seite mit Link zur E-Book-Seite
-- [ ] Facebook Business-Seite mit Inhalten bestücken
-- [ ] Instagram auf gleiches Branding wie Website bringen
+### Posting-Plan Woche 1 (Di 31.03. – So 05.04.2026)
+
+- **16 geplante Posts** über alle 4 Kanäle
+- **Status:** Noch nicht in Google Calendar importiert
+- **Ausstehend:** Datei `pc_woche1.ics` erstellen und in Google Calendar importieren
+
+### Facebook Ads
+
+- **Start:** Woche 2 (ab 07.04.2026)
+- **Budget:** €5 / Tag
+
+### Nächste Schritte Social Media
+
+- [ ] `pc_woche1.ics` erstellen (16 Termine, Di 31.03 – So 05.04)
+- [ ] ICS-Datei in Google Calendar importieren
+- [ ] Facebook Ads ab Woche 2 schalten (€5/Tag)
 - [ ] Kundenbewertungen sammeln und posten
 
 ---

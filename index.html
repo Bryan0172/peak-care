@@ -2,16 +2,78 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) — GA4 "Peak Care" (G-H23NHSC1L6) + Consent Mode v2 (DSGVO), 2026-06-17 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      // Consent Mode v2: EEA-Default = alles DENIED bis zur ausdruecklichen Einwilligung
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      // Fruehere Entscheidung wiederherstellen (kein Banner-Flackern bei Wiederkehr)
+      try {
+        if (localStorage.getItem('pc_consent') === 'granted') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } catch (e) {}
+      gtag('js', new Date());
+      gtag('config', 'G-H23NHSC1L6');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H23NHSC1L6"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Peak Care – Ihr Experte für Schimmelschutz und Krisenvorsorge in Bulgarien und Europa. Professionelle Gebäudeschutz- und Schimmelbeseitigung." />
     <title>Peak Care – Schimmelschutz & Krisenvorsorge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta name="theme-color" content="#0d9488" />
+    <!-- Inter wird self-hosted via @fontsource/inter (src/main.jsx) — DSGVO: keine Google-Fonts-CDN-Anfrage -->
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- DSGVO Cookie-Consent-Banner (Consent Mode v2) — 2026-06-17 -->
+    <style>
+      #pc-consent{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#0f172a;color:#e2e8f0;font-family:'Inter',system-ui,sans-serif;padding:16px;box-shadow:0 -4px 24px rgba(0,0,0,.35);display:none}
+      #pc-consent.pc-show{display:block}
+      #pc-consent .pc-in{max-width:1080px;margin:0 auto;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+      #pc-consent p{margin:0;font-size:13.5px;line-height:1.55;flex:1 1 340px;color:#cbd5e1}
+      #pc-consent .pc-btns{display:flex;gap:10px;flex:0 0 auto}
+      #pc-consent button{border:0;border-radius:8px;padding:10px 20px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit}
+      #pc-consent .pc-ok{background:#0d9488;color:#fff}
+      #pc-consent .pc-ok:hover{background:#0b7d72}
+      #pc-consent .pc-no{background:transparent;color:#cbd5e1;border:1px solid #475569}
+      #pc-consent .pc-no:hover{border-color:#94a3b8}
+    </style>
+    <div id="pc-consent" role="dialog" aria-live="polite" aria-label="Cookie-Einwilligung">
+      <div class="pc-in">
+        <p>Wir verwenden Cookies für anonyme Statistik (Google Analytics), um unsere Website zu verbessern &mdash; nur mit Ihrer Einwilligung. Notwendige Funktionen bleiben davon unberührt. Mehr in unserer <a href="/datenschutz" style="color:#5eead4;text-decoration:underline">Datenschutzerklärung</a>.</p>
+        <div class="pc-btns">
+          <button class="pc-no" id="pc-no" type="button">Ablehnen</button>
+          <button class="pc-ok" id="pc-ok" type="button">Akzeptieren</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function(){
+        function gtag(){window.dataLayer=window.dataLayer||[];window.dataLayer.push(arguments);}
+        var el=document.getElementById('pc-consent');
+        if(!el)return;
+        var stored=null; try{stored=localStorage.getItem('pc_consent');}catch(e){}
+        if(!stored){el.classList.add('pc-show');}
+        function choose(v){
+          try{localStorage.setItem('pc_consent',v);}catch(e){}
+          gtag('consent','update',{'analytics_storage': v==='granted'?'granted':'denied'});
+          el.classList.remove('pc-show');
+        }
+        var ok=document.getElementById('pc-ok'), no=document.getElementById('pc-no');
+        if(ok)ok.addEventListener('click',function(){choose('granted');});
+        if(no)no.addEventListener('click',function(){choose('denied');});
+      })();
+    </script>
   </body>
 </html>

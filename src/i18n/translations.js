@@ -12,15 +12,25 @@ export const translations = {
 
     // Hero
     hero: {
-      badge: 'Seit 25+ Jahren internationale Erfahrung – Bansko, Bulgarien',
-      headline: 'Wenn das Fundament wackelt –\u00A0wir halten stand',
-      crisis: 'Ukrainekrieg direkt an der EU-Grenze. Raketenangriffe im Nahen Osten. Energieinfrastruktur als Angriffsziel. Versorgungsengpässe bei Lebensmitteln und Medikamenten. Inflation und drohende Bankenkrisen. Die Frage ist nicht ob – sondern wann.',
-      sub: 'Schimmelschutz, Gebäudesanierung und Krisenvorsorge aus einer Hand – 25+ Jahre internationale Erfahrung, Bansko, Bulgarien.',
-      btnEbooks: 'E-Books sofort kaufen',
-      btnVideo: 'Videoanalyse buchen',
+      badge: '25+ Jahre internationale Erfahrung – seit 2 Jahren in ganz Bulgarien aktiv',
+      headline: 'Technische Immobilien-Expertise & Sanierung in Bulgarien – für Investoren und Eigentümer',
+      crisis: '',
+      sub: 'Von der Begutachtung der Bausubstanz vor dem Kauf über Renovierung, Um- und Ausbau bis zur technischen Immobilienüberwachung aus der Ferne – klare Diagnose, koordinierte Umsetzung, kontrolliertes Ergebnis. Alles aus einer Hand, nach deutschem Standard. Schimmel, Feuchte und Schallschutz inklusive.',
+      btnPrimary: 'Begutachtung anfragen',
+      btnSecondary: 'Leistungen ansehen',
       trust1: 'Über 500 sanierte Objekte',
       trust2: 'Zertifizierte Fachkräfte',
       trust3: 'Videoanalyse auf Anfrage',
+    },
+
+    pillars: {
+      item1Title: 'Renovierung, Um- & Ausbau',
+      item1Text: 'Komplettumbau, Erweiterung, Innenausbau und energetische Modernisierung – geplant, koordiniert und umgesetzt nach westeuropäischem Standard.',
+      item2Title: 'Alles aus einer Hand',
+      item2Text: 'Ein Ansprechpartner für alle Gewerke: Diagnose, Planung, Ausführung und Abnahme. Keine Koordination verschiedener Handwerker – wir übernehmen das.',
+      item3Title: 'Nach deutschem Standard',
+      item3Text: 'Materialauswahl, Ausführungsqualität und Projektdokumentation entsprechen DACH-Standards – für Investoren, die Qualität fordern und verlässliche Partnerschaft schätzen.',
+      cta: 'Mehr zu Renovierung & Ausbau',
     },
 
     // E-Books Section (Homepage)
@@ -46,26 +56,41 @@ export const translations = {
     // Services
     services: {
       headline: 'Unsere Leistungen',
-      sub: 'Von der Schimmelanalyse bis zur umfassenden Gebäudesanierung, Renovierung und Krisenvorsorge – alles aus einer Hand.',
+      sub: 'Von der Bausubstanz-Begutachtung vor dem Kauf über Renovierung und Um-/Ausbau bis zur technischen Immobilienüberwachung – für ausländische und inländische Investoren und Eigentümer. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
       videoAnalysis: {
-        title: 'Videoanalyse',
-        desc: 'Professionelle Fernanalyse Ihres Schadenbilds in 30 Minuten. Wir beurteilen den Schaden, geben konkrete Handlungsempfehlungen und erstellen eine erste Kostenschätzung – bequem von zu Hause aus.',
-        features: ['30 Minuten live per Video', 'Schadensbeurteilung', 'Maßnahmenplan', 'Kostenschätzung'],
+        title: 'Kostenlose Begutachtung per Videoanalyse',
+        desc: 'Sie filmen das Objekt – wir liefern in 30 Minuten eine fachliche Ersteinschätzung der Bausubstanz, konkrete Empfehlungen und einen Kostenrahmen. Ideal vor einer Kaufentscheidung oder aus der Ferne, ganz ohne Anreise.',
+        features: ['30 Minuten live per Video', 'Einschätzung der Bausubstanz', 'Handlungsempfehlung', 'Kostenrahmen'],
       },
-      mold: {
-        title: 'Schimmelbeseitigung & Sanierung',
-        desc: 'Professionelle Analyse, Entfernung und dauerhafte Sanierung von Schimmelbefall. Mit zertifizierten Methoden, 2 Jahren Garantie.',
-        features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', '2 Jahre Garantie'],
+      inspection: {
+        title: 'Bausubstanz-Begutachtung vor dem Kauf',
+        desc: 'Unabhängige technische Prüfung von Bausubstanz, Feuchte, statischen Auffälligkeiten und Sanierungsbedarf – bevor Sie kaufen. Schriftlicher Befund mit Kostenrahmen als belastbare Entscheidungsgrundlage.',
+        features: ['Zustandsbericht der Bausubstanz', 'Feuchte- & Schadensprüfung', 'Sanierungs-Kostenrahmen', 'Entscheidungsgrundlage zum Kauf'],
       },
       renovation: {
-        title: 'Gebäudesanierung & Renovierung',
-        desc: 'Vollständige Sanierung von Feuchteschäden, Kellerabdichtung, Fassadensanierung, Dachabdichtung – dauerhafter Gebäudeschutz.',
-        features: ['Kellerabdichtung', 'Fassadensanierung', 'Dachabdichtung', 'Innenrenovierung'],
+        title: 'Renovierung, Um- & Ausbau',
+        desc: 'Komplettrenovierung, Umbau, Innenausbau und energetische Modernisierung – geplant, koordiniert und schlüsselfertig nach westeuropäischem Standard. Bau- und Arbeitskosten deutlich unter DACH-Niveau.',
+        features: ['Komplettrenovierung', 'Um- & Ausbau', 'Energetische Modernisierung', 'Schlüsselfertig, ein Ansprechpartner'],
+      },
+      oversight: {
+        title: 'Technische Immobilienüberwachung',
+        desc: 'Für Eigentümer, die nicht vor Ort sind: regelmäßige Kontrolle, Mängel-Früherkennung, Koordination von Handwerkern und Foto-Dokumentation. Ihr technischer Vertreter vor Ort – Sie behalten die Kontrolle aus der Ferne.',
+        features: ['Regelmäßige Objektkontrolle', 'Mängel-Früherkennung', 'Handwerker-Koordination', 'Foto-Dokumentation'],
+      },
+      soundInsulation: {
+        title: 'Schallschutz & Lärmschutz',
+        desc: 'Trittschall von oben, Stimmen durch die Wand, Straßenlärm durchs Fenster – schlechter Schallschutz mindert Wohnwert und Vermietbarkeit. Wir analysieren die Lärmquelle und liefern dauerhafte Lösungen: für Altbauwohnungen, verglaste Balkone und Neubauten mit unzureichender Dämmung.',
+        features: ['Trittschall & Luftschall', 'Verglaste Balkone', 'Fenster & Fassade', 'Videoanalyse möglich'],
+      },
+      mold: {
+        title: 'Schimmel- & Feuchtigkeitssanierung',
+        desc: 'Professionelle Ursachenanalyse, Entfernung und dauerhafte Sanierung von Schimmel- und Feuchteschäden – eine unserer Spezialitäten, mit zertifizierten Methoden und 2 Jahren Garantie.',
+        features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', '2 Jahre Garantie'],
       },
       crisis: {
         title: 'Krisenvorsorge & Beratung',
-        desc: '9 von 10 Familien in Europa sind auf einen Blackout, Versorgungsengpass oder militärische Eskalation nicht vorbereitet. Kein Wasservorrat. Kein Notfallplan. Kein Schutz. Wir analysieren Ihre Risiken, stärken Ihre Infrastruktur und helfen Ihnen, handlungsfähig zu bleiben – wenn andere in Panik geraten.',
-        features: ['Gebäude-Risikoanalyse', 'Notfallplanung für Familien', 'Rückstauklappe & Infrastruktur', 'Vorortinspektion auf Anfrage'],
+        desc: 'Gebäude-Risikoanalyse, Notfallplanung und Infrastruktur-Absicherung – für Eigentümer, die ihr Objekt zusätzlich gegen Ausfälle absichern wollen.',
+        features: ['Gebäude-Risikoanalyse', 'Notfallplanung', 'Rückstauklappe & Infrastruktur', 'Vorortinspektion auf Anfrage'],
       },
       onsite: 'Vorortinspektion auf Anfrage',
     },
@@ -158,7 +183,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: 'Schimmelschutz, Gebäudesanierung und Krisenvorsorge – 25+ Jahre internationale Erfahrung, Bansko, Bulgarien.',
+      tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz und Krisenvorsorge – 25+ Jahre internationale Erfahrung, seit 2 Jahren in ganz Bulgarien.',
       nav: 'Navigation',
       contact: 'Kontakt',
       rights: 'Alle Rechte vorbehalten.',
@@ -222,16 +247,27 @@ export const translations = {
       call: 'Call us',
     },
     hero: {
-      badge: '25+ years of international experience – Bansko, Bulgaria',
-      headline: 'When the Foundation Shakes –\u00A0We Hold Steady',
-      crisis: 'War at the EU border. Iranian missile strikes in the Middle East. Energy infrastructure under attack. Food and medicine supply shortages. Inflation and looming banking crises. The question is not if – but when.',
-      sub: 'Mold protection, building renovation and crisis preparedness under one roof – 25+ years of international experience, Bansko, Bulgaria.',
-      btnEbooks: 'Buy E-Books Now',
-      btnVideo: 'Book Video Analysis',
-      trust1: 'Over 500 renovated buildings',
+      badge: '25+ years of international experience – active across Bulgaria since 2024',
+      headline: 'Technical property expertise & renovation in Bulgaria – for investors and owners',
+      crisis: '',
+      sub: 'From assessing the building fabric before you buy, through renovation, conversion and extension, to remote technical property oversight – clear diagnosis, coordinated execution, controlled results. Everything from one source, to German standards. Mold, moisture and sound insulation included.',
+      btnPrimary: 'Request an assessment',
+      btnSecondary: 'View services',
+      trust1: 'Over 500 renovated properties',
       trust2: 'Certified specialists',
       trust3: 'Video analysis on request',
     },
+
+    pillars: {
+      item1Title: 'Renovation, Conversion & Extension',
+      item1Text: 'Full refurbishment, extensions, interior fit-out and energy upgrades – planned, coordinated and executed to Western European standards.',
+      item2Title: 'Everything from One Source',
+      item2Text: 'One point of contact for all trades: diagnosis, planning, execution and sign-off. No managing multiple contractors – we handle it.',
+      item3Title: 'To German Standards',
+      item3Text: 'Material quality, workmanship and project documentation meet DACH standards – for investors who demand quality and value reliable partnerships.',
+      cta: 'More on renovation & construction',
+    },
+
     ebooksHome: {
       badge: 'Instant Download',
       headline: 'Protect Yourself Now – With Our Expert Knowledge',
@@ -252,26 +288,41 @@ export const translations = {
     },
     services: {
       headline: 'Our Services',
-      sub: 'From mold analysis to complete building renovation, refurbishment and crisis preparedness – everything from one source.',
+      sub: 'From pre-purchase building assessment through renovation and conversion to remote technical property oversight – for foreign and domestic investors and owners. Mold, moisture and sound insulation as specialties.',
       videoAnalysis: {
-        title: 'Video Analysis',
-        desc: 'Professional remote assessment of your damage in 30 minutes. We evaluate the damage, provide concrete recommendations and an initial cost estimate – from the comfort of your home.',
-        features: ['30-minute live video call', 'Damage assessment', 'Action plan', 'Cost estimate'],
+        title: 'Free assessment by video',
+        desc: 'You film the property – within 30 minutes we provide a professional first assessment of the building fabric, concrete recommendations and a cost range. Ideal before a purchase decision or from abroad, with no travel needed.',
+        features: ['30-minute live video call', 'Building-fabric assessment', 'Recommendation', 'Cost range'],
       },
-      mold: {
-        title: 'Mold Remediation & Restoration',
-        desc: 'Professional analysis, removal and permanent remediation of mold. Certified methods, 2-year guarantee.',
-        features: ['Root cause analysis', 'Mold removal', 'Protective coating', '2-year guarantee'],
+      inspection: {
+        title: 'Pre-purchase building assessment',
+        desc: 'Independent technical inspection of building fabric, moisture, structural red flags and renovation needs – before you buy. Written report with a cost range as a solid basis for your decision.',
+        features: ['Building condition report', 'Moisture & damage check', 'Renovation cost range', 'Basis for your purchase decision'],
       },
       renovation: {
-        title: 'Building Renovation & Refurbishment',
-        desc: 'Complete remediation of moisture damage, basement waterproofing, facade restoration, roof sealing – lasting building protection.',
-        features: ['Basement waterproofing', 'Facade restoration', 'Roof sealing', 'Interior renovation'],
+        title: 'Renovation, Conversion & Extension',
+        desc: 'Full renovation, conversion, interior fit-out and energy modernization – planned, coordinated and delivered turnkey to Western European standards. Construction and labour costs well below DACH levels.',
+        features: ['Full renovation', 'Conversion & extension', 'Energy modernization', 'Turnkey, one point of contact'],
+      },
+      oversight: {
+        title: 'Technical Property Oversight',
+        desc: 'For owners who aren’t on site: regular checks, early defect detection, tradesperson coordination and photo documentation. Your technical representative on the ground – you stay in control from afar.',
+        features: ['Regular property checks', 'Early defect detection', 'Tradesperson coordination', 'Photo documentation'],
+      },
+      soundInsulation: {
+        title: 'Sound Insulation & Noise Reduction',
+        desc: 'Impact noise from above, voices through the wall, traffic noise through the window – poor sound insulation lowers living comfort and rentability. We identify the source and deliver lasting solutions: for old-build apartments, glazed balconies and new-builds with insufficient acoustic insulation.',
+        features: ['Impact & airborne noise', 'Glazed balconies', 'Windows & facade', 'Video analysis available'],
+      },
+      mold: {
+        title: 'Mold & Moisture Remediation',
+        desc: 'Professional root-cause analysis, removal and permanent remediation of mold and moisture damage – one of our specialties, with certified methods and a 2-year guarantee.',
+        features: ['Root cause analysis', 'Mold removal', 'Protective coating', '2-year guarantee'],
       },
       crisis: {
         title: 'Crisis Preparedness & Consulting',
-        desc: '9 out of 10 families in Europe are unprepared for a blackout, supply disruption or military escalation. No water supply. No emergency plan. No protection. We analyze your risks, reinforce your infrastructure and help you stay capable of acting – when others panic.',
-        features: ['Building risk analysis', 'Family emergency planning', 'Backflow valve & infrastructure', 'On-site inspection on request'],
+        desc: 'Building risk analysis, emergency planning and infrastructure protection – for owners who want to additionally safeguard their property against outages.',
+        features: ['Building risk analysis', 'Emergency planning', 'Backflow valve & infrastructure', 'On-site inspection on request'],
       },
       onsite: 'On-site inspection on request',
     },
@@ -354,7 +405,7 @@ export const translations = {
       trustStripe: 'Payment via Stripe',
     },
     footer: {
-      tagline: 'Mold protection, building renovation and crisis preparedness – 25+ years of international experience, Bansko, Bulgaria.',
+      tagline: 'Mold protection, building renovation, sound insulation and crisis preparedness – 25+ years of international experience, now active across Bulgaria.',
       nav: 'Navigation',
       contact: 'Contact',
       rights: 'All rights reserved.',
@@ -412,16 +463,27 @@ export const translations = {
       call: 'Обади се',
     },
     hero: {
-      badge: '25+ години международен опит – Банско, България',
-      headline: 'Когато основите се клатят –\u00A0ние устояваме',
-      crisis: 'Война на границата на ЕС. Ракетни удари в Близкия изток. Енергийна инфраструктура под атака. Недостиг на храна и медикаменти. Инфлация и заплаха от банкова криза. Въпросът не е дали – а кога.',
-      sub: 'Защита от мухъл, саниране на сгради и кризисна готовност под един покрив – 25+ години международен опит, Банско, България.',
-      btnEbooks: 'Купи е-книги сега',
-      btnVideo: 'Запази видеоанализ',
-      trust1: 'Над 500 санирани обекта',
+      badge: '25+ години международен опит – активни в цяла България от 2024 г.',
+      headline: 'Техническа експертиза и саниране на имоти в България – за инвеститори и собственици',
+      crisis: '',
+      sub: 'От оценка на сградната конструкция преди покупка, през реновиране, преустройство и разширение, до дистанционен технически надзор на имота – ясна диагностика, координирано изпълнение, контролиран резултат. Всичко от един изпълнител, по немски стандарт. Мухъл, влага и шумоизолация включително.',
+      btnPrimary: 'Заявете оценка',
+      btnSecondary: 'Вижте услугите',
+      trust1: 'Над 500 реновирани обекта',
       trust2: 'Сертифицирани специалисти',
       trust3: 'Видеоанализ при запитване',
     },
+
+    pillars: {
+      item1Title: 'Реновиране, преустройство и разширение',
+      item1Text: 'Пълна реконструкция, разширения, вътрешно оформление и енергийна модернизация – планирано, координирано и изпълнено по западноевропейски стандарт.',
+      item2Title: 'Всичко от един изпълнител',
+      item2Text: 'Един контакт за всички занаяти: диагностика, планиране, изпълнение и приемане. Не координирате различни майстори – ние поемаме това.',
+      item3Title: 'По немски стандарт',
+      item3Text: 'Избор на материали, качество на изпълнение и проектна документация по стандартите на DACH региона – за инвеститори, които изискват качество и ценят надеждно партньорство.',
+      cta: 'Повече за реновирането',
+    },
+
     ebooksHome: {
       badge: 'Мигновено изтегляне',
       headline: 'Защитете се сега – с нашите практически знания',
@@ -442,26 +504,41 @@ export const translations = {
     },
     services: {
       headline: 'Нашите услуги',
-      sub: 'От анализ на мухъл до цялостно саниране, ремонт и кризисна готовност – всичко от един изпълнител.',
+      sub: 'От оценка на сградата преди покупка през реновиране и преустройство до технически надзор – за чуждестранни и местни инвеститори и собственици. Мухъл, влага и шумоизолация като специалности.',
       videoAnalysis: {
-        title: 'Видеоанализ',
-        desc: 'Професионална дистанционна оценка на щетите за 30 минути. Оценяваме повредата, даваме конкретни препоръки и първоначална сметка – от удобството на вашия дом.',
-        features: ['30 минути живо видео', 'Оценка на щетата', 'План за действие', 'Ценова оценка'],
+        title: 'Безплатна оценка чрез видео',
+        desc: 'Вие заснемате обекта – в рамките на 30 минути даваме професионална първоначална оценка на сградната конструкция, конкретни препоръки и ценови диапазон. Идеално преди решение за покупка или от разстояние, без пътуване.',
+        features: ['30 минути живо видео', 'Оценка на конструкцията', 'Препоръка', 'Ценови диапазон'],
       },
-      mold: {
-        title: 'Отстраняване на мухъл и саниране',
-        desc: 'Професионален анализ, отстраняване и трайно саниране на мухъл. Сертифицирани методи, 2 години гаранция.',
-        features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', '2 години гаранция'],
+      inspection: {
+        title: 'Оценка на сградата преди покупка',
+        desc: 'Независима техническа проверка на сградната конструкция, влага, конструктивни рискове и нужда от саниране – преди да купите. Писмен доклад с ценови диапазон като солидна основа за решението ви.',
+        features: ['Доклад за състоянието', 'Проверка на влага и щети', 'Ценови диапазон за саниране', 'Основа за решението за покупка'],
       },
       renovation: {
-        title: 'Саниране и обновяване на сгради',
-        desc: 'Пълно саниране на щети от влага, хидроизолация на мазета, фасадно саниране, покривна хидроизолация.',
-        features: ['Хидроизолация на мазе', 'Фасадно саниране', 'Покривна хидроизолация', 'Вътрешен ремонт'],
+        title: 'Реновиране, преустройство и разширение',
+        desc: 'Пълно реновиране, преустройство, вътрешно оформление и енергийна модернизация – планирано, координирано и изпълнено „до ключ" по западноевропейски стандарт. Строителни и трудови разходи значително под нивата в DACH.',
+        features: ['Пълно реновиране', 'Преустройство и разширение', 'Енергийна модернизация', 'До ключ, един контакт'],
+      },
+      oversight: {
+        title: 'Технически надзор на имота',
+        desc: 'За собственици, които не са на място: редовни проверки, ранно откриване на дефекти, координация на майстори и фото документация. Вашият технически представител на място – вие контролирате от разстояние.',
+        features: ['Редовни проверки', 'Ранно откриване на дефекти', 'Координация на майстори', 'Фото документация'],
+      },
+      soundInsulation: {
+        title: 'Звукоизолация и шумозащита',
+        desc: 'Стъпков шум отгоре, гласове през стената, уличен шум — лошата звукоизолация намалява комфорта и възможността за отдаване под наем. Анализираме точния източник на шума и предлагаме трайно решение.',
+        features: ['Стъпков и въздушен шум', 'Остъклени балкони', 'Прозорци и фасада', 'Видеоанализ при запитване'],
+      },
+      mold: {
+        title: 'Саниране на мухъл и влага',
+        desc: 'Професионален анализ на причините, отстраняване и трайно саниране на щети от мухъл и влага – една от нашите специалности, със сертифицирани методи и 2 години гаранция.',
+        features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', '2 години гаранция'],
       },
       crisis: {
         title: 'Кризисна готовност и консултации',
-        desc: '9 от 10 семейства в Европа не са подготвени за блекаут, прекъсване на доставките или военна ескалация. Без запаси от вода. Без авариен план. Без защита. Ние анализираме рисковете ви, укрепваме инфраструктурата ви и ви помагаме да останете боеспособни – когато другите изпадат в паника.',
-        features: ['Рискова оценка на сградата', 'Семеен авариен план', 'Обратна клапа и инфраструктура', 'Оглед на място по заявка'],
+        desc: 'Рискова оценка на сградата, авариен план и защита на инфраструктурата – за собственици, които искат допълнително да обезопасят имота си срещу прекъсвания.',
+        features: ['Рискова оценка на сградата', 'Авариен план', 'Обратна клапа и инфраструктура', 'Оглед на място по заявка'],
       },
       onsite: 'Оглед на място по заявка',
     },
