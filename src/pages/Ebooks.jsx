@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 import { useSEO } from '../hooks/useSEO'
 import CheckoutModal from '../components/CheckoutModal'
-import { useSEO } from '../hooks/useSEO'
 
 const SCHUTZSCHILD = {
   de: {

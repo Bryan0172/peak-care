@@ -6,6 +6,17 @@ const SENDER = { email: 'peakcare@peak-care.com', name: 'Peak Care Website' }; /
 const TO = [{ email: 'peakcare@peak-care.com', name: 'Peak Care' }];
 const BCC = [{ email: 'andy7203@googlemail.com' }];
 
+async function verifyTurnstile(token, ip) {
+  const body = new URLSearchParams();
+  body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
+  body.append('response', token || '');
+  if (ip) body.append('remoteip', ip);
+  const res = await fetch('https://challenges.cloudflare.com/turnstile/v1/siteverify', {
+    method: 'POST', body,
+  });
+  return (await res.json()).success === true;
+}
+
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -43,6 +54,13 @@ exports.handler = async (event) => {
 
   // Honeypot: gefülltes Bot-Feld → still akzeptieren (kein Mailversand), damit Bots keinen Fehler sehen.
   if (data['bot-field']) return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+
+  // Turnstile: nur aktiv wenn CLOUDFLARE_TURNSTILE_SECRET gesetzt.
+  if (process.env.CLOUDFLARE_TURNSTILE_SECRET) {
+    const token = data['cf-turnstile-response'];
+    const ip = event.headers['cf-connecting-ip'] || event.headers['x-forwarded-for'] || '';
+    if (!await verifyTurnstile(token, ip)) return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+  }
 
   // Spam still verwerfen (200 zurück, damit der Bot „Erfolg" sieht und keine echte Mail rausgeht).
   if (isSpam(data)) return { statusCode: 200, body: JSON.stringify({ ok: true }) };

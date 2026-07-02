@@ -103,16 +103,22 @@ export default function ServiceCards() {
         {/* Video Analysis – full-width highlight card */}
         <div className="card overflow-hidden mb-8 md:flex">
           <div className="md:w-2/5 relative overflow-hidden min-h-48">
+            {/* Kein Autoplay + preload=none + Poster + controls: die 16-MB-MP4 wird NICHT mehr
+                bei jedem Aufruf/Bot geladen (Bandbreiten-/Credit-Leck gestopft, 02.07.),
+                lädt+spielt aber auf Klick (Play-Button). Overlay = pointer-events-none, damit
+                der Play-Button klickbar bleibt. */}
             <video
-              autoPlay
               muted
               loop
               playsInline
+              controls
+              preload="none"
+              poster="/images/Gebäuderenovierung.jpeg"
               className="w-full h-full object-cover"
             >
               <source src={VIDEO_SRC} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-teal-700/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-700/60 to-transparent pointer-events-none" />
             <div className="absolute top-4 left-4 bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full">
               ● Online
             </div>

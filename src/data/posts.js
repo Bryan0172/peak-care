@@ -29,6 +29,7 @@ import propertyInspectionBulgaria from '../posts/property-inspection-buying-bulg
 import renovationForeignOwners from '../posts/renovation-company-bulgaria-foreign-owners.md?raw'
 import renovationCostsBulgaria from '../posts/renovation-costs-bulgaria-guide.md?raw'
 import waermeplanungHeizungFeuchte from '../posts/waermeplanung-2026-heizung-feuchte.md?raw'
+import immobiliePruefenDE from '../posts/immobilie-pruefen-vor-dem-kauf-bulgarien.md?raw'
 
 function parseFrontmatter(raw) {
   // Normalize CRLF -> LF so frontmatter parsing is robust regardless of
@@ -80,6 +81,7 @@ export const allPosts = [
   parsePost(wasservorratAnlegen),
   parsePost(blackoutFerienhaus),
   parsePost(propertyInspectionBulgaria),
+  parsePost(immobiliePruefenDE),
   parsePost(renovationForeignOwners),
   parsePost(renovationCostsBulgaria),
   parsePost(waermeplanungHeizungFeuchte),

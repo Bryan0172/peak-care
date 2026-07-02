@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useLang } from '../context/LanguageContext'
 
 export default function ContactSection() {
@@ -7,6 +7,7 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const turnstileRef = useRef(null)
 
   function handleChange(e) {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
@@ -23,7 +24,11 @@ export default function ContactSection() {
       const res = await fetch('/.netlify/functions/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: enc({ 'form-name': 'kontakt', ...form }),
+        body: enc({
+          'form-name': 'kontakt',
+          ...form,
+          'cf-turnstile-response': turnstileRef.current?.querySelector('[name="cf-turnstile-response"]')?.value || '',
+        }),
       })
       if (!res.ok) throw new Error('lead submit failed: ' + res.status)
       setSent(true)
@@ -198,6 +203,7 @@ export default function ContactSection() {
                   />
                 </div>
 
+                <div ref={turnstileRef} className="cf-turnstile" data-sitekey="0x4AAAAAADtugrvEnoy83UQj" data-theme="light" style={{marginBottom: '8px'}}></div>
                 <button type="submit" disabled={loading} className="btn-primary w-full">
                   {loading ? c.formSending : c.formSubmit}
                 </button>

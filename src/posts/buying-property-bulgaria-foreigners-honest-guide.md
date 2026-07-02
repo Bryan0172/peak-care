@@ -12,6 +12,8 @@ Bansko is affordable. The climate is good. Price per square metre is a fraction 
 
 This article isn't a sales brochure. It's what we tell our clients in the first conversation — honest and direct.
 
+One point we make in that first conversation: never buy on trust alone. An independent [pre-purchase building inspection in Bulgaria](/bauinspektion-vor-dem-kauf-bulgarien) tells you what you are really buying — and for owners who are rarely on site, [technical property oversight](/technische-immobilienueberwachung-bulgarien) keeps the building sound afterwards.
+
 ---
 
 ## What Draws Western Europeans to Bulgaria

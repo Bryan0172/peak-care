@@ -14,6 +14,8 @@ The honest answer is that renovation costs vary significantly depending on the c
 
 All quotes are provided on a project-by-project basis after inspection. We don't give indicative figures without seeing the property — because a quote without inspection is just a guess, and guesses create disputes.
 
+That inspection is a service in its own right — see our [pre-purchase building inspection in Bulgaria](/bauinspektion-vor-dem-kauf-bulgarien) — and the work itself is delivered under [renovation & conversion in Bulgaria](/service/renovierung-umbau-ausbau-bulgarien).
+
 ---
 
 ## Why Renovation Cost in Bulgaria Is Harder to Estimate Than It Looks

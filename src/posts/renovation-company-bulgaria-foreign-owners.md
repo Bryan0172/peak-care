@@ -14,6 +14,8 @@ This is one of the most common situations we work in. Property owners based in G
 
 It works. But only when it's set up correctly from the start.
 
+That is exactly what our [renovation & conversion service in Bulgaria](/service/renovierung-umbau-ausbau-bulgarien) is built for — and, before the work begins, an independent [pre-purchase building inspection](/bauinspektion-vor-dem-kauf-bulgarien) establishes what the property actually needs.
+
 ---
 
 ## The Real Challenge of Renovation in Bulgaria for Foreign Owners

@@ -10,6 +10,71 @@ import CheckoutModal from '../components/CheckoutModal'
 import { useSEO } from '../hooks/useSEO'
 import { useLang } from '../context/LanguageContext'
 
+// Homepage-Entitäts-Schema (GEO/SEO): PC-Home hatte KEIN JSON-LD → Google/KI verstanden die
+// Entität schlecht. WebSite + LocalBusiness + Person + Kern-Services, areaServed BG + DACH. (02.07.)
+const HOME_JSONLD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://peak-care.com/#website',
+      url: 'https://peak-care.com/',
+      name: 'Peak Care',
+      description: 'Technical property expertise and renovation in Bulgaria for international investors and owners.',
+      publisher: { '@id': 'https://peak-care.com/#organization' },
+    },
+    {
+      '@type': ['Organization', 'LocalBusiness', 'ProfessionalService'],
+      '@id': 'https://peak-care.com/#organization',
+      name: 'Peak Care',
+      url: 'https://peak-care.com/',
+      email: 'peakcare@peak-care.com',
+      telephone: '+359898436561',
+      description: 'Independent technical property expertise and renovation in Bulgaria for international investors and owners: pre-purchase building inspection, technical property oversight, renovation and conversion, sound insulation, and moisture/mould remediation. Reports in German and English. Not a certified sworn appraiser — experience-based technical inspection, independent of sellers.',
+      areaServed: [
+        { '@type': 'Country', name: 'Bulgaria' },
+        { '@type': 'Country', name: 'Germany' },
+        { '@type': 'Country', name: 'Austria' },
+        { '@type': 'Country', name: 'Switzerland' },
+      ],
+      founder: { '@id': 'https://peak-care.com/#andreas-donner' },
+      knowsAbout: ['Pre-Purchase Building Inspection', 'Technical Property Oversight', 'Building Renovation', 'Moisture and Mould Remediation', 'Sound Insulation', 'Buying Property in Bulgaria'],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://peak-care.com/#andreas-donner',
+      name: 'Andreas Donner',
+      jobTitle: 'Building Expert & Founder',
+      worksFor: { '@id': 'https://peak-care.com/#organization' },
+      knowsAbout: ['Building fabric', 'Renovation', 'Construction oversight', 'Moisture and mould', 'Property in Bulgaria'],
+    },
+    {
+      '@type': 'Service',
+      name: 'Pre-Purchase Building Inspection Bulgaria',
+      serviceType: 'Pre-Purchase Building Inspection',
+      provider: { '@id': 'https://peak-care.com/#organization' },
+      areaServed: { '@type': 'Country', name: 'Bulgaria' },
+      url: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien',
+    },
+    {
+      '@type': 'Service',
+      name: 'Technical Property Oversight Bulgaria',
+      serviceType: 'Technical Property Oversight',
+      provider: { '@id': 'https://peak-care.com/#organization' },
+      areaServed: { '@type': 'Country', name: 'Bulgaria' },
+      url: 'https://peak-care.com/technische-immobilienueberwachung-bulgarien',
+    },
+    {
+      '@type': 'Service',
+      name: 'Renovation & Conversion Bulgaria',
+      serviceType: 'Building Renovation',
+      provider: { '@id': 'https://peak-care.com/#organization' },
+      areaServed: { '@type': 'Country', name: 'Bulgaria' },
+      url: 'https://peak-care.com/service/renovierung-umbau-ausbau-bulgarien',
+    },
+  ],
+}
+
 export default function Home() {
   const { t, lang } = useLang()
   const [checkout, setCheckout] = useState(null)
@@ -18,6 +83,7 @@ export default function Home() {
     title: lang === 'en' ? 'Technical Property Expertise & Renovation in Bulgaria | Peak Care' : 'Technische Immobilien-Expertise & Sanierung in Bulgarien | Peak Care',
     description: lang === 'en' ? 'Peak Care: technical property expertise for investors and owners in Bulgaria — pre-purchase building assessment, renovation, conversion and remote property oversight. Mold, moisture and sound insulation as specialties.' : 'Peak Care: technische Immobilien-Expertise für Investoren und Eigentümer in Bulgarien — Bausubstanz-Begutachtung vor dem Kauf, Renovierung, Um- & Ausbau, technische Immobilienüberwachung. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
     canonical: 'https://peak-care.com/',
+    jsonLd: HOME_JSONLD,
   })
 
   const coverSuffix = lang === 'en' ? 'en' : lang === 'bg' ? 'bg' : 'de'
