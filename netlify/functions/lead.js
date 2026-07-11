@@ -6,15 +6,34 @@ const SENDER = { email: 'peakcare@peak-care.com', name: 'Peak Care Website' }; /
 const TO = [{ email: 'peakcare@peak-care.com', name: 'Peak Care' }];
 const BCC = [{ email: 'andy7203@googlemail.com' }];
 
+// Faellt OPEN bei jedem technischen Fehler (leere/kaputte Cloudflare-Antwort, Netzwerkfehler):
+// ein Verifikations-Hickup darf die Funktion nie abstuerzen oder einen echten Lead stillschweigend
+// verschlucken — Honeypot + isSpam bleiben als die anderen zwei Spam-Schichten ohnehin bestehen.
 async function verifyTurnstile(token, ip) {
-  const body = new URLSearchParams();
-  body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
-  body.append('response', token || '');
-  if (ip) body.append('remoteip', ip);
-  const res = await fetch('https://challenges.cloudflare.com/turnstile/v1/siteverify', {
-    method: 'POST', body,
-  });
-  return (await res.json()).success === true;
+  if (!token) return false;
+  try {
+    const body = new URLSearchParams();
+    body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
+    body.append('response', token);
+    if (ip) body.append('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v1/siteverify', {
+      method: 'POST', body,
+    });
+    if (!res.ok) {
+      console.error(`Turnstile siteverify HTTP ${res.status} — failing open`);
+      return true;
+    }
+    const text = await res.text();
+    let json;
+    try { json = JSON.parse(text); } catch (e) {
+      console.error('Turnstile siteverify returned non-JSON — failing open', text.slice(0, 200));
+      return true;
+    }
+    return json.success === true;
+  } catch (e) {
+    console.error('Turnstile verification threw — failing open to avoid losing a lead', (e && e.message) || String(e));
+    return true;
+  }
 }
 
 function esc(s) {
@@ -31,7 +50,9 @@ function isSpam(data) {
   // Komplett leere / Endpunkt-Probe (kein Name, keine Mail, keine Nachricht) -> Bot.
   if (!name && !email && !msg) return true;
   let score = 0;
-  if (/jackpot|casino|lottery|\blotto\b|viagra|cialis|bitcoin|crypto|forex|\bwinner\b|you won|you have won|congratulations|earn \$|make money|\$\s?\d{3,}|gift ?card|inheritance|loan offer|backlink|seo service|escort|\bnude\b|\bsex\b/i.test(hay)) score += 4;
+  // KEIN Score auf blosse Geldbetraege ($500,000 o. ae.) — fuer eine Immobilien-/Sanierungs-Anfrage
+  // ist ein genannter Betrag ein Budget-/Kaufintent-Signal, kein Spam-Signal (siehe BC-Fix 10.07.).
+  if (/jackpot|casino|lottery|\blotto\b|viagra|cialis|bitcoin|crypto|forex|\bwinner\b|you won|you have won|congratulations|earn \$|make money|gift ?card|inheritance|loan offer|backlink|seo service|escort|\bnude\b|\bsex\b/i.test(hay)) score += 4;
   const urlCount = (hay.match(/https?:\/\/|www\.|\b\w+\.(ru|cn|tk|top|xyz|click|loan|win)\b/gi) || []).length;
   if (urlCount >= 2) score += 4; else if (urlCount === 1) score += 2;
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) score += 2;
