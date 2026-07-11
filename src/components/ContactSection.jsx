@@ -246,7 +246,11 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <div ref={turnstileRef} className="cf-turnstile" style={{marginBottom: '8px'}}></div>
+                {/* Kein "cf-turnstile"-Klassenname: Cloudflares eigener MutationObserver scannt
+                    Elemente mit dieser Klasse implizit und versucht (ohne data-sitekey) selbst zu
+                    rendern -- crasht dabei intern und blockiert den gewollten expliziten render()-
+                    Aufruf oben. Eigener Klassenname umgeht den impliziten Auto-Scan vollstaendig. */}
+                <div ref={turnstileRef} className="turnstile-widget" style={{marginBottom: '8px'}}></div>
                 <button type="submit" disabled={loading} className="btn-primary w-full">
                   {loading ? c.formSending : c.formSubmit}
                 </button>
