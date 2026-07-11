@@ -1,5 +1,7 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useLang } from '../context/LanguageContext'
+
+const TURNSTILE_SITEKEY = '0x4AAAAAADtugrvEnoy83UQj'
 
 export default function ContactSection() {
   const { t } = useLang()
@@ -7,7 +9,48 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [turnstileToken, setTurnstileToken] = useState('')
   const turnstileRef = useRef(null)
+  const turnstileWidgetId = useRef(null)
+
+  // Explizites Rendern statt implizitem data-sitekey-Auto-Scan: das Turnstile-Script
+  // (async defer) laeuft haeufig VOR React das <div ref=turnstileRef> mountet, wodurch
+  // der implizite Scan den Div nie sieht und real nie ein Token entsteht (stiller
+  // Lead-Verlust ohne Fehler). Explizites turnstile.render() nach Mount behebt das.
+  useEffect(() => {
+    let cancelled = false
+    let pollTimer = null
+
+    function renderWidget() {
+      if (cancelled || !turnstileRef.current || turnstileWidgetId.current !== null) return
+      turnstileWidgetId.current = window.turnstile.render(turnstileRef.current, {
+        sitekey: TURNSTILE_SITEKEY,
+        theme: 'light',
+        callback: (token) => setTurnstileToken(token),
+        'expired-callback': () => setTurnstileToken(''),
+        'error-callback': () => setTurnstileToken(''),
+      })
+    }
+
+    if (window.turnstile) {
+      renderWidget()
+    } else {
+      pollTimer = setInterval(() => {
+        if (window.turnstile) {
+          clearInterval(pollTimer)
+          renderWidget()
+        }
+      }, 200)
+    }
+
+    return () => {
+      cancelled = true
+      if (pollTimer) clearInterval(pollTimer)
+      if (turnstileWidgetId.current !== null && window.turnstile) {
+        try { window.turnstile.remove(turnstileWidgetId.current) } catch (e) { /* noop */ }
+      }
+    }
+  }, [])
 
   function handleChange(e) {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
@@ -27,7 +70,7 @@ export default function ContactSection() {
         body: enc({
           'form-name': 'kontakt',
           ...form,
-          'cf-turnstile-response': turnstileRef.current?.querySelector('[name="cf-turnstile-response"]')?.value || '',
+          'cf-turnstile-response': turnstileToken,
         }),
       })
       if (!res.ok) throw new Error('lead submit failed: ' + res.status)
@@ -203,7 +246,7 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <div ref={turnstileRef} className="cf-turnstile" data-sitekey="0x4AAAAAADtugrvEnoy83UQj" data-theme="light" style={{marginBottom: '8px'}}></div>
+                <div ref={turnstileRef} className="cf-turnstile" style={{marginBottom: '8px'}}></div>
                 <button type="submit" disabled={loading} className="btn-primary w-full">
                   {loading ? c.formSending : c.formSubmit}
                 </button>
