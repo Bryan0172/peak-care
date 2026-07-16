@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.peak-care.com/sitemap.xml
+Sitemap: https://peak-care.com/sitemap.xml
