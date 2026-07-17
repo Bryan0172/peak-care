@@ -4,6 +4,14 @@
   functions = "netlify/functions"
   edge_functions = "netlify/edge-functions"
 
+# Node-Version festnageln (17.07., mit Umstellung auf Git-Auto-Build): ohne diesen Pin nimmt
+# Netlify seine Default-Version, die nicht die lokal getestete sein muss — die klassische
+# Quelle fuer "lokal baut es, auf Netlify nicht". 24 = die Version, mit der der Build hier
+# verifiziert wurde (52 Routen, 0 Fehler). package-lock.json ist getrackt, damit sind auch
+# die Pakete reproduzierbar.
+[build.environment]
+  NODE_VERSION = "24"
+
 # Edge function injects OG meta tags server-side for LinkedIn/social scrapers
 [[edge_functions]]
   path = "/mentaler-schutzschild"
