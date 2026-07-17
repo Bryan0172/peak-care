@@ -1,5 +1,10 @@
 [build]
-  command   = "npm run build"
+  # Chromium VOR dem Build explizit in den persistenten Cache installieren. PUPPETEER_CACHE_DIR
+  # (s.u.) allein reicht nicht: bei `npm ci` mit restauriertem node_modules-Cache laeuft Puppeteers
+  # postinstall-Download nicht zuverlaessig, und der Prerender findet keinen Browser (Vorfall 17.07.).
+  # `puppeteer browsers install chrome` laedt idempotent in PUPPETEER_CACHE_DIR — beim 1. Build echt,
+  # danach Cache-Treffer. Lokal unnoetig, daher hier statt in package.json (npm run build bleibt clean).
+  command   = "npx puppeteer browsers install chrome && npm run build"
   publish   = "dist"
   functions = "netlify/functions"
   edge_functions = "netlify/edge-functions"
