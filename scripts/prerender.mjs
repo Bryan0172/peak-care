@@ -65,6 +65,7 @@ console.log(`Prerender: ${routes.length} Routen, Server auf :${PORT}`)
 
 let ok = 0, fail = 0, generic = 0
 let browser
+let browserFailed = false
 try {
   browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] })
 for (const route of routes) {
@@ -114,10 +115,31 @@ for (const route of routes) {
 }
   await browser.close()
 } catch (e) {
-  console.warn('⚠️ Prerender uebersprungen (Headless-Browser-Fehler) — Build laeuft trotzdem weiter, SPA bleibt funktionsfaehig:', String(e).slice(0, 140))
+  browserFailed = true
+  console.error('❌ Prerender: Headless-Browser konnte nicht starten:', String(e).slice(0, 200))
 } finally {
   try { server.close() } catch {}
   try { if (browser) await browser.close() } catch {}
 }
 console.log(`Prerender fertig: ${ok} ok · ${fail} Fehler · ${generic} mit generischem Titel (sollte ~0 sein) · ${routes.length} Routen`)
-// Bewusst KEIN process.exit(1): Prerender-Probleme duerfen Build/Deploy NICHT blockieren.
+
+// GUARD (17.07.2026): Ein KATASTROPHALER Prerender-Ausfall MUSS den Build fehlschlagen lassen —
+// sonst veroeffentlicht Netlify die rohe SPA (alle Routen generischer Titel, kein Meta/Canonical/
+// JSON-LD/og) und meldet trotzdem Erfolg. Genau das ist am 17.07. 7 h lang passiert, weil der
+// alte Code hier bewusst NICHT beendete. Ein fehlgeschlagener Build ist harmlos: Netlify behaelt
+// den letzten guten Deploy. Ein still-kaputter Deploy ist es NICHT.
+//
+// Bewusst NUR bei Total-Ausfall, nicht bei einzelnen Routen-Timeouts (fail > 0 allein blockt nicht):
+const total = routes.length
+if (browserFailed || (total > 0 && ok === 0) || (total > 0 && generic === total)) {
+  console.error(
+    `\n‼️ PRERENDER-TOTALAUSFALL — Build wird abgebrochen, damit KEINE rohe SPA live geht.\n` +
+    `   browserFailed=${browserFailed} · ok=${ok}/${total} · generic=${generic}\n` +
+    `   Ursache pruefen: findet Puppeteer Chromium? (PUPPETEER_CACHE_DIR, Container-Install)\n`,
+  )
+  process.exit(1)
+}
+// Einzelne Routen-Fehler bei sonst funktionierendem Prerender bleiben tolerierbar (nur Warnung):
+if (fail > 0 || generic > 0) {
+  console.warn(`⚠️ Prerender mit Einzel-Problemen: ${fail} Fehler, ${generic} generisch — Build laeuft weiter, aber pruefen.`)
+}

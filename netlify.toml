@@ -11,6 +11,13 @@
 # die Pakete reproduzierbar.
 [build.environment]
   NODE_VERSION = "24"
+  # Puppeteer laedt sein Chromium normalerweise nach ~/.cache/puppeteer — das ueberlebt im
+  # Netlify-Container den Schritt von install zu build NICHT, und der Prerender findet keinen
+  # Browser. Auf den PERSISTENTEN Build-Cache zeigen: Chromium wird beim install dorthin
+  # geladen und beim build von genau dort gefunden. (Vorfall 17.07.: 7 h rohe SPA live, weil
+  # genau das fehlte.) Der Build-Guard in prerender.mjs laesst den Build fehlschlagen, falls
+  # der Browser trotzdem nicht startet — dann bleibt der letzte gute Deploy stehen.
+  PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
 
 # Edge function injects OG meta tags server-side for LinkedIn/social scrapers
 [[edge_functions]]
