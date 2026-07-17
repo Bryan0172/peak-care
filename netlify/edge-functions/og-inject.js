@@ -37,10 +37,6 @@ export default async function handler(request, context) {
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="product" />
     <meta property="og:url" content="${og.url}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${og.title}" />
-    <meta name="twitter:description" content="${og.description}" />
-    <meta name="twitter:image" content="${og.image}" />
     <title>${og.title}</title>`
 
   // Inject before </head>

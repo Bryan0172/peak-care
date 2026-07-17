@@ -22,8 +22,6 @@ export function useSEO({ title, description, canonical, image, type = 'website',
     }
     if (image) {
       setMeta('property', 'og:image', image)
-      setMeta('name', 'twitter:card', 'summary_large_image')
-      setMeta('name', 'twitter:image', image)
     }
     // JSON-LD structured data — replace any prior on route change
     document.head.querySelectorAll('script[data-seo-jsonld]').forEach((s) => s.remove())

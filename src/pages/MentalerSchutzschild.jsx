@@ -173,8 +173,6 @@ export default function MentalerSchutzschild() {
       <meta property="og:image:height" content="630" />
       <meta property="og:type" content="product" />
       <meta property="og:url" content={`https://www.peak-care.com/mentaler-schutzschild`} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content={ogImage} />
     </Helmet>
     <div className="bg-gray-950 text-white min-h-screen">
 
