@@ -80,15 +80,22 @@ exports.handler = async (event) => {
   // sonst koennte ein Fremder ueber diesen oeffentlichen Endpoint in beliebige Listen schreiben.
   const ALLOWED_LISTS = [2, 3]
   const LEAD_MAGNET_LIST_ID = ALLOWED_LISTS.includes(Number(listId)) ? Number(listId) : 2
-
-  // 1. Add contact to Brevo list
+  // Kontakt anlegen. Der Willkommens-Mailversand liegt NICHT mehr hier, sondern in der
+  // Brevo-Automation "Lead Magnet - Welcome Email" (Trigger "Contact added to list" -> Liste 3),
+  // die das gestaltete zweisprachige Template schickt. Vorher sendeten BEIDE -> der Anmelder bekam
+  // zwei Mails (verifiziert 17.07. im Brevo-Log: 06:55:25 diese Funktion, 06:55:29 die Automation).
+  //
+  // Nebeneffekt, der zaehlt: diese Funktion verschickt jetzt gar keine Mail mehr an eine frei
+  // waehlbare Adresse. Das Mail-Relay-Risiko entfaellt damit vollstaendig, statt nur durch
+  // Turnstile gedeckt zu sein.
+  //
+  // Der Kontakt ist damit der EINZIGE Ausloeser der Willkommensmail. Schlaegt er fehl, darf hier
+  // KEIN Erfolg gemeldet werden - sonst wartet der Anmelder auf eine Mail, die nie kommt (der
+  // frueher hier verschluckte Fehler fiel nur deshalb nicht auf, weil die Mail separat rausging).
   try {
-    await fetch('https://api.brevo.com/v3/contacts', {
+    const res = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
-      headers: {
-        'api-key': BREVO_API_KEY,
-        'Content-Type': 'application/json',
-      },
+      headers: { 'api-key': BREVO_API_KEY, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email,
         attributes: { FIRSTNAME: name || '', LANGUAGE: lang.toUpperCase(), SOURCE: 'lead_magnet' },
@@ -96,109 +103,14 @@ exports.handler = async (event) => {
         updateEnabled: true,
       }),
     })
-  } catch (err) {
-    console.error('Brevo contact error:', err)
-  }
-
-  // 2. Send welcome email with lead magnet PDF
-  const templates = {
-    de: {
-      subject: 'Ihr kostenloser Schimmel-Check ist da 📋',
-      heading: 'Ihr 5-Punkte-Sofort-Check',
-      intro: `Herzlichen Glückwunsch – Sie haben den ersten Schritt gemacht.`,
-      body: `In weniger als 5 Minuten wissen Sie, ob Ihre Immobilie ein Schimmelproblem hat – oder nicht.<br><br>
-Hier ist Ihr kostenloser Check:<br><br>
-<a href="https://www.peak-care.com/downloads/schimmel-sofort-check.pdf"
-   style="background:#0D6B5E;color:white;padding:14px 28px;text-decoration:none;border-radius:6px;display:inline-block;font-weight:bold;">
-📋 Sofort-Check herunterladen
-</a><br><br>
-<strong>Was Sie als nächstes tun können:</strong><br>
-<ul>
-<li>Führen Sie den Check in Ihrer Wohnung durch (dauert 5 Minuten)</li>
-<li>Wenn Sie 7+ Punkte erreichen: Buchen Sie eine kostenlose Ersteinschätzung</li>
-<li>Lesen Sie unsere aktuellen Blog-Artikel zu Schimmel und Krisenvorsorge</li>
-</ul>`,
-      cta_text: 'Videoanalyse buchen',
-      cta_url: 'https://www.peak-care.com/#kontakt',
-      closing: 'Bei Fragen antworten Sie einfach auf diese Mail.',
-    },
-    en: {
-      subject: 'Your free mold check is here 📋',
-      heading: 'Your 5-Point Quick Check',
-      intro: 'Congratulations – you\'ve taken the first step.',
-      body: `In less than 5 minutes, you\'ll know whether your property has a mold problem — or not.<br><br>
-Here is your free check:<br><br>
-<a href="https://www.peak-care.com/downloads/mold-quick-check.pdf"
-   style="background:#0D6B5E;color:white;padding:14px 28px;text-decoration:none;border-radius:6px;display:inline-block;font-weight:bold;">
-📋 Download Quick Check
-</a><br><br>
-<strong>What you can do next:</strong><br>
-<ul>
-<li>Complete the check at your property (takes 5 minutes)</li>
-<li>If you score 7+ points: book a free initial consultation</li>
-<li>Read our latest blog articles on mold and crisis preparedness</li>
-</ul>`,
-      cta_text: 'Book Video Analysis',
-      cta_url: 'https://www.peak-care.com/#kontakt',
-      closing: 'Any questions? Just reply to this email.',
-    },
-  }
-
-  const t = templates[lang] || templates['de']
-
-  const html = `
-<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#ffffff;">
-  <div style="background:#0D6B5E;padding:30px;text-align:center;">
-    <h1 style="color:white;margin:0;font-size:24px;">Peak Care</h1>
-    <p style="color:#a7f3d0;margin:8px 0 0;font-size:14px;">Schimmelschutz & Krisenvorsorge</p>
-  </div>
-  <div style="padding:32px;">
-    <h2 style="color:#1a1a1a;margin-top:0;">${t.heading}</h2>
-    <p style="color:#444;">${t.intro}</p>
-    <div style="color:#444;line-height:1.7;">${t.body}</div>
-    <div style="text-align:center;margin:32px 0;">
-      <a href="${t.cta_url}" style="background:#0D6B5E;color:white;padding:14px 28px;text-decoration:none;border-radius:6px;display:inline-block;font-weight:bold;">
-        ${t.cta_text}
-      </a>
-    </div>
-    <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0;">
-    <p style="color:#888;font-size:13px;">${t.closing}</p>
-    <p style="color:#888;font-size:12px;">
-      Peak Care · Bansko, Bulgarien ·
-      <a href="https://www.peak-care.com" style="color:#0D6B5E;">peak-care.com</a>
-    </p>
-  </div>
-</div>`
-
-  try {
-    const res = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'api-key': BREVO_API_KEY,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        // peakcare@ ist der in Brevo verifizierte Absender (s. lead.js). info@ war hier nie belegt.
-        sender: { name: 'Peak Care', email: 'peakcare@peak-care.com' },
-        to: [{ email, name: name || email }],
-        subject: t.subject,
-        htmlContent: html,
-      }),
-    })
-
     if (!res.ok) {
-      const err = await res.text()
-      console.error('Brevo send error:', err)
-      return { statusCode: 500, headers, body: JSON.stringify({ error: 'Email send failed' }) }
+      console.error('Brevo contact add failed', res.status, await res.text())
+      return { statusCode: 502, headers, body: JSON.stringify({ error: 'Subscription failed' }) }
     }
   } catch (err) {
-    console.error('Email error:', err)
-    return { statusCode: 500, headers, body: JSON.stringify({ error: 'Email error' }) }
+    console.error('Brevo contact exception:', (err && err.message) || String(err))
+    return { statusCode: 502, headers, body: JSON.stringify({ error: 'Subscription failed' }) }
   }
 
-  return {
-    statusCode: 200,
-    headers,
-    body: JSON.stringify({ success: true }),
-  }
+  return { statusCode: 200, headers, body: JSON.stringify({ success: true }) }
 }
