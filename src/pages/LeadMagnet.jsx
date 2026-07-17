@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import TurnstileWidget from '../components/TurnstileWidget'
 
 const BREVO_LIST_ID = 3 // Lead Magnet - Schimmel-Sofort-Check
-const BREVO_API_KEY = import.meta.env.VITE_BREVO_API_KEY
 
 export default function LeadMagnet() {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [error, setError] = useState('')
+  const [turnstileToken, setTurnstileToken] = useState('')
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -15,30 +16,25 @@ export default function LeadMagnet() {
     setError('')
 
     try {
-      const res = await fetch('https://api.brevo.com/v3/contacts', {
+      // Brevo wird serverseitig aufgerufen (netlify/functions/subscribe.js). Nie direkt aus dem
+      // Browser: der API-Key waere sonst im oeffentlichen Bundle lesbar (Vorfall 17.07.).
+      const res = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
-        headers: {
-          'api-key': BREVO_API_KEY,
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
-          attributes: { FIRSTNAME: name },
-          listIds: [BREVO_LIST_ID],
-          updateEnabled: true,
+          name,
+          lang: 'de',
+          listId: BREVO_LIST_ID,
+          'cf-turnstile-response': turnstileToken,
         }),
       })
 
-      if (res.ok || res.status === 204) {
+      if (res.ok) {
         setStatus('success')
       } else {
-        const data = await res.json()
-        // Contact already exists → still allow download
-        if (data.code === 'duplicate_parameter') {
-          setStatus('success')
-        } else {
-          throw new Error(data.message || 'Fehler')
-        }
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'Fehler')
       }
     } catch (err) {
       setStatus('error')
@@ -107,18 +103,36 @@ export default function LeadMagnet() {
                 />
               </div>
 
+              {/* Honeypot: fuer Menschen unsichtbar, Bots fuellen es aus */}
+              <input
+                type="text"
+                name="bot-field"
+                tabIndex={-1}
+                autoComplete="off"
+                value=""
+                onChange={() => {}}
+                style={{ position: 'absolute', left: '-9999px' }}
+                aria-hidden="true"
+              />
+
               {error && (
                 <p className="text-red-600 text-sm">{error}</p>
               )}
 
+              <TurnstileWidget onToken={setTurnstileToken} />
+
+              {/* Absenden erst mit Token: lieber ein sichtbar wartender Button als ein
+                  vorgetaeuschtes "gesendet", bei dem der Lead still verlorengeht. */}
               <button
                 type="submit"
-                disabled={status === 'loading'}
+                disabled={status === 'loading' || !turnstileToken}
                 className="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors disabled:opacity-60"
               >
                 {status === 'loading'
                   ? 'Wird gesendet…'
-                  : '📥 Gratis herunterladen'}
+                  : !turnstileToken
+                    ? 'Sicherheitsprüfung läuft…'
+                    : '📥 Gratis herunterladen'}
               </button>
 
               <p className="text-xs text-gray-400 text-center">

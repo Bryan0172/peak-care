@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
+import TurnstileWidget from './TurnstileWidget'
 
 const CONTENT = {
   de: {
@@ -13,6 +14,7 @@ const CONTENT = {
     ],
     placeholder: 'Ihre E-Mail-Adresse',
     btn: 'Gratis herunterladen',
+    verifying: 'Sicherheitsprüfung läuft…',
     note: 'Kein Spam. Jederzeit abmeldbar.',
     success: 'Perfekt! Hier ist Ihr kostenloser Schimmel-Sofort-Check:',
     download: 'PDF jetzt herunterladen',
@@ -29,6 +31,7 @@ const CONTENT = {
     ],
     placeholder: 'Your email address',
     btn: 'Download free',
+    verifying: 'Security check running…',
     note: 'No spam. Unsubscribe any time.',
     success: 'Here is your free Mold Quick-Check:',
     download: 'Download PDF now',
@@ -45,6 +48,7 @@ const CONTENT = {
     ],
     placeholder: 'Вашият имейл адрес',
     btn: 'Изтеглете безплатно',
+    verifying: 'Извършва се проверка за сигурност…',
     note: 'Без спам. Отпишете се по всяко време.',
     success: 'Ето вашата безплатна проверка за мухъл:',
     download: 'Изтеглете PDF',
@@ -58,6 +62,7 @@ export default function LeadMagnet() {
 
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle') // idle | loading | success | error
+  const [turnstileToken, setTurnstileToken] = useState('')
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -65,19 +70,14 @@ export default function LeadMagnet() {
     setStatus('loading')
 
     try {
-      const res = await fetch('https://api.brevo.com/v3/contacts', {
+      // Brevo wird serverseitig aufgerufen (netlify/functions/subscribe.js). Nie direkt aus dem
+      // Browser: der API-Key waere sonst im oeffentlichen Bundle lesbar (Vorfall 17.07.).
+      const res = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'api-key': import.meta.env.VITE_BREVO_API_KEY,
-        },
-        body: JSON.stringify({
-          email,
-          listIds: [3],
-          updateEnabled: true,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, lang, listId: 3, 'cf-turnstile-response': turnstileToken }),
       })
-      if (res.ok || res.status === 204) {
+      if (res.ok) {
         setStatus('success')
         setEmail('')
       } else {
@@ -144,12 +144,28 @@ export default function LeadMagnet() {
                   />
                 </div>
 
+                {/* Honeypot: fuer Menschen unsichtbar, Bots fuellen es aus */}
+                <input
+                  type="text"
+                  name="bot-field"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value=""
+                  onChange={() => {}}
+                  style={{ position: 'absolute', left: '-9999px' }}
+                  aria-hidden="true"
+                />
+
+                <TurnstileWidget onToken={setTurnstileToken} />
+
+                {/* Absenden erst mit Token: lieber ein sichtbar wartender Button als ein
+                    vorgetaeuschtes "gesendet", bei dem der Lead still verlorengeht. */}
                 <button
                   type="submit"
-                  disabled={status === 'loading'}
+                  disabled={status === 'loading' || !turnstileToken}
                   className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-6 rounded-lg transition-colors disabled:opacity-60 text-base"
                 >
-                  {status === 'loading' ? '...' : `📋 ${c.btn}`}
+                  {status === 'loading' ? '...' : !turnstileToken ? c.verifying : `📋 ${c.btn}`}
                 </button>
 
                 {status === 'error' && (

@@ -1,5 +1,40 @@
 // Peak Care – Lead Magnet Subscription
 // Adds contact to Brevo + sends welcome mail with free PDF link
+//
+// Turnstile ist hier PFLICHT, nicht Kosmetik: der Endpoint verschickt Mail an eine frei
+// waehlbare Adresse ueber unseren verifizierten Absender. Ohne Schutz waere das ein offenes
+// Mail-Relay — wer es findet, verbrennt unsere Absender-Reputation und unser Brevo-Konto.
+// Logik 1:1 aus lead.js (dort bewaehrt).
+
+// Faellt OPEN bei jedem technischen Fehler (leere/kaputte Cloudflare-Antwort, Netzwerkfehler):
+// ein Verifikations-Hickup darf nie einen echten Lead verschlucken. Ein FEHLENDES Token gilt
+// dagegen als Bot — das ist kein technischer Fehler, sondern eine ausgebliebene Challenge.
+async function verifyTurnstile(token, ip) {
+  if (!token) return false
+  try {
+    const body = new URLSearchParams()
+    body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '')
+    body.append('response', token)
+    if (ip) body.append('remoteip', ip)
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v1/siteverify', {
+      method: 'POST', body,
+    })
+    if (!res.ok) {
+      console.error(`Turnstile siteverify HTTP ${res.status} — failing open`)
+      return true
+    }
+    const text = await res.text()
+    let json
+    try { json = JSON.parse(text) } catch (e) {
+      console.error('Turnstile siteverify returned non-JSON — failing open', text.slice(0, 200))
+      return true
+    }
+    return json.success === true
+  } catch (e) {
+    console.error('Turnstile verification threw — failing open to avoid losing a lead', (e && e.message) || String(e))
+    return true
+  }
+}
 
 exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
@@ -7,7 +42,7 @@ exports.handler = async (event) => {
   }
 
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': 'https://www.peak-care.com',
     'Content-Type': 'application/json',
   }
 
@@ -18,14 +53,33 @@ exports.handler = async (event) => {
     return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid JSON' }) }
   }
 
-  const { email, name, lang = 'de' } = body
+  const { email, name, lang = 'de', listId } = body
+
+  // Honeypot: gefuelltes Bot-Feld -> still akzeptieren, damit der Bot keinen Fehler sieht
+  // und das Formular nicht als kaputt erkennt.
+  if (body['bot-field']) {
+    return { statusCode: 200, headers, body: JSON.stringify({ success: true }) }
+  }
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid email' }) }
   }
 
+  // Turnstile: nur aktiv wenn CLOUDFLARE_TURNSTILE_SECRET gesetzt ist (wie lead.js).
+  // Bot -> 200 ohne Wirkung: kein Kontakt, kein Mailversand, aber auch kein Fehlersignal.
+  if (process.env.CLOUDFLARE_TURNSTILE_SECRET) {
+    const token = body['cf-turnstile-response']
+    const ip = event.headers['cf-connecting-ip'] || event.headers['x-forwarded-for'] || ''
+    if (!await verifyTurnstile(token, ip)) {
+      return { statusCode: 200, headers, body: JSON.stringify({ success: true }) }
+    }
+  }
+
   const BREVO_API_KEY = process.env.BREVO_API_KEY
-  const LEAD_MAGNET_LIST_ID = 2 // Brevo list ID for lead magnet subscribers
+  // Allowlist: der Client darf die Liste waehlen, aber nur aus bekannten Lead-Magnet-Listen —
+  // sonst koennte ein Fremder ueber diesen oeffentlichen Endpoint in beliebige Listen schreiben.
+  const ALLOWED_LISTS = [2, 3]
+  const LEAD_MAGNET_LIST_ID = ALLOWED_LISTS.includes(Number(listId)) ? Number(listId) : 2
 
   // 1. Add contact to Brevo list
   try {
@@ -124,7 +178,8 @@ Here is your free check:<br><br>
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        sender: { name: 'Peak Care', email: 'info@peak-care.com' },
+        // peakcare@ ist der in Brevo verifizierte Absender (s. lead.js). info@ war hier nie belegt.
+        sender: { name: 'Peak Care', email: 'peakcare@peak-care.com' },
         to: [{ email, name: name || email }],
         subject: t.subject,
         htmlContent: html,
