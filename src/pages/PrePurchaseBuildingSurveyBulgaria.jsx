@@ -48,7 +48,7 @@ const content = {
     },
     scope: {
       headline: 'Was wir vor Ort prüfen',
-      sub: 'Eine systematische Sichtprüfung der kaufentscheidenden Bereiche – dokumentiert mit Fotos.',
+      sub: 'Eine systematische Sichtprüfung der kaufentscheidenden Bereiche – nach einer festen, dokumentierten Prüfsystematik und mit Fotos belegt, damit kein kaufentscheidender Bereich übersehen wird.',
       groups: [
         { title: 'Tragwerk & Substanz', items: ['Fundament & Keller', 'Wände, Risse & Setzungen', 'Decken & tragende Elemente', 'Dachstuhl & Dacheindeckung'] },
         { title: 'Feuchte & Bauklima', items: ['Aufsteigende & eindringende Feuchte', 'Schimmel & Salzausblühungen', 'Wärmebrücken & Dämmung', 'Belüftung & Kondensat'] },
@@ -64,6 +64,7 @@ const content = {
         { title: 'Fotodokumentation', text: 'Jeder relevante Befund mit Bild belegt – nachvollziehbar auch aus dem Ausland.' },
         { title: 'Priorisierte Mängelliste', text: 'Sofort / mittelfristig / kosmetisch – Sie sehen, was wirklich drängt.' },
         { title: 'Renovierungskosten-Orientierung', text: 'Realistische Kostenspannen für die wichtigsten Maßnahmen, basierend auf lokaler Markterfahrung.' },
+        { title: 'Was nicht geprüft werden konnte – und warum', text: 'Der Bericht benennt ausdrücklich, welche Bereiche ohne Öffnung, Messgerät oder Zugang nicht beurteilt werden konnten – damit Sie genau wissen, worauf die Einschätzung beruht und wo eine Restunsicherheit bleibt.' },
         { title: 'Klare Kauf-Einschätzung', text: 'Eine ehrliche Gesamtbeurteilung: solide, mit Vorbehalt, oder Finger weg.' },
         { title: 'Bericht in 2–3 Werktagen', text: 'Nach dem Vor-Ort-Termin erhalten Sie die Dokumentation zeitnah – damit Sie entscheiden können.' },
       ],
@@ -140,7 +141,7 @@ const content = {
     },
     scope: {
       headline: 'What we inspect on site',
-      sub: 'A systematic visual inspection of the purchase-critical areas – documented with photos.',
+      sub: 'A systematic visual inspection of the purchase-critical areas – following a fixed, documented method and evidenced with photos, so no purchase-critical area is overlooked.',
       groups: [
         { title: 'Structure & fabric', items: ['Foundation & basement', 'Walls, cracks & settlement', 'Floors & load-bearing elements', 'Roof structure & covering'] },
         { title: 'Damp & building climate', items: ['Rising & penetrating damp', 'Mould & salt efflorescence', 'Thermal bridges & insulation', 'Ventilation & condensation'] },
@@ -156,6 +157,7 @@ const content = {
         { title: 'Photo documentation', text: 'Every relevant finding evidenced with an image – verifiable even from abroad.' },
         { title: 'Prioritised defect list', text: 'Urgent / medium-term / cosmetic – you see what actually matters.' },
         { title: 'Renovation cost orientation', text: 'Realistic cost ranges for the key works, based on local market experience.' },
+        { title: 'What could not be assessed – and why', text: 'The report states explicitly which areas could not be judged without opening up, instruments or access – so you know exactly what the assessment rests on and where a residual uncertainty remains.' },
         { title: 'Clear purchase verdict', text: 'An honest overall assessment: sound, proceed with caution, or walk away.' },
         { title: 'Report in 2–3 working days', text: 'After the on-site visit you receive the documentation promptly – so you can decide.' },
       ],
@@ -232,7 +234,7 @@ const content = {
     },
     scope: {
       headline: 'Какво проверяваме на място',
-      sub: 'Систематичен визуален оглед на решаващите за покупката зони – документиран със снимки.',
+      sub: 'Систематичен визуален оглед на решаващите за покупката зони – по фиксирана, документирана методика и подкрепен със снимки, за да не бъде пропусната нито една решаваща за покупката зона.',
       groups: [
         { title: 'Конструкция и субстанция', items: ['Основи и сутерен', 'Стени, пукнатини и слягания', 'Подове и носещи елементи', 'Покривна конструкция и покритие'] },
         { title: 'Влага и микроклимат', items: ['Капилярна и проникваща влага', 'Мухъл и солни налепи', 'Термомостове и изолация', 'Вентилация и кондензация'] },
@@ -248,6 +250,7 @@ const content = {
         { title: 'Снимкова документация', text: 'Всяка съществена находка е доказана със снимка – проследима дори от чужбина.' },
         { title: 'Приоритизиран списък с дефекти', text: 'Спешно / средносрочно / козметично – виждате какво наистина има значение.' },
         { title: 'Ориентир за разходите за ремонт', text: 'Реалистични ценови диапазони за основните работи, на база местен пазарен опит.' },
+        { title: 'Какво не можа да бъде проверено – и защо', text: 'Докладът посочва изрично кои зони не могат да бъдат оценени без отваряне, уред или достъп – за да знаете точно на какво се основава оценката и къде остава известна несигурност.' },
         { title: 'Ясна оценка за покупката', text: 'Честна цялостна преценка: солиден имот, с условие, или по-добре се откажете.' },
         { title: 'Доклад за 2–3 работни дни', text: 'След огледа на място получавате документацията навреме – за да можете да решите.' },
       ],
