@@ -92,7 +92,10 @@ for (const route of routes) {
     if (title === GENERIC_TITLE) generic++
     // Canonical normalisieren: jede Seite bekommt ihren Self-Canonical (Apex) — fixt die alten
     // Helmet-Seiten (Service/Technical/...), die sonst faelschlich auf die Home zeigen.
-    const canon = 'https://peak-care.com' + (route === '/' ? '/' : route)
+    // Self-canonical: die 200-Antwort liegt unter der Slash-Form (dist/<route>/index.html),
+    // die No-Slash-Form 301-redirected dorthin. Canonical muss die tatsächlich servierte
+    // URL nennen, sonst zeigt die 200-Seite auf eine Redirect-Quelle (A80-Vorfall 16./17.07.).
+    const canon = 'https://peak-care.com' + (route === '/' ? '/' : route + '/')
     await page.evaluate((c) => {
       let l = document.head.querySelector('link[rel="canonical"]')
       if (!l) { l = document.createElement('link'); l.setAttribute('rel', 'canonical'); document.head.appendChild(l) }
