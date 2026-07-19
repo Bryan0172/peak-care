@@ -111,13 +111,13 @@ const content = {
 
   en: {
     meta: {
-      title: 'Pre-Purchase Building Inspection in Bulgaria – independent property check | Peak Care',
-      description: 'Independent technical building inspection before you buy property in Bulgaria. An experienced building expert inspects structure, damp, statics and hidden defects on site – structured inspection report with photo documentation, defect list and renovation cost orientation. For international investors and owners.',
+      title: 'Buying Property in Bulgaria? Independent Pre-Purchase Building Inspection | Peak Care',
+      description: 'Buying property in Bulgaria, from abroad? Independent pre-purchase building inspection. An experienced building expert inspects structure, damp, statics and hidden defects on site – structured inspection report with photo documentation, defect list and renovation cost orientation. For international investors and owners.',
       canonical: 'https://peak-care.com/pre-purchase-building-inspection-bulgaria',
     },
     hero: {
-      tag: 'PRE-PURCHASE BUILDING INSPECTION · BULGARIA',
-      title: 'Know what you are buying – before you sign',
+      tag: 'BUYING PROPERTY IN BULGARIA · PRE-PURCHASE INSPECTION',
+      title: 'Buying property in Bulgaria — know what you are signing.',
       subtitle: 'An independent technical inspection of the building fabric, carried out on site by an experienced building expert. You get a clear, honest picture of the property: what is sound, what it will cost you, and whether the asking price is justified.',
       ctaPrimary: 'Request an inspection',
       ctaSecondary: 'Message on WhatsApp',
@@ -204,13 +204,13 @@ const content = {
 
   bg: {
     meta: {
-      title: 'Техническа проверка на имот преди покупка в България | Peak Care',
+      title: 'Купувате имот в България? Техническа проверка преди покупка | Peak Care',
       description: 'Независима техническа проверка на сградата преди покупка на имот в България. Опитен строителен експерт проверява конструкцията, влагата, статиката и скритите дефекти на място – структуриран доклад от проверката със снимки, списък с дефекти и ориентир за разходите за ремонт. За международни и местни инвеститори.',
       canonical: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien',
     },
     hero: {
-      tag: 'ТЕХНИЧЕСКА ПРОВЕРКА ПРЕДИ ПОКУПКА · БЪЛГАРИЯ',
-      title: 'Знайте какво купувате – преди да подпишете',
+      tag: 'КУПУВАНЕ НА ИМОТ В БЪЛГАРИЯ · ПРОВЕРКА ПРЕДИ ПОКУПКА',
+      title: 'Купувате имот в България — знайте какво подписвате.',
       subtitle: 'Независима техническа проверка на сградата, извършена на място от опитен строителен експерт. Получавате ясна и честна картина на имота: какво е наред, какво ще ви струва и дали исканата цена е оправдана.',
       ctaPrimary: 'Заявете проверка',
       ctaSecondary: 'Пишете в WhatsApp',
