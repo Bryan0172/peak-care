@@ -55,6 +55,8 @@ Wenn trotz Sofortmaßnahmen die Feuchtigkeit wiederkehrt oder der Schaden sichtb
 
 **Eine professionelle Analyse kostet wenig. Ein übersehener Feuchtigkeitsschaden kann Ihr Gebäude zerstören.**
 
+Stehen Sie noch vor dem Kauf und wollen genau solche Mängel gar nicht erst übernehmen? Unsere [Bauinspektion vor dem Kauf in Bulgarien](/bauinspektion-vor-dem-kauf-bulgarien) prüft Feuchte, Statik und Bausubstanz, bevor Sie unterschreiben.
+
 ---
 
 ## Weiterführende Artikel
@@ -62,4 +64,5 @@ Wenn trotz Sofortmaßnahmen die Feuchtigkeit wiederkehrt oder der Schaden sichtb
 - [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung – die vollständige Anleitung](/blog/feuchtigkeit-keller-ursachen-abdichtung)
 - [Schimmel im Keller: Ursachen und dauerhafte Beseitigung](/blog/schimmel-keller-ursachen-beseitigung)
 - [Schimmelflecken an der Wand dauerhaft entfernen](/blog/schimmelflecken-wand-entfernen-dauerhaft)
+- [Immobilie in Bulgarien kaufen – vorher prüfen lassen](/bauinspektion-vor-dem-kauf-bulgarien)
 - [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)

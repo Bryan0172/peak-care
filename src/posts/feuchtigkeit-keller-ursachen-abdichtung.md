@@ -156,6 +156,8 @@ Der gefährlichste Fehler ist Abwarten. Wasser findet immer mehr Wege ins Mauerw
 
 Oder laden Sie unser E-Book [„Schimmel & Feuchtigkeit im Griff"](/ebooks) herunter – mit detaillierten Schritt-für-Schritt-Anleitungen für Hausbesitzer, die ihr Feuchtigkeitsproblem verstehen und lösen wollen.
 
+Planen Sie den Kauf einer Immobilie in Bulgarien und wollen solche Ursachen vorab ausschließen? Unsere [Bauinspektion vor dem Kauf in Bulgarien](/bauinspektion-vor-dem-kauf-bulgarien) prüft genau das, bevor Sie unterschreiben.
+
 ---
 
 ## Weiterführende Artikel
@@ -163,4 +165,5 @@ Oder laden Sie unser E-Book [„Schimmel & Feuchtigkeit im Griff"](/ebooks) heru
 - [Schimmel im Keller: Ursachen und dauerhafte Beseitigung](/blog/schimmel-keller-ursachen-beseitigung)
 - [Feuchtigkeit im Keller beseitigen: Ursachen, Lösungen und Prävention](/blog/feuchtigkeit-im-keller-beseitigen)
 - [Schimmelflecken an der Wand dauerhaft entfernen](/blog/schimmelflecken-wand-entfernen-dauerhaft)
+- [Immobilie in Bulgarien kaufen – vorher prüfen lassen](/bauinspektion-vor-dem-kauf-bulgarien)
 - [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)
