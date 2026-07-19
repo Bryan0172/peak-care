@@ -18,13 +18,13 @@ const WA = 'https://wa.me/359898436561'
 const content = {
   de: {
     meta: {
-      title: 'Bauinspektion vor dem Kauf in Bulgarien – unabhängige Prüfung der Bausubstanz | Peak Care',
-      description: 'Unabhängige technische Bauinspektion vor dem Immobilienkauf in Bulgarien. Ein erfahrener Bauexperte prüft Bausubstanz, Feuchte, Statik & versteckte Mängel vor Ort – strukturierter Inspektionsbericht mit Fotodokumentation, Mängelliste und Renovierungskosten-Orientierung. Für internationale Investoren und Bauherren.',
+      title: 'Immobilie in Bulgarien kaufen: vorher prüfen lassen – unabhängiges Bau-Gutachten | Peak Care',
+      description: 'Immobilie in Bulgarien kaufen? Vorher unabhängig prüfen lassen. Ein erfahrener Bauexperte prüft Bausubstanz, Feuchte, Statik & versteckte Mängel vor Ort – strukturierter Inspektionsbericht mit Fotodokumentation, Mängelliste und Renovierungskosten-Orientierung. Für internationale Investoren und Bauherren.',
       canonical: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien',
     },
     hero: {
-      tag: 'BAUINSPEKTION VOR DEM KAUF · BULGARIEN',
-      title: 'Wissen, was Sie kaufen – bevor Sie unterschreiben',
+      tag: 'IMMOBILIE KAUFEN IN BULGARIEN · PRÜFUNG VOR DEM KAUF',
+      title: 'Immobilie in Bulgarien kaufen – wissen, was Sie unterschreiben.',
       subtitle: 'Eine unabhängige technische Inspektion der Bausubstanz, durchgeführt vor Ort von einem erfahrenen Bauexperten. Sie erhalten ein klares, ehrliches Bild des Objekts: was in Ordnung ist, was Sie kosten wird und ob sich der Kaufpreis rechtfertigt.',
       ctaPrimary: 'Bauinspektion anfragen',
       ctaSecondary: 'Direkt per WhatsApp',
