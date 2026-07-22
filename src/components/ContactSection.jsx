@@ -129,7 +129,7 @@ export default function ContactSection() {
                   ),
                   label: c.phone,
                   value: '+359 89 843 6561',
-                  href: 'tel:+35989843561',
+                  href: 'tel:+359898436561',
                 },
                 {
                   icon: (
