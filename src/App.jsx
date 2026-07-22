@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
-import { LanguageProvider } from './context/LanguageContext'
+import { HelmetProvider, Helmet } from 'react-helmet-async'
+import { LanguageProvider, useLang } from './context/LanguageContext'
 import { Suspense, lazy } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -19,6 +19,18 @@ const TechnicalPropertyOversightBulgaria = lazy(() => import('./pages/TechnicalP
 const PrePurchaseBuildingSurveyBulgaria  = lazy(() => import('./pages/PrePurchaseBuildingSurveyBulgaria'))
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
 
+// Setzt <html lang> auf die tatsaechliche Seitensprache (P3 aus dem Web-Health-Report,
+// Andreas-Go 22.07.). Ohne das lieferte JEDE Route lang="de" — auch die englischen —,
+// weil der Wert statisch in index.html stand und der Prerender ihn nur abfotografiert hat.
+// Der Prerender serialisiert document.documentElement.outerHTML, Helmet schreibt das
+// Attribut vor dem Snapshot => der Wert landet auch im ausgelieferten statischen HTML.
+// Einzelne Seiten duerfen das ueberschreiben (ZipperPage tut es aus seinem eigenen
+// lang-Feld); der spaetere/tiefere Helmet gewinnt.
+function HtmlLang() {
+  const { lang } = useLang()
+  return <Helmet htmlAttributes={{ lang }} />
+}
+
 function PageLoader() {
   return (
     <div className="flex items-center justify-center min-h-[40vh]">
@@ -32,6 +44,7 @@ export default function App() {
     <HelmetProvider>
     <LanguageProvider>
       <BrowserRouter>
+        <HtmlLang />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
