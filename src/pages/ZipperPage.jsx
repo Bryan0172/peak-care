@@ -36,7 +36,7 @@ export default function ZipperPage() {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: page.lang }}>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={schema.url} />
