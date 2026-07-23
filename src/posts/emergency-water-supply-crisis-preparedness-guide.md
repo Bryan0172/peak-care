@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: How much water does your family actually need for 72 hours, a week, or longer? The practical guide without the panic.
 category: Krisenvorsorge
 readingTime: 9 min
+lang: en
 ---
 
 Germany's Federal Office for Civil Protection recommends: 2 litres of drinking water per person per day, for a minimum of 10 days.

@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: A damp basement is not a minor inconvenience — it is structural damage in slow motion. Here's how to identify the cause, choose the right solution, and what professional waterproofing costs.
 category: Building Protection
 readingTime: 12 min
+lang: en
 ---
 
 A damp basement gets ignored for years. "It smells a bit musty, but that's normal for a cellar." No — it is not normal. Basement dampness is an active problem that destroys your building from the ground up. Slowly, but with certainty.

@@ -6,6 +6,7 @@ author: Andreas Donner
 excerpt: Basement mold is never just an aesthetic issue. It means your building is drawing water. Here is what really causes it – and what permanently fixes it.
 category: Mold Protection
 readingTime: 11 min
+lang: en
 ---
 
 Most property owners ignore basement mold for too long. It is "just downstairs" – nobody sees it, it smells a little musty, but it does not affect daily life.

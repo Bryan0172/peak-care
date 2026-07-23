@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: Bathroom mold keeps coming back because most people treat symptoms, not causes. Here's how to get rid of it — for good.
 category: Schimmelschutz
 readingTime: 10 min
+lang: en
 ---
 
 Bathroom mold is the number one complaint we hear from property owners across Europe. And the typical response: bleach spray, leave for a minute, wipe off. Problem solved — for about three weeks.

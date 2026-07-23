@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: Most foreign buyers in Bulgaria skip the building inspection — and regret it. What a proper property inspection covers, why it matters in Bulgaria specifically, and how to get one done before you sign.
 category: Property Inspection
 readingTime: 10 min
+lang: en
 ---
 
 You've found the apartment. The price is right. The location is good. The estate agent says it's in excellent condition.

@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: Managing a renovation in Bulgaria from abroad is difficult. Finding a contractor who communicates clearly, works to a consistent standard, and finishes what they start is harder. Here is what reliable renovation looks like — and what to insist on.
 category: Renovation
 readingTime: 11 min
+lang: en
 ---
 
 You've bought property in Bulgaria. Now you want to renovate — and you're not going to be there for most of it.

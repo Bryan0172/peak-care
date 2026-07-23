@@ -30,6 +30,8 @@ import renovationForeignOwners from '../posts/renovation-company-bulgaria-foreig
 import renovationCostsBulgaria from '../posts/renovation-costs-bulgaria-guide.md?raw'
 import waermeplanungHeizungFeuchte from '../posts/waermeplanung-2026-heizung-feuchte.md?raw'
 import immobiliePruefenDE from '../posts/immobilie-pruefen-vor-dem-kauf-bulgarien.md?raw'
+import rueckstauklappeDE from '../posts/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht.md?raw'
+import backflowPreventerEN from '../posts/backflow-preventer-why-every-homeowner-needs-one.md?raw'
 
 function parseFrontmatter(raw) {
   // Normalize CRLF -> LF so frontmatter parsing is robust regardless of
@@ -85,6 +87,8 @@ export const allPosts = [
   parsePost(renovationForeignOwners),
   parsePost(renovationCostsBulgaria),
   parsePost(waermeplanungHeizungFeuchte),
+  parsePost(rueckstauklappeDE),
+  parsePost(backflowPreventerEN),
 ].sort((a, b) => new Date(b.date) - new Date(a.date))
 
 export function getPostBySlug(slug) {

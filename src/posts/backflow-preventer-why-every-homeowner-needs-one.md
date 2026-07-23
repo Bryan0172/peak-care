@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: One heavy rainstorm, five minutes — and the basement is flooded. The cause is almost never a burst pipe. It is backflow from the sewer network. What a backflow preventer costs, when it is legally required, and why insurers refuse to pay without one.
 category: Building Protection
 readingTime: 10 min
+lang: en
 ---
 
 A summer thunderstorm. Thirty minutes of heavy rain. Afterwards, 20 centimetres of water in the basement.

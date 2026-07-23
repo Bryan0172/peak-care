@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: What drives renovation costs in Bulgaria, what a realistic project scope looks like, and how to get an accurate quote before you commit. No guesswork — just a clear framework.
 category: Renovation
 readingTime: 8 min
+lang: en
 ---
 
 One of the first questions foreign property owners ask when considering renovation in Bulgaria is: how much will this cost?

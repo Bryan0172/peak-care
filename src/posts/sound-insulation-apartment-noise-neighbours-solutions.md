@@ -6,6 +6,7 @@ author: Andreas Donner
 excerpt: Soundproofing old apartments and panel buildings in Sofia and Bulgaria – impact noise from above, voices through walls, street noise outside. What the causes are and what actually works.
 category: Sound Insulation
 readingTime: 12 min
+lang: en
 ---
 
 Sound insulation is the problem that apartment owners talk about least – and suffer from most.

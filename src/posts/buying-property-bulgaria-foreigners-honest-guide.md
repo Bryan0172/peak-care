@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: What Western European buyers actually need to know about Bulgarian property – legal essentials, common pitfalls, building condition, and what happens after purchase.
 category: Gebäudeschutz
 readingTime: 12 min
+lang: en
 ---
 
 Bansko is affordable. The climate is good. Price per square metre is a fraction of what you'd pay in London, Vienna, or Zurich. And many Western European buyers are taking the leap — sometimes without truly understanding what they're getting into.

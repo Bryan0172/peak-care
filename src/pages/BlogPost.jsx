@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useLang } from '../context/LanguageContext'
@@ -65,6 +66,10 @@ export default function BlogPost() {
 
   return (
     <article className="min-h-screen bg-white">
+      {/* <html lang> folgt der Frontmatter-Sprache des Posts, nicht dem globalen
+          UI-Umschalter (P3 Web-Health-Restlücke) — sonst deklarieren englische
+          Artikel weiterhin lang="de", wenn niemand den Umschalter berührt hat. */}
+      {post.lang && <Helmet htmlAttributes={{ lang: post.lang }} />}
       {/* Hero image */}
       {heroImg && (
         <div className="relative h-64 md:h-80 overflow-hidden bg-gray-900">

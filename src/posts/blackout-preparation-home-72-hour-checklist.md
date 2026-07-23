@@ -6,6 +6,7 @@ author: Peak Care Team
 excerpt: A blackout in Europe is no longer a science fiction scenario. Here's how to concretely prepare your home — a practical checklist for 72 hours without electricity.
 category: Krisenvorsorge
 readingTime: 10 min
+lang: en
 ---
 
 In October 2024, Germany's Federal Office for Civil Protection again warned households to prepare for a multi-day power outage. Similar warnings came from Austria, Switzerland, and the Netherlands.
