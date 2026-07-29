@@ -33,19 +33,10 @@
   path = "/krisensicheres-zuhause-fuer-familien"
   function = "og-inject"
 
-# Language prefix redirects — /bg/ and /de/ are not URL-based routes, redirect to root
-[[redirects]]
-  from   = "/bg"
-  to     = "/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/bg/*"
-  to     = "/"
-  status = 301
-  force  = true
-
+# Language prefix redirect — /de/ is not a URL-based route, redirect to root.
+# /bg had the same treatment until 29.07. (A186-SEO): /bg is now a real, indexable
+# route (Home.jsx rendered in Bulgarian, own canonical/hreflang) — see LanguageContext.jsx.
+# A force=true redirect here would shadow that route, so it was removed.
 [[redirects]]
   from   = "/de"
   to     = "/"

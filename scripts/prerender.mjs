@@ -23,6 +23,16 @@ const MIME = {
   '.txt': 'text/plain', '.map': 'application/json',
 }
 
+// Pristine Vite-SPA-Shell EINMAL beim Start einlesen, bevor der Prerender-Lauf
+// dist/index.html mit dem fertig gerenderten "/"-Ergebnis ueberschreibt. Sonst bekommt
+// jede Route, die NACH "/" verarbeitet wird (z. B. /en, /bg), ueber den SPA-Fallback
+// faelschlich die bereits statisch gerenderte deutsche Startseite als Ausgangspunkt
+// statt der leeren Shell — React hydratisiert dann teils auf schon "fremdsprachig"
+// simuliertem DOM, was <html lang> (Helmet, async) inkonsistent zur Route macht,
+// waehrend synchron gesetzte Werte (title, canonical) korrekt bleiben. Befund 29.07.
+// bei /bg (leerer lang="de" trotz korrektem BG-Titel/Canonical), A186-SEO-Fix.
+const PRISTINE_INDEX_HTML = fs.readFileSync(path.join(DIST, 'index.html'))
+
 function serveStatic() {
   return http.createServer((req, res) => {
     try {
@@ -32,8 +42,8 @@ function serveStatic() {
         res.setHeader('Content-Type', MIME[path.extname(fp).toLowerCase()] || 'application/octet-stream')
         return fs.createReadStream(fp).pipe(res)
       }
-      res.setHeader('Content-Type', 'text/html') // SPA-Fallback
-      fs.createReadStream(path.join(DIST, 'index.html')).pipe(res)
+      res.setHeader('Content-Type', 'text/html') // SPA-Fallback — immer die pristine Shell
+      res.end(PRISTINE_INDEX_HTML)
     } catch {
       res.statusCode = 500; res.end('err')
     }
@@ -51,9 +61,15 @@ function getRoutes() {
   } catch (e) { console.warn('sitemap.xml nicht lesbar:', e.message) }
   // statische Routen, die evtl. nicht in der Sitemap stehen
   ;['/ebooks', '/erfolg', '/schimmel-sofort-check', '/mentaler-schutzschild',
-    '/krisensicheres-zuhause-fuer-familien', '/datenschutz',
+    // A186-SEO-Nachtrag (29.07.): war "/krisensicheres-zuhause-fuer-familien" — diese Route
+    // existiert in App.jsx nicht (nur "/krisensicheres-zuhause" ohne Suffix ist registriert),
+    // wurde deshalb bisher blank mit generischem Titel prerendert. netlify.toml referenziert
+    // denselben falschen Pfad fuer die og-inject-Edge-Function — separat gemeldet, nicht hier
+    // mitgeaendert (Edge-Function-Scope, eigene Pruefung noetig).
+    '/krisensicheres-zuhause', '/datenschutz',
     '/technical-property-oversight-bulgaria', '/technische-immobilienueberwachung-bulgarien',
     '/bauinspektion-vor-dem-kauf-bulgarien', '/pre-purchase-building-inspection-bulgaria',
+    '/en', '/bg', // A186-SEO 29.07.: eigene, indexierbare Sprachvarianten der Startseite
   ].forEach((r) => set.add(r))
   return [...set]
 }

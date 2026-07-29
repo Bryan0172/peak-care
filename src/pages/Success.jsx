@@ -1,9 +1,18 @@
 import { Link } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Success() {
   const { t } = useLang()
   const s = t.success
+  // A186-SEO-Nachtrag (29.07.): Checkout-Bestaetigungsseite hatte nie eigenes Title/Meta
+  // (erbte zufaellig den Home-Titel) und ist nicht in der Sitemap — bewusst noindex, damit
+  // eine transaktionale Seite nicht mit falschem Titel im Index landet.
+  useSEO({
+    title: 'Bestellung erfolgreich | Peak Care',
+    canonical: 'https://peak-care.com/erfolg/',
+    noindex: true,
+  })
 
   return (
     <div className="min-h-[60vh] flex items-center justify-center px-4 bg-gray-950">

@@ -79,11 +79,33 @@ export default function Home() {
   const { t, lang } = useLang()
   const [checkout, setCheckout] = useState(null)
 
+  const SEO_BY_LANG = {
+    de: {
+      title: 'Technische Immobilien-Expertise & Sanierung in Bulgarien | Peak Care',
+      description: 'Peak Care: technische Immobilien-Expertise für Investoren und Eigentümer in Bulgarien — Bausubstanz-Begutachtung vor dem Kauf, Renovierung, Um- & Ausbau, technische Immobilienüberwachung. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
+      canonical: 'https://peak-care.com/',
+    },
+    en: {
+      title: 'Technical Property Expertise & Renovation in Bulgaria | Peak Care',
+      description: 'Peak Care: technical property expertise for investors and owners in Bulgaria — pre-purchase building assessment, renovation, conversion and remote property oversight. Mold, moisture and sound insulation as specialties.',
+      canonical: 'https://peak-care.com/en/',
+    },
+    bg: {
+      title: 'Техническа експертиза и ремонт на имоти в България | Peak Care',
+      description: 'Peak Care: техническа експертиза за инвеститори и собственици на имоти в България — оглед преди покупка, ремонт, надзор на дейности от разстояние. Плесен, влага и звукоизолация като специалности.',
+      canonical: 'https://peak-care.com/bg/',
+    },
+  }
+
   useSEO({
-    title: lang === 'en' ? 'Technical Property Expertise & Renovation in Bulgaria | Peak Care' : 'Technische Immobilien-Expertise & Sanierung in Bulgarien | Peak Care',
-    description: lang === 'en' ? 'Peak Care: technical property expertise for investors and owners in Bulgaria — pre-purchase building assessment, renovation, conversion and remote property oversight. Mold, moisture and sound insulation as specialties.' : 'Peak Care: technische Immobilien-Expertise für Investoren und Eigentümer in Bulgarien — Bausubstanz-Begutachtung vor dem Kauf, Renovierung, Um- & Ausbau, technische Immobilienüberwachung. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
-    canonical: 'https://peak-care.com/',
+    ...SEO_BY_LANG[lang] || SEO_BY_LANG.de,
     jsonLd: HOME_JSONLD,
+    alternates: [
+      { hreflang: 'de', href: 'https://peak-care.com/' },
+      { hreflang: 'en', href: 'https://peak-care.com/en/' },
+      { hreflang: 'bg', href: 'https://peak-care.com/bg/' },
+      { hreflang: 'x-default', href: 'https://peak-care.com/' },
+    ],
   })
 
   const coverSuffix = lang === 'en' ? 'en' : lang === 'bg' ? 'bg' : 'de'

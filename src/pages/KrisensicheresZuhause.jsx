@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useLang } from '../context/LanguageContext'
 import CheckoutModal from '../components/CheckoutModal'
+import { useSEO } from '../hooks/useSEO'
 
 const content = {
   de: {
@@ -160,19 +160,20 @@ export default function KrisensicheresZuhause() {
     ? 'The practical guide for families: water, food, light, heat, medicine — everything you need before the next crisis. PDF e-book — immediate download.'
     : 'Der praktische Ratgeber für Familien: Wasser, Lebensmittel, Licht, Wärme, Medikamente — alles was Sie brauchen bevor die nächste Krise kommt. PDF-E-Book — Sofort-Download.'
 
+  // A186-SEO-Nachtrag (29.07.): war <Helmet><title>… — react-helmet-async erwies sich fuer
+  // <title>/<html lang> als unzuverlaessig (s. useSEO.js, App.jsx HtmlLang). Auf denselben
+  // synchronen DOM-Weg umgestellt; og:url korrigiert (apex statt www, echter Routenpfad
+  // statt der alten, nicht mehr existierenden Kurz-URL).
+  useSEO({
+    title: ogTitle,
+    description: ogDesc,
+    canonical: 'https://peak-care.com/krisensicheres-zuhause-fuer-familien/',
+    image: ogImage,
+    type: 'product',
+  })
+
   return (
     <>
-    <Helmet>
-      <title>{ogTitle}</title>
-      <meta name="description" content={ogDesc} />
-      <meta property="og:title" content={ogTitle} />
-      <meta property="og:description" content={ogDesc} />
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:type" content="product" />
-      <meta property="og:url" content="https://www.peak-care.com/krisensicheres-zuhause" />
-    </Helmet>
     <div className="bg-gray-950 text-white min-h-screen">
 
       {/* ── HERO ─────────────────────────────────────────────────────── */}

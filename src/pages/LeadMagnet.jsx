@@ -1,9 +1,17 @@
 import { useState } from 'react'
 import TurnstileWidget from '../components/TurnstileWidget'
+import { useSEO } from '../hooks/useSEO'
 
 const BREVO_LIST_ID = 3 // Lead Magnet - Schimmel-Sofort-Check
 
 export default function LeadMagnet() {
+  // A186-SEO-Nachtrag (29.07.): Seite hatte nie eigenes Title/Meta — erbte bisher rein
+  // zufaellig den Home-Titel ueber einen Prerender-Seiteneffekt (behoben, s. prerender.mjs).
+  useSEO({
+    title: 'Schimmel-Sofort-Check – Kostenloser Selbsttest | Peak Care',
+    description: 'Schimmel-Sofort-Check: kostenloser Selbsttest zum Download. Erkennen Sie in wenigen Minuten, ob und wie dringend Handlungsbedarf in Ihrer Immobilie besteht.',
+    canonical: 'https://peak-care.com/schimmel-sofort-check/',
+  })
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [status, setStatus] = useState('idle') // idle | loading | success | error

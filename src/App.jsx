@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
-import { HelmetProvider, Helmet } from 'react-helmet-async'
+import { HelmetProvider } from 'react-helmet-async'
 import { LanguageProvider, useLang } from './context/LanguageContext'
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -22,13 +22,20 @@ const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
 // Setzt <html lang> auf die tatsaechliche Seitensprache (P3 aus dem Web-Health-Report,
 // Andreas-Go 22.07.). Ohne das lieferte JEDE Route lang="de" — auch die englischen —,
 // weil der Wert statisch in index.html stand und der Prerender ihn nur abfotografiert hat.
-// Der Prerender serialisiert document.documentElement.outerHTML, Helmet schreibt das
-// Attribut vor dem Snapshot => der Wert landet auch im ausgelieferten statischen HTML.
-// Einzelne Seiten duerfen das ueberschreiben (ZipperPage tut es aus seinem eigenen
-// lang-Feld); der spaetere/tiefere Helmet gewinnt.
+// ‼️ 29.07. (A186-SEO): react-helmet-async erwies sich hierfuer als genauso unzuverlaessig
+// wie useSEO.js es fuer title/canonical schon dokumentiert ("nie zuverlaessig applied,
+// verifiziert in dev UND prod build") — bei /en bzw. /bg blieb <html lang> je nach
+// Verarbeitungsreihenfolge zufaellig auf "de" haengen, obwohl title/canonical (die
+// bereits synchron per document.title/setAttribute statt Helmet gesetzt werden) korrekt
+// waren. Direkte, synchrone DOM-Zuweisung statt Helmet behebt die Race-Condition an der
+// Wurzel. ZipperPage (eigenes Helmet-htmlAttributes) bleibt unberuehrt, ueberschreibt aber
+// zuverlaessig ebenfalls nur durch den Effect hier, da beide auf dasselbe Attribut zielen.
 function HtmlLang() {
   const { lang } = useLang()
-  return <Helmet htmlAttributes={{ lang }} />
+  useEffect(() => {
+    document.documentElement.setAttribute('lang', lang)
+  }, [lang])
+  return null
 }
 
 function PageLoader() {
@@ -51,6 +58,10 @@ export default function App() {
             <Suspense fallback={<PageLoader />}>
               <Routes>
                 <Route path="/" element={<Home />} />
+                {/* A186-SEO (29.07.): eigene, indexierbare Sprachvarianten der Startseite —
+                    vorher self-canonical zur deutschen Startseite, s. LanguageContext.jsx */}
+                <Route path="/en" element={<Home />} />
+                <Route path="/bg" element={<Home />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/ebooks" element={<Ebooks />} />
