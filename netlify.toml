@@ -30,7 +30,11 @@
   function = "og-inject"
 
 [[edge_functions]]
-  path = "/krisensicheres-zuhause-fuer-familien"
+  # A186-SEO-Nachtrag (29.07.): war "/krisensicheres-zuhause-fuer-familien" — diese Route
+  # existiert nicht (App.jsx registriert nur "/krisensicheres-zuhause" ohne Suffix, ebenso
+  # og-inject.js's eigene config.path). Die OG-Tags fuer LinkedIn/Social-Sharing dieser Seite
+  # feuerten deshalb vermutlich nie. Korrigiert auf den echten Pfad.
+  path = "/krisensicheres-zuhause"
   function = "og-inject"
 
 # Language prefix redirect — /de/ is not a URL-based route, redirect to root.
