@@ -1,7 +1,6 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const { Resend } = require('resend');
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const BREVO_API_KEY = process.env.BREVO_API_KEY;
 
 const PRODUCT_FILES = {
   'ebook_schimmel_de': 'ebook_schimmel_de.pdf',
@@ -81,12 +80,23 @@ exports.handler = async (event) => {
   const email = getEmailContent(lang, downloadLinks);
 
   try {
-    await resend.emails.send({
-      from: 'Peak Care <peakcare@peak-care.com>',
-      to: customerEmail,
-      subject: email.subject,
-      html: email.html,
+    // Auslieferung der Download-Links via Brevo (Domain authentifiziert, Key bereits in der Netlify-Env).
+    const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: { 'api-key': BREVO_API_KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        sender: { name: 'Peak Care', email: 'peakcare@peak-care.com' },
+        to: [{ email: customerEmail }],
+        subject: email.subject,
+        htmlContent: email.html,
+      }),
     });
+
+    if (!res.ok) {
+      const detail = await res.text();
+      console.error('Brevo send failed:', res.status, detail);
+      throw new Error(`Brevo ${res.status}`);
+    }
 
     // Trigger Brevo follow-up sequence (fire & forget)
     const customerName = paymentIntent.shipping?.name || '';
@@ -98,6 +108,8 @@ exports.handler = async (event) => {
 
     return { statusCode: 200, body: 'OK' };
   } catch (err) {
+    // 500 ist Absicht: Stripe wiederholt den Webhook, ein transienter Ausfall bekommt einen zweiten Versuch.
+    console.error('E-Book delivery failed:', err);
     return { statusCode: 500, body: 'Error sending email' };
   }
 };
