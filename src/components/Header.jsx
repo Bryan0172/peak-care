@@ -16,7 +16,6 @@ export default function Header() {
   const navItems = [
     { to: '/', label: t.nav.home },
     { to: '/blog', label: t.nav.blog },
-    { to: '/ebooks', label: t.nav.ebooks },
     { to: '/#leistungen', label: t.nav.services, hash: true },
     { to: '/#kontakt', label: t.nav.contact, hash: true },
   ]

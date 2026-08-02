@@ -7,7 +7,6 @@
   command   = "npx puppeteer browsers install chrome && npm run build"
   publish   = "dist"
   functions = "netlify/functions"
-  edge_functions = "netlify/edge-functions"
 
 # Node-Version festnageln (17.07., mit Umstellung auf Git-Auto-Build): ohne diesen Pin nimmt
 # Netlify seine Default-Version, die nicht die lokal getestete sein muss — die klassische
@@ -23,19 +22,6 @@
   # genau das fehlte.) Der Build-Guard in prerender.mjs laesst den Build fehlschlagen, falls
   # der Browser trotzdem nicht startet — dann bleibt der letzte gute Deploy stehen.
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
-
-# Edge function injects OG meta tags server-side for LinkedIn/social scrapers
-[[edge_functions]]
-  path = "/mentaler-schutzschild"
-  function = "og-inject"
-
-[[edge_functions]]
-  # A186-SEO-Nachtrag (29.07.): war "/krisensicheres-zuhause-fuer-familien" — diese Route
-  # existiert nicht (App.jsx registriert nur "/krisensicheres-zuhause" ohne Suffix, ebenso
-  # og-inject.js's eigene config.path). Die OG-Tags fuer LinkedIn/Social-Sharing dieser Seite
-  # feuerten deshalb vermutlich nie. Korrigiert auf den echten Pfad.
-  path = "/krisensicheres-zuhause"
-  function = "og-inject"
 
 # Language prefix redirect — /de/ is not a URL-based route, redirect to root.
 # /bg had the same treatment until 29.07. (A186-SEO): /bg is now a real, indexable
@@ -53,10 +39,43 @@
   status = 301
   force  = true
 
-# Canonical redirect — /e-books is duplicate of /ebooks
+# 02.08.2026 — Andreas-Entscheid: E-Book-Shop komplett entfernt, Fokus zurueck auf Kernangebot.
+# Alte Shop-/Produktseiten hatten nie zahlende Kunden (0 EUR Umsatz in der gesamten Historie,
+# verifiziert vor der Entscheidung) — 301 auf die Startseite statt Soft-404, falls noch irgendwo
+# ein alter Link/Social-Share/Bookmark existiert.
+[[redirects]]
+  from   = "/ebooks"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/ebooks/*"
+  to     = "/"
+  status = 301
+  force  = true
+
 [[redirects]]
   from   = "/e-books"
-  to     = "/ebooks"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/erfolg"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/krisensicheres-zuhause"
+  to     = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/mentaler-schutzschild"
+  to     = "/"
   status = 301
   force  = true
 

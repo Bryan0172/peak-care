@@ -60,13 +60,10 @@ function getRoutes() {
     }
   } catch (e) { console.warn('sitemap.xml nicht lesbar:', e.message) }
   // statische Routen, die evtl. nicht in der Sitemap stehen
-  ;['/ebooks', '/erfolg', '/schimmel-sofort-check', '/mentaler-schutzschild',
-    // A186-SEO-Nachtrag (29.07.): war "/krisensicheres-zuhause-fuer-familien" — diese Route
-    // existiert in App.jsx nicht (nur "/krisensicheres-zuhause" ohne Suffix ist registriert),
-    // wurde deshalb bisher blank mit generischem Titel prerendert. netlify.toml referenziert
-    // denselben falschen Pfad fuer die og-inject-Edge-Function — separat gemeldet, nicht hier
-    // mitgeaendert (Edge-Function-Scope, eigene Pruefung noetig).
-    '/krisensicheres-zuhause', '/datenschutz',
+  // 02.08.2026: /ebooks, /erfolg, /mentaler-schutzschild, /krisensicheres-zuhause entfernt —
+  // E-Book-Shop komplett aus dem Angebot genommen (Andreas-Entscheid), diese Pfade sind jetzt
+  // reine 301-Redirects in netlify.toml, keine App.jsx-Routen mehr, brauchen kein Prerender.
+  ;['/schimmel-sofort-check', '/datenschutz',
     '/technical-property-oversight-bulgaria', '/technische-immobilienueberwachung-bulgarien',
     '/bauinspektion-vor-dem-kauf-bulgarien', '/pre-purchase-building-inspection-bulgaria',
     '/en', '/bg', // A186-SEO 29.07.: eigene, indexierbare Sprachvarianten der Startseite

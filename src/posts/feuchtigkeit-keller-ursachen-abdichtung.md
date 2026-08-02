@@ -154,8 +154,6 @@ Der gefährlichste Fehler ist Abwarten. Wasser findet immer mehr Wege ins Mauerw
 
 **Haben Sie Feuchtigkeit im Keller?** Buchen Sie jetzt eine [kostenlose 30-minütige Videoanalyse](/#kontakt) – wir beurteilen Ihr Schadensbild, benennen die Ursache und erläutern die sinnvollen nächsten Schritte. Ohne Anfahrtskosten, ohne Verpflichtung.
 
-Oder laden Sie unser E-Book [„Schimmel & Feuchtigkeit im Griff"](/ebooks) herunter – mit detaillierten Schritt-für-Schritt-Anleitungen für Hausbesitzer, die ihr Feuchtigkeitsproblem verstehen und lösen wollen.
-
 Planen Sie den Kauf einer Immobilie in Bulgarien und wollen solche Ursachen vorab ausschließen? Unsere [Bauinspektion vor dem Kauf in Bulgarien](/bauinspektion-vor-dem-kauf-bulgarien) prüft genau das, bevor Sie unterschreiben.
 
 ---

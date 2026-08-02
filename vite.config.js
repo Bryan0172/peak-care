@@ -13,8 +13,6 @@ export default defineConfig({
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
           // Helmet — rarely changes
           'vendor-helmet': ['react-helmet-async'],
-          // Stripe — only loaded on checkout pages
-          'vendor-stripe': ['@stripe/react-stripe-js', '@stripe/stripe-js'],
         },
       },
     },

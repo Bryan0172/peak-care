@@ -158,8 +158,6 @@ The most dangerous mistake is waiting. Water always finds more pathways into mas
 
 **Do you have dampness in your basement?** Book a [free 30-minute video analysis](/#kontakt) — we assess your situation, identify the likely cause, and walk you through the realistic options. No travel costs, no obligation.
 
-Or download our guide [*Mould & Dampness Under Control*](/ebooks) — a practical handbook for property owners who want to understand and solve their moisture problems properly.
-
 ---
 
 ## Related Articles

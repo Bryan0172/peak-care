@@ -108,8 +108,6 @@ Installing one costs a fraction of what flood damage costs. Postponing it means 
 
 **Questions about your property?** Our [free 30-minute video analysis](/videoanalyse) gives you a concrete assessment — no site visit required, conducted entirely online.
 
-And if you want to know how to protect your home against further risks: our e-book **["Crisis-Proof Home"](/krisensicheres-zuhause)** provides a step-by-step guide for families preparing for blackouts, water supply failures and other emergency scenarios — €17, instant PDF download.
-
 ---
 
 ## Related Articles

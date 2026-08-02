@@ -4,7 +4,6 @@ export const translations = {
     nav: {
       home: 'Startseite',
       blog: 'Blog',
-      ebooks: 'E-Books',
       services: 'Leistungen',
       contact: 'Kontakt',
       call: 'Jetzt anrufen',
@@ -31,26 +30,6 @@ export const translations = {
       item3Title: 'Nach deutschem Standard',
       item3Text: 'Materialauswahl, Ausführungsqualität und Projektdokumentation entsprechen DACH-Standards – für Investoren, die Qualität fordern und verlässliche Partnerschaft schätzen.',
       cta: 'Mehr zu Renovierung & Ausbau',
-    },
-
-    // E-Books Section (Homepage)
-    ebooksHome: {
-      badge: 'Sofort-Wissen zum Download',
-      headline: 'Schützen Sie sich jetzt – mit unserem Praxis-Wissen',
-      sub: 'Unsere Krisenratgeber geben Ihnen die Werkzeuge, die Sie heute brauchen. Kein Warten, kein Termin – sofort als PDF verfügbar.',
-      ebook1Title: 'Schimmel & Feuchtigkeit im Griff',
-      ebook1Desc: 'Schimmel erkennen, sanieren und dauerhaft verhindern. Der komplette Leitfaden für Hausbesitzer.',
-      ebook1Price: '12 €',
-      ebook2Title: 'Krisensicheres Zuhause',
-      ebook2Desc: 'Blackout. Versorgungsengpass. Evakuierung. Was noch vor 5 Jahren undenkbar schien, ist heute reale Regierungsplanung. Dieses E-Book gibt Ihrer Familie einen konkreten Schutzplan – Schritt für Schritt.',
-      ebook2Price: '17 €',
-      bundleTitle: 'Bundle: Beide E-Books',
-      bundleDesc: 'Komplett-Paket: Schimmelschutz + Krisenvorsorge. Sie sparen 7\u00A0€ gegenüber dem Einzelkauf.',
-      bundlePrice: '22 €',
-      bundleBadge: 'Spare 7 €',
-      buyBtn: 'Jetzt kaufen',
-      bundleBtn: 'Bundle kaufen – 22 €',
-      instant: 'Sofort-Download · PDF · Sicher über Stripe',
     },
 
     // Services
@@ -136,51 +115,6 @@ export const translations = {
       privacy: 'Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage genutzt.',
     },
 
-    // Checkout / Ebook page
-    ebooks: {
-      badge: 'Digital & Sofort verfügbar',
-      headline: 'E-Books',
-      sub: 'Professionelles Krisenwissen – kompakt, praxisnah, sofort als PDF verfügbar.',
-      bestseller: 'Bestseller',
-      recommended: 'Empfohlen',
-      bundle: 'Bundle-Angebot',
-      save: 'Spare 7\u00A0€',
-      oneTime: 'einmalig · sofort verfügbar',
-      buyNow: 'Jetzt kaufen',
-      pages60: '~60 Seiten, PDF',
-      pages80: '~80 Seiten, PDF',
-      pages140: '~140 Seiten, PDF',
-      features: {
-        mold: [
-          'Alle Schimmelarten & ihre Risiken',
-          'Schritt-für-Schritt-Sanierung',
-          'Richtig lüften & Feuchtigkeit messen',
-          'Wann Profis gefragt sind',
-          'Checklisten zum Ausdrucken',
-          '~60 Seiten, PDF-Format',
-        ],
-        crisis: [
-          'Blackout-Vorbereitung: konkrete Checkliste',
-          'Wasservorrat & Lebensmittellager',
-          'Notfallplan für die ganze Familie',
-          'Notstrom & Kommunikation ohne Internet',
-          'Evakuierungsplan & Go-Bag',
-          '~80 Seiten, PDF-Format',
-        ],
-        bundle: [
-          'Alle Inhalte beider E-Books',
-          'Schimmelschutz + Krisenvorsorge',
-          'Über 140 Seiten Praxiswissen',
-          'Checklisten & Pläne zum Ausdrucken',
-          '7\u00A0€ günstiger als Einzelkauf',
-          'PDF-Format, sofort verfügbar',
-        ],
-      },
-      trustSSL: 'SSL-verschlüsselte Zahlung',
-      trustDownload: 'Sofort-Download',
-      trustStripe: 'Zahlung über Stripe',
-    },
-
     // Footer
     footer: {
       tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz und Krisenvorsorge – 25+ Jahre internationale Erfahrung, seit 2 Jahren in ganz Bulgarien.',
@@ -209,31 +143,6 @@ export const translations = {
       text: '⚠ Angesichts der aktuellen Weltlage: Jetzt für den Ernstfall vorbereiten',
       dismiss: '×',
     },
-
-    // Crisis Section (Homepage – above e-books)
-    crisisSection: {
-      headline: 'Europa steht vor der größten Bewährungsprobe seit dem Zweiten Weltkrieg',
-      sub: 'Während Politiker beruhigen, bereiten sich kluge Familien vor. Sind Sie und Ihre Familie geschützt – wenn der Strom ausfällt, die Regale leer sind oder Sie evakuieren müssen?',
-      bullets: [
-        '72 Stunden ohne Strom – was passiert in Ihrer Wohnung?',
-        'Kein Bargeld, keine Karte, kein Internet – wie zahlen Sie?',
-        'Medikamente für nur 3 Tage vorrätig – was dann?',
-        'Evakuierung in 1 Stunde – haben Sie einen Plan?',
-        'Ihr Erspartes verliert täglich an Wert – handeln Sie jetzt',
-      ],
-      ctaText: 'Jetzt E-Book kaufen: Krisensicheres Zuhause',
-      ctaPrice: '17 €',
-      ctaSubtext: 'Sofort als PDF verfügbar · Sicher über Stripe',
-    },
-
-    // Success page
-    success: {
-      headline: 'Zahlung erfolgreich!',
-      msg: 'Vielen Dank für Ihren Kauf. Sie erhalten Ihr E-Book in Kürze per E-Mail.',
-      hint: 'Bitte prüfen Sie auch Ihren Spam-Ordner.',
-      home: 'Zur Startseite',
-      blog: 'Zum Blog',
-    },
   },
 
   // ─────────────── ENGLISH ───────────────
@@ -241,7 +150,6 @@ export const translations = {
     nav: {
       home: 'Home',
       blog: 'Blog',
-      ebooks: 'E-Books',
       services: 'Services',
       contact: 'Contact',
       call: 'Call us',
@@ -268,24 +176,6 @@ export const translations = {
       cta: 'More on renovation & construction',
     },
 
-    ebooksHome: {
-      badge: 'Instant Download',
-      headline: 'Protect Yourself Now – With Our Expert Knowledge',
-      sub: 'Our crisis guides give you the tools you need today. No waiting, no appointment – available as PDF instantly.',
-      ebook1Title: 'Mold & Moisture Under Control',
-      ebook1Desc: 'Identify, remediate and permanently prevent mold. The complete guide for homeowners.',
-      ebook1Price: '€12',
-      ebook2Title: 'Crisis-Proof Home',
-      ebook2Desc: 'Blackout. Supply disruption. Evacuation. What seemed unthinkable 5 years ago is now government contingency planning. This e-book gives your family a concrete protection plan – step by step.',
-      ebook2Price: '€17',
-      bundleTitle: 'Bundle: Both E-Books',
-      bundleDesc: 'Complete package: Mold protection + crisis preparedness. Save €7 vs. buying separately.',
-      bundlePrice: '€22',
-      bundleBadge: 'Save €7',
-      buyBtn: 'Buy Now',
-      bundleBtn: 'Buy Bundle – €22',
-      instant: 'Instant download · PDF · Secure via Stripe',
-    },
     services: {
       headline: 'Our Services',
       sub: 'From pre-purchase building assessment through renovation and conversion to remote technical property oversight – for foreign and domestic investors and owners. Mold, moisture and sound insulation as specialties.',
@@ -361,49 +251,6 @@ export const translations = {
       formSuccessMsg: 'We will get back to you within 24 hours.',
       privacy: 'Your data is used solely to process your inquiry.',
     },
-    ebooks: {
-      badge: 'Digital & Instantly Available',
-      headline: 'E-Books',
-      sub: 'Professional crisis knowledge – concise, practical, immediately available as PDF.',
-      bestseller: 'Bestseller',
-      recommended: 'Recommended',
-      bundle: 'Bundle Offer',
-      save: 'Save €7',
-      oneTime: 'one-time · instant access',
-      buyNow: 'Buy Now',
-      pages60: '~60 pages, PDF',
-      pages80: '~80 pages, PDF',
-      pages140: '~140 pages, PDF',
-      features: {
-        mold: [
-          'All mold types & their risks',
-          'Step-by-step remediation guide',
-          'Proper ventilation & moisture measurement',
-          'When to call professionals',
-          'Printable checklists',
-          '~60 pages, PDF format',
-        ],
-        crisis: [
-          'Blackout preparation: concrete checklist',
-          'Water supply & food storage',
-          'Emergency plan for the whole family',
-          'Backup power & off-grid communication',
-          'Evacuation plan & go-bag',
-          '~80 pages, PDF format',
-        ],
-        bundle: [
-          'All content from both e-books',
-          'Mold protection + crisis preparedness',
-          'Over 140 pages of practical knowledge',
-          'Printable checklists & plans',
-          '€7 cheaper than buying separately',
-          'PDF format, instant access',
-        ],
-      },
-      trustSSL: 'SSL-encrypted payment',
-      trustDownload: 'Instant download',
-      trustStripe: 'Payment via Stripe',
-    },
     footer: {
       tagline: 'Mold protection, building renovation, sound insulation and crisis preparedness – 25+ years of international experience, now active across Bulgaria.',
       nav: 'Navigation',
@@ -428,28 +275,7 @@ export const translations = {
       dismiss: '×',
     },
 
-    crisisSection: {
-      headline: 'Europe faces its greatest test since World War II',
-      sub: 'While politicians reassure, smart families prepare. Are you and your family protected – if the power goes out, shelves are empty, or you must evacuate?',
-      bullets: [
-        '72 hours without power – what happens in your home?',
-        'No cash, no card, no internet – how do you pay?',
-        'Only 3 days of medication left – what then?',
-        'Evacuation in 1 hour – do you have a plan?',
-        'Your savings lose value every day – act now',
-      ],
-      ctaText: 'Buy E-Book: Crisis-Proof Home',
-      ctaPrice: '€17',
-      ctaSubtext: 'Instantly available as PDF · Secure via Stripe',
-    },
 
-    success: {
-      headline: 'Payment Successful!',
-      msg: 'Thank you for your purchase. Your e-book will be sent to you by email shortly.',
-      hint: 'Please also check your spam folder.',
-      home: 'Go to Homepage',
-      blog: 'Go to Blog',
-    },
   },
 
   // ─────────────── BULGARIAN ───────────────
@@ -457,7 +283,6 @@ export const translations = {
     nav: {
       home: 'Начало',
       blog: 'Блог',
-      ebooks: 'Е-книги',
       services: 'Услуги',
       contact: 'Контакт',
       call: 'Обади се',
@@ -484,24 +309,6 @@ export const translations = {
       cta: 'Повече за реновирането',
     },
 
-    ebooksHome: {
-      badge: 'Мигновено изтегляне',
-      headline: 'Защитете се сега – с нашите практически знания',
-      sub: 'Нашите наръчници ви дават инструментите, от които се нуждаете днес. Без чакане, без срещи – веднага като PDF.',
-      ebook1Title: 'Мухъл и влага под контрол',
-      ebook1Desc: 'Разпознайте, санирайте и трайно предотвратете мухъла. Пълното ръководство за собственици.',
-      ebook1Price: '12 €',
-      ebook2Title: 'Кризисно устойчив дом',
-      ebook2Desc: 'Блекаут. Недостиг. Евакуация. Това, което преди 5 години изглеждаше немислимо, днес е правителствено планиране. Тази е-книга дава на семейството ви конкретен план за защита – стъпка по стъпка.',
-      ebook2Price: '17 €',
-      bundleTitle: 'Комплект: двете е-книги',
-      bundleDesc: 'Пълен пакет: защита от мухъл + кризисна готовност. Спестявате 7\u00A0€ спрямо отделна покупка.',
-      bundlePrice: '22 €',
-      bundleBadge: 'Спести 7 €',
-      buyBtn: 'Купи сега',
-      bundleBtn: 'Купи комплекта – 22 €',
-      instant: 'Мигновено изтегляне · PDF · Сигурно чрез Stripe',
-    },
     services: {
       headline: 'Нашите услуги',
       sub: 'От оценка на сградата преди покупка през реновиране и преустройство до технически надзор – за чуждестранни и местни инвеститори и собственици. Мухъл, влага и шумоизолация като специалности.',
@@ -577,49 +384,6 @@ export const translations = {
       formSuccessMsg: 'Ще се свържем с вас до 24 часа.',
       privacy: 'Данните ви се използват само за обработка на запитването.',
     },
-    ebooks: {
-      badge: 'Цифрово и незабавно достъпно',
-      headline: 'Е-книги',
-      sub: 'Професионални знания за кризи – кратко, практично, веднага като PDF.',
-      bestseller: 'Бестселър',
-      recommended: 'Препоръчано',
-      bundle: 'Комплектна оферта',
-      save: 'Спести 7\u00A0€',
-      oneTime: 'еднократно · незабавен достъп',
-      buyNow: 'Купи сега',
-      pages60: '~60 стр., PDF',
-      pages80: '~80 стр., PDF',
-      pages140: '~140 стр., PDF',
-      features: {
-        mold: [
-          'Всички видове мухъл и рисковете им',
-          'Ръководство за саниране стъпка по стъпка',
-          'Правилно проветряване и измерване на влагата',
-          'Кога са нужни специалисти',
-          'Контролни списъци за печат',
-          '~60 стр., PDF формат',
-        ],
-        crisis: [
-          'Подготовка за блекаут: конкретен списък',
-          'Водни запаси и продоволствие',
-          'Авариен план за цялото семейство',
-          'Резервно захранване и комуникация',
-          'План за евакуация и авариен раница',
-          '~80 стр., PDF формат',
-        ],
-        bundle: [
-          'Цялото съдържание на двете е-книги',
-          'Защита от мухъл + кризисна готовност',
-          'Над 140 стр. практически знания',
-          'Контролни списъци и планове за печат',
-          '7\u00A0€ по-евтино от отделна покупка',
-          'PDF формат, незабавен достъп',
-        ],
-      },
-      trustSSL: 'SSL криптирано плащане',
-      trustDownload: 'Незабавно изтегляне',
-      trustStripe: 'Плащане чрез Stripe',
-    },
     footer: {
       tagline: 'Защита от мухъл, саниране на сгради и кризисна готовност – 25+ години международен опит, Банско, България.',
       nav: 'Навигация',
@@ -644,28 +408,7 @@ export const translations = {
       dismiss: '×',
     },
 
-    crisisSection: {
-      headline: 'Европа е изправена пред най-голямото изпитание от Втората световна война насам',
-      sub: 'Докато политиците успокояват, умните семейства се подготвят. Защитени ли сте вие и семейството ви – ако токът спре, рафтовете се изпразнят или трябва да евакуирате?',
-      bullets: [
-        '72 часа без ток – какво се случва в дома ви?',
-        'Без пари, без карта, без интернет – как плащате?',
-        'Медикаменти за само 3 дни – какво след това?',
-        'Евакуация за 1 час – имате ли план?',
-        'Спестяванията ви губят стойност всеки ден – действайте сега',
-      ],
-      ctaText: 'Купи е-книга: Кризисно устойчив дом',
-      ctaPrice: '17 €',
-      ctaSubtext: 'Незабавно достъпна като PDF · Сигурно чрез Stripe',
-    },
 
-    success: {
-      headline: 'Плащането е успешно!',
-      msg: 'Благодарим за покупката. Вашата е-книга ще бъде изпратена на имейла ви.',
-      hint: 'Моля, проверете и папката за спам.',
-      home: 'Към начало',
-      blog: 'Към блога',
-    },
   },
 }
 

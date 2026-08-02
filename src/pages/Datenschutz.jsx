@@ -3,17 +3,19 @@ import { useSEO } from '../hooks/useSEO'
 // Datenschutzerklaerung peak-care.com — erstellt 2026-06-17.
 // Inhaltlich an die tatsaechliche Datenverarbeitung der Seite angepasst:
 // Netlify-Hosting + Netlify-Forms-Kontaktformular, Google Analytics 4 (Consent Mode v2),
-// Google Fonts, Stripe (E-Book-Zahlungen). DSGVO-Betroffenenrechte.
+// Google Fonts. DSGVO-Betroffenenrechte.
+// 02.08.2026: Abschnitt "Zahlungsabwicklung (Stripe)" entfernt — E-Book-Shop komplett
+// abgeschaltet (Andreas-Entscheid), Website verarbeitet keine Zahlungsdaten mehr.
 // ⚠️ Verantwortlichen-Anschrift + finale anwaltliche Pruefung sind vom Betreiber zu ergaenzen.
 
 export default function Datenschutz() {
   useSEO({
     title: 'Datenschutzerklärung | Peak Care',
-    description: 'Datenschutzerklärung von peak-care.com — wie wir personenbezogene Daten verarbeiten (Hosting, Analyse mit Einwilligung, Kontaktformular, Zahlungen) nach DSGVO.',
+    description: 'Datenschutzerklärung von peak-care.com — wie wir personenbezogene Daten verarbeiten (Hosting, Analyse mit Einwilligung, Kontaktformular) nach DSGVO.',
     canonical: 'https://peak-care.com/datenschutz',
   })
 
-  const updated = '17. Juni 2026'
+  const updated = '2. August 2026'
 
   return (
     <div className="bg-white">
@@ -70,12 +72,7 @@ export default function Datenschutz() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">8. Zahlungsabwicklung (E-Books)</h2>
-            <p>Für den Kauf digitaler Produkte (E-Books) nutzen wir den Zahlungsdienstleister <strong>Stripe</strong> (Stripe Payments Europe, Ltd., Irland). Die für die Zahlung erforderlichen Daten (z. B. Name, E-Mail, Zahlungsdaten) werden unmittelbar durch Stripe verarbeitet; wir selbst speichern keine vollständigen Zahlungsdaten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Weitere Informationen: <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">Datenschutz von Stripe</a>.</p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">9. Ihre Rechte als betroffene Person</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">8. Ihre Rechte als betroffene Person</h2>
             <p>Sie haben nach der DSGVO insbesondere folgende Rechte:</p>
             <ul className="list-disc pl-6 mt-3 space-y-1">
               <li>Auskunft über die zu Ihrer Person verarbeiteten Daten (Art. 15 DSGVO)</li>
@@ -89,17 +86,17 @@ export default function Datenschutz() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">10. Beschwerderecht bei der Aufsichtsbehörde</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">9. Beschwerderecht bei der Aufsichtsbehörde</h2>
             <p>Unbeschadet anderweitiger Rechtsbehelfe haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen die DSGVO verstößt (Art. 77 DSGVO).</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">11. Datensicherheit</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">10. Datensicherheit</h2>
             <p>Diese Website nutzt eine SSL-/TLS-Verschlüsselung (erkennbar an „https://" und dem Schloss-Symbol in der Adresszeile), um die Übertragung Ihrer Daten zu schützen.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">12. Aktualität dieser Datenschutzerklärung</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">11. Aktualität dieser Datenschutzerklärung</h2>
             <p>Wir passen diese Datenschutzerklärung an, sobald Änderungen der von uns durchgeführten Datenverarbeitung dies erforderlich machen. Es gilt die jeweils auf dieser Seite veröffentlichte aktuelle Fassung.</p>
           </section>
 

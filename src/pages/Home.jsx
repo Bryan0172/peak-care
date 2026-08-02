@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
-import EbooksHomeSection from '../components/EbooksHomeSection'
 import ServiceCards from '../components/ServiceCards'
 import NewsBlock from '../components/NewsBlock'
 import LeadMagnet from '../components/LeadMagnet'
 import ContactSection from '../components/ContactSection'
-import CheckoutModal from '../components/CheckoutModal'
 import { useSEO } from '../hooks/useSEO'
 import { useLang } from '../context/LanguageContext'
 
@@ -77,7 +74,6 @@ const HOME_JSONLD = {
 
 export default function Home() {
   const { t, lang } = useLang()
-  const [checkout, setCheckout] = useState(null)
 
   const SEO_BY_LANG = {
     de: {
@@ -107,29 +103,6 @@ export default function Home() {
       { hreflang: 'x-default', href: 'https://peak-care.com/' },
     ],
   })
-
-  const coverSuffix = lang === 'en' ? 'en' : lang === 'bg' ? 'bg' : 'de'
-
-  const PRODUCT_NAMES = {
-    [`ebook_schimmel_${lang}`]: t.ebooksHome.ebook1Title,
-    [`ebook_krisen_${lang}`]:   t.ebooksHome.ebook2Title,
-    [`ebook_bundle_${lang}`]:   t.ebooksHome.bundleTitle,
-  }
-
-  const COVER_IMAGES = {
-    [`ebook_schimmel_${lang}`]: `/images/covers/schimmel-${coverSuffix}.jpg`,
-    [`ebook_krisen_${lang}`]:   `/images/covers/krisensicher-${coverSuffix}.jpg`,
-    [`ebook_bundle_${lang}`]:   `/images/covers/bundle-${coverSuffix}.jpg`,
-  }
-
-  function handleBuy(productId) {
-    const langProductId = `${productId}_${lang}`
-    setCheckout({
-      productId: langProductId,
-      productName: PRODUCT_NAMES[langProductId],
-      coverImage: COVER_IMAGES[langProductId],
-    })
-  }
 
   return (
     <>
@@ -399,10 +372,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. All E-Books – full shop section */}
-      <EbooksHomeSection onBuy={handleBuy} />
-
-      {/* 8. Blog / News */}
+      {/* 6. Blog / News */}
       <NewsBlock />
 
       {/* 7. Lead Magnet – email list builder */}
@@ -410,16 +380,6 @@ export default function Home() {
 
       {/* 8. Contact */}
       <ContactSection />
-
-      {/* Checkout modal */}
-      {checkout && (
-        <CheckoutModal
-          productId={checkout.productId}
-          productName={checkout.productName}
-          coverImage={checkout.coverImage}
-          onClose={() => setCheckout(null)}
-        />
-      )}
     </>
   )
 }

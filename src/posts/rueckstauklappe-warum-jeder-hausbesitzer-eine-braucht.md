@@ -107,8 +107,6 @@ Der Einbau kostet einen Bruchteil dessen, was ein Wasserschaden kostet. Wer ihn 
 
 **Haben Sie Fragen zu Ihrem Gebäude?** Unsere [kostenlose 30-Minuten-Videoanalyse](/videoanalyse) gibt Ihnen eine konkrete Einschätzung — ohne Vor-Ort-Termin, direkt online.
 
-Und wenn Sie wissen möchten, wie Sie Ihr Zuhause gegen weitere Risiken absichern: Unser E-Book **[„Krisensicheres Zuhause"](/krisensicheres-zuhause)** zeigt Schritt für Schritt, wie Familien sich auf Blackout, Wasserausfall und andere Krisenszenarien vorbereiten — für 17 €, sofort als PDF.
-
 ---
 
 ## Weiterführende Artikel
