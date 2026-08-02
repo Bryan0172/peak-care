@@ -11,7 +11,7 @@ export const translations = {
 
     // Hero
     hero: {
-      badge: '25+ Jahre internationale Erfahrung – seit 2 Jahren in ganz Bulgarien aktiv',
+      badge: '25+ Jahre internationale Erfahrung – seit 2024 in ganz Bulgarien aktiv',
       headline: 'Technische Immobilien-Expertise & Sanierung in Bulgarien – für Investoren und Eigentümer',
       crisis: '',
       sub: 'Von der Begutachtung der Bausubstanz vor dem Kauf über Renovierung, Um- und Ausbau bis zur technischen Immobilienüberwachung aus der Ferne – klare Diagnose, koordinierte Umsetzung, kontrolliertes Ergebnis. Alles aus einer Hand, nach deutschem Standard. Schimmel, Feuchte und Schallschutz inklusive.',
@@ -117,7 +117,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz und Krisenvorsorge – 25+ Jahre internationale Erfahrung, seit 2 Jahren in ganz Bulgarien.',
+      tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz und Krisenvorsorge – 25+ Jahre internationale Erfahrung, seit 2024 in ganz Bulgarien.',
       nav: 'Navigation',
       contact: 'Kontakt',
       rights: 'Alle Rechte vorbehalten.',
@@ -252,7 +252,7 @@ export const translations = {
       privacy: 'Your data is used solely to process your inquiry.',
     },
     footer: {
-      tagline: 'Mold protection, building renovation, sound insulation and crisis preparedness – 25+ years of international experience, now active across Bulgaria.',
+      tagline: 'Mold protection, building renovation, sound insulation and crisis preparedness – 25+ years of international experience, active across Bulgaria since 2024.',
       nav: 'Navigation',
       contact: 'Contact',
       rights: 'All rights reserved.',

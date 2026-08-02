@@ -1,10 +1,5 @@
 import { useLang } from '../context/LanguageContext'
 
-const SERVICE_IMAGES = [
-  '/images/Schimmelbeseitigung.jpeg',
-  '/images/Gebäuderenovierung.jpeg',
-]
-
 const VIDEO_SRC = '/Videoanalyse.mp4'
 
 export default function ServiceCards() {
@@ -22,8 +17,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.069A1 1 0 0121 8.82V15.18a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
         </svg>
       ),
-      img: SERVICE_IMAGES[1],
-      imgAlt: 'Begutachtung per Videoanalyse',
       highlight: true,
       data: s.videoAnalysis,
     },
@@ -34,8 +27,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80',
-      imgAlt: 'Bausubstanz-Begutachtung vor dem Kauf',
       highlight: false,
       data: s.inspection,
       link: surveyUrl,
@@ -47,8 +38,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
         </svg>
       ),
-      img: SERVICE_IMAGES[1],
-      imgAlt: 'Gebäudesanierung',
       highlight: false,
       data: s.renovation,
     },
@@ -60,8 +49,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
         </svg>
       ),
-      img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
-      imgAlt: 'Technische Immobilienüberwachung',
       highlight: false,
       data: s.oversight,
       link: oversightUrl,
@@ -73,8 +60,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.536 8.464a5 5 0 010 7.072M12 6v12m0 0l-3-3m3 3l3-3M6.343 9.657a8 8 0 000 4.686M4.929 7.929a10 10 0 000 8.142" />
         </svg>
       ),
-      img: '/images/Schallschutz.jpeg',
-      imgAlt: 'Schallschutz Wohnung Lärmschutz',
       highlight: false,
       data: s.soundInsulation,
     },
@@ -85,8 +70,6 @@ export default function ServiceCards() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      img: SERVICE_IMAGES[0],
-      imgAlt: 'Schimmel- & Feuchtigkeitssanierung',
       highlight: false,
       data: s.mold,
     },
@@ -147,23 +130,18 @@ export default function ServiceCards() {
           </div>
         </div>
 
-        {/* Other 3 services */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Other 5 services — icon-led cards, no photography. Real project photos exist
+            for only 2 of these 6 disciplines; mixing those with generic stock images (or
+            reusing one photo across two unrelated cards) reads as unprofessional up close.
+            A consistent icon system holds together better than inconsistent photography. */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.slice(1).map((svc) => (
-            <div key={svc.key} className="card flex flex-col overflow-hidden">
-              <div className="relative h-44 overflow-hidden">
-                <img
-                  src={svc.img}
-                  alt={svc.imgAlt}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            <div key={svc.key} className="card flex flex-col p-6">
+              <div className="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4">
+                {svc.icon}
               </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center gap-2 mb-2 text-teal-500">
-                  {svc.icon}
-                  <h3 className="text-lg font-bold text-gray-900">{svc.data.title}</h3>
-                </div>
+              <div className="flex flex-col flex-grow">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{svc.data.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">{svc.data.desc}</p>
                 <ul className="space-y-1.5 mb-5">
                   {svc.data.features.map((f) => (

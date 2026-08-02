@@ -5,18 +5,21 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-gray-950">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=80"
-          alt="Wasserschaden in Gebäude"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-teal-950/80 to-gray-900" />
-      </div>
+      {/* Layered dark gradient — no stock photography, a company built on 25 years of
+          real, verifiable work doesn't need a generic water-damage stock image standing
+          in for it. Two soft radial glows give the section depth instead. */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-teal-950" />
+      <div
+        className="absolute -top-32 -right-32 w-[36rem] h-[36rem] rounded-full opacity-20 blur-3xl"
+        style={{ background: 'radial-gradient(circle, #1A7A6E 0%, transparent 70%)' }}
+      />
+      <div
+        className="absolute -bottom-40 -left-24 w-[28rem] h-[28rem] rounded-full opacity-10 blur-3xl"
+        style={{ background: 'radial-gradient(circle, #3aad9f 0%, transparent 70%)' }}
+      />
 
       {/* Grid overlay */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-[0.04]">
         <svg width="100%" height="100%">
           <defs>
             <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
@@ -45,7 +48,8 @@ export default function Hero() {
           {t.hero.sub}
         </p>
 
-        {/* CTA Buttons — prominently visible */}
+        {/* CTA Buttons — one clear primary action, secondary is a quiet ghost button
+            instead of a second saturated color competing for attention. */}
         <div className="flex flex-col sm:flex-row gap-4 mb-14">
           <a
             href="#kontakt"
@@ -58,10 +62,10 @@ export default function Hero() {
           </a>
           <a
             href="#leistungen"
-            className="group flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-yellow-500/20 text-lg"
+            className="group flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-white/15 text-lg"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
             </svg>
             {t.hero.btnSecondary}
           </a>

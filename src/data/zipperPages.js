@@ -16,7 +16,7 @@ export const zipperPages = [
       serviceType: 'Mold Removal and Remediation',
     },
     hero: {
-      badge: 'PEAK CARE · Vor Ort in Bansko · 25+ Jahre Erfahrung',
+      badge: 'PEAK CARE · 25+ Jahre internationale Erfahrung · Vor Ort in Bansko',
       headline: 'Schimmelbeseitigung in Bansko',
       sub: 'Schimmel in Ihrer Wohnung oder Ihrem Haus in Bansko? Wir beseitigen die Ursache – nicht nur das Symptom. Mit 2 Jahren Garantie auf alle Sanierungsarbeiten.',
       cta: 'Kostenlose Videoanalyse buchen',
@@ -67,7 +67,7 @@ export const zipperPages = [
       serviceType: 'Mold Removal and Remediation',
     },
     hero: {
-      badge: 'PEAK CARE · Bulgarienweiter Service · 25+ Jahre Erfahrung',
+      badge: 'PEAK CARE · 25+ Jahre internationale Erfahrung · Bulgarienweiter Service',
       headline: 'Schimmelbeseitigung in Sofia',
       sub: 'Schimmelprobleme in Ihrer Sofia-Immobilie? Wir sanieren dauerhaft – mit Ursachenanalyse, professioneller Behandlung und 2 Jahren Garantie.',
       cta: 'Kostenlose Videoanalyse buchen',
