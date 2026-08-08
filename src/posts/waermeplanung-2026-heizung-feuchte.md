@@ -1,20 +1,25 @@
 ---
 slug: waermeplanung-2026-heizung-feuchte
-title: Wärmeplanung 2026 und die ausgesetzte 65-%-Heizungspflicht – worauf Eigentümer bei der Feuchte achten müssen
+title: Die 65-%-Heizungspflicht ist gefallen – worauf Eigentümer jetzt bei der Feuchte achten müssen
 date: 2026-06-15
 author: Peak Care Team
-excerpt: Die Wärmeplanungs-Frist 30. Juni 2026 rückt näher – doch die viel zitierte 65-%-Erneuerbare-Pflicht wird mit dem neuen Gebäudemodernisierungsgesetz (GModG) bis November 2026 ausgesetzt. Was das für Eigentümer bedeutet – und warum energetische Modernisierung ohne Bauphysik-Konzept trotzdem zum Schimmelrisiko wird.
+excerpt: Seit dem 29. Juli 2026 gilt das Gebäudemodernisierungsgesetz (GModG) – die viel zitierte 65-%-Erneuerbare-Pflicht ist damit ersatzlos entfallen. Was das für Eigentümer bedeutet, warum jetzt allein die Förderung entscheidet – und warum energetische Modernisierung ohne Bauphysik-Konzept trotzdem zum Schimmelrisiko wird.
 category: Gebäudeschutz
 readingTime: 6 min
 ---
 
-Viele Eigentümer ziehen ihre Heizungs- und Dämm-Modernisierung gerade vor. Der Grund ist ein Stichtag, der näher rückt – und eine Rechtslage, die sich gerade ändert.
+Viele Eigentümer haben ihre Heizungs- und Dämm-Modernisierung wegen eines Stichtags vorgezogen. Diesen Stichtag gibt es nicht mehr. Die Rechtslage hat sich zum 29. Juli 2026 grundlegend geändert – und damit auch die Frage, warum sich eine Sanierung jetzt lohnt.
 
-Zum **30. Juni 2026** müssen rund **80 deutsche Städte mit über 100.000 Einwohnern** ihren kommunalen Wärmeplan vorlegen; für kleinere Kommunen gilt die Frist bis zum **30. Juni 2028**. Lange war dieser Stichtag mit der **65-%-Erneuerbare-Pflicht** des Gebäudeenergiegesetzes (GEG) verknüpft – jede neu eingebaute Heizung sollte dann mindestens 65 % erneuerbare Energie nutzen.
+**Das Gebäudemodernisierungsgesetz (GModG) ist am 29. Juli 2026 in Kraft getreten** (BGBl. Nr. 226 vom 28. Juli 2026) und ersetzt das Gebäudeenergiegesetz (GEG). Bundestag und Bundesrat hatten es am 10. Juli beschlossen. Damit gilt:
 
-Doch diese starre Vorgabe kommt so nicht: Das **Bundeskabinett hat am 13. Mai 2026 das Gebäudemodernisierungsgesetz (GModG)** beschlossen, das das GEG ablöst. Es **setzt die 65-%-Pflicht bis zum 1. November 2026 aus** und ersetzt sie anschließend durch mehr Wahlfreiheit bei der Heizung (eine schrittweise „Bio-Treppe" ab 2029). Das Gesetz muss noch durch den Bundesrat – voraussichtlich im Oktober 2026.
+- Die pauschale **65-%-Erneuerbare-Pflicht für neue Heizungen entfällt ersatzlos.**
+- **Betriebsverbote für Öl- und Gaskessel sind aufgehoben.**
+- An ihre Stelle tritt eine schrittweise **„Bio-Treppe"** für fossile Heizungen.
+- Die **CO₂-Kosten** werden zwischen Vermieter und Mieter neu aufgeteilt.
 
-Für Eigentümer heißt das: Der **Modernisierungsdruck bleibt** – über die kommunale Wärmeplanung, steigende Energiestandards und die Förderlogik –, aber der starre 65-%-Stichtag fällt vorerst weg. Wer jetzt saniert, gewinnt vor allem eines: Zeit, es **richtig** zu machen.
+Die kommunale Wärmeplanung läuft davon unberührt weiter: Städte mit über 100.000 Einwohnern mussten ihren Wärmeplan zum **30. Juni 2026** vorlegen, für kleinere Kommunen gilt der **30. Juni 2028**. Was wegfällt, ist die starre Kopplung „Wärmeplan liegt vor ⇒ 65 % erneuerbar in jeder neuen Heizung".
+
+**Für Eigentümer heißt das: Der gesetzliche Druck ist weg – die wirtschaftliche Rechnung entscheidet jetzt allein.** Und die hat sich zum 21. Juli 2026 verschlechtert: Die KfW/BEG-Fördersätze wurden abgesenkt. Wer saniert, tut es künftig, weil die Förderung und die Energiekosten es tragen – nicht, weil ein Gesetz es verlangt. Wer jetzt saniert, gewinnt vor allem eines: Zeit, es **richtig** zu machen.
 
 Energetische Modernisierung ist sinnvoll – aber sie verändert, *wie* ein Gebäude funktioniert. Und genau hier entsteht ein Risiko, das viele erst Monate später bemerken.
 
