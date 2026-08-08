@@ -70,7 +70,7 @@ export default function LeadMagnet() {
     setStatus('loading')
 
     try {
-      // Brevo wird serverseitig aufgerufen (netlify/functions/subscribe.js). Nie direkt aus dem
+      // Brevo wird serverseitig aufgerufen (netlify/functions/subscribe.cjs). Nie direkt aus dem
       // Browser: der API-Key waere sonst im oeffentlichen Bundle lesbar (Vorfall 17.07.).
       const res = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
