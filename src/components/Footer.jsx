@@ -56,11 +56,6 @@ export default function Footer() {
             <li><Link to="/blog" className="hover:text-teal-400 transition-colors">{n.blog}</Link></li>
             <li><a href="/#leistungen" className="hover:text-teal-400 transition-colors">{n.services}</a></li>
             <li><a href="/#kontakt" className="hover:text-teal-400 transition-colors">{n.contact}</a></li>
-            <li className="pt-2 border-t border-white/5">
-              <a href="https://www.peakcare-bansko.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors flex items-center gap-1">
-                <span className="text-teal-500">↗</span> peakcare-bansko.com
-              </a>
-            </li>
           </ul>
         </div>
 
