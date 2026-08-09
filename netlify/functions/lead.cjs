@@ -48,12 +48,31 @@ function esc(s) {
 // deshalb bemerkt, weil dort diese Benachrichtigung existiert (5 Mails am 29./30.07.).
 // Die Antwort an den Client bleibt unveraendert 200 {ok:true} — ein Bot soll weiterhin
 // "Erfolg" sehen. Es aendert sich AUSSCHLIESSLICH, dass wir es erfahren.
-async function notifyBlocked(reason, data, formName) {
+async function notifyBlocked(reason, data, formName, client) {
   try {
-    const rows = Object.entries(data)
-      .filter(([k]) => !['form-name', 'bot-field', 'cf-turnstile-response'].includes(k))
+    // PATCH 09.08.2026 (SEO/GEO, auf REQ-2026-08-09-SEO-BLOCKIERT-ALARM-...): Die Mail trug bisher
+    // NUR die uebermittelten Felder. Bei einem Bot mit leerem Body ist die Tabelle leer — und sieht
+    // exakt aus wie bei einem Menschen, dessen Turnstile-Token ablief und der nichts ausfuellte.
+    // Die Unterscheidung war nur durch Lesen dieses Quellcodes moeglich und wurde am 31.07., 06.08.
+    // und 08.08. jedes Mal von vorn gefuehrt — einmal sogar falsch herum (Abend-Digest meldete
+    // erkannte Bots als „kann ein echter Interessent sein"). Jetzt steht die Antwort IN der Mail.
+    const payload = Object.entries(data)
+      .filter(([k]) => !['form-name', 'bot-field', 'cf-turnstile-response'].includes(k));
+    const rows = payload
       .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
       .join('');
+    const filled = payload.filter(([, v]) => String(v || '').trim() !== '').length;
+    // Klartext-Verdikt statt Rohzahl: 0 ausgefuellte Nutzfelder kann ein Mensch nicht erzeugen —
+    // ein leeres Formular kommt gar nicht erst bis hierher, es scheitert vorher an der Pflichtpruefung.
+    const verdict = filled === 0
+      ? '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.'
+      : '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.';
+    const diag = `<p style="font-size:13px;margin:10px 0 0;padding:8px 10px;background:#f6f6f6;border-left:3px solid #999">
+          Einschaetzung: ${verdict}<br>
+          Nutzfelder gesamt: <strong>${payload.length}</strong> · davon ausgefuellt: <strong>${filled}</strong>
+          · IP: ${esc((client && client.ip) || 'unbekannt')}
+          · User-Agent: ${esc((client && client.ua) || 'unbekannt')}
+        </p>`;
     await fetch(BREVO_URL, {
       method: 'POST',
       headers: { 'api-key': process.env.BREVO_API_KEY || '', 'content-type': 'application/json', accept: 'application/json' },
@@ -67,6 +86,7 @@ async function notifyBlocked(reason, data, formName) {
           <p style="font-size:14px;margin:0 0 12px">Diese Übermittlung wurde <strong>nicht</strong> als Lead zugestellt.
           Der Absender hat im Formular „gesendet" gesehen. Bitte prüfen, ob es ein echter Interessent war.</p>
           <table style="border-collapse:collapse;font-size:14px">${rows}</table>
+          ${diag}
           <p style="color:#888;font-size:12px;margin-top:14px">Quelle: peak-care.com · Formular „${esc(formName)}" · Grund: ${esc(reason)}</p>
         </div>`,
       }),
@@ -128,7 +148,7 @@ exports.handler = async (event) => {
       // bei jedem technischen Fehler bewusst OPEN (true) — nur ein FEHLENDES oder abgelaufenes
       // Token faellt CLOSED (false). Genau dieser Fall trifft echte Menschen: Turnstile-Token
       // laufen nach ~300 s ab, wer laenger an seiner Nachricht schreibt, sendet ein leeres Token.
-      await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName);
+      await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
       return { statusCode: 200, body: JSON.stringify({ ok: true }) };
     }
   }
