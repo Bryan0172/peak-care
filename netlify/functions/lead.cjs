@@ -160,7 +160,11 @@ exports.handler = async (event) => {
   const email = data.email || data.Email || '';
 
   const rows = Object.entries(data)
-    .filter(([k]) => !['form-name', 'bot-field'].includes(k))
+    // 'cf-turnstile-response' ergaenzt (SEO 13.08.): der Blockier-Pfad oben filtert den Token
+    // bereits heraus, der Erfolgs-Pfad nicht — dadurch stand in JEDER echten Lead-Mail eine
+    // 300+ Zeichen lange Token-Zeile ueber den Nutzfeldern. Kein Sicherheitsproblem (interne
+    // Mail, Einmal-Token), aber es hat die eigentliche Anfrage nach unten gedrueckt.
+    .filter(([k]) => !['form-name', 'bot-field', 'cf-turnstile-response'].includes(k))
     .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
     .join('');
 

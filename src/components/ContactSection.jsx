@@ -3,6 +3,16 @@ import { useLang } from '../context/LanguageContext'
 
 const TURNSTILE_SITEKEY = '0x4AAAAAADtugrvEnoy83UQj'
 
+// Liest die in main.jsx beim Erst-Aufruf festgehaltene Herkunft. Faellt sie aus, wird der
+// Lead trotzdem gesendet — nur ohne Kanal-Angabe.
+function readOrigin() {
+  try {
+    return sessionStorage.getItem('pc_origin') || 'nicht erfasst'
+  } catch (e) {
+    return 'nicht erfasst'
+  }
+}
+
 export default function ContactSection() {
   const { t } = useLang()
   const c = t.contact
@@ -70,6 +80,9 @@ export default function ContactSection() {
         body: enc({
           'form-name': 'kontakt',
           ...form,
+          // Herkunft aus der Erst-Erfassung in main.jsx. Die Lead-Funktion rendert jedes
+          // uebermittelte Feld als eigene Zeile in die Mail — es braucht dort KEINE Aenderung.
+          Herkunft: readOrigin(),
           'cf-turnstile-response': turnstileToken,
         }),
       })
