@@ -19,4 +19,17 @@
 /blog/feuchtigkeit-im-keller      /blog/feuchtigkeit-im-keller-beseitigen     301!
 /blog/krisensicheres-zuhause      /blog/krisensicheres-zuhause-fuer-familien  301!
 
+# 13.08.2026 (SEO/GEO, REQ-2026-08-13-DER-BEZAHLTE-AUSWANDERN-INFO-LINK-...): Kurzadresse fuer die
+# bezahlte Platzierung auf auswandern-info.com. Grund: die vollstaendige Ziel-URL ist DREIMAL an der
+# Uebertragung per Mail gescheitert (Gmail verpackt jede erkannte Adresse in google.com/url), zuletzt
+# so, dass ein Klick auf einer Google-Warnseite endet statt bei uns. Statt den Transportweg ein
+# viertes Mal zu haerten, wird die Nutzlast verkuerzt: "peak-care.com/auswandern" ist kurz genug, um
+# fehlerfrei abgetippt zu werden, und enthaelt kein '?' und kein '&', an dem eine Verpackung ansetzt.
+# Die UTM-Kennung haengt SERVERSEITIG an - die Messbarkeit haengt damit nicht mehr am Partner.
+# Muss VOR dem Catch-all stehen, sonst greift '/* /index.html 200' zuerst (Lehre vom 09.08.).
+/auswandern   /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
+/auswandern/  /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
+# Zweite Platzierung (/als-rentner/bulgarien-2/) getrennt messbar:
+/auswandern-rentner  /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026&utm_content=als-rentner  301!
+
 /* /index.html 200
