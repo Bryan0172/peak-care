@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import { translations, defaultLang } from '../i18n/translations'
+import { getPostBySlug } from '../data/posts'
 
 const LanguageContext = createContext(null)
 
@@ -18,11 +19,24 @@ const EN_ROUTE_PATHS = [
 // pc-en-bg-canonical-fix.md). Scope bewusst auf genau diese zwei Pfade begrenzt.
 const LANG_ROUTE_PREFIXES = { '/en': 'en', '/bg': 'bg' }
 
+// REQ-2026-08-19-PC-49-URLS-...: same bug, wider surface. The 19.07. fix above only
+// covered two static landing-page paths — every /blog/:slug post carrying its own
+// `lang: en` frontmatter (11 posts) still fell through to defaultLang here, so
+// Googlebot/the Puppeteer prerender saw a German nav/footer/CTA block wrapped around
+// English article text. Blog posts already declare their language in frontmatter;
+// read it instead of hardcoding another static list.
+const BLOG_POST_PATH = /^\/blog\/([^/]+)$/
+
 function initialLang() {
   if (typeof window === 'undefined') return defaultLang
   const path = window.location.pathname.replace(/\/$/, '') || '/'
   if (EN_ROUTE_PATHS.includes(path)) return 'en'
   if (LANG_ROUTE_PREFIXES[path]) return LANG_ROUTE_PREFIXES[path]
+  const blogMatch = path.match(BLOG_POST_PATH)
+  if (blogMatch) {
+    const post = getPostBySlug(blogMatch[1])
+    if (post?.lang === 'en') return 'en'
+  }
   return defaultLang
 }
 

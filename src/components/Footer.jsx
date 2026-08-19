@@ -88,7 +88,7 @@ export default function Footer() {
       <div className="border-t border-white/5 text-center text-gray-600 text-xs py-4 px-4">
         © {new Date().getFullYear()} Peak Care. {f.rights}
         {' · '}
-        <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">Datenschutz</Link>
+        <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy' : isBg ? 'Поверителност' : 'Datenschutz'}</Link>
       </div>
     </footer>
   )
