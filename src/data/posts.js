@@ -3,9 +3,6 @@ import schimmelWinter from '../posts/schimmel-im-winter.md?raw'
 import feuchtigkeitKeller from '../posts/feuchtigkeit-im-keller.md?raw'
 import krisensicheresZuhause from '../posts/krisensicheres-zuhause.md?raw'
 import schimmelBadezimmer from '../posts/schimmel-badezimmer-ursachen-loesungen.md?raw'
-import wasservorrat from '../posts/wasservorrat-anlegen-krisenvorsorge.md?raw'
-import immobilienBulgarien from '../posts/immobilien-bulgarien-kaufen-auslaender.md?raw'
-import blackoutVorbereitung from '../posts/blackout-vorbereitung-72-stunden.md?raw'
 // New articles
 import blackoutZuhause from '../posts/blackout-vorbereitung-zuhause-72-stunden.md?raw'
 import immobilienLeitfaden from '../posts/immobilien-bulgarien-kaufen-auslaender-leitfaden.md?raw'
@@ -23,7 +20,6 @@ import schallschutzEN from '../posts/sound-insulation-apartment-noise-neighbours
 import schimmelBulgarien from '../posts/schimmel-beseitigen-bulgarien.md?raw'
 import schimmelfleckenWand from '../posts/schimmelflecken-wand-entfernen-dauerhaft.md?raw'
 import renovierungUmbau from '../posts/renovierung-umbau-ausbau-bulgarien.md?raw'
-import wasservorratAnlegen from '../posts/wasservorrat-anlegen.md?raw'
 import blackoutFerienhaus from '../posts/blackout-ferienhaus-bulgarien.md?raw'
 import propertyInspectionBulgaria from '../posts/property-inspection-buying-bulgaria.md?raw'
 import renovationForeignOwners from '../posts/renovation-company-bulgaria-foreign-owners.md?raw'
@@ -61,9 +57,6 @@ export const allPosts = [
   parsePost(feuchtigkeitKeller),
   parsePost(krisensicheresZuhause),
   parsePost(schimmelBadezimmer),
-  parsePost(wasservorrat),
-  parsePost(immobilienBulgarien),
-  parsePost(blackoutVorbereitung),
   parsePost(blackoutZuhause),
   parsePost(immobilienLeitfaden),
   parsePost(wasservorratAnleitung),
@@ -80,7 +73,6 @@ export const allPosts = [
   parsePost(schimmelBulgarien),
   parsePost(schimmelfleckenWand),
   parsePost(renovierungUmbau),
-  parsePost(wasservorratAnlegen),
   parsePost(blackoutFerienhaus),
   parsePost(propertyInspectionBulgaria),
   parsePost(immobiliePruefenDE),

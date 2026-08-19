@@ -123,7 +123,7 @@ Ein vollständiger Innenausbau einer 60–80 m² Wohnung dauert bei realistische
 
 ---
 
-Wenn Sie ein Renovierungsprojekt in Bulgarien haben — ob Umbau, Innenausbau oder Kernsanierung — beginnen wir mit einer technischen Bestandsaufnahme vor Ort. Damit Sie wissen, was Ihr Objekt wirklich braucht, bevor irgendjemand ein Angebot abgibt.
+Wenn Sie ein Renovierungsprojekt in Bulgarien haben — ob Umbau, Innenausbau oder Kernsanierung — bieten wir genau das an: [Renovierung, Umbau & Ausbau in Bulgarien](/service/renovierung-umbau-ausbau-bulgarien) beginnt mit einer technischen Bestandsaufnahme vor Ort. Damit Sie wissen, was Ihr Objekt wirklich braucht, bevor irgendjemand ein Angebot abgibt.
 
 [Projekt anfragen →](/contact)
 

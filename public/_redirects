@@ -32,4 +32,16 @@
 # Zweite Platzierung (/als-rentner/bulgarien-2/) getrennt messbar:
 /auswandern-rentner  /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026&utm_content=als-rentner  301!
 
+# 19.08.2026 (SEO/GEO, REQ-2026-08-19-PC-49-URLS-...): Titel-Dubletten und ein Cluster mit
+# 0-Impressionen-Kannibalisierung zusammengefuehrt (STRATEGIE-Analyse, GSC-Zahlen gegengeprueft).
+# Jeweils die vollstaendigere/neuere Fassung bleibt live, die schwaechere leitet 301 weiter.
+/blog/immobilien-bulgarien-kaufen-auslaender          /blog/immobilien-bulgarien-kaufen-auslaender-leitfaden   301!
+/blog/immobilien-bulgarien-kaufen-auslaender/         /blog/immobilien-bulgarien-kaufen-auslaender-leitfaden   301!
+/blog/blackout-vorbereitung-72-stunden                /blog/blackout-vorbereitung-zuhause-72-stunden           301!
+/blog/blackout-vorbereitung-72-stunden/               /blog/blackout-vorbereitung-zuhause-72-stunden           301!
+/blog/wasservorrat-anlegen                            /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
+/blog/wasservorrat-anlegen/                           /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
+/blog/wasservorrat-anlegen-krisenvorsorge             /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
+/blog/wasservorrat-anlegen-krisenvorsorge/            /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
+
 /* /index.html 200

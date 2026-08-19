@@ -23,7 +23,7 @@ This guide explains what a proper building inspection in Bulgaria covers, what t
 
 In the UK, a RICS building survey is standard practice. In Germany, a Baugutachten before purchase is normal. In Bulgaria, neither of these traditions exists in the same form — which means buyers must actively seek out qualified independent inspection rather than expecting it to happen automatically.
 
-This is exactly what Peak Care provides: an independent [pre-purchase building inspection in Bulgaria](/bauinspektion-vor-dem-kauf-bulgarien) with a structured written report — and, for owners who are rarely on site, ongoing [technical property oversight](/technische-immobilienueberwachung-bulgarien) after the purchase.
+This is exactly what Peak Care provides: an independent [pre-purchase building inspection in Bulgaria](/pre-purchase-building-inspection-bulgaria) with a structured written report — and, for owners who are rarely on site, ongoing [technical property oversight](/technical-property-oversight-bulgaria) after the purchase.
 
 Several factors make inspection in Bulgaria particularly important:
 
