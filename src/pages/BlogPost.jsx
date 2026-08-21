@@ -50,6 +50,20 @@ export default function BlogPost() {
     canonical: `https://peak-care.com/blog/${slug}`,
     image: POST_IMAGES[slug],
     type: 'article',
+    // REQ-2026-07-29-WEB-HEALTH: 35 von 50 PC-Seiten ohne JSON-LD, praktisch der komplette
+    // Blog (33 Beiträge) — hier einmal im Template statt 33x von Hand.
+    jsonLd: post ? {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: post.title.replace(/\s*\|\s*Peak Care\s*$/i, ''),
+      description: post.excerpt,
+      datePublished: post.date,
+      inLanguage: post.lang === 'en' ? 'en' : 'de',
+      author: { '@type': 'Organization', name: post.author || 'Peak Care Team' },
+      publisher: { '@type': 'Organization', name: 'Peak Care', url: 'https://peak-care.com' },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': `https://peak-care.com/blog/${slug}` },
+      ...(POST_IMAGES[slug] ? { image: POST_IMAGES[slug] } : {}),
+    } : null,
   })
 
   if (!post) {
