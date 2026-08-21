@@ -311,7 +311,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Building Renovation Bansko',
-      url: 'https://www.peak-care.com/service/building-renovation-bansko',
+      url: 'https://peak-care.com/service/building-renovation-bansko',
       areaServed: 'Bansko, Bulgaria',
       serviceType: 'Building Renovation and Construction',
     },

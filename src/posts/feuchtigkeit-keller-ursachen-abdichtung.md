@@ -1,9 +1,9 @@
 ---
 slug: feuchtigkeit-keller-ursachen-abdichtung
-title: Feuchtigkeit im Keller – Ursachen erkennen und dauerhaft abdichten
+title: Feuchtigkeit im Keller (Bulgarien) – Ursachen erkennen und dauerhaft abdichten
 date: 2026-04-16
 author: Peak Care Team
-excerpt: Ein feuchter Keller ist kein Schönheitsfehler – er ist ein aktives Problem, das Ihr Gebäude von unten zerstört. Die häufigsten Ursachen, die richtigen Abdichtungsmethoden und was eine Sanierung kostet.
+excerpt: Feuchter Keller in Bulgarien? Kein Schönheitsfehler, sondern ein aktives Problem, das Ihr Gebäude von unten zerstört. Ursachen, geprüfte Abdichtungsmethoden und realistische Sanierungskosten – begleitet von Peak Care vor Ort.
 category: Gebäudeschutz
 readingTime: 12 min
 ---
