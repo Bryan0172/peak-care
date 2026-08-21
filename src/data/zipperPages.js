@@ -11,7 +11,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Schimmelbeseitigung Bansko',
-      url: 'https://www.peak-care.com/service/schimmelbeseitigung-bansko',
+      url: 'https://peak-care.com/service/schimmelbeseitigung-bansko',
       areaServed: 'Bansko, Bulgaria',
       serviceType: 'Mold Removal and Remediation',
     },
@@ -62,7 +62,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Schimmelbeseitigung Sofia',
-      url: 'https://www.peak-care.com/service/schimmelbeseitigung-sofia',
+      url: 'https://peak-care.com/service/schimmelbeseitigung-sofia',
       areaServed: 'Sofia, Bulgaria',
       serviceType: 'Mold Removal and Remediation',
     },
@@ -112,7 +112,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Kellerabdichtung Bansko',
-      url: 'https://www.peak-care.com/service/kellerabdichtung-bansko',
+      url: 'https://peak-care.com/service/kellerabdichtung-bansko',
       areaServed: 'Bansko, Bulgaria',
       serviceType: 'Basement Waterproofing',
     },
@@ -161,7 +161,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Gebäudesanierung Bansko',
-      url: 'https://www.peak-care.com/service/gebaudesanierung-bansko',
+      url: 'https://peak-care.com/service/gebaudesanierung-bansko',
       areaServed: 'Bansko, Bulgaria',
       serviceType: 'Building Renovation and Construction',
     },
@@ -210,7 +210,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Mold Removal Bansko',
-      url: 'https://www.peak-care.com/service/mold-removal-bansko',
+      url: 'https://peak-care.com/service/mold-removal-bansko',
       areaServed: 'Bansko, Bulgaria',
       serviceType: 'Mold Removal and Remediation',
     },
@@ -261,7 +261,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Mold Removal Sofia',
-      url: 'https://www.peak-care.com/service/mold-removal-sofia',
+      url: 'https://peak-care.com/service/mold-removal-sofia',
       areaServed: 'Sofia, Bulgaria',
       serviceType: 'Mold Removal and Remediation',
     },
@@ -362,7 +362,7 @@ export const zipperPages = [
     },
     schema: {
       name: 'Peak Care – Renovierung, Um- und Ausbau Bulgarien',
-      url: 'https://www.peak-care.com/service/renovierung-umbau-ausbau-bulgarien',
+      url: 'https://peak-care.com/service/renovierung-umbau-ausbau-bulgarien',
       areaServed: 'Bulgaria',
       serviceType: 'Building Renovation, Conversion, Extension and Fit-Out',
     },
