@@ -161,7 +161,6 @@ Planen Sie den Kauf einer Immobilie in Bulgarien und wollen solche Ursachen vora
 ## Weiterführende Artikel
 
 - [Schimmel im Keller: Ursachen und dauerhafte Beseitigung](/blog/schimmel-keller-ursachen-beseitigung)
-- [Feuchtigkeit im Keller beseitigen: Ursachen, Lösungen und Prävention](/blog/feuchtigkeit-im-keller-beseitigen)
 - [Schimmelflecken an der Wand dauerhaft entfernen](/blog/schimmelflecken-wand-entfernen-dauerhaft)
 - [Immobilie in Bulgarien kaufen – vorher prüfen lassen](/bauinspektion-vor-dem-kauf-bulgarien)
 - [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)

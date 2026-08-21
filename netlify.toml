@@ -88,7 +88,17 @@
 
 [[redirects]]
   from   = "/blog/feuchtigkeit-im-keller"
-  to     = "/blog/feuchtigkeit-im-keller-beseitigen"
+  to     = "/blog/feuchtigkeit-keller-ursachen-abdichtung"
+  status = 301
+  force  = true
+
+# 21.08.2026 (SEO/GEO): -beseitigen war selbst nur eine Zwischenstation (s. o.), hat sich als
+# schwaechere Dublette der neueren, ausfuehrlicheren -ursachen-abdichtung erwiesen (90T GSC:
+# 4 Impr gesamt, Pos 38-100, gegen 76 Impr auf der anderen Seite) -> beide Ketten enden jetzt
+# direkt am selben Ziel.
+[[redirects]]
+  from   = "/blog/feuchtigkeit-im-keller-beseitigen"
+  to     = "/blog/feuchtigkeit-keller-ursachen-abdichtung"
   status = 301
   force  = true
 

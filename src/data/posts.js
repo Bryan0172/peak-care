@@ -1,6 +1,5 @@
 // Import all markdown files as raw strings via Vite's ?raw suffix
 import schimmelWinter from '../posts/schimmel-im-winter.md?raw'
-import feuchtigkeitKeller from '../posts/feuchtigkeit-im-keller.md?raw'
 import krisensicheresZuhause from '../posts/krisensicheres-zuhause.md?raw'
 import schimmelBadezimmer from '../posts/schimmel-badezimmer-ursachen-loesungen.md?raw'
 // New articles
@@ -54,7 +53,6 @@ function parsePost(raw) {
 
 export const allPosts = [
   parsePost(schimmelWinter),
-  parsePost(feuchtigkeitKeller),
   parsePost(krisensicheresZuhause),
   parsePost(schimmelBadezimmer),
   parsePost(blackoutZuhause),
