@@ -1,6 +1,6 @@
 ---
 slug: feuchtigkeit-keller-ursachen-abdichtung
-title: Feuchtigkeit im Keller (Bulgarien) – Ursachen erkennen und dauerhaft abdichten
+title: Nasse Kellerwand (Bulgarien) – Ursachen erkennen und dauerhaft abdichten
 date: 2026-04-16
 author: Peak Care Team
 excerpt: Feuchter Keller in Bulgarien? Kein Schönheitsfehler, sondern ein aktives Problem, das Ihr Gebäude von unten zerstört. Ursachen, geprüfte Abdichtungsmethoden und realistische Sanierungskosten – begleitet von Peak Care vor Ort.
