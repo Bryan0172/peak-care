@@ -412,4 +412,10 @@ export const translations = {
   },
 }
 
-export const defaultLang = 'de'
+// REQ-2026-08-25-PC-WEBSITE-STARTET-AUF-DEUTSCH-STATT-ENGLISCH-SPRACHFEHLER: Zielmaerkte laut
+// pc_zielkunde sind Westeuropa/UK, Israel, Ukraine, Skandinavien - nur ein Teil davon spricht
+// Deutsch. EN deckt alle vier ab, DE bleibt ueber den Sprachumschalter fuer DACH-Besucher
+// erreichbar. Betrifft nur den Fallback fuer nicht explizit zugeordnete Pfade (initialLang()
+// in LanguageContext.jsx) - /en, /bg und die EN-Blogposts hatten ihre Sprache ohnehin schon
+// fest zugeordnet.
+export const defaultLang = 'en'
