@@ -136,7 +136,7 @@ Sie müssen nicht für ein apokalyptisches Szenario planen. Aber 72 Stunden ohne
 
 **Starten Sie heute mit Schritt 1:** Taschenlampe prüfen. Batterien im Haus? Powerbank aufgeladen?
 
-Wenn Sie tiefer einsteigen wollen — wie Sie Ihr gesamtes Zuhause krisensicher machen, mit Checklisten für Wasser, Lebensmittel, Notfallplan und Infrastruktur: Unser **E-Book "Krisensicheres Zuhause"** gibt Ihnen den kompletten Aktionsplan für 17 €.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](https://www.peak-care.com/#contact), 30 Minuten, ohne Anreise.
 
 Haben Sie Fragen zur Infrastruktur Ihres Gebäudes (Heizung, Wasserleitungen, Schimmelschutz bei Heizungsausfall)? [Buchen Sie eine Videoanalyse](https://www.peak-care.com/#contact) — direkt und ohne Anfahrtskosten.
 

@@ -105,7 +105,7 @@ Dafür gerüstet zu sein kostet Sie weniger als 200 € und zwei Stunden Vorbere
 
 ---
 
-**Möchten Sie tiefer einsteigen?** Unser E-Book **„Krisensicheres Zuhause"** — 17 € — gibt Ihnen den kompletten Aktionsplan: Wasser, Lebensmittel, Strom, Notfallplan und Infrastruktur. Sofort als PDF verfügbar.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](https://www.peak-care.com/#contact), 30 Minuten, ohne Anreise.
 
 ---
 

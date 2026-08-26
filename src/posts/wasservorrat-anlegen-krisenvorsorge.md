@@ -105,7 +105,7 @@ Wasser zu lagern ist so unspektakulär wie eine Versicherung abzuschließen. Man
 
 ---
 
-**Möchten Sie Ihr Zuhause vollständig auf Krisenszenarien vorbereiten?** Unser E-Book **„Krisensicheres Zuhause"** gibt Ihnen den kompletten Schutzplan für 17 €. Sofort als PDF verfügbar.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](https://www.peak-care.com/#contact), 30 Minuten, ohne Anreise.
 
 ---
 

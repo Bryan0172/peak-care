@@ -131,7 +131,7 @@ These investments don't only increase your crisis resilience — they add value 
 
 Start today. With 24 bottles. It takes 20 minutes.
 
-Want to fully prepare your home for crisis scenarios? Our **e-book "Crisis-Proof Home"** gives you the complete protection plan: water supply, power outage, food storage, emergency communication, and evacuation planning — step by step, for just €17.
+If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](https://www.peak-care.com/#contact), 30 minutes, no travel required.
 
 Questions about your property's infrastructure? [Book a video analysis](https://www.peak-care.com/#contact) — we'll assess what you can specifically improve.
 

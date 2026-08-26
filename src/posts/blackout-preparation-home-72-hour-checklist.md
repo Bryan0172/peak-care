@@ -136,7 +136,7 @@ You don't need to plan for an apocalyptic scenario. But 72 hours without electri
 
 **Start today with step one:** Check your torch. Batteries in the house? Powerbank charged?
 
-Want to go deeper? Our **e-book "Crisis-Proof Home"** gives you the complete action plan for €17 — available immediately as a PDF. Questions about your building's infrastructure? [Book a video analysis](https://www.peak-care.com/#contact) — direct, no travel costs.
+If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](https://www.peak-care.com/#contact), 30 minutes, no travel required.
 
 ---
 
