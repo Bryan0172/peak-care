@@ -49,4 +49,19 @@
 /blog/wasservorrat-anlegen-krisenvorsorge             /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
 /blog/wasservorrat-anlegen-krisenvorsorge/            /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
 
-/* /index.html 200
+# 26.08.2026 (Andreas-Direktauftrag, Soft-404-Behebung) — WICHTIGSTE ZEILE DIESER DATEI:
+# Hier stand '/* /index.html 200'. Damit antwortete JEDE unbekannte Adresse mit der
+# Startseite und HTTP 200 ("Soft 404"): tote Links waren weder fuer uns noch fuer
+# Suchmaschinen auffindbar, und Google sah beliebig viele Dubletten der Startseite.
+# Jetzt echte 404 mit eigener Seite (public/404.html, noindex, Wegweiser).
+#
+# ‼️ Vorher geprueft, damit nichts Echtes 404 wird: getRoutes() in scripts/prerender.mjs
+# erzeugt alle 52 Routen (Sitemap-<loc> + 8 fest eingetragene Pfade), und ALLE 27 in
+# src/data/posts.js eingebundenen Blogartikel stehen in der Sitemap. Die 5 uebrigen
+# .md-Dateien in src/posts sind Altfassungen ohne Route — sie sind oben ohnehin bereits
+# per 301 auf die jeweils gueltige Fassung umgeleitet.
+#
+# ‼️ NEUE ROUTE => in die Sitemap ODER in die Liste in getRoutes() aufnehmen. Sonst wird
+# sie ab sofort 404, statt still auf die Startseite zu fallen. Das ist gewollt: der
+# stille Fall auf die Startseite war genau der Defekt. netlify.toml synchron halten.
+/* /404.html 404
