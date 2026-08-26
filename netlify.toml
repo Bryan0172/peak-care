@@ -108,9 +108,18 @@
   status = 301
   force  = true
 
-# SPA fallback – rewrites all routes to index.html (status 200 = rewrite, NOT redirect)
+# 26.08.2026 (Andreas-Direktauftrag, Soft-404-Behebung): hier stand ein SPA-Fallback auf
+# /index.html mit status 200. Damit antwortete JEDE unbekannte Adresse mit der Startseite und
+# HTTP 200 ("Soft 404") — tote Links blieben unauffindbar, und Google sah beliebig viele
+# Dubletten der Startseite. Geprueft vor der Umstellung: getRoutes() in scripts/prerender.mjs
+# erzeugt alle 52 Routen (Sitemap-<loc> + 8 fest eingetragene), und ALLE 27 in src/data/posts.js
+# eingebundenen Blogartikel stehen in der Sitemap. (Die 5 uebrigen .md-Dateien in src/posts sind
+# verwaiste Altfassungen ohne Route — bewusst nicht aufgenommen.)
+# Netlify liefert vorhandene Dateien VOR nicht erzwungenen Redirects aus, echte Seiten sind
+# also unveraendert erreichbar. ‼️ Neue Route => in Sitemap ODER in die Liste in getRoutes(),
+# sonst wird sie ab sofort 404 statt still auf die Startseite zu fallen.
 [[redirects]]
   from   = "/*"
-  to     = "/index.html"
-  status = 200
+  to     = "/404.html"
+  status = 404
   force  = false

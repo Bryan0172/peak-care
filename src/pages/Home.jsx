@@ -97,7 +97,9 @@ export default function Home() {
     ...SEO_BY_LANG[lang] || SEO_BY_LANG.de,
     jsonLd: HOME_JSONLD,
     alternates: [
-      { hreflang: 'de', href: 'https://peak-care.com/' },
+      // 26.08.2026: hreflang="de" entfernt (Andreas-Direktauftrag). Die Startseite ist
+      // englisch (lang="en"); eine deutsche Fassung existiert nicht. Die Angabe meldete
+      // Google eine Sprachversion, die es nicht gibt. /en/ und /bg/ sind real und bleiben.
       { hreflang: 'en', href: 'https://peak-care.com/en/' },
       { hreflang: 'bg', href: 'https://peak-care.com/bg/' },
       { hreflang: 'x-default', href: 'https://peak-care.com/' },
