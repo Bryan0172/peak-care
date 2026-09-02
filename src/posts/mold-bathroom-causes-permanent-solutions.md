@@ -127,8 +127,6 @@ In most cases, that means:
 
 Do you have bathroom mold that keeps coming back? [Book a 30-minute video analysis](https://www.peak-care.com/#contact) — we'll assess your situation, identify the cause, and give you a cost estimate. Direct, no travel costs, no obligation.
 
-Or download our e-book **"Mold & Moisture Under Control"** — the complete guide for property owners, now just €12.
-
 ---
 
 ## Related Articles
