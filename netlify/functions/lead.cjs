@@ -56,8 +56,16 @@ async function notifyBlocked(reason, data, formName, client) {
     // Die Unterscheidung war nur durch Lesen dieses Quellcodes moeglich und wurde am 31.07., 06.08.
     // und 08.08. jedes Mal von vorn gefuehrt — einmal sogar falsch herum (Abend-Digest meldete
     // erkannte Bots als „kann ein echter Interessent sein"). Jetzt steht die Antwort IN der Mail.
+    // PATCH 02.09.2026 (SEO/GEO, A386-SEO): von Blacklist auf Whitelist umgestellt. Die alte Form
+    // (alles AUSSER drei bekannten Namen zaehlt als "Nutzfeld") laesst jeden injizierten Zusatz-
+    // Schluessel ungeprueft in die Ausgefuellt-Zaehlung einfliessen — eine Bot-Variante, die
+    // zusaetzliche Feldnamen mitschickt, wuerde die Zaehlung nach oben verzerren, ohne dass es
+    // an dieser Stelle auffaellt. Die Whitelist listet ausschliesslich die Feldnamen, die das
+    // Formular selbst kennt (ContactSection.jsx: name, email, phone, message) — alles andere wird
+    // fuer die Tabelle und die Zaehlung ignoriert, taucht aber weiterhin im Netlify-Funktionslog auf.
+    const KNOWN_FIELDS = ['name', 'email', 'phone', 'message'];
     const payload = Object.entries(data)
-      .filter(([k]) => !['form-name', 'bot-field', 'cf-turnstile-response'].includes(k));
+      .filter(([k]) => KNOWN_FIELDS.includes(k));
     const rows = payload
       .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
       .join('');
