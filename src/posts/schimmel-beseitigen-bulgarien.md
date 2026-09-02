@@ -74,8 +74,6 @@ Transparenz ist uns wichtiger als ein gutes Gefühl.
 
 Das sind keine Festpreise — das sind realistische Orientierungswerte. Die tatsächlichen Kosten hängen von Ausmaß, Ursache und Zugänglichkeit ab.
 
-Was diese Zahlen zeigen: Schimmelbeseitigung in Bulgarien ist günstiger als in Deutschland, Österreich oder der Schweiz. Bulgarische Arbeitskosten liegen 50–60 % unter westeuropäischem Niveau. Eine Sanierung, die in München 3.000 Euro kostet, liegt in Sofia bei 1.200–1.500 Euro.
-
 ## Schwarzer Schimmel in Bulgarien: Wann es gefährlich wird
 
 Nicht jeder Schimmel ist gleich gefährlich. Aber schwarzer Schimmel — Stachybotrys chartarum — ist eine andere Kategorie.
