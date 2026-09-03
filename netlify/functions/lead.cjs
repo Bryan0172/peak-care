@@ -40,6 +40,32 @@ function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// PATCH 21.08.2026 (SEO/GEO, REQ-2026-08-21-DIE-TURNSTILE-WARNMAIL-STUFT-OFFENSICHTLICHEN-LINKSPAM-
+// ALS-MENSCH-MOEGLICH-EIN, gebaut+getestet 21.08. fuer BC, deployt 03.09. auch hier fuer
+// Konsistenz -- die Heuristik stand seit dem urspruenglichen Patch wortgleich in beiden Fassungen).
+// Getestet 8/8 gegen den echten Spam vom 20.08. und sechs legitime Uebermittlungen, 0 Fehlalarme.
+// Der Vokal-Check matcht nur reine ASCII-a-z0-9-Token -- kyrillische/hebraeische/griechische
+// Kundenpost besteht aus anderen Unicode-Bereichen und kann dieses Muster nicht treffen.
+function botContentSignals(payload) {
+  const IDENT_SKIP = ['message', 'nachricht', 'comments', 'comment', 'email', 'e-mail', 'mail'];
+  const LINK_RE = /(https?:\/\/|www\.|\b[a-z0-9][a-z0-9-]{1,}\.(com|net|org|ru|xyz|top|info|shop|click|link)\b)/i;
+  const signals = [];
+  let linkCount = 0;
+  let randomTokens = 0;
+  for (const [k, vRaw] of payload) {
+    const key = String(k || '').toLowerCase();
+    const v = String(vRaw == null ? '' : vRaw).trim();
+    if (!v) continue;
+    if (!IDENT_SKIP.includes(key) && LINK_RE.test(v)) signals.push('Link/Domain im Feld "' + k + '"');
+    if (/^[a-z0-9]{5,12}$/i.test(v) && /\d/.test(v) && /[a-z]/i.test(v) && !/[aeiouäöüy]/i.test(v)) randomTokens++;
+    const m = v.match(/https?:\/\//gi);
+    if (m) linkCount += m.length;
+  }
+  if (randomTokens >= 2) signals.push(randomTokens + ' Felder mit Zufallsketten ohne Vokale');
+  if (linkCount >= 2) signals.push(linkCount + ' Links in der Uebermittlung');
+  return signals;
+}
+
 // PATCH 31.07.2026 (SEO/GEO) — Sichtbarkeit fuer blockierte Leads, uebernommen aus der
 // BC-Fassung (banskoconcierge-website/netlify/functions/lead.js), die genau das seit
 // laengerem tut. Grund: ein Turnstile-Token, das fehlt oder abgelaufen ist (Cloudflare-
@@ -77,10 +103,13 @@ async function notifyBlocked(reason, data, formName, client) {
     // bekommen ein eigenes Verdikt, die Turnstile-Blockade selbst aendert sich nicht.
     const ua = (client && client.ua) || '';
     const NON_BROWSER_UA = /\bcurl\/|\bwget\/|python-requests|node-fetch|axios\/|Go-http-client|PostmanRuntime/i;
+    const contentSignals = botContentSignals(payload);
     const verdict = filled === 0
       ? '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.'
       : NON_BROWSER_UA.test(ua)
       ? '<strong style="color:#b00">TESTVERKEHR/BOT (Nicht-Browser-User-Agent)</strong> — Nutzfelder gefuellt, aber der User-Agent stammt erkennbar nicht aus einem Browser.'
+      : contentSignals.length
+      ? '<strong style="color:#b00">BOT WAHRSCHEINLICH</strong> — Inhaltsmerkmale automatisierter Uebermittlung: ' + esc(contentSignals.join(' · ')) + '.'
       : '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.';
     // PATCH 03.09.2026 (SEO/GEO, REQ-2026-09-02-EIN-TEIL-DER-LEAD-BLOCKIERT-ALARME-KOMMT-VON-
     // UNSERER-EIGENEN-IP): STRATEGIE hat gemessen, dass ein Teil der Blockier-Alarme von der
