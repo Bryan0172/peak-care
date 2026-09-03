@@ -75,10 +75,24 @@ async function notifyBlocked(reason, data, formName, client) {
     const verdict = filled === 0
       ? '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.'
       : '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.';
+    // PATCH 03.09.2026 (SEO/GEO, REQ-2026-09-02-EIN-TEIL-DER-LEAD-BLOCKIERT-ALARME-KOMMT-VON-
+    // UNSERER-EIGENEN-IP): STRATEGIE hat gemessen, dass ein Teil der Blockier-Alarme von der
+    // ausgehenden IP DIESES Haushalts/Netzwerks stammt (deckungsgleich mit der healthchecks.io-
+    // Ping-Quelle) — vermutlich Diagnose-Aufrufe aus SEO/GEO-Sitzungen, nicht externe Bots.
+    // Bewusst NICHT unterdrueckt (STRATEGIEs Punkt 1) — eine IP-Uebereinstimmung heute beweist
+    // nichts fuer morgen (DHCP), und eine still weggefilterte Mail koennte einen echten Fall
+    // verstecken. Stattdessen nur gekennzeichnet (Punkt 2), damit die Alarmklasse lesbar bleibt,
+    // ohne dass jemand etwas verliert.
+    const KNOWN_OWN_IPS = ['149.62.204.85'];
+    const srcIp = (client && client.ip) || '';
+    const srcLabel = KNOWN_OWN_IPS.some(ip => srcIp.includes(ip))
+      ? '<strong style="color:#666">eigene Infrastruktur (bekannte IP)</strong>'
+      : '<strong style="color:#0a0">extern</strong>';
     const diag = `<p style="font-size:13px;margin:10px 0 0;padding:8px 10px;background:#f6f6f6;border-left:3px solid #999">
           Einschaetzung: ${verdict}<br>
           Nutzfelder gesamt: <strong>${payload.length}</strong> · davon ausgefuellt: <strong>${filled}</strong>
-          · IP: ${esc((client && client.ip) || 'unbekannt')}
+          · Quelle: ${srcLabel}
+          · IP: ${esc(srcIp || 'unbekannt')}
           · User-Agent: ${esc((client && client.ua) || 'unbekannt')}
         </p>`;
     await fetch(BREVO_URL, {
