@@ -173,7 +173,11 @@ export default function ContactSection() {
                   <div>
                     <div className="text-gray-500 text-xs uppercase tracking-wider">{item.label}</div>
                     {item.href ? (
-                      <a href={item.href} className="text-white font-semibold hover:text-teal-400 transition-colors">
+                      <a
+                        href={item.href}
+                        className="text-white font-semibold hover:text-teal-400 transition-colors"
+                        onClick={item.href.startsWith('tel:') ? () => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'phone_click') } : undefined}
+                      >
                         {item.value}
                       </a>
                     ) : (

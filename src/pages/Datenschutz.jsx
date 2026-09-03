@@ -34,7 +34,7 @@ export default function Datenschutz() {
               Stragite 08, Apt. 39D<br />
               2770 Bansko, Bulgarien<br />
               E-Mail: <a href="mailto:peakcare@peak-care.com" className="text-teal-600 underline">peakcare@peak-care.com</a><br />
-              Telefon: <a href="tel:+359898436561" className="text-teal-600 underline">+359 89 843 6561</a><br />
+              Telefon: <a href="tel:+359898436561" className="text-teal-600 underline" onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'phone_click') }}>+359 89 843 6561</a><br />
               Website: <a href="https://peak-care.com" className="text-teal-600 underline">peak-care.com</a>
             </p>
           </section>

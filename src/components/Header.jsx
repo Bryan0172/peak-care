@@ -99,7 +99,11 @@ export default function Header() {
             )}
           </div>
 
-          <a href="tel:+359898436561" className="btn-primary text-sm !py-2 !px-4">
+          <a
+            href="tel:+359898436561"
+            className="btn-primary text-sm !py-2 !px-4"
+            onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'phone_click') }}
+          >
             {t.nav.call}
           </a>
         </div>
@@ -173,7 +177,11 @@ export default function Header() {
               </NavLink>
             )
           )}
-          <a href="tel:+359898436561" className="btn-primary block text-center mt-4">
+          <a
+            href="tel:+359898436561"
+            className="btn-primary block text-center mt-4"
+            onClick={() => { if (typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'phone_click') }}
+          >
             {t.nav.call}
           </a>
         </div>
