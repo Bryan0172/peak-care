@@ -84,7 +84,7 @@ export default function Home() {
     en: {
       title: 'Technical Property Expertise & Renovation in Bulgaria | Peak Care',
       description: 'Peak Care: technical property expertise for investors and owners in Bulgaria — pre-purchase building assessment, renovation, conversion and remote property oversight. Mold, moisture and sound insulation as specialties.',
-      canonical: 'https://peak-care.com/en/',
+      canonical: 'https://peak-care.com/',
     },
     bg: {
       title: 'Техническа експертиза и ремонт на имоти в България | Peak Care',
@@ -98,9 +98,11 @@ export default function Home() {
     jsonLd: HOME_JSONLD,
     alternates: [
       // 26.08.2026: hreflang="de" entfernt (Andreas-Direktauftrag). Die Startseite ist
-      // englisch (lang="en"); eine deutsche Fassung existiert nicht. Die Angabe meldete
-      // Google eine Sprachversion, die es nicht gibt. /en/ und /bg/ sind real und bleiben.
-      { hreflang: 'en', href: 'https://peak-care.com/en/' },
+      // englisch (lang="en"); eine deutsche Fassung existiert nicht. /bg/ ist real und bleibt.
+      // 03.09.2026 (SEO/GEO, REQ-E-2026-09-02-ESKALATION-...): /en/ war byte-nah identisch
+      // mit / (defaultLang='en') und leitet jetzt per 301 auf / weiter - hreflang zeigt
+      // deshalb direkt auf die Root, nicht mehr auf die (weiterleitende) /en/-Adresse.
+      { hreflang: 'en', href: 'https://peak-care.com/' },
       { hreflang: 'bg', href: 'https://peak-care.com/bg/' },
       { hreflang: 'x-default', href: 'https://peak-care.com/' },
     ],

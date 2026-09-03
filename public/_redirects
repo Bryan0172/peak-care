@@ -1,5 +1,8 @@
 # 28.06.2026: Slug-Umbenennung "Baugutachten" -> "Bauinspektion" (kein geschützter Gutachter-Titel)
-/baugutachten-vor-dem-kauf-bulgarien    /bauinspektion-vor-dem-kauf-bulgarien      301
+# 03.09.2026 (SEO/GEO, REQ-E-2026-09-02-ESKALATION-PC-DUBLETTEN-...): Ziel direkt auf die
+# englische Fassung umgebogen (war zuvor bauinspektion-vor-dem-kauf-bulgarien, das jetzt selbst
+# weiterleitet) - vermeidet einen zweiten Redirect-Hop.
+/baugutachten-vor-dem-kauf-bulgarien    /pre-purchase-building-inspection-bulgaria 301
 /pre-purchase-building-survey-bulgaria  /pre-purchase-building-inspection-bulgaria 301
 
 # 09.08.2026 (SEO/GEO, REQ-2026-08-08-PC-CUSTOM-REDIRECTS-LIEFERN-200-STATT-301): _redirects
@@ -32,10 +35,13 @@
 # fehlerfrei abgetippt zu werden, und enthaelt kein '?' und kein '&', an dem eine Verpackung ansetzt.
 # Die UTM-Kennung haengt SERVERSEITIG an - die Messbarkeit haengt damit nicht mehr am Partner.
 # Muss VOR dem Catch-all stehen, sonst greift '/* /index.html 200' zuerst (Lehre vom 09.08.).
-/auswandern   /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
-/auswandern/  /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
+# 03.09.2026 (SEO/GEO): Ziel auf /pre-purchase-building-inspection-bulgaria/ umgestellt (war
+# bauinspektion-vor-dem-kauf-bulgarien/, das jetzt selbst dorthin weiterleitet) - vermeidet einen
+# zweiten Redirect-Hop auf PCs groesstem bezahlten Kanal.
+/auswandern   /pre-purchase-building-inspection-bulgaria/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
+/auswandern/  /pre-purchase-building-inspection-bulgaria/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026   301!
 # Zweite Platzierung (/als-rentner/bulgarien-2/) getrennt messbar:
-/auswandern-rentner  /bauinspektion-vor-dem-kauf-bulgarien/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026&utm_content=als-rentner  301!
+/auswandern-rentner  /pre-purchase-building-inspection-bulgaria/?utm_source=auswandern-info&utm_medium=referral&utm_campaign=bauinspektion-2026&utm_content=als-rentner  301!
 
 # 19.08.2026 (SEO/GEO, REQ-2026-08-19-PC-49-URLS-...): Titel-Dubletten und ein Cluster mit
 # 0-Impressionen-Kannibalisierung zusammengefuehrt (STRATEGIE-Analyse, GSC-Zahlen gegengeprueft).
@@ -48,6 +54,21 @@
 /blog/wasservorrat-anlegen/                           /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
 /blog/wasservorrat-anlegen-krisenvorsorge             /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
 /blog/wasservorrat-anlegen-krisenvorsorge/            /blog/wasservorrat-anlegen-krisenvorsorge-anleitung      301!
+
+# 03.09.2026 (SEO/GEO, REQ-E-2026-09-02-ESKALATION-PC-DUBLETTEN-UND-STARTSEITE-EN-...):
+# ①/en/ dupliziert / byte-nah (defaultLang='en' seit 25.08. - / ist bereits die englische Seite).
+# ②Die zwei "deutschen" Slugs liefern denselben englischen Flieltext wie ihr englisches Pendant -
+# die lang-Verzweigung in den Komponenten deckt nur die Fussnoten-Navigation ab, nicht den
+# Haupttext (0 bzw. 7 lang==='de'-Treffer, alle 7 reine Footer-Links). Kein DE-Content vorhanden,
+# also Konsolidierung statt Uebersetzung. Ziel jeweils die englische URL, die die staerkeren
+# GSC-Signale traegt.
+/en                                          /                                            301!
+/en/                                         /                                            301!
+/en/*                                        /                                            301!
+/bauinspektion-vor-dem-kauf-bulgarien        /pre-purchase-building-inspection-bulgaria   301!
+/bauinspektion-vor-dem-kauf-bulgarien/       /pre-purchase-building-inspection-bulgaria/  301!
+/technische-immobilienueberwachung-bulgarien   /technical-property-oversight-bulgaria     301!
+/technische-immobilienueberwachung-bulgarien/  /technical-property-oversight-bulgaria/    301!
 
 # 26.08.2026 (Andreas-Direktauftrag, Soft-404-Behebung) — WICHTIGSTE ZEILE DIESER DATEI:
 # Hier stand '/* /index.html 200'. Damit antwortete JEDE unbekannte Adresse mit der
