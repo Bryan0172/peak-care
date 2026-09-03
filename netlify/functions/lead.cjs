@@ -70,10 +70,17 @@ async function notifyBlocked(reason, data, formName, client) {
       .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
       .join('');
     const filled = payload.filter(([, v]) => String(v || '').trim() !== '').length;
-    // Klartext-Verdikt statt Rohzahl: 0 ausgefuellte Nutzfelder kann ein Mensch nicht erzeugen —
-    // ein leeres Formular kommt gar nicht erst bis hierher, es scheitert vorher an der Pflichtpruefung.
+    // PATCH 03.09.2026 (SEO/GEO, REQ-2026-08-26-SEO-SE4-ZUSTELLTEST-...): die Heuristik zaehlte
+    // bisher nur Nutzfelder und ignorierte den User-Agent — ein eigener curl-Zustelltest mit
+    // ausgefuellten Feldern kam als "MENSCH MOEGLICH" durch, obwohl "curl/8.17.0" die deutlichste
+    // Bot-Signatur ist, die es gibt. Rein additive Praezisierung: bekannte Nicht-Browser-UAs
+    // bekommen ein eigenes Verdikt, die Turnstile-Blockade selbst aendert sich nicht.
+    const ua = (client && client.ua) || '';
+    const NON_BROWSER_UA = /\bcurl\/|\bwget\/|python-requests|node-fetch|axios\/|Go-http-client|PostmanRuntime/i;
     const verdict = filled === 0
       ? '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.'
+      : NON_BROWSER_UA.test(ua)
+      ? '<strong style="color:#b00">TESTVERKEHR/BOT (Nicht-Browser-User-Agent)</strong> — Nutzfelder gefuellt, aber der User-Agent stammt erkennbar nicht aus einem Browser.'
       : '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.';
     // PATCH 03.09.2026 (SEO/GEO, REQ-2026-09-02-EIN-TEIL-DER-LEAD-BLOCKIERT-ALARME-KOMMT-VON-
     // UNSERER-EIGENEN-IP): STRATEGIE hat gemessen, dass ein Teil der Blockier-Alarme von der
