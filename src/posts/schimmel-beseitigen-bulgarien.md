@@ -61,18 +61,18 @@ Was wir in Bansko regelmäßig vorfinden:
 
 Die Diagnose ist jeweils anders. Die Behandlung auch.
 
-## Was dauerhafte Schimmelbeseitigung kostet
+## Was dauerhafte Schimmelbeseitigung umfasst
 
-Transparenz ist uns wichtiger als ein gutes Gefühl.
+Transparenz ist uns wichtiger als ein gutes Gefühl. Deshalb sagen wir hier auch offen, was wir vorher **nicht** seriös sagen können: einen Preis.
 
-| Situation | Methode | Kostenrahmen |
+| Situation | Methode | Typischer Aufwand |
 |---|---|---|
-| Oberflächlicher Schimmel (< 0,5 m²), Ursache: Kondensation | Biozide Behandlung + Putzreparatur | 150–300 € |
-| Schimmelbefall einer Zimmerwand, Ursache: Kältebrücke | Behandlung + Innendämmung (Schlanksystem) | 600–1.200 € |
-| Kellerfeuchte, gesamtes Kellergeschoss | Innenabdichtung (kristallin) + Drainage | ab 1.500 € |
-| Chronischer Schimmel über mehrere Räume, Altbaustruktur | Vollsanierung inkl. Ursachenbehebung | individuell nach Diagnose |
+| Oberflächlicher Schimmel (< 0,5 m²), Ursache: Kondensation | Biozide Behandlung + Putzreparatur | Der kleinste Fall — ein Raum, kurze Ausführung |
+| Schimmelbefall einer Zimmerwand, Ursache: Kältebrücke | Behandlung + Innendämmung (Schlanksystem) | Mehrere Arbeitsschritte, Trocknungszeit eingerechnet |
+| Kellerfeuchte, gesamtes Kellergeschoss | Innenabdichtung (kristallin) + Drainage | Deutlich umfangreicher, abhängig von der Zugänglichkeit |
+| Chronischer Schimmel über mehrere Räume, Altbaustruktur | Vollsanierung inkl. Ursachenbehebung | Individuell nach Diagnose |
 
-Das sind keine Festpreise — das sind realistische Orientierungswerte. Die tatsächlichen Kosten hängen von Ausmaß, Ursache und Zugänglichkeit ab.
+Was das im Einzelfall kostet, hängt von Ausmaß, Ursache und Zugänglichkeit ab — und diese drei Dinge sieht man erst, wenn man hinsieht. Wer Ihnen vorher eine Zahl nennt, rät. Sie bekommen von uns einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse**: eine Zahl, die steht, statt einer Spanne, die sich später nach oben bewegt.
 
 ## Schwarzer Schimmel in Bulgarien: Wann es gefährlich wird
 

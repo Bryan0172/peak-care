@@ -94,18 +94,18 @@ Weiße Ablagerungen = Kapillarfeuchtigkeit. Das ist ein zuverlässiges Indiz.
 **Schritt 4: Zeitpunkt notieren**
 Kommen nasse Stellen nur nach Starkregen? → Druckwasser. Ganzjährig, unabhängig vom Wetter? → Kapillar oder Kondensation.
 
-## Kellerabdichtung: Die wichtigsten Methoden und Kosten
+## Kellerabdichtung: Die wichtigsten Methoden
 
-| Methode | Anwendungsfall | Kosten (grob) |
+| Methode | Anwendungsfall | Hinweis |
 |---|---|---|
-| Hygrometer + richtiges Lüften | Kondensation | 10–15 € |
-| Elektrischer Entfeuchter | Kondensation | 150–500 € |
-| Injektionsverfahren (Horizontalsperre) | Kapillarfeuchtigkeit | 80–150 € pro lfd. Meter |
-| Dichtschlämme innen | Leichtes Druckwasser | 30–60 € pro m² |
-| Außenabdichtung mit Drainage | Starkes Druckwasser | 300–800 € pro lfd. Meter |
-| Vollständige Kellersanierung | Schwerer Gesamtschaden | 15.000–50.000 € |
+| Hygrometer + richtiges Lüften | Kondensation | Selbsthilfe, Gerät ab ca. 10–15 € im Handel |
+| Elektrischer Entfeuchter | Kondensation | Selbsthilfe, Geräte ab ca. 150 € im Handel |
+| Injektionsverfahren (Horizontalsperre) | Kapillarfeuchtigkeit | Fachleistung – Menge richtet sich nach lfd. Metern |
+| Dichtschlämme innen | Leichtes Druckwasser | Fachleistung – Menge richtet sich nach der Fläche |
+| Außenabdichtung mit Drainage | Starkes Druckwasser | Fachleistung – Erdarbeiten, Zugänglichkeit entscheidet |
+| Vollständige Kellersanierung | Schwerer Gesamtschaden | Fachleistung – mehrere Verfahren kombiniert |
 
-**Wichtig:** Diese Zahlen sind Richtwerte. Der tatsächliche Aufwand hängt stark von der Ursache, dem Ausmaß des Schadens und der Zugänglichkeit ab.
+**Die ersten beiden Zeilen können Sie selbst erledigen, und die Preise dafür stehen in jedem Baumarkt.** Für die vier Fachleistungen nennen wir hier bewusst keine Spannen: Der tatsächliche Aufwand hängt von Ursache, Schadensausmaß und Zugänglichkeit ab, und keines dieser drei Dinge lässt sich aus der Ferne schätzen. Sie bekommen einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse** — eine Zahl, auf die Sie sich verlassen können, statt einer Spanne, die während der Arbeit wächst.
 
 ## Die häufigsten Fehler bei der Kellerabdichtung
 

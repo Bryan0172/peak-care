@@ -74,17 +74,19 @@ Der bulgarische Winter ist hart. Wohnungen werden dicht geschlossen gehalten. Da
 
 In Deutschland gibt es DIN-Normen für Schallschutz (DIN 4109), die für Neubauten bindend sind. In Bulgarien existieren Vorschriften, aber die Durchsetzung ist lückenhaft. Käufer von Neubauwohnungen stellen oft erst nach dem Einzug fest, dass die Schallschutzwerte nicht eingehalten wurden.
 
-## Schallschutz Kosten Bulgarien: Was kostet Lärmschutz in der Praxis?
+## Schallschutz in der Praxis: Welche Maßnahme gegen welchen Lärm?
 
-Abhängig von Maßnahme und Raumgröße:
+Die entscheidende Frage ist nicht, was eine Maßnahme kostet — sondern ob sie gegen **Ihren** Lärm überhaupt wirkt:
 
-| Maßnahme | Kostenbandbreite |
-|---|---|
-| Trittschalldämmung (schwimmender Estrich, 20 m²) | 1.500 – 3.500 € |
-| Vorsatzschale (Luftschall, pro Wand 10 m²) | 800 – 2.000 € |
-| Schallschutzfenster (pro Fenster) | 600 – 1.800 € |
-| Balkonverglasung Schallschutz (ca. 8 m²) | 1.200 – 3.000 € |
-| Gesamtsanierung (30 m² Wohnung) | 5.000 – 12.000 € |
+| Maßnahme | Wirkt gegen | Bezugsgröße |
+|---|---|---|
+| Trittschalldämmung (schwimmender Estrich) | Schritte, Möbelrücken von oben | Bodenfläche des Raums |
+| Vorsatzschale | Luftschall durch die Wand (Stimmen, TV) | Wandfläche |
+| Schallschutzfenster | Straßen- und Außenlärm | Anzahl und Größe der Fenster |
+| Balkonverglasung Schallschutz | Außenlärm, wenn der Balkon die Schwachstelle ist | Verglaste Fläche |
+| Gesamtsanierung | Mehrere Schallwege gleichzeitig | Wohnungsgröße |
+
+**Warum hier keine Preise stehen:** Weil die Zahl ohne die Diagnose wertlos ist — und mit der Diagnose brauchen Sie keine Spanne mehr, sondern einen verbindlichen Festpreis. Den bekommen Sie nach einer **kostenlosen Videoanalyse**.
 
 **Wichtig:** Diese Zahlen sind nur dann sinnvoll, wenn vorher eine Analyse der tatsächlichen Schallquelle erfolgt. Eine Trittschalldämmung hilft nicht gegen Luftschall. Neue Fenster helfen nicht gegen Trittschall von oben.
 
@@ -92,7 +94,7 @@ Abhängig von Maßnahme und Raumgröße:
 
 Wir sehen regelmäßig Wohnungen, in denen Eigentümer Tausende Euro in Maßnahmen investiert haben – die nicht geholfen haben, weil die falsche Ursache bekämpft wurde.
 
-**Beispiel aus der Praxis:** Kunde in Sofia, Altbau, Bj. 1978. Klagt über Lärm von oben. Lässt in der eigenen Wohnung Trittschalldämmung unter dem Laminat verlegen. Kosten: 2.200 €. Ergebnis: Kein Unterschied. Warum? Trittschalldämmung unter dem Laminat in der unteren Wohnung bringt keinen messbaren Effekt – sie muss in der oberen Wohnung verlegt werden. Zusätzlich war das Problem teilweise Luftschall (Stimmen), der über eine dünne Trennwand übertragen wurde.
+**Beispiel aus der Praxis:** Kunde in Sofia, Altbau, Bj. 1978. Klagt über Lärm von oben. Lässt in der eigenen Wohnung Trittschalldämmung unter dem Laminat verlegen — eine vierstellige Investition. Ergebnis: Kein Unterschied. Warum? Trittschalldämmung unter dem Laminat in der unteren Wohnung bringt keinen messbaren Effekt – sie muss in der oberen Wohnung verlegt werden. Zusätzlich war das Problem teilweise Luftschall (Stimmen), der über eine dünne Trennwand übertragen wurde.
 
 **Die Lösung:** Vor jeder Investition eine professionelle Schallschutzanalyse. In 30 Minuten lässt sich via Video die Situation einschätzen und ein konkreter Maßnahmenplan erstellen.
 

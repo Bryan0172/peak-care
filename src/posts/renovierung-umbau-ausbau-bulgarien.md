@@ -68,21 +68,21 @@ In der Praxis bedeutet das:
 - **Bodenaufbauten** mit korrekten Schichtenfolgen: Trittschalldämmung, Dampfsperre, Estrich — nicht direkt Fliese auf Beton
 - **Dokumentation** jedes Ausführungsschritts: Was wurde verbaut? Welche Chargen? Von welchem Hersteller?
 
-Das kostet mehr als die lokale Mindestlösung. Und es ist trotzdem deutlich günstiger als dieselbe Arbeit in Deutschland.
+Das kostet mehr als die lokale Mindestlösung. Es ist der Unterschied zwischen einer Wohnung, die fertig *aussieht*, und einer, die in zehn Jahren noch trägt.
 
 ## Renovierungskosten in Bulgarien: Was ist realistisch?
 
-Pauschalpreise sind in diesem Bereich irreführend. Was eine Renovierung kostet, hängt vom Zustand des Objekts, der Eingrifftiefe, den Materialwünschen und der Region ab.
+Pauschalpreise sind in diesem Bereich irreführend. Was eine Renovierung kostet, hängt vom Zustand des Objekts, der Eingrifftiefe, den Materialwünschen und der Region ab — und diese vier Größen liegen bei jedem Objekt anders.
 
-Was wir aus Projekterfahrung sagen können:
+Deshalb nennen wir hier keine Spannen. Was wir aus Projekterfahrung stattdessen sagen können, ist, **wovon** der Preis tatsächlich abhängt:
 
-Ein vollständiger **Innenausbau** einer 60–80 m² Wohnung in Bansko oder Sofia liegt bei korrekter Ausführung mit hochwertigen Materialien realistisch zwischen 15.000 und 35.000 EUR — je nach Ausgangszustand und Ausstattungsniveau.
+Ein vollständiger **Innenausbau** wird im Wesentlichen vom Ausgangszustand und vom Ausstattungsniveau bestimmt — dieselbe Wohnungsgröße kann je nach beidem sehr weit auseinanderliegen.
 
-Ein **Umbau** mit Grundrissänderungen und nötiger Statikprüfung beginnt bei einfacheren Eingriffen um 8.000–15.000 EUR und steigt je nach Komplexität.
+Ein **Umbau** mit Grundrissänderungen wird von der Statik bestimmt: ob tragende Wände betroffen sind, entscheidet über Prüfaufwand, Genehmigung und Bauzeit — und damit über den Preis, nicht die Quadratmeterzahl.
 
-Eine **Kernsanierung** eines typischen Bansko-Chalets oder einer älteren Stadtwohnung liegt bei 40.000–100.000 EUR und darüber — je nach Objektgröße und Ausgangszustand.
+Eine **Kernsanierung** wird davon bestimmt, wie viel der vorhandenen Substanz erhalten werden kann. Was hinter Putz und Estrich zum Vorschein kommt, ist vorher niemandem bekannt — auch uns nicht.
 
-Diese Zahlen sind Orientierungswerte. Angebote, die deutlich darunter liegen, signalisieren entweder Materialabstriche, fehlende Genehmigungskosten oder einen Auftragnehmer, der überlastet kalkuliert und unterliefert.
+**Was Sie von uns bekommen, ist deshalb kein Richtwert, sondern ein verbindlicher Festpreis nach Objektaufnahme.** Und eine Warnung, die unabhängig von jeder Zahl gilt: Angebote, die auffällig niedrig liegen, signalisieren Materialabstriche, fehlende Genehmigungskosten oder einen Auftragnehmer, der überlastet kalkuliert und unterliefert.
 
 ## Wie eine professionell begleitete Renovierung in Bulgarien abläuft
 
@@ -107,7 +107,7 @@ Das Ergebnis: Sie können in Deutschland leben und trotzdem sicher sein, dass Ih
 ## Häufige Fragen zur Renovierung in Bulgarien
 
 **Was kostet eine Kernsanierung in Bansko?**
-Eine Kernsanierung in Bansko liegt je nach Objektgröße und Ausgangszustand realistisch zwischen 40.000 und 100.000 EUR bei korrekter Ausführung und hochwertigen Materialien. Günstigere Angebote gehen in der Regel zu Lasten von Materialqualität oder Ausführungsstandard.
+Das hängt von Objektgröße, Ausgangszustand und davon ab, wie viel der vorhandenen Substanz erhalten werden kann — und Letzteres zeigt sich erst, wenn Putz und Estrich geöffnet sind. Eine seriöse Zahl gibt es deshalb erst nach der Objektaufnahme; von uns bekommen Sie sie dann als verbindlichen Festpreis. Was sich auch ohne Zahl sagen lässt: auffällig günstige Angebote gehen in der Regel zu Lasten von Materialqualität oder Ausführungsstandard.
 
 **Brauche ich für einen Umbau in Bulgarien eine Baugenehmigung?**
 Ja, in vielen Fällen. Ob und welche Genehmigungen erforderlich sind, hängt von der Art des Eingriffs und der Gemeinde ab. Strukturelle Eingriffe wie das Entfernen tragender Wände sind genehmigungspflichtig. Eine rechtliche Klärung vor Projektbeginn ist zwingend.

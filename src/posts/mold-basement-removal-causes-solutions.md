@@ -72,22 +72,24 @@ Settlement cracks, thermal stress, or lack of maintenance create gaps through wh
 
 ## What Basement Mold Costs – And What Ignoring It Really Costs
 
-Typical cost ranges for basement remediation depending on the cause:
+Which measure applies is decided by the cause – not by preference and not by budget. These are the methods that actually work permanently against basement damp:
 
-| Measure | Cost Range |
+| Measure | What it addresses |
 |---|---|
-| Interior wall waterproofing (crystallisation) | €50–100/m² |
-| External waterproofing with drainage | €150–350/linear metre |
-| Horizontal damp-proof course (injection) | €80–150/linear metre |
-| Mold removal and disinfection | €30–80/m² |
-| Basement floor screed remediation | €60–120/m² |
+| Interior wall waterproofing (crystallisation) | Moisture pushing through the masonry |
+| External waterproofing with drainage | Water pressing in from outside |
+| Horizontal damp-proof course (injection) | Rising damp from the foundation |
+| Mold removal and disinfection | The infestation itself – never on its own, always with the cause |
+| Basement floor screed remediation | A saturated floor build-up |
 
-That sounds significant. Compare it with the cost of inaction:
+**Why there is no price range here:** Whether your basement needs one of these measures or four depends on the cause, and the cause is only established after diagnosis. A figure quoted in advance would be guesswork. What you get instead is a **binding fixed price following a free video assessment**.
+
+Whatever the remediation costs, compare it with the cost of inaction:
 
 - Basement mold reduces property value by 10–20%
 - Mold spores spread throughout the building, contaminating air quality in living areas
 - Structurally relevant damage from permanently saturated masonry develops within 5–10 years
-- A basement remediation costing €8,000 today often costs €25,000 or more in five years
+- And the damage grows faster than the effort to repair it: a contained waterproofing job becomes a full renovation after a few years
 
 **My experience in practice:** Not one owner who acted early has regretted it. Every owner who waited has paid for it.
 

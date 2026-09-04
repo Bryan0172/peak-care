@@ -89,14 +89,16 @@ Erst wenn Untergrund trocken (Restfeuchte unter 3%) und Ursache beseitigt ist: n
 
 Kalkputz hat natürliche biozide Eigenschaften und reguliert Feuchtigkeit besser als Gipsputz.
 
-## Schimmelflecken entfernen: Was kostet das?
+## Schimmelflecken entfernen: Welcher Aufwand steht dahinter?
 
-| Maßnahme | Kosten (Richtwert) |
+| Situation | Was nötig wird |
 |---|---|
-| Kleiner Fleck bis 0,5 m² — DIY mit Biozid | 20–50 € Material |
-| Professionelle Sanierung 1–3 m² | 300–600 € |
-| Große Flächen mit Putzabtrag und Ursachenbehebung | 800–2.500 € |
-| Kellerabdichtung (bei Feuchtigkeitseintritt von außen) | ab 1.200 € |
+| Kleiner Fleck bis 0,5 m² — DIY mit Biozid | Selbst machbar, Material aus dem Baumarkt (20–50 €) |
+| 1–3 m², Ursache bekannt und begrenzt | Professionelle Sanierung der Fläche |
+| Große Flächen | Putzabtrag **plus** Ursachenbehebung — die Fläche allein reicht nicht |
+| Feuchtigkeitseintritt von außen | Kellerabdichtung; die Wand innen zu behandeln wäre verlorene Arbeit |
+
+**Was das kostet, sagen wir Ihnen nach der Diagnose — verbindlich, als Festpreis nach einer kostenlosen Videoanalyse.** Eine Spanne vorab würde nur so lange halten, bis jemand hinter den Putz sieht.
 
 **Wichtig:** Günstige Lösungen ohne Ursachenbehebung kosten mehr — weil sie wiederholt werden müssen. Markus hat dreimal gestrichen. Beim vierten Mal haben wir die Ursache beseitigt. Seither kein Schimmel mehr.
 

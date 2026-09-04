@@ -95,18 +95,18 @@ White deposits = rising damp. This is one of the most reliable diagnostic signs 
 **Step 4: Correlate with rainfall**
 Does the dampness appear or worsen within 24–48 hours of heavy rain? → Hydrostatic pressure. Does it appear on hot, humid days regardless of rain? → Condensation.
 
-## Waterproofing Methods and Realistic Costs
+## Waterproofing Methods and When They Apply
 
-| Method | Best For | Approximate Cost |
+| Method | Best For | Note |
 |---|---|---|
-| Hygrometer + controlled ventilation | Condensation | €10–15 |
-| Electric dehumidifier | Condensation | €150–500 |
-| Injection waterproofing (horizontal barrier) | Rising damp | €80–150 per linear metre |
-| Internal cementitious tanking | Moderate hydrostatic pressure | €30–60 per m² |
-| External tanking with drainage | Severe hydrostatic pressure | €300–800 per linear metre |
-| Full basement waterproofing renovation | Widespread structural damage | €15,000–50,000 |
+| Hygrometer + controlled ventilation | Condensation | Self-help; device from around €10–15 in any DIY store |
+| Electric dehumidifier | Condensation | Self-help; units from around €150 in any DIY store |
+| Injection waterproofing (horizontal barrier) | Rising damp | Professional work — scope follows the linear metres |
+| Internal cementitious tanking | Moderate hydrostatic pressure | Professional work — scope follows the surface area |
+| External tanking with drainage | Severe hydrostatic pressure | Professional work — excavation; access governs the effort |
+| Full basement waterproofing renovation | Widespread structural damage | Professional work — several methods combined |
 
-**Important:** These are indicative figures. Actual costs depend heavily on the specific cause, extent of damage, access conditions, and local labour rates.
+**The first two rows you can handle yourself, and the shops price them openly.** For the four professional methods we deliberately quote no ranges: the actual effort depends on the cause, the extent of the damage, and how accessible the structure is — and none of those can be assessed from a distance. What you get instead is a **binding fixed price following a free video assessment**: a figure you can rely on, rather than a range that grows once work begins.
 
 ## The Most Common Mistakes in Basement Waterproofing
 

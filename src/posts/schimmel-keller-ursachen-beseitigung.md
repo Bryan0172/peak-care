@@ -71,22 +71,24 @@ Setzungsrisse, Temperaturspannungen oder mangelnde Wartung erzeugen Risse, durch
 
 ## Was Schimmel im Keller kostet – und was er wirklich kostet wenn man nichts tut
 
-Hier die typischen Kostenbereiche für Kellersanierungen, abhängig von der Ursache:
+Welche Maßnahme greift, entscheidet die Ursache – nicht der Wunsch und nicht das Budget. Das sind die Verfahren, die bei Kellerfeuchte tatsächlich dauerhaft wirken:
 
-| Maßnahme | Kostenbandbreite |
+| Maßnahme | Wogegen sie wirkt |
 |---|---|
-| Innenwandabdichtung (Kristallisation) | 50–100 €/m² |
-| Außenabdichtung mit Drainage | 150–350 €/lfd. Meter |
-| Horizontalsperre (Injektion) | 80–150 €/lfd. Meter |
-| Schimmelbeseitigung und Desinfektion | 30–80 €/m² |
-| Estrichsanierung Kellerboden | 60–120 €/m² |
+| Innenwandabdichtung (Kristallisation) | Feuchte, die durch das Mauerwerk drückt |
+| Außenabdichtung mit Drainage | Drückendes Wasser von außen |
+| Horizontalsperre (Injektion) | Aufsteigende Feuchte aus dem Fundament |
+| Schimmelbeseitigung und Desinfektion | Den Befall selbst – nie allein, immer mit der Ursache |
+| Estrichsanierung Kellerboden | Durchnässten Bodenaufbau |
 
-Das klingt zunächst nach viel. Vergleichen Sie es mit dem, was passiert wenn Sie nichts tun:
+**Warum hier keine Preisspanne steht:** Ob Ihr Keller eine dieser Maßnahmen braucht oder vier, hängt von der Ursache ab – und die steht erst nach der Diagnose fest. Eine Zahl vorab wäre geraten. Sie bekommen stattdessen einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse**.
+
+Was auch immer die Sanierung kostet: vergleichen Sie es mit dem, was passiert wenn Sie nichts tun:
 
 - Schimmel im Keller senkt den Immobilienwert um 10–20%
 - Schimmelsporen breiten sich im gesamten Gebäude aus und belasten die Raumluft in Wohnbereichen
 - Statik-relevante Schäden durch dauerhaft durchnässtes Mauerwerk entstehen nach 5–10 Jahren
-- Eine Kellersanierung die heute 8.000 € kostet, kostet in 5 Jahren oft 25.000 € oder mehr
+- Und der Schaden wächst schneller als der Aufwand, ihn zu beheben: aus einer begrenzten Abdichtung wird nach Jahren eine Vollsanierung
 
 **Meine Erfahrung aus der Praxis:** Kein einziger Eigentümer der früh gehandelt hat, hat das bereut. Jeder der gewartet hat, hat bezahlt.
 

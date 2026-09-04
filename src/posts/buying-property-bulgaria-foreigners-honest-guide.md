@@ -86,7 +86,7 @@ Estate agents in Bulgaria earn their commission on the sale — not on your sati
 
 ### Mistake 3: Underestimating renovation costs
 
-"A bit of renovation" in Bulgaria often means: new electrics, new windows, damp remediation, new flooring. This adds up quickly to €10,000–30,000.
+"A bit of renovation" in Bulgaria often means: new electrics, new windows, damp remediation, new flooring. That is not cosmetics — it is a construction project in its own right, and it is part of what decides whether the purchase price was a good one.
 
 **Solution:** Get a realistic understanding of what drives costs before you commit. Our guide explains scope, cost drivers, and what to insist on: [Renovation Costs in Bulgaria: What Foreign Buyers and Property Owners Should Expect](/blog/renovation-costs-bulgaria-guide).
 

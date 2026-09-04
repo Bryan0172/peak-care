@@ -83,7 +83,7 @@ Makler in Bulgarien verdienen am Verkauf — nicht an Ihrer Zufriedenheit danach
 
 ### Fehler 3: Renovierungskosten unterschätzen
 
-"Ein bisschen Renovierung" bedeutet in Bulgarien oft: neue Elektrik, neue Fenster, Feuchtigkeitssanierung, neuer Boden. Das summiert sich schnell auf 10.000–30.000 €.
+"Ein bisschen Renovierung" bedeutet in Bulgarien oft: neue Elektrik, neue Fenster, Feuchtigkeitssanierung, neuer Boden. Das ist keine Kosmetik, sondern ein eigenes Bauprojekt — und es entscheidet mit darüber, ob der Kaufpreis günstig war.
 
 **Lösung:** Holen Sie vor dem Kauf eine realistische Kostenschätzung ein.
 

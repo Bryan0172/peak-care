@@ -75,17 +75,19 @@ Bulgarian winters are severe. Apartments are kept tightly sealed. This amplifies
 
 Germany has DIN standards for sound insulation (DIN 4109) that are binding for new construction. Bulgaria has regulations, but enforcement is inconsistent. Buyers of new apartments often discover only after moving in that the acoustic performance specifications were not met.
 
-## Sound Insulation Costs in Bulgaria: What Does Noise Reduction Cost in Practice?
+## Sound Insulation in Practice: Which Measure Against Which Noise?
 
-Depending on measure and room size:
+The decisive question is not what a measure costs — but whether it works against **your** noise at all:
 
-| Measure | Cost Range |
-|---|---|
-| Impact sound insulation (floating screed, 20 m²) | €1,500 – €3,500 |
-| Independent wall lining (airborne sound, per 10 m² wall) | €800 – €2,000 |
-| Acoustic windows (per window) | €600 – €1,800 |
-| Balcony acoustic glazing (approx. 8 m²) | €1,200 – €3,000 |
-| Full acoustic remediation (30 m² apartment) | €5,000 – €12,000 |
+| Measure | Works against | Scope follows |
+|---|---|---|
+| Impact sound insulation (floating screed) | Footsteps, furniture moved above you | Floor area of the room |
+| Independent wall lining | Airborne sound through the wall (voices, TV) | Wall area |
+| Acoustic windows | Street and outdoor noise | Number and size of windows |
+| Balcony acoustic glazing | Outdoor noise where the balcony is the weak point | Glazed area |
+| Full acoustic remediation | Several sound paths at once | Size of the apartment |
+
+**Why no prices appear here:** because the figure is worthless without the diagnosis — and once the diagnosis exists you no longer need a range, you need a binding fixed price. You get one after a **free video assessment**.
 
 **Important:** These figures are only meaningful when preceded by an analysis of the actual noise source. Impact sound insulation does not help against airborne noise. New windows do not help against impact noise from above.
 
@@ -93,7 +95,7 @@ Depending on measure and room size:
 
 We regularly see apartments where owners have invested thousands of euros in measures that produced no improvement – because the wrong cause was addressed.
 
-**A real example:** Client in Sofia, old build, 1978. Complains of noise from above. Has impact sound insulation laid under laminate flooring in his own apartment. Cost: €2,200. Result: no difference. Why? Underlay beneath laminate in the lower apartment has no measurable acoustic effect – it must be installed in the upper apartment. Additionally, part of the problem was airborne sound (voices) transmitting through a thin partition wall.
+**A real example:** Client in Sofia, old build, 1978. Complains of noise from above. Has impact sound insulation laid under laminate flooring in his own apartment — a four-figure investment. Result: no difference. Why? Underlay beneath laminate in the lower apartment has no measurable acoustic effect – it must be installed in the upper apartment. Additionally, part of the problem was airborne sound (voices) transmitting through a thin partition wall.
 
 **The solution:** Before any investment, a professional acoustic analysis. In 30 minutes via video, the situation can be assessed and a concrete action plan prepared.
 
