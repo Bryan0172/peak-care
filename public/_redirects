@@ -57,18 +57,21 @@
 
 # 03.09.2026 (SEO/GEO, REQ-E-2026-09-02-ESKALATION-PC-DUBLETTEN-UND-STARTSEITE-EN-...):
 # ①/en/ dupliziert / byte-nah (defaultLang='en' seit 25.08. - / ist bereits die englische Seite).
-# ②Die zwei "deutschen" Slugs liefern denselben englischen Flieltext wie ihr englisches Pendant -
-# die lang-Verzweigung in den Komponenten deckt nur die Fussnoten-Navigation ab, nicht den
-# Haupttext (0 bzw. 7 lang==='de'-Treffer, alle 7 reine Footer-Links). Kein DE-Content vorhanden,
-# also Konsolidierung statt Uebersetzung. Ziel jeweils die englische URL, die die staerkeren
-# GSC-Signale traegt.
 /en                                          /                                            301!
 /en/                                         /                                            301!
 /en/*                                        /                                            301!
-/bauinspektion-vor-dem-kauf-bulgarien        /pre-purchase-building-inspection-bulgaria   301!
-/bauinspektion-vor-dem-kauf-bulgarien/       /pre-purchase-building-inspection-bulgaria/  301!
-/technische-immobilienueberwachung-bulgarien   /technical-property-oversight-bulgaria     301!
-/technische-immobilienueberwachung-bulgarien/  /technical-property-oversight-bulgaria/    301!
+# ‼️ 04.09.2026 (SEO/GEO, REQ-2026-08-25-PC-UND-PCAI-...-DUPLIKATE Punkt ④) — KORREKTUR
+# der ②-Redirects von oben (Zeilen jetzt entfernt): die 03.09.-Messung „kein DE-Content
+# vorhanden, 0 bzw. 7 lang==='de'-Treffer" war ein Methodenfehler - sie hat nach dem
+# woertlichen String `lang === 'de'` gegrept, aber beide Komponenten binden Sprache
+# NICHT ueber Inline-Ternaries, sondern ueber `content[lang]`-Objektzugriff. Direkt an
+# den Quelldateien nachgeprueft: beide Deutsch-Objekte tragen vollstaendigen,
+# eigenstaendigen Flieltext ueber alle Abschnitte (Hero/Problem/Services/Prozess/
+# Abschluss), keine Duennstelle. Root Cause war stattdessen ein Routing-Bug in
+# `LanguageContext.jsx` (DE_ROUTE_PATHS fehlte, Seiten fielen auf defaultLang='en'
+# zurueck) - heute in derselben Session behoben. Die Redirects hier haetten das
+# Symptom kaschiert, ohne den echten deutschen Content je auszuliefern. Entfernt,
+# damit beide Sprachvarianten wieder unter ihrer eigenen URL live gehen.
 
 # 26.08.2026 (Andreas-Direktauftrag, Soft-404-Behebung) — WICHTIGSTE ZEILE DIESER DATEI:
 # Hier stand '/* /index.html 200'. Damit antwortete JEDE unbekannte Adresse mit der
