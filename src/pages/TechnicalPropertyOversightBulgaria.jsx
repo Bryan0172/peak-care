@@ -178,6 +178,11 @@ export default function TechnicalPropertyOversightBulgaria() {
     title: c.meta.title,
     description: c.meta.description,
     canonical: c.meta.canonical,
+    alternates: [
+      { hreflang: 'de', href: 'https://peak-care.com/technische-immobilienueberwachung-bulgarien' },
+      { hreflang: 'en', href: 'https://peak-care.com/technical-property-oversight-bulgaria' },
+      { hreflang: 'x-default', href: 'https://peak-care.com/technical-property-oversight-bulgaria' },
+    ],
     jsonLd: [faqSchema, serviceSchema],
   })
 

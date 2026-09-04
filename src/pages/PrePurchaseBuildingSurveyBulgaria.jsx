@@ -340,6 +340,11 @@ export default function PrePurchaseBuildingSurveyBulgaria() {
     title: c.meta.title,
     description: c.meta.description,
     canonical: c.meta.canonical,
+    alternates: [
+      { hreflang: 'de', href: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien' },
+      { hreflang: 'en', href: 'https://peak-care.com/pre-purchase-building-inspection-bulgaria' },
+      { hreflang: 'x-default', href: 'https://peak-care.com/pre-purchase-building-inspection-bulgaria' },
+    ],
     jsonLd: buildSchema(c, lang),
   })
 

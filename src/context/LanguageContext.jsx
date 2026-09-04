@@ -14,6 +14,16 @@ const EN_ROUTE_PATHS = [
   '/technical-property-oversight-bulgaria',
 ]
 
+// REQ-2026-08-25-PC-UND-PCAI-ANTWORTEN-…-DUPLIKATE: same bug class as EN_ROUTE_PATHS
+// above, missing half — the German-slug counterpart of each pair above was never added
+// here, so it fell through to defaultLang ('en') and rendered byte-identical to its
+// English twin (same title, lang="en" under a German URL, both self-canonical). Fixed
+// symmetrically, same scope discipline as the 19.07. fix (exact known page pairs only).
+const DE_ROUTE_PATHS = [
+  '/bauinspektion-vor-dem-kauf-bulgarien',
+  '/technische-immobilienueberwachung-bulgarien',
+]
+
 // A186-SEO (29.07., Andreas-Go): /en und /bg sind jetzt echte, eigenständig indexierte
 // Homepage-Varianten (vorher: self-canonical zur deutschen Startseite, siehe
 // pc-en-bg-canonical-fix.md). Scope bewusst auf genau diese zwei Pfade begrenzt.
@@ -31,6 +41,7 @@ function initialLang() {
   if (typeof window === 'undefined') return defaultLang
   const path = window.location.pathname.replace(/\/$/, '') || '/'
   if (EN_ROUTE_PATHS.includes(path)) return 'en'
+  if (DE_ROUTE_PATHS.includes(path)) return 'de'
   if (LANG_ROUTE_PREFIXES[path]) return LANG_ROUTE_PREFIXES[path]
   const blogMatch = path.match(BLOG_POST_PATH)
   if (blogMatch) {
