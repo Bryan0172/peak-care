@@ -131,7 +131,7 @@ async function notifyBlocked(reason, data, formName, client) {
           · IP: ${esc(srcIp || 'unbekannt')}
           · User-Agent: ${esc((client && client.ua) || 'unbekannt')}
         </p>`;
-    await fetch(BREVO_URL, {
+    const alarmRes = await fetch(BREVO_URL, {
       method: 'POST',
       headers: { 'api-key': process.env.BREVO_API_KEY || '', 'content-type': 'application/json', accept: 'application/json' },
       body: JSON.stringify({
@@ -149,6 +149,18 @@ async function notifyBlocked(reason, data, formName, client) {
         </div>`,
       }),
     });
+    // fetch() wirft bei HTTP 4xx/5xx KEINE Exception — der catch unten faengt deshalb
+    // nur Netzwerkabbrueche. Ohne diese Pruefung verschwindet eine ABGELEHNTE Alarmmail
+    // (Kontingent, Rate-Limit, Empfaengersperre) spurlos, und das ist der letzte Draht,
+    // den wir haben: er feuert ueberhaupt nur, wenn schon etwas schiefgegangen ist.
+    // Bewusst OHNE Retry — der Alarm ist nicht idempotent, ein zweiter Versuch nach
+    // einem in Wahrheit zugestellten ersten erzeugt eine Dublette.
+    if (!alarmRes.ok) {
+      console.error(
+        'notifyBlocked rejected by Brevo',
+        `HTTP ${alarmRes.status}: ${await alarmRes.text()}`
+      );
+    }
   } catch (e) {
     // Benachrichtigung darf den Handler nie zum Absturz bringen.
     console.error('notifyBlocked failed', (e && e.message) || String(e));
