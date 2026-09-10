@@ -191,7 +191,7 @@ export const translations = {
       },
       renovation: {
         title: 'Renovation, Conversion & Extension',
-        desc: 'Full renovation, conversion, interior fit-out and energy modernization – planned, coordinated and delivered turnkey to Western European standards. Construction and labour costs well below DACH levels.',
+        desc: 'Full renovation, conversion, interior fit-out and energy modernization – planned, coordinated and delivered turnkey to Western European standards. Planned and delivered by one accountable team, to Western European standards.',
         features: ['Full renovation', 'Conversion & extension', 'Energy modernization', 'Turnkey, one point of contact'],
       },
       oversight: {
@@ -324,7 +324,7 @@ export const translations = {
       },
       renovation: {
         title: 'Реновиране, преустройство и разширение',
-        desc: 'Пълно реновиране, преустройство, вътрешно оформление и енергийна модернизация – планирано, координирано и изпълнено „до ключ" по западноевропейски стандарт. Строителни и трудови разходи значително под нивата в DACH.',
+        desc: 'Пълно реновиране, преустройство, вътрешно оформление и енергийна модернизация – планирано, координирано и изпълнено „до ключ" по западноевропейски стандарт. Планирано и изпълнено от един отговорен екип, по западноевропейски стандарт.',
         features: ['Пълно реновиране', 'Преустройство и разширение', 'Енергийна модернизация', 'До ключ, един контакт'],
       },
       oversight: {

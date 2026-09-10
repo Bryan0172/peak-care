@@ -123,7 +123,7 @@ We carry out inspections across Bulgaria. The inspection gives you a clear pictu
 
 **Are renovation costs in Bulgaria significantly lower than in Western Europe?**
 
-Labour costs are substantially lower — typically a fraction of equivalent rates in the UK, Germany, or the Netherlands. Materials vary: locally available materials are cheaper, but quality fittings are often imported. Overall renovation costs in Bulgaria are meaningfully lower than Western Europe, but the gap narrows when you factor in project management, quality oversight, and the cost of fixing work done incorrectly the first time.
+Labour is costed per project rather than by a published rate; the figure for a specific scope follows the site visit. Materials vary: locally available materials are cheaper, but quality fittings are often imported. Overall renovation costs in Bulgaria are meaningfully lower than Western Europe, but the gap narrows when you factor in project management, quality oversight, and the cost of fixing work done incorrectly the first time.
 
 **Should I factor in a contingency?**
 

@@ -163,7 +163,7 @@ const serviceSchema = {
     '@type': 'LocalBusiness',
     name: 'Peak Care',
     url: 'https://peak-care.com',
-    telephone: '+35989843656',
+    telephone: '+359898436561',
     areaServed: 'Bulgaria',
   },
   serviceType: 'Technical Building Assessment',

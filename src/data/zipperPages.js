@@ -324,7 +324,7 @@ export const zipperPages = [
     problems: [
       { icon: '🏗️', title: 'Most Bansko apartments need work after 15+ years', text: "Bansko's ski resort boom peaked in the mid-2000s. Many apartments now show their age: damp infiltration, cracked render, outdated bathrooms and kitchens. The renovation backlog is significant — and addressable." },
       { icon: '🌍', title: 'Coordinating renovation from abroad is the hard part', text: 'Finding reliable contractors, maintaining quality standards, managing schedules and dealing with surprises — all while living in another country. We act as your local project manager.' },
-      { icon: '📈', title: 'Renovation returns are strong in Bansko', text: 'A professionally renovated Bansko apartment commands 30–50% higher rental rates than unrenovated stock. At Bulgarian labour costs (40–60% below Western Europe), the numbers work.' },
+      { icon: '📈', title: 'Renovation returns are strong in Bansko', text: 'A professionally renovated apartment lets more reliably and needs fewer interventions between guests.' },
     ],
     service: {
       headline: 'Our Renovation Services in Bansko',
@@ -375,7 +375,7 @@ export const zipperPages = [
     problems: [
       { icon: '🏗️', title: 'Koordination ist das eigentliche Problem', text: 'Zuverlässige Handwerker finden, Qualität sicherstellen, Termine koordinieren – und das alles aus dem Ausland. Genau das übernehmen wir: ein Ansprechpartner für alle Gewerke, von der Diagnose bis zur Abnahme.' },
       { icon: '📐', title: 'Viele Immobilien haben Umbaupotenzial', text: 'Ob Grundrissänderung, Dachausbau, Anbauten oder komplette Innengestaltung – bulgarische Immobilien bieten oft ungenutzte Potenziale. Wir bewerten realistisch, was sinnvoll und rentabel ist.' },
-      { icon: '💶', title: 'Bulgarien: Westeuropäische Qualität, deutlich geringere Kosten', text: 'Arbeitskosten in Bulgarien liegen 40–60% unter westeuropäischem Niveau. Bei konsequenter Qualitätskontrolle nach deutschem Standard erzielen Sie Ergebnisse, die Sie auch zuhause erwarten würden – zu einem Bruchteil des Preises.' },
+      { icon: '💶', title: 'Bulgarien: Westeuropäische Ausführungsqualität', text: 'Wir planen, koordinieren und führen mit denselben Standards aus, die Sie aus dem DACH-Raum kennen. Den verbindlichen Rahmen für Ihr Vorhaben nennen wir nach der Besichtigung — auf Anfrage.' },
     ],
     service: {
       headline: 'Unsere Leistungen in ganz Bulgarien',

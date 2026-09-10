@@ -14,7 +14,7 @@ Kein Rohrbruch. Kein Leck. Der Schaden kam von unten — durch das Abflussrohr. 
 
 Was viele erst danach erfahren: Die Versicherung zahlt nicht. Denn es war kein Elementarschaden. Es war ein Rückstauereignis — und das ist in fast allen Policen nur versichert, wenn eine **Rückstausicherung** vorhanden war.
 
-Die gute Nachricht: Eine Rückstauklappe kostet 200 bis 500 Euro. Ein Wasserschaden ohne sie kostet 10.000 bis 50.000 Euro.
+Die gute Nachricht: Eine Rückstauklappe ist eine der günstigsten Maßnahmen am Haus. Ein Wasserschaden ohne sie gehört zu den teuersten.
 
 ## Was ist ein Rückstau — und wie entsteht er?
 
@@ -58,11 +58,11 @@ Gerade bei westeuropäischen Immobilienkäufern in Bulgarien ist der fehlende R�
 
 ## Was kostet eine Rückstauklappe?
 
-| Lösung | Kosten (Material + Einbau) | Geeignet für |
+| Lösung | Aufwand | Geeignet für |
 |---|---|---|
-| Einfacher Rückstauverschluss | 200–400 € | Kellerabläufe, einfache Situation |
-| Rückstauverschluss mit Wartungsöffnung | 300–500 € | Zugängliche Leitungen |
-| Hebeanlage mit Rückstausicherung | 1.500–4.000 € | Genutzte Keller mit Sanitär |
+| Einfacher Rückstauverschluss | gering, meist ein Termin | Kellerabläufe, einfache Situation |
+| Rückstauverschluss mit Wartungsöffnung | gering bis mittel | Zugängliche Leitungen |
+| Hebeanlage mit Rückstausicherung | höher, mit Elektroanschluss | Genutzte Keller mit Sanitär |
 
 Der Einbau dauert bei einem einfachen Verschluss einen halben Tag. Eine Hebeanlage benötigt 1–2 Tage Installationszeit.
 
