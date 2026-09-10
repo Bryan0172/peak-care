@@ -6,11 +6,14 @@
 // Mail-Relay — wer es findet, verbrennt unsere Absender-Reputation und unser Brevo-Konto.
 // Logik 1:1 aus lead.js (dort bewaehrt).
 
-// Faellt OPEN bei jedem technischen Fehler (leere/kaputte Cloudflare-Antwort, Netzwerkfehler):
-// ein Verifikations-Hickup darf nie einen echten Lead verschlucken. Ein FEHLENDES Token gilt
-// dagegen als Bot — das ist kein technischer Fehler, sondern eine ausgebliebene Challenge.
+// GO 10.09.2026 (Andreas, A453-PCAI-Muster): bisher fiel jeder technische Cloudflare-Fehler
+// OPEN (true) — bei einem oeffentlichen Mail-Relay-Endpoint (s. Kopf-Kommentar) ist das genau
+// die Luecke, vor der Turnstile hier ueberhaupt schuetzen soll. Rueckgabewert jetzt Tri-State
+// ('pass'|'fail'|'error'); die Aufrufstelle behandelt 'error' wie 'fail' — kein Kontakt
+// angelegt, keine Mail verschickt. Anders als bei lead.cjs geht dabei kein Interessent
+// verloren: ein blockierter Newsletter-Signup hat keinen Menschen, der auf Antwort wartet.
 async function verifyTurnstile(token, ip) {
-  if (!token) return false
+  if (!token) return 'fail'
   try {
     const body = new URLSearchParams()
     body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '')
@@ -20,19 +23,19 @@ async function verifyTurnstile(token, ip) {
       method: 'POST', body,
     })
     if (!res.ok) {
-      console.error(`Turnstile siteverify HTTP ${res.status} — failing open`)
-      return true
+      console.error(`Turnstile siteverify HTTP ${res.status} — treating as unverified, not as pass`)
+      return 'error'
     }
     const text = await res.text()
     let json
     try { json = JSON.parse(text) } catch (e) {
-      console.error('Turnstile siteverify returned non-JSON — failing open', text.slice(0, 200))
-      return true
+      console.error('Turnstile siteverify returned non-JSON — treating as unverified, not as pass', text.slice(0, 200))
+      return 'error'
     }
-    return json.success === true
+    return json.success === true ? 'pass' : 'fail'
   } catch (e) {
-    console.error('Turnstile verification threw — failing open to avoid losing a lead', (e && e.message) || String(e))
-    return true
+    console.error('Turnstile verification threw — treating as unverified, not as pass', (e && e.message) || String(e))
+    return 'error'
   }
 }
 
@@ -70,7 +73,8 @@ exports.handler = async (event) => {
   if (process.env.CLOUDFLARE_TURNSTILE_SECRET) {
     const token = body['cf-turnstile-response']
     const ip = event.headers['cf-connecting-ip'] || event.headers['x-forwarded-for'] || ''
-    if (!await verifyTurnstile(token, ip)) {
+    const verdict = await verifyTurnstile(token, ip)
+    if (verdict === 'fail' || verdict === 'error') {
       return { statusCode: 200, headers, body: JSON.stringify({ success: true }) }
     }
   }

@@ -6,11 +6,17 @@ const SENDER = { email: 'peakcare@peak-care.com', name: 'Peak Care Website' }; /
 const TO = [{ email: 'peakcare@peak-care.com', name: 'Peak Care' }];
 const BCC = [{ email: 'andy7203@googlemail.com' }];
 
-// Faellt OPEN bei jedem technischen Fehler (leere/kaputte Cloudflare-Antwort, Netzwerkfehler):
-// ein Verifikations-Hickup darf die Funktion nie abstuerzen oder einen echten Lead stillschweigend
-// verschlucken — Honeypot + isSpam bleiben als die anderen zwei Spam-Schichten ohnehin bestehen.
+// GO 10.09.2026 (Andreas, A453-PCAI-Muster auf PC uebertragen, REQ-2026-09-08-DER-HEUTE-
+// AUF-PCAI-GESCHLOSSENE-TURNSTILE-FAIL-OPEN-STEHT-WORTGLEICH-NOCH-IN-PEAK-CARE-COM): bisher
+// fiel jeder technische Cloudflare-Fehler OPEN (true) = wie ein bestandener Check behandelt.
+// Live gemessen (08./10.09.) war das kein seltener Randfall, sondern reproduzierbar der
+// Normalfall bei gestoertem siteverify — jede Uebermittlung MIT irgendeinem (auch erfundenem)
+// Token kam so ununterscheidbar von einem echten Lead durch. Rueckgabewert jetzt Tri-State
+// ('pass'|'fail'|'error') statt Boolean; die Aufrufstelle behandelt 'error' wie 'fail' —
+// notifyBlocked() statt stiller Zustellung, kein Interessent geht verloren (Rohdaten gehen
+// als Warnmail raus), nur der Zustellpfad wechselt vom Lead- ins Warn-Postfach.
 async function verifyTurnstile(token, ip) {
-  if (!token) return false;
+  if (!token) return 'fail';
   try {
     const body = new URLSearchParams();
     body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
@@ -20,19 +26,19 @@ async function verifyTurnstile(token, ip) {
       method: 'POST', body,
     });
     if (!res.ok) {
-      console.error(`Turnstile siteverify HTTP ${res.status} — failing open`);
-      return true;
+      console.error(`Turnstile siteverify HTTP ${res.status} — treating as unverified, not as pass`);
+      return 'error';
     }
     const text = await res.text();
     let json;
     try { json = JSON.parse(text); } catch (e) {
-      console.error('Turnstile siteverify returned non-JSON — failing open', text.slice(0, 200));
-      return true;
+      console.error('Turnstile siteverify returned non-JSON — treating as unverified, not as pass', text.slice(0, 200));
+      return 'error';
     }
-    return json.success === true;
+    return json.success === true ? 'pass' : 'fail';
   } catch (e) {
-    console.error('Turnstile verification threw — failing open to avoid losing a lead', (e && e.message) || String(e));
-    return true;
+    console.error('Turnstile verification threw — treating as unverified, not as pass', (e && e.message) || String(e));
+    return 'error';
   }
 }
 
@@ -213,12 +219,19 @@ exports.handler = async (event) => {
   if (process.env.CLOUDFLARE_TURNSTILE_SECRET) {
     const token = data['cf-turnstile-response'];
     const ip = event.headers['cf-connecting-ip'] || event.headers['x-forwarded-for'] || '';
-    if (!await verifyTurnstile(token, ip)) {
-      // PATCH 31.07.2026: DIES ist der Zweig, der bisher still verlor. verifyTurnstile faellt
-      // bei jedem technischen Fehler bewusst OPEN (true) — nur ein FEHLENDES oder abgelaufenes
-      // Token faellt CLOSED (false). Genau dieser Fall trifft echte Menschen: Turnstile-Token
-      // laufen nach ~300 s ab, wer laenger an seiner Nachricht schreibt, sendet ein leeres Token.
+    const verdict = await verifyTurnstile(token, ip);
+    if (verdict === 'fail') {
+      // PATCH 31.07.2026: DIES ist der Zweig, der bisher still verlor. Ein FEHLENDES oder
+      // abgelaufenes Token faellt CLOSED. Genau dieser Fall trifft echte Menschen: Turnstile-
+      // Token laufen nach ~300 s ab, wer laenger an seiner Nachricht schreibt, sendet ein leeres Token.
       await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
+      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+    }
+    if (verdict === 'error') {
+      // GO 10.09.2026 (Andreas, A453-PCAI-Muster): ein technischer Cloudflare-Fehler ist auf
+      // dieser Strecke kein seltener Randfall, sondern reproduzierbar der Normalfall gewesen —
+      // deshalb wie 'fail' behandeln statt den Lead ungekennzeichnet durchzulassen.
+      await notifyBlocked('Turnstile technisch nicht prüfbar — Verifikation ausgefallen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
       return { statusCode: 200, body: JSON.stringify({ ok: true }) };
     }
   }
