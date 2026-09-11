@@ -100,7 +100,18 @@ async function notifyBlocked(reason, data, formName, client) {
       .filter(([k]) => KNOWN_FIELDS.includes(k));
     const rows = payload
       .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
-      .join('');
+      .join('')
+      // PATCH 11.09.2026 (SEO/GEO, REQ-2026-09-10-DIE-FELDLISTE-DER-PC-MAIL-TAUGT-NICHT-ALS-
+      // TURNSTILE-BEWEISMITTEL): der Token selbst ist bewusst NICHT in KNOWN_FIELDS (kein
+      // verwertbares Secret im Postfach) -- aber dadurch war "Feld fehlt" hier nie von "Token war
+      // leer" zu unterscheiden. Gekuerzter Fingerabdruck (12 Zeichen + Laenge) macht den Zustand
+      // sichtbar, ohne ein nutzbares Token abzulegen. Zaehlt bewusst NICHT zu `payload`/`filled` --
+      // die Bot-Einstufung bleibt unveraendert.
+      + (() => {
+          const tok = String(data['cf-turnstile-response'] || '');
+          const fp = tok ? `${esc(tok.slice(0, 12))}… · ${tok.length} Z.` : '(leer)';
+          return `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee;color:#888">cf-turnstile-response</td><td style="padding:4px 12px;border-bottom:1px solid #eee;color:#888">${fp}</td></tr>`;
+        })();
     const filled = payload.filter(([, v]) => String(v || '').trim() !== '').length;
     // PATCH 03.09.2026 (SEO/GEO, REQ-2026-08-26-SEO-SE4-ZUSTELLTEST-...): die Heuristik zaehlte
     // bisher nur Nutzfelder und ignorierte den User-Agent — ein eigener curl-Zustelltest mit
