@@ -15,7 +15,7 @@ No burst pipe. No leak. The damage came from below — through the drain. The se
 
 What many homeowners only discover afterwards: the insurance does not pay. Because it was not storm damage. It was a backflow event — and that is only covered in most policies if a **backflow prevention system** was installed.
 
-The good news: a backflow preventer costs between 200 and 500 euros. A flood damage without one costs 10,000 to 50,000 euros.
+The good news: a backflow preventer is one of the least expensive measures on the house. A flood damage without one is among the most expensive.
 
 ## What Is Backflow — And How Does It Happen?
 
@@ -59,11 +59,11 @@ For Western European buyers purchasing property in Bulgaria, missing backflow pr
 
 ## What Does a Backflow Preventer Cost?
 
-| Solution | Cost (materials + installation) | Suitable for |
+| Solution | Effort | Suitable for |
 |---|---|---|
-| Basic backflow valve | €200–400 | Basement drains, simple situations |
-| Valve with inspection access | €300–500 | Accessible pipework |
-| Lifting station with backflow protection | €1,500–4,000 | Used basements with sanitary facilities |
+| Basic backflow valve | low, usually one appointment | Basement drains, simple situations |
+| Valve with inspection access | low to moderate | Accessible pipework |
+| Lifting station with backflow protection | higher, with electrical connection | Used basements with sanitary facilities |
 
 Installation of a simple valve takes half a day. A lifting station requires one to two days.
 
