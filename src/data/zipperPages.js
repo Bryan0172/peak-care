@@ -174,7 +174,7 @@ export const zipperPages = [
     problems: [
       { icon: '🏗️', title: 'Viele Bansko-Immobilien brauchen Sanierung', text: 'Besonders ältere Apartmentkomplexe aus den 2000er Jahren zeigen nach 15–20 Jahren erhebliche Mängel: Feuchtigkeit, veraltete Installationen, marode Dämmung. Das drückt den Wert – und lässt sich beheben.' },
       { icon: '🌍', title: 'Als Auslandseigentümer ohne lokales Netzwerk', text: 'Zuverlässige Handwerker zu finden, Qualität zu kontrollieren und Termine aus dem Ausland zu koordinieren – das ist die eigentliche Herausforderung. Genau dafür sind wir da.' },
-      { icon: '📈', title: 'Sanierung erhöht Mietrendite und Verkaufswert', text: 'Eine professionell sanierte Bansko-Wohnung erzielt 30–50% höhere Mietpreise als unsanierter Bestand. Die Investition rechnet sich in der Regel innerhalb von 2–4 Jahren.' },
+      { icon: '📈', title: 'Sanierung erhöht Mietrendite und Verkaufswert', text: 'Eine professionell sanierte Wohnung vermietet sich zuverlässiger und braucht zwischen Gästen weniger Eingriffe.' },
     ],
     service: {
       headline: 'Was wir in Bansko sanieren',
