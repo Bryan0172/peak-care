@@ -190,7 +190,7 @@ export const zipperPages = [
       { icon: '🤝', title: 'Festpreisangebote', desc: 'Kein Aufschlag nach Beginn der Arbeiten. Wir halten was wir anbieten.' },
     ],
     faqs: [
-      { q: 'Was kostet eine Komplettrenovierung in Bansko?', a: 'Das hängt vom Umfang ab (reine Renovierung vs. inkl. Küche und Bad). Den verbindlichen Festpreis erhalten Sie nach der kostenlosen Videoanalyse. Vorteil: Bau- und Arbeitskosten in Bulgarien liegen deutlich unter westeuropäischem Niveau.' },
+      { q: 'Was kostet eine Komplettrenovierung in Bansko?', a: 'Das hängt vom Umfang ab (reine Renovierung vs. inkl. Küche und Bad). Den verbindlichen Festpreis erhalten Sie nach der kostenlosen Videoanalyse — vorher wäre jede Zahl geraten. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
       { q: 'Kann ich die Sanierung aus Deutschland koordinieren?', a: 'Ja – das ist der Normalfall. Videoanalyse → Angebot → Auftragserteilung per E-Mail → Foto-Updates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Sanierung nicht vor Ort.' },
       { q: 'Wie lange dauert eine Komplettrenovierung?', a: 'Schwerpunktsanierungen (Schimmel, Feuchtigkeit): 1–5 Tage. Vollrenovierung 50 m²: 3–6 Wochen. Wir erstellen vorab einen verbindlichen Zeitplan.' },
     ],
@@ -340,7 +340,7 @@ export const zipperPages = [
       { icon: '💶', title: 'Fixed Prices', desc: 'No cost creep after work starts. We stand behind our quotes.' },
     ],
     faqs: [
-      { q: 'How much does a full renovation cost in Bansko?', a: 'It depends on the scope (basic renovation vs. including kitchen and bathroom). You receive a binding fixed-price quote after the free video assessment. The advantage: construction and labour costs in Bulgaria are well below Western European rates.' },
+      { q: 'How much does a full renovation cost in Bansko?', a: 'It depends on the scope (basic renovation vs. including kitchen and bathroom). You receive a binding fixed-price quote after the free video assessment — before that, any figure would be a guess. Construction and labour cost less in Bulgaria than in Western Europe; what decides the outcome is the standard of work you get for it.' },
       { q: 'Can I manage the renovation without being there?', a: 'Yes — this is our standard model. Video assessment → fixed quote → contract by email → photo updates → remote sign-off. Many of our clients have never visited during the renovation.' },
       { q: 'Do you only work in Bansko?', a: 'Bansko is our main base, but we operate across Bulgaria — including Sofia, Plovdiv and the Black Sea coast. Contact us with your location for availability.' },
     ],
@@ -391,7 +391,7 @@ export const zipperPages = [
       { icon: '📸', title: 'Foto-Updates & Festpreis', desc: 'Sie sehen jeden Fortschritt. Keine Überraschungen bei der Abrechnung.' },
     ],
     faqs: [
-      { q: 'Was kostet eine Komplettrenovierung in Bulgarien?', a: 'Das hängt vom Umfang ab (reine Renovierung, mit Küche und Bad, Umbau/Ausbau). Den exakten Festpreis nennen wir Ihnen nach der kostenlosen Videoanalyse und Vor-Ort-Besichtigung. Bau- und Arbeitskosten in Bulgarien liegen deutlich unter westeuropäischem Niveau.' },
+      { q: 'Was kostet eine Komplettrenovierung in Bulgarien?', a: 'Das hängt vom Umfang ab (reine Renovierung, mit Küche und Bad, Umbau/Ausbau). Den exakten Festpreis nennen wir Ihnen nach der kostenlosen Videoanalyse und Vor-Ort-Besichtigung — vorher wäre jede Zahl geraten. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
       { q: 'Kann ich die Renovierung aus Deutschland koordinieren?', a: 'Ja – das ist der Standard bei uns. Videoanalyse → Angebot → Beauftragung per E-Mail → laufende Fotoupdates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Maßnahme nicht in Bulgarien.' },
       { q: 'Arbeiten Sie nur in Bansko oder in ganz Bulgarien?', a: 'Wir arbeiten in ganz Bulgarien – mit Schwerpunkten in Bansko, Sofia, Plovdiv und an der Schwarzmeerküste. Teilen Sie uns Ihren genauen Standort mit, wir prüfen die Verfügbarkeit.' },
       { q: 'Was bedeutet "nach deutschem Standard"?', a: 'Wir verwenden Materialien und Ausführungsverfahren, die in Deutschland, Österreich und der Schweiz üblich sind – inklusive schriftlicher Dokumentation, Festpreisangeboten und strukturierter Qualitätskontrolle bei jedem Schritt.' },

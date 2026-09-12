@@ -21,9 +21,10 @@ One point we make in that first conversation: never buy on trust alone. An indep
 
 The numbers speak for themselves:
 
-- **Property prices Bansko:** €600–1,500 per m² (depending on location and condition)
-- **Comparison London:** £8,000–15,000 per m²
-- **Comparison Vienna:** €5,000–12,000 per m²
+- **Property prices, Bansko town:** €1,100–1,500 per m² — asking prices for apartments in mid-range locations, as at August 2026
+- **Razlog and the outlying villages:** €800–1,100 per m² — a separate market, and not the same thing as “Bansko”
+- **Comparison London:** £8,000–15,000 per m² (indicative)
+- **Comparison Vienna:** €5,000–12,000 per m² (indicative)
 - **EU member** since 2007 — legal security within the European framework
 - **Direct flights** from the UK, Germany, Austria to Sofia (2–3 hours)
 - **Bansko ski resort:** One of the best in Southeast Europe

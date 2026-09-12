@@ -16,9 +16,10 @@ Dieser Artikel ist kein Verkaufsprospekt. Er ist das, was wir unseren Kunden im 
 
 Die Zahlen sprechen für sich:
 
-- **Immobilienpreise Bansko:** 600–1.500 € pro m²
-- **Vergleich Wien:** 5.000–12.000 € pro m²
-- **Vergleich München:** 8.000–15.000 € pro m²
+- **Immobilienpreise Bansko-Ort:** 1.100–1.500 € pro m² — Angebotspreise für Wohnungen in mittleren Lagen, Stand August 2026
+- **Razlog und die Randlagen:** 800–1.100 € pro m² — ein eigener Markt, nicht dasselbe wie „Bansko“
+- **Vergleich Wien:** 5.000–12.000 € pro m² (Richtwert)
+- **Vergleich München:** 8.000–15.000 € pro m² (Richtwert)
 - **EU-Mitglied** seit 2007 — Rechtssicherheit im europäischen Rahmen
 - **Direktflüge** aus Deutschland, Österreich, UK nach Sofia (2–3 Stunden)
 - **Lebenshaltungskosten:** Ca. 40% unter deutschem Niveau
