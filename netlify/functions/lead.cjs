@@ -81,6 +81,24 @@ function botContentSignals(payload) {
 // Die Antwort an den Client bleibt unveraendert 200 {ok:true} — ein Bot soll weiterhin
 // "Erfolg" sehen. Es aendert sich AUSSCHLIESSLICH, dass wir es erfahren.
 async function notifyBlocked(reason, data, formName, client) {
+  // PATCH 17.09.2026 (SEO/GEO, auf REQ-2026-09-17-DIE-VERIFY-TEST-AUSNAHME-FUER-DIE-TURNSTILE-
+  // WARNMAIL-IST-DOKUMENTIERT-ABER-IM-CODE-NICHT-VORHANDEN-DREI-FEHLALARME-PRO-AUDIT-TAG):
+  // Der taegliche Funnel-Outcome-Check (`daily-system-health-audit`, SCHRITT 4.5) sendet drei
+  // synthetische Anfragen und loest die Turnstile-Challenge per Konstruktion NICHT. Jede davon
+  // erzeugte bisher eine Warnmail in genau dem Kanal, der einen ECHTEN blockierten Lead melden
+  // soll — die Abstumpfung, die die Ausnahme verhindern sollte. Die Ausnahme steht seit dem
+  // 10.07.2026 in der Task-Definition, war aber nie im Produktivcode vorhanden.
+  // Bewusst KEIN stiller Abbruch: der Vorgang geht ins Netlify-Funktionslog, damit eine
+  // missbraeuchliche Verwendung des Markers nachweisbar bleibt und nichts spurlos verschwindet.
+  // Ein echter Interessent ist nicht betroffen: dieser Pfad wird ausschliesslich erreicht,
+  // wenn die Uebermittlung ohnehin schon blockiert ist — unterdrueckt wird die MELDUNG, nie
+  // eine Zustellung. Der Marker wird ueber ALLE Werte geprueft, weil der Audit ihn je nach
+  // Marke in `name`, `message`, `company` oder `role` traegt.
+  const VERIFY_MARKER = 'system verify-test';
+  if (Object.values(data || {}).some((v) => String(v).toLowerCase().includes(VERIFY_MARKER))) {
+    console.log('notifyBlocked suppressed: SYSTEM VERIFY-TEST marker present', { reason, formName });
+    return;
+  }
   try {
     // PATCH 09.08.2026 (SEO/GEO, auf REQ-2026-08-09-SEO-BLOCKIERT-ALARM-...): Die Mail trug bisher
     // NUR die uebermittelten Felder. Bei einem Bot mit leerem Body ist die Tabelle leer — und sieht
