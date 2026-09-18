@@ -8,7 +8,7 @@ category: Gebäudeschutz
 readingTime: 12 min
 ---
 
-Ein feuchter Keller wird oft jahrelang ignoriert. „Es riecht ein bisschen muffig, aber das ist halt so." Nein – das ist nicht einfach so. Feuchtigkeit im Keller ist ein aktives Problem, das Ihr Gebäude von unten zerstört. Langsam, aber sicher.
+Eine nasse Kellerwand wird oft jahrelang ignoriert. „Es riecht ein bisschen muffig, aber das ist halt so." Nein – das ist nicht einfach so. Eine nasse Kellerwand ist ein aktives Problem, das Ihr Gebäude von unten zerstört. Langsam, aber sicher.
 
 In diesem Artikel zeigen wir Ihnen, wie Sie die Ursache identifizieren, welche Abdichtungsmethoden wirklich helfen – und wann Sie professionelle Hilfe brauchen.
 
@@ -24,7 +24,7 @@ Feuchtes Mauerwerk ist schwaches Mauerwerk. Die Folgen:
 
 Wer einen Keller kauft oder besitzt, der „ein bisschen feucht ist", sitzt auf einem Problem, das exponentiell teurer wird, je länger man wartet.
 
-## Die 4 Hauptursachen für Kellerfeuchtigkeit
+## Nasse Kellerwand: die 4 Hauptursachen im Überblick
 
 ### 1. Kondensationsfeuchtigkeit (Tauwasser)
 
