@@ -152,13 +152,38 @@ async function notifyBlocked(reason, data, formName, client) {
     const ua = (client && client.ua) || '';
     const NON_BROWSER_UA = /\bcurl\/|\bwget\/|python-requests|node-fetch|axios\/|Go-http-client|PostmanRuntime/i;
     const contentSignals = botContentSignals(payload);
-    const verdict = filled === 0
-      ? '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.'
+    // PATCH 19.09.2026 (SEO/GEO, A510-SEO, Andreas-Go im Chat "ja, mach das so"): die Einstufung
+    // war bisher NUR ein HTML-Text und damit maschinell nicht auswertbar. A510 verlangt, BOT-
+    // Faelle nicht mehr zuzustellen -- dafuer braucht es ein Flag. Bewusst als EIN Objekt je
+    // Zweig statt einer zweiten, danebenlaufenden Bedingungsliste: eine spaeter ergaenzte
+    // Heuristik muss ihr `bot`-Flag zwangsweise mitangeben und kann nicht still in die falsche
+    // Klasse rutschen. Der Verdikt-TEXT ist gegenueber der Vorfassung unveraendert.
+    const verdictInfo = filled === 0
+      ? { bot: true, html: '<strong style="color:#b00">BOT (sehr wahrscheinlich)</strong> — kein einziges Nutzfeld ausgefuellt; ein Mensch haette mindestens eines befuellt.' }
       : NON_BROWSER_UA.test(ua)
-      ? '<strong style="color:#b00">TESTVERKEHR/BOT (Nicht-Browser-User-Agent)</strong> — Nutzfelder gefuellt, aber der User-Agent stammt erkennbar nicht aus einem Browser.'
+      ? { bot: true, html: '<strong style="color:#b00">TESTVERKEHR/BOT (Nicht-Browser-User-Agent)</strong> — Nutzfelder gefuellt, aber der User-Agent stammt erkennbar nicht aus einem Browser.' }
       : contentSignals.length
-      ? '<strong style="color:#b00">BOT WAHRSCHEINLICH</strong> — Inhaltsmerkmale automatisierter Uebermittlung: ' + esc(contentSignals.join(' · ')) + '.'
-      : '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.';
+      ? { bot: true, html: '<strong style="color:#b00">BOT WAHRSCHEINLICH</strong> — Inhaltsmerkmale automatisierter Uebermittlung: ' + esc(contentSignals.join(' · ')) + '.' }
+      : { bot: false, html: '<strong style="color:#0a0">MENSCH MOEGLICH</strong> — es wurden Nutzfelder ausgefuellt, bitte inhaltlich pruefen.' };
+    const verdict = verdictInfo.html;
+    // A510-Torschluss. Steht bewusst HIER und nicht oben am Funktionskopf: die Einstufung
+    // entsteht erst an dieser Stelle (sie braucht `filled`, `ua` und `contentSignals`). Alles
+    // darueber -- Tabellenaufbau, Token-Fingerabdruck -- ist reine Textarbeit ohne Nebenwirkung.
+    // Ausnahme SE4: siehe ausfuehrliche Begruendung in banskoconcierge-website/netlify/
+    // functions/lead.js (gleiche Stelle). Kurz: SE4s EINZIGER Beleg ist genau diese Mail;
+    // wuerde sie unterdrueckt, meldete SE4 Gruen auf einer Messung, die nie stattfand.
+    const SE4_MARKER = 'se4-wirksamkeitsnachweis';
+    const isSe4Proof = Object.values(data || {}).some((v) => String(v).toLowerCase().includes(SE4_MARKER));
+    if (verdictInfo.bot && !isSe4Proof) {
+      // Kein stiller Abbruch (A510 verlangt internes Logging): strukturiert ins Netlify-
+      // Funktionslog. Ein Zaehler je Marke in einer Datei ist hier nicht moeglich -- die
+      // Function ist stateless, ihr Dateisystem read-only bzw. pro Aufruf verworfen.
+      console.log('A510 notifyBlocked suppressed: bot-classified', JSON.stringify({
+        marker: 'A510_BOT_SUPPRESSED', brand: 'PC', reason, formName,
+        filled, ua, ip: (client && client.ip) || '', at: new Date().toISOString(),
+      }));
+      return;
+    }
     // PATCH 03.09.2026 (SEO/GEO, REQ-2026-09-02-EIN-TEIL-DER-LEAD-BLOCKIERT-ALARME-KOMMT-VON-
     // UNSERER-EIGENEN-IP): STRATEGIE hat gemessen, dass ein Teil der Blockier-Alarme von der
     // ausgehenden IP DIESES Haushalts/Netzwerks stammt (deckungsgleich mit der healthchecks.io-
