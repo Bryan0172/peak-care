@@ -13,6 +13,7 @@ const LeadMagnet         = lazy(() => import('./pages/LeadMagnet'))
 const ZipperPage            = lazy(() => import('./pages/ZipperPage'))
 const TechnicalPropertyOversightBulgaria = lazy(() => import('./pages/TechnicalPropertyOversightBulgaria'))
 const PrePurchaseBuildingSurveyBulgaria  = lazy(() => import('./pages/PrePurchaseBuildingSurveyBulgaria'))
+const HausverwaltungBulgaria             = lazy(() => import('./pages/HausverwaltungBulgaria'))
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
 
 // Setzt <html lang> auf die tatsaechliche Seitensprache (P3 aus dem Web-Health-Report,
@@ -61,6 +62,8 @@ export default function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/schimmel-sofort-check" element={<LeadMagnet />} />
+                <Route path="/service/hausverwaltung-bulgarien" element={<HausverwaltungBulgaria />} />
+                <Route path="/service/building-management-bulgaria" element={<HausverwaltungBulgaria />} />
                 <Route path="/service/:slug" element={<ZipperPage />} />
                 <Route path="/technical-property-oversight-bulgaria" element={<TechnicalPropertyOversightBulgaria />} />
                 <Route path="/technische-immobilienueberwachung-bulgarien" element={<TechnicalPropertyOversightBulgaria />} />

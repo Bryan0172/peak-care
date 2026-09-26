@@ -12,6 +12,7 @@ const LanguageContext = createContext(null)
 const EN_ROUTE_PATHS = [
   '/pre-purchase-building-inspection-bulgaria',
   '/technical-property-oversight-bulgaria',
+  '/service/building-management-bulgaria',
 ]
 
 // REQ-2026-08-25-PC-UND-PCAI-ANTWORTEN-…-DUPLIKATE: same bug class as EN_ROUTE_PATHS
@@ -22,6 +23,7 @@ const EN_ROUTE_PATHS = [
 const DE_ROUTE_PATHS = [
   '/bauinspektion-vor-dem-kauf-bulgarien',
   '/technische-immobilienueberwachung-bulgarien',
+  '/service/hausverwaltung-bulgarien',
 ]
 
 // A186-SEO (29.07., Andreas-Go): /en und /bg sind jetzt echte, eigenständig indexierte
