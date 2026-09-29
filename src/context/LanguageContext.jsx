@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from 'react'
 import { translations, defaultLang } from '../i18n/translations'
 import { getPostBySlug } from '../data/posts'
+import { getZipperPage } from '../data/zipperPages'
 
 const LanguageContext = createContext(null)
 
@@ -39,6 +40,16 @@ const LANG_ROUTE_PREFIXES = { '/en': 'en', '/bg': 'bg' }
 // read it instead of hardcoding another static list.
 const BLOG_POST_PATH = /^\/blog\/([^/]+)$/
 
+// REQ-2026-09-28-WEB-HEALTH (11 aufeinanderfolgende Läufe geflaggt, ⑧): dieselbe
+// Bug-Klasse ein drittes Mal — /service/:slug (ZipperPage) trägt pro Eintrag ein
+// eigenes `lang`-Feld in zipperPages.js, das hier nie abgefragt wurde. ZipperPage.jsx
+// versucht es zusätzlich über react-helmet-async zu setzen, das laut App.jsx-Kommentar
+// für <html lang> nachweislich unzuverlässig ist — die einzige verlässliche Zuweisung
+// ist der synchrone HtmlLang-Effect in App.jsx, und der liest ausschließlich diesen
+// Context. Ohne diesen Fall fielen alle 5 deutschen Zipper-Seiten (u. a.
+// schimmelbeseitigung-bansko, kellerabdichtung-bansko) auf defaultLang ('en') zurück.
+const ZIPPER_PATH = /^\/service\/([^/]+)$/
+
 function initialLang() {
   if (typeof window === 'undefined') return defaultLang
   const path = window.location.pathname.replace(/\/$/, '') || '/'
@@ -49,6 +60,11 @@ function initialLang() {
   if (blogMatch) {
     const post = getPostBySlug(blogMatch[1])
     if (post?.lang === 'en') return 'en'
+  }
+  const zipperMatch = path.match(ZIPPER_PATH)
+  if (zipperMatch) {
+    const page = getZipperPage(zipperMatch[1])
+    if (page?.lang) return page.lang
   }
   return defaultLang
 }

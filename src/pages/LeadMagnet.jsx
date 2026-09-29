@@ -11,6 +11,19 @@ export default function LeadMagnet() {
     title: 'Schimmel-Sofort-Check – Kostenloser Selbsttest | Peak Care',
     description: 'Schimmel-Sofort-Check: kostenloser Selbsttest zum Download. Erkennen Sie in wenigen Minuten, ob und wie dringend Handlungsbedarf in Ihrer Immobilie besteht.',
     canonical: 'https://peak-care.com/schimmel-sofort-check/',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Schimmel-Sofort-Check',
+      description: 'Kostenloser Selbsttest, um in wenigen Minuten einzuschätzen, ob und wie dringend Handlungsbedarf bei Schimmelverdacht in einer Immobilie besteht.',
+      url: 'https://peak-care.com/schimmel-sofort-check/',
+      isAccessibleForFree: true,
+      publisher: {
+        '@type': 'LocalBusiness',
+        name: 'Peak Care',
+        url: 'https://peak-care.com',
+      },
+    },
   })
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
