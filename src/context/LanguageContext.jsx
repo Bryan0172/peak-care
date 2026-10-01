@@ -25,6 +25,10 @@ const DE_ROUTE_PATHS = [
   '/bauinspektion-vor-dem-kauf-bulgarien',
   '/technische-immobilienueberwachung-bulgarien',
   '/service/hausverwaltung-bulgarien',
+  // REQ-2026-09-28-WEB-HEALTH ⑧-Nachtrag (01.10., SEO/GEO): /datenschutz ist eine
+  // einzige, german-only Seite (useSEO, kein useLang()-Aufruf, keine EN-Fassung) —
+  // fiel damit auf defaultLang ('en') zurueck wie die Blog-Posts ohne lang-Frontmatter.
+  '/datenschutz',
 ]
 
 // A186-SEO (29.07., Andreas-Go): /en und /bg sind jetzt echte, eigenständig indexierte

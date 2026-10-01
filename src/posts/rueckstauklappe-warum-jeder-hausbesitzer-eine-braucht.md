@@ -1,5 +1,6 @@
 ---
 slug: rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht
+lang: "de"
 title: Rückstauklappe – Warum jeder Hausbesitzer eine braucht
 date: 2026-04-18
 author: Peak Care Team

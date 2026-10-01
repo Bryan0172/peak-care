@@ -1,5 +1,6 @@
 ---
 slug: renovierung-umbau-ausbau-bulgarien
+lang: "de"
 title: Renovierung und Umbau in Bulgarien – Was westeuropäische Eigentümer wirklich wissen müssen
 date: 2026-05-26
 author: Andreas Donner

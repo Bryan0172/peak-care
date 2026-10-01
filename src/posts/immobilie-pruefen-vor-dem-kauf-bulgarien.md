@@ -1,5 +1,6 @@
 ---
 slug: immobilie-pruefen-vor-dem-kauf-bulgarien
+lang: "de"
 title: Immobilie in Bulgarien prüfen vor dem Kauf – worauf ausländische Käufer und Investoren achten müssen
 date: 2026-07-02
 author: Peak Care Team

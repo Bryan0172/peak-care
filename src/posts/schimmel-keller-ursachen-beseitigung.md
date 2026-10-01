@@ -1,5 +1,6 @@
 ---
 slug: schimmel-keller-ursachen-beseitigung
+lang: "de"
 title: Schimmel im Keller beseitigen – Ursachen, Kosten und dauerhafte Lösung
 date: 2026-04-21
 author: Andreas Donner

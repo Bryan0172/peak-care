@@ -1,5 +1,6 @@
 ---
 slug: schimmel-im-winter-erkennen
+lang: "de"
 title: Schimmel im Winter erkennen – früh handeln, Schäden vermeiden
 date: 2025-12-10
 author: Peak Care Team

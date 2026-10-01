@@ -1,5 +1,6 @@
 ---
 slug: wasservorrat-anlegen-krisenvorsorge-anleitung
+lang: "de"
 title: Wasservorrat anlegen für die Krisenvorsorge – Die vollständige Anleitung
 date: 2026-05-05
 author: Peak Care Team

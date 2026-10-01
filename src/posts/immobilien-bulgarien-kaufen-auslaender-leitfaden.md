@@ -1,5 +1,6 @@
 ---
 slug: immobilien-bulgarien-kaufen-auslaender-leitfaden
+lang: "de"
 title: Immobilien in Bulgarien kaufen als Ausländer – Was Sie wirklich wissen müssen
 date: 2026-04-04
 author: Peak Care Team

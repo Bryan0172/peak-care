@@ -1,5 +1,6 @@
 ---
 slug: schimmel-badezimmer-ursachen-loesungen
+lang: "de"
 title: Schimmel im Badezimmer – Ursachen und wie Sie ihn dauerhaft beseitigen
 date: 2026-04-01
 author: Peak Care Team

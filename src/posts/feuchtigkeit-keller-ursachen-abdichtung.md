@@ -1,5 +1,6 @@
 ---
 slug: feuchtigkeit-keller-ursachen-abdichtung
+lang: "de"
 title: Nasse Kellerwand – Ursachen erkennen & dauerhaft abdichten (Bulgarien-Ratgeber)
 date: 2026-04-16
 author: Peak Care Team

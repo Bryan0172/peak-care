@@ -1,5 +1,6 @@
 ---
 slug: waermeplanung-2026-heizung-feuchte
+lang: "de"
 title: Die 65-%-Heizungspflicht ist gefallen – worauf Eigentümer jetzt bei der Feuchte achten müssen
 date: 2026-06-15
 lastmod: 2026-08-02

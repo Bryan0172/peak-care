@@ -1,5 +1,6 @@
 ---
 slug: schallschutz-wohnung-laerm-nachbarn-loesungen
+lang: "de"
 title: Schallschutz Wohnung Altbau – Trittschall, Lärm von Nachbarn und Außenlärm dauerhaft lösen
 date: 2026-04-21
 author: Andreas Donner

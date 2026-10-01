@@ -1,5 +1,6 @@
 ---
 slug: blackout-vorbereitung-zuhause-72-stunden
+lang: "de"
 title: Blackout – Wie Sie Ihr Zuhause auf 72 Stunden ohne Strom vorbereiten
 date: 2026-04-03
 author: Peak Care Team

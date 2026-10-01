@@ -1,5 +1,6 @@
 ---
 slug: krisensicheres-zuhause-fuer-familien
+lang: "de"
 title: Krisensicheres Zuhause für Familien – Der ehrliche Leitfaden für das, was jetzt kommt
 date: 2026-02-20
 author: Peak Care Team

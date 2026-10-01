@@ -1,5 +1,6 @@
 ---
 slug: blackout-ferienhaus-bulgarien
+lang: "de"
 title: Blackout im Ferienhaus Bulgarien – Was Eigentümer jetzt vorbereiten sollten
 date: 2026-05-26
 author: Peak Care Team
