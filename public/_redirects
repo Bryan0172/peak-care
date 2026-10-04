@@ -1,3 +1,12 @@
+# 04.10.2026 (SEO/GEO, web-health ⑩, Andreas: "wir nutzen die Domain aktiv"): peakcare-bansko.com
+# ist Netlify-Alias dieser Seite (vorher Namecheap-URL-Forward ohne HTTPS = Timeout). Alle Anfragen
+# auf diese Domain gehen mit 301 auf peak-care.com. MX/Mail der Domain liegen bei Google und sind
+# von diesen Web-Regeln nicht betroffen. Muss ganz oben stehen (vor dem Catch-all weiter unten).
+https://peakcare-bansko.com/*      https://peak-care.com/:splat  301!
+https://www.peakcare-bansko.com/*  https://peak-care.com/:splat  301!
+http://peakcare-bansko.com/*       https://peak-care.com/:splat  301!
+http://www.peakcare-bansko.com/*   https://peak-care.com/:splat  301!
+
 # 28.06.2026: Slug-Umbenennung "Baugutachten" -> "Bauinspektion" (kein geschützter Gutachter-Titel)
 # 03.09.2026 (SEO/GEO, REQ-E-2026-09-02-ESKALATION-PC-DUBLETTEN-...): Ziel direkt auf die
 # englische Fassung umgebogen (war zuvor bauinspektion-vor-dem-kauf-bulgarien, das jetzt selbst
