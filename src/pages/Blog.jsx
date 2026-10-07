@@ -27,16 +27,16 @@ export default function Blog() {
   const { lang, t } = useLang()
 
   useSEO({
-    title: 'Ratgeber: Schimmelschutz, Feuchte & Krisenvorsorge | Peak Care',
+    title: 'Ratgeber: Schimmelschutz, Feuchte & Gebäudepflege | Peak Care',
     description:
-      'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Krisenvorsorge für Haus- und Ferienhaus-Eigentümer in Bulgarien. Peak Care.',
+      'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Gebäudepflege für Haus- und Ferienhaus-Eigentümer in Bulgarien. Peak Care.',
     canonical: 'https://www.peak-care.com/blog',
   })
   const b = t.blog
 
   useSEO({
-    title: lang === 'en' ? 'Guides: Mould, Damp & Crisis Preparedness | Peak Care' : 'Ratgeber: Schimmelschutz, Feuchte & Krisenvorsorge | Peak Care',
-    description: lang === 'en' ? 'Practical guides on mould, basement damp and crisis preparedness for property owners in Bulgaria and Europe. Peak Care.' : 'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Krisenvorsorge für Eigentümer in Bulgarien und Europa. Peak Care.',
+    title: lang === 'en' ? 'Guides: Mould, Damp & Building Care | Peak Care' : 'Ratgeber: Schimmelschutz, Feuchte & Gebäudepflege | Peak Care',
+    description: lang === 'en' ? 'Practical guides on mould, basement damp and building care for property owners in Bulgaria and Europe. Peak Care.' : 'Praxisnahe Ratgeber zu Schimmel, Feuchtigkeit im Keller und Gebäudepflege für Eigentümer in Bulgarien und Europa. Peak Care.',
     canonical: 'https://peak-care.com/blog',
     // REQ-2026-07-29-WEB-HEALTH: /blog trug 0 JSON-LD trotz strukturierter Daten auf fast
     // jedem Beitrag darunter.
@@ -44,7 +44,7 @@ export default function Blog() {
       '@context': 'https://schema.org',
       '@type': 'Blog',
       '@id': 'https://peak-care.com/blog#blog',
-      name: lang === 'en' ? 'Guides: Mould, Damp & Crisis Preparedness' : 'Ratgeber: Schimmelschutz, Feuchte & Krisenvorsorge',
+      name: lang === 'en' ? 'Guides: Mould, Damp & Building Care' : 'Ratgeber: Schimmelschutz, Feuchte & Gebäudepflege',
       url: 'https://peak-care.com/blog',
       publisher: { '@type': 'Organization', name: 'Peak Care', url: 'https://peak-care.com' },
       inLanguage: lang === 'en' ? 'en' : 'de',

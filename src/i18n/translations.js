@@ -77,7 +77,7 @@ export const translations = {
     // News / Blog Block
     news: {
       headline: 'Aktuelles & Tipps',
-      sub: 'Praxiswissen zu Schimmelschutz, Gebäudepflege und Krisenvorsorge.',
+      sub: 'Praxiswissen zu Schimmelschutz, Gebäudepflege und Hausverwaltung.',
       allArticles: 'Alle Artikel →',
     },
 
@@ -117,7 +117,7 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz und Krisenvorsorge – 25+ Jahre internationale Erfahrung, seit 2024 in ganz Bulgarien.',
+      tagline: 'Schimmelschutz, Gebäudesanierung, Schallschutz sowie Haus- und Objektverwaltung – 25+ Jahre internationale Erfahrung, seit 2024 in ganz Bulgarien.',
       nav: 'Navigation',
       contact: 'Kontakt',
       rights: 'Alle Rechte vorbehalten.',
@@ -127,7 +127,7 @@ export const translations = {
     blog: {
       badge: 'Wissen & Tipps',
       headline: 'Blog',
-      sub: 'Praxisnahe Artikel zu Schimmelschutz, Gebäudepflege und Krisenvorsorge.',
+      sub: 'Praxisnahe Artikel zu Schimmelschutz, Feuchte und Gebäudepflege.',
       readMore: 'Artikel lesen →',
       reading: 'Lesezeit',
       notFound: 'Artikel nicht gefunden',
@@ -218,7 +218,7 @@ export const translations = {
     },
     news: {
       headline: 'News & Tips',
-      sub: 'Practical knowledge on mold protection, building maintenance and crisis preparedness.',
+      sub: 'Practical knowledge on mold protection, building maintenance and property management.',
       allArticles: 'All Articles →',
     },
     stats: {
@@ -252,7 +252,7 @@ export const translations = {
       privacy: 'Your data is used solely to process your inquiry.',
     },
     footer: {
-      tagline: 'Mold protection, building renovation, sound insulation and crisis preparedness – 25+ years of international experience, active across Bulgaria since 2024.',
+      tagline: 'Mold protection, building renovation, sound insulation and property management – 25+ years of international experience, active across Bulgaria since 2024.',
       nav: 'Navigation',
       contact: 'Contact',
       rights: 'All rights reserved.',
@@ -260,7 +260,7 @@ export const translations = {
     blog: {
       badge: 'Knowledge & Tips',
       headline: 'Blog',
-      sub: 'Practical articles on mold protection, building maintenance and crisis preparedness.',
+      sub: 'Practical articles on mold protection, damp and building maintenance.',
       readMore: 'Read article →',
       reading: 'Reading time',
       notFound: 'Article not found',
@@ -351,7 +351,7 @@ export const translations = {
     },
     news: {
       headline: 'Новини и съвети',
-      sub: 'Практически знания за защита от мухъл, поддръжка на сгради и кризисна готовност.',
+      sub: 'Практически знания за защита от мухъл, поддръжка на сгради и управление на имоти.',
       allArticles: 'Всички статии →',
     },
     stats: {
@@ -385,7 +385,7 @@ export const translations = {
       privacy: 'Данните ви се използват само за обработка на запитването.',
     },
     footer: {
-      tagline: 'Защита от мухъл, саниране на сгради и кризисна готовност – 25+ години международен опит, Банско, България.',
+      tagline: 'Защита от мухъл, саниране на сгради, шумоизолация и управление на имоти – 25+ години международен опит, Банско, България.',
       nav: 'Навигация',
       contact: 'Контакт',
       rights: 'Всички права запазени.',
@@ -393,7 +393,7 @@ export const translations = {
     blog: {
       badge: 'Знания и съвети',
       headline: 'Блог',
-      sub: 'Практически статии за защита от мухъл, поддръжка на сгради и кризисна готовност.',
+      sub: 'Практически статии за защита от мухъл, влага и поддръжка на сгради.',
       readMore: 'Прочети →',
       reading: 'Четене',
       notFound: 'Статията не е намерена',
