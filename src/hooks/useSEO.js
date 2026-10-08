@@ -18,8 +18,9 @@ export function useSEO({ title, description, canonical, image, type = 'website',
     setMeta('property', 'og:type', type)
     setMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow')
     if (canonical) {
-      setMeta('property', 'og:url', canonical)
-      setLink('canonical', canonical)
+      const c = withSlash(canonical)
+      setMeta('property', 'og:url', c)
+      setLink('canonical', c)
     }
     if (image) {
       setMeta('property', 'og:image', image)
@@ -31,7 +32,7 @@ export function useSEO({ title, description, canonical, image, type = 'website',
         const el = document.createElement('link')
         el.setAttribute('rel', 'alternate')
         el.setAttribute('hreflang', hreflang)
-        el.setAttribute('href', href)
+        el.setAttribute('href', withSlash(href))
         el.setAttribute('data-seo-hreflang', '')
         document.head.appendChild(el)
       }
@@ -69,4 +70,16 @@ function setLink(rel, href) {
     document.head.appendChild(el)
   }
   el.setAttribute('href', href)
+}
+
+// Slash-Form erzwingen (A629): 200 liegt unter /route/ (Prerender dist/<route>/index.html),
+// /route ohne Slash ist eine 301-Quelle. Canonical/og:url/hreflang muessen die servierte URL nennen.
+export function withSlash(u) {
+  if (!u) return u
+  try {
+    const x = new URL(u)
+    const last = x.pathname.split('/').pop()
+    if (!x.pathname.endsWith('/') && !last.includes('.')) x.pathname += '/'
+    return x.toString()
+  } catch { return u }
 }

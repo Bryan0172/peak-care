@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getZipperPage } from '../data/zipperPages'
+import { withSlash } from '../hooks/useSEO'
 
 export default function ZipperPage() {
   const { slug } = useParams()
@@ -39,7 +40,7 @@ export default function ZipperPage() {
       <Helmet htmlAttributes={{ lang: page.lang }}>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <link rel="canonical" href={schema.url} />
+        <link rel="canonical" href={withSlash(schema.url)} />
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchemaJson)}</script>
       </Helmet>
