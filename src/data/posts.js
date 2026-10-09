@@ -27,6 +27,8 @@ import waermeplanungHeizungFeuchte from '../posts/waermeplanung-2026-heizung-feu
 import immobiliePruefenDE from '../posts/immobilie-pruefen-vor-dem-kauf-bulgarien.md?raw'
 import rueckstauklappeDE from '../posts/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht.md?raw'
 import backflowPreventerEN from '../posts/backflow-preventer-why-every-homeowner-needs-one.md?raw'
+// SE6 Proof-of-Work-Fallstudie (A643-SEO, Andreas-Go 09.10.2026)
+import fallstudieSofiaDE from '../posts/fallstudie-feuchtesanierung-sofia-vier-ursachen.md?raw'
 
 function parseFrontmatter(raw) {
   // Normalize CRLF -> LF so frontmatter parsing is robust regardless of
@@ -79,6 +81,7 @@ export const allPosts = [
   parsePost(waermeplanungHeizungFeuchte),
   parsePost(rueckstauklappeDE),
   parsePost(backflowPreventerEN),
+  parsePost(fallstudieSofiaDE),
 ].sort((a, b) => new Date(b.date) - new Date(a.date))
 
 export function getPostBySlug(slug) {

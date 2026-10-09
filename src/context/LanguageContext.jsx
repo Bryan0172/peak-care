@@ -63,7 +63,9 @@ function initialLang() {
   const blogMatch = path.match(BLOG_POST_PATH)
   if (blogMatch) {
     const post = getPostBySlug(blogMatch[1])
-    if (post?.lang === 'en') return 'en'
+    // A643-SEO 09.10.2026 (Web-Health 09.10.): bisher nur 'en' abgefragt, die 16 DE-Posts
+    // fielen auf defaultLang ('en') zurueck -> englische Navigation/Fusszeile im Prerender.
+    if (post?.lang) return post.lang
   }
   const zipperMatch = path.match(ZIPPER_PATH)
   if (zipperMatch) {

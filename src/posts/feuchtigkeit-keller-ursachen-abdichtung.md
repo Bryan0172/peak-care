@@ -165,3 +165,4 @@ Planen Sie den Kauf einer Immobilie in Bulgarien und wollen solche Ursachen vora
 - [Schimmelflecken an der Wand dauerhaft entfernen](/blog/schimmelflecken-wand-entfernen-dauerhaft)
 - [Immobilie in Bulgarien kaufen – vorher prüfen lassen](/bauinspektion-vor-dem-kauf-bulgarien)
 - [Renovierung und Umbau in Bulgarien: Was Eigentümer wirklich wissen müssen](/blog/renovierung-umbau-ausbau-bulgarien)
+- [Fallstudie Sofia: vier Feuchtequellen in einem Haus](/blog/fallstudie-feuchtesanierung-sofia-vier-ursachen)
