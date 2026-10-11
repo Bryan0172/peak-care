@@ -67,6 +67,11 @@ function getRoutes() {
     '/technical-property-oversight-bulgaria', '/technische-immobilienueberwachung-bulgarien',
     '/bauinspektion-vor-dem-kauf-bulgarien', '/pre-purchase-building-inspection-bulgaria',
     '/en', '/bg', // A186-SEO 29.07.: eigene, indexierbare Sprachvarianten der Startseite
+    // PC3 "Vertrauensbasis" (11.10.2026): Krisenvorsorge ist aus der Sitemap raus, bleibt aber
+    // erreichbar. Ohne Prerender bekaemen Crawler hier die Startseiten-Huelle mit "index, follow".
+    '/blog/krisensicheres-zuhause-fuer-familien', '/blog/blackout-vorbereitung-zuhause-72-stunden',
+    '/blog/wasservorrat-anlegen-krisenvorsorge-anleitung', '/blog/blackout-preparation-home-72-hour-checklist',
+    '/blog/emergency-water-supply-crisis-preparedness-guide', '/blog/blackout-ferienhaus-bulgarien',
   ].forEach((r) => set.add(r))
   return [...set]
 }

@@ -84,6 +84,15 @@ export const allPosts = [
   parsePost(fallstudieSofiaDE),
 ].sort((a, b) => new Date(b.date) - new Date(a.date))
 
+// PC3 Korrekturpaket "Vertrauensbasis" (Andreas D2 11.10.2026, Andreas 13.08.: nicht loeschen):
+// Krisenvorsorge bleibt unter ihrer URL erreichbar, aber noindex und aus Blog-Index,
+// Startseiten-NewsBlock und "Weitere Artikel" heraus.
+export const UNLISTED_CATEGORIES = ['Krisenvorsorge']
+export function isUnlisted(post) {
+  return UNLISTED_CATEGORIES.includes(post?.category)
+}
+export const listedPosts = allPosts.filter((p) => !isUnlisted(p))
+
 export function getPostBySlug(slug) {
   return allPosts.find((p) => p.slug === slug)
 }

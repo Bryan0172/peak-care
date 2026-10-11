@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useSEO } from '../hooks/useSEO'
 import { useLang } from '../context/LanguageContext'
-import { allPosts } from '../data/posts'
+import { listedPosts as allPosts } from '../data/posts'
 
 function formatDate(dateStr, lang) {
   return new Date(dateStr).toLocaleDateString(

@@ -186,7 +186,7 @@ export default function LeadMagnet() {
                 Mehr als 6 Häkchen? Wir helfen Ihnen.
               </p>
               <a
-                href="/#contact"
+                href="/#kontakt"
                 className="text-green-700 hover:text-green-800 font-semibold underline"
               >
                 Jetzt Videoanalyse buchen →

@@ -167,7 +167,7 @@ The right time for an inspection is after the preliminary agreement (*предв
 
 If you're not yet at that stage and want an initial view before making an offer, we can carry out a preliminary remote assessment from photographs and video — this won't replace a full inspection but helps identify obvious concerns early.
 
-To arrange an inspection, [contact us](https://www.peak-care.com/#contact) with the property address and your intended purchase timeline.
+To arrange an inspection, [contact us](/#kontakt) with the property address and your intended purchase timeline.
 
 ---
 

@@ -129,7 +129,7 @@ Without an accurate inspection, quotes from contractors will be based on assumpt
 
 We can arrange the inspection and then manage the full process from there, or simply provide the inspection report for you to take to contractors yourself. Most clients who start with an inspection end up asking us to manage the project — once they understand what's involved, that tends to make more sense than managing it remotely without local representation.
 
-To discuss a specific project, [contact us](https://www.peak-care.com/#contact) with the property address and a brief description of what you're planning.
+To discuss a specific project, [contact us](/#kontakt) with the property address and a brief description of what you're planning.
 
 ---
 

@@ -124,7 +124,7 @@ Schimmel in Ihrer bulgarischen Immobilie — egal ob in Bansko, Sofia, Plovdiv o
 
 Schicken Sie uns ein kurzes Video. Keine Anreise, keine Wartezeit. In 30 Minuten wissen Sie was das Problem ist, was es kostet, und wie wir es dauerhaft lösen.
 
-**[Jetzt Videoanalyse buchen →](https://www.peak-care.com/#kontakt)**
+**[Jetzt Videoanalyse buchen →](/#kontakt)**
 
 ---
 

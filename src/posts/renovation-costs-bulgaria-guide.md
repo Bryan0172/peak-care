@@ -115,7 +115,7 @@ A visual estimate from photos gives an approximate order of magnitude. The actua
 
 We carry out inspections across Bulgaria. The inspection gives you a clear picture of the property's condition, a realistic scope for the renovation work needed, and a basis for accurate quoting.
 
-[Contact us](https://www.peak-care.com/#contact) with the property address and your renovation plans. We'll confirm what's needed for an accurate assessment.
+[Contact us](/#kontakt) with the property address and your renovation plans. We'll confirm what's needed for an accurate assessment.
 
 ---
 

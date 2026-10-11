@@ -130,7 +130,7 @@ Bulgaria — and Bansko in particular — is a real market with real opportuniti
 
 The best protection is knowledge: What does renovation actually cost? What condition is the building structure in? What will you face after the purchase?
 
-**Planning a property purchase in Bulgaria?** Talk to us first — before you buy. A [30-minute video analysis](https://www.peak-care.com/#contact) gives you an independent initial assessment of the property and renovation costs.
+**Planning a property purchase in Bulgaria?** Talk to us first — before you buy. A [30-minute video analysis](/#kontakt) gives you an independent initial assessment of the property and renovation costs.
 
 ---
 

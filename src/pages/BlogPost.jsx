@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useLang } from '../context/LanguageContext'
-import { getPostBySlug, allPosts } from '../data/posts'
+import { getPostBySlug, listedPosts, isUnlisted } from '../data/posts'
 import { useSEO } from '../hooks/useSEO'
 
 function formatDate(dateStr, lang) {
@@ -50,6 +50,7 @@ export default function BlogPost() {
     canonical: `https://peak-care.com/blog/${slug}`,
     image: POST_IMAGES[slug],
     type: 'article',
+    noindex: isUnlisted(post),
     // REQ-2026-07-29-WEB-HEALTH: 35 von 50 PC-Seiten ohne JSON-LD, praktisch der komplette
     // Blog (33 Beiträge) — hier einmal im Template statt 33x von Hand.
     jsonLd: post ? {
@@ -75,7 +76,7 @@ export default function BlogPost() {
     )
   }
 
-  const related = allPosts.filter((p) => p.slug !== slug).slice(0, 2)
+  const related = listedPosts.filter((p) => p.slug !== slug).slice(0, 2)
   const heroImg = POST_IMAGES[slug]
 
   return (

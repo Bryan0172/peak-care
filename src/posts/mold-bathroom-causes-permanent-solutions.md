@@ -125,7 +125,7 @@ In most cases, that means:
 2. Check and replace silicone seals (short-term)
 3. Root cause analysis if mold keeps returning (professional)
 
-Do you have bathroom mold that keeps coming back? [Book a 30-minute video analysis](https://www.peak-care.com/#contact) — we'll assess your situation, identify the cause, and give you a cost estimate. Direct, no travel costs, no obligation.
+Do you have bathroom mold that keeps coming back? [Book a 30-minute video analysis](/#kontakt) — we'll assess your situation, identify the cause, and give you a cost estimate. Direct, no travel costs, no obligation.
 
 ---
 

@@ -132,7 +132,7 @@ Der beste Schutz ist Wissen: Was kostet Renovierung wirklich? In welchem Zustand
 
 Genau dafür sind wir da.
 
-**Planen Sie einen Immobilienkauf in Bulgarien?** Sprechen Sie zuerst mit uns — bevor Sie kaufen. Eine [30-minütige Videoanalyse](https://www.peak-care.com/#contact) gibt Ihnen eine erste unabhängige Einschätzung des Objekts und der Renovierungskosten.
+**Planen Sie einen Immobilienkauf in Bulgarien?** Sprechen Sie zuerst mit uns — bevor Sie kaufen. Eine [30-minütige Videoanalyse](/#kontakt) gibt Ihnen eine erste unabhängige Einschätzung des Objekts und der Renovierungskosten.
 
 ---
 

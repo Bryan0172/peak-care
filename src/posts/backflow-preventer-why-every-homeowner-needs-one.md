@@ -91,7 +91,7 @@ If water damage is not completely dried within 24 to 48 hours, mould begins form
 
 After a backflow event, pumping out the water and drying the surfaces is not enough. Water penetrates into the masonry — and that is where the real danger begins. If you notice a musty smell after water damage, that is mould — even if you cannot see it yet.
 
-In that case, we recommend our **[free 30-minute video analysis](/videoanalyse)**: we assess the condition of your building remotely and give you a concrete recommendation for what needs to be done.
+In that case, we recommend our **[free 30-minute video analysis](/#kontakt)**: we assess the condition of your building remotely and give you a concrete recommendation for what needs to be done.
 
 ## Summary
 
@@ -106,7 +106,7 @@ Installing one costs a fraction of what flood damage costs. Postponing it means 
 
 ---
 
-**Questions about your property?** Our [free 30-minute video analysis](/videoanalyse) gives you a concrete assessment — no site visit required, conducted entirely online.
+**Questions about your property?** Our [free 30-minute video analysis](/#kontakt) gives you a concrete assessment — no site visit required, conducted entirely online.
 
 ---
 

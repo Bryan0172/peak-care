@@ -110,7 +110,7 @@ Peak Care berät und saniert Kellerabdichtungen, Zisternenanlagen und Wasserinst
 
 Ein 14-Tage-Vorrat für eine 4-köpfige Familie kostet unter 200 € — weniger als ein Restaurantabend.
 
-Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](https://www.peak-care.com/#contact), 30 Minuten, ohne Anreise.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 30 Minuten, ohne Anreise.
 
 ---
 

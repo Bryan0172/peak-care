@@ -109,7 +109,7 @@ Krisenvorsorge ist nicht nur Vorräte horten. Es geht auch darum, dass Ihr Gebä
 
 **Konkrete Schwachstellen, die Sie heute prüfen sollten:**
 
-**Rückstauklappe:** Bei Starkregen und überlasteten Kanalisationen – was mit dem Klimawandel immer häufiger passiert – kann Abwasser in Keller zurückdrücken. Eine Rückstauklappe kostet 200–500 € und verhindert, dass Ihr Keller zur Kloake wird.
+**Rückstauklappe:** Bei Starkregen und überlasteten Kanalisationen – was mit dem Klimawandel immer häufiger passiert – kann Abwasser in Keller zurückdrücken. Eine Rückstauklappe verhindert, dass Ihr Keller zur Kloake wird.
 
 **Keller dicht?** Ein überfluteter Keller zerstört Heizungsanlage, Elektroinstallation und Vorräte. Wenn Ihr Keller bei Regen feucht wird: Das ist kein kosmetisches Problem. Das ist eine Sicherheitslücke.
 

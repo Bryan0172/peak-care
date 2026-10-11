@@ -131,9 +131,9 @@ These investments don't only increase your crisis resilience — they add value 
 
 Start today. With 24 bottles. It takes 20 minutes.
 
-If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](https://www.peak-care.com/#contact), 30 minutes, no travel required.
+If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](/#kontakt), 30 minutes, no travel required.
 
-Questions about your property's infrastructure? [Book a video analysis](https://www.peak-care.com/#contact) — we'll assess what you can specifically improve.
+Questions about your property's infrastructure? [Book a video analysis](/#kontakt) — we'll assess what you can specifically improve.
 
 ---
 
