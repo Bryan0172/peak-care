@@ -15,6 +15,7 @@ const TechnicalPropertyOversightBulgaria = lazy(() => import('./pages/TechnicalP
 const PrePurchaseBuildingSurveyBulgaria  = lazy(() => import('./pages/PrePurchaseBuildingSurveyBulgaria'))
 const HausverwaltungBulgaria             = lazy(() => import('./pages/HausverwaltungBulgaria'))
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
+const MouldDampSiteVisit = lazy(() => import('./pages/MouldDampSiteVisit'))
 
 // Setzt <html lang> auf die tatsaechliche Seitensprache (P3 aus dem Web-Health-Report,
 // Andreas-Go 22.07.). Ohne das lieferte JEDE Route lang="de" — auch die englischen —,
@@ -70,6 +71,9 @@ export default function App() {
                 <Route path="/bauinspektion-vor-dem-kauf-bulgarien" element={<PrePurchaseBuildingSurveyBulgaria />} />
                 <Route path="/pre-purchase-building-inspection-bulgaria" element={<PrePurchaseBuildingSurveyBulgaria />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
+                {/* W2 PC-3 Landeseite (V-WERBEKAMPAGNE 13.10.2026): nur BG + EN */}
+                <Route path="/ogled-muhal-vlaga" element={<MouldDampSiteVisit />} />
+                <Route path="/mould-damp-site-visit-bulgaria" element={<MouldDampSiteVisit />} />
               </Routes>
             </Suspense>
           </main>

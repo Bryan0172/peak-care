@@ -14,6 +14,15 @@ const EN_ROUTE_PATHS = [
   '/pre-purchase-building-inspection-bulgaria',
   '/technical-property-oversight-bulgaria',
   '/service/building-management-bulgaria',
+  // W2 PC-3 Landeseite (13.10.2026), EN-Haelfte des BG/EN-Paars
+  '/mould-damp-site-visit-bulgaria',
+]
+
+// W2 PC-3 Landeseite (13.10.2026): erste eigenstaendige BG-Unterseite. Gleiche
+// Scope-Disziplin wie oben (nur das bekannte Seitenpaar), sonst fiele /ogled-muhal-vlaga
+// auf defaultLang zurueck und lieferte englischen Rahmen um bulgarischen Text.
+const BG_ROUTE_PATHS = [
+  '/ogled-muhal-vlaga',
 ]
 
 // REQ-2026-08-25-PC-UND-PCAI-ANTWORTEN-…-DUPLIKATE: same bug class as EN_ROUTE_PATHS
@@ -62,6 +71,7 @@ function initialLang() {
   const path = window.location.pathname.replace(/\/$/, '') || '/'
   if (EN_ROUTE_PATHS.includes(path)) return 'en'
   if (DE_ROUTE_PATHS.includes(path)) return 'de'
+  if (BG_ROUTE_PATHS.includes(path)) return 'bg'
   if (LANG_ROUTE_PREFIXES[path]) return LANG_ROUTE_PREFIXES[path]
   const blogMatch = path.match(BLOG_POST_PATH)
   if (blogMatch) {
