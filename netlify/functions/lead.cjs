@@ -302,14 +302,17 @@ exports.handler = async (event) => {
       // abgelaufenes Token faellt CLOSED. Genau dieser Fall trifft echte Menschen: Turnstile-
       // Token laufen nach ~300 s ab, wer laenger an seiner Nachricht schreibt, sendet ein leeres Token.
       await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
-      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+      // PATCH 14.10.2026 (SEO/GEO): 403 statt 200 -> das Formular zeigt dem Absender eine
+      // Fehlermeldung statt "gesendet". Die Alarmmail oben bleibt unveraendert (Rohdaten gehen
+      // weiter an peakcare@), es aendert sich nur, was der Mensch am Bildschirm sieht.
+      return { statusCode: 403, body: JSON.stringify({ ok: false, reason: 'turnstile' }) };
     }
     if (verdict === 'error') {
       // GO 10.09.2026 (Andreas, A453-PCAI-Muster): ein technischer Cloudflare-Fehler ist auf
       // dieser Strecke kein seltener Randfall, sondern reproduzierbar der Normalfall gewesen —
       // deshalb wie 'fail' behandeln statt den Lead ungekennzeichnet durchzulassen.
       await notifyBlocked('Turnstile technisch nicht prüfbar — Verifikation ausgefallen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
-      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+      return { statusCode: 503, body: JSON.stringify({ ok: false, reason: 'turnstile-unavailable' }) };
     }
   }
 
