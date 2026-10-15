@@ -19,6 +19,7 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
   const [turnstileToken, setTurnstileToken] = useState('')
   const turnstileRef = useRef(null)
   const turnstileWidgetId = useRef(null)
@@ -66,8 +67,24 @@ export default function ContactSection() {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
   }
 
+  // PATCH 14.10.2026 (SEO/GEO, Testanfrage PC-1 kam als "LEAD BLOCKIERT" an): bisher war der
+  // Knopf nur waehrend des Sendens gesperrt, nicht solange die Sicherheitspruefung lief, und
+  // die Function meldete auch bei blockierter Uebermittlung 200 -> Absender sah "gesendet",
+  // als Lead kam nichts an. Jetzt: Senden erst mit Token, und jede Ablehnung wird sichtbar.
+  function resetTurnstile() {
+    setTurnstileToken('')
+    if (turnstileWidgetId.current !== null && window.turnstile) {
+      try { window.turnstile.reset(turnstileWidgetId.current) } catch (e) { /* noop */ }
+    }
+  }
+
   async function handleSubmit(e) {
     e.preventDefault()
+    setError(false)
+    if (!turnstileToken) {
+      setError(true)
+      return
+    }
     setLoading(true)
     // Uebermittlung an die Brevo-Lead-Funktion (garantierte Inbox-Zustellung an peakcare@peak-care.com).
     // BREVO_API_KEY ist 24.06. in der PC-Netlify-Site gesetzt (All scopes). res.ok pruefen -> kein falsches
@@ -94,6 +111,8 @@ export default function ContactSection() {
       }
     } catch (err) {
       console.error('Kontaktformular-Uebermittlung fehlgeschlagen', err)
+      setError(true)
+      resetTurnstile()
     } finally {
       setLoading(false)
     }
@@ -268,9 +287,18 @@ export default function ContactSection() {
                     rendern -- crasht dabei intern und blockiert den gewollten expliziten render()-
                     Aufruf oben. Eigener Klassenname umgeht den impliziten Auto-Scan vollstaendig. */}
                 <div ref={turnstileRef} className="turnstile-widget" style={{marginBottom: '8px'}}></div>
-                <button type="submit" disabled={loading} className="btn-primary w-full">
+                <button type="submit" disabled={loading || !turnstileToken} className="btn-primary w-full">
                   {loading ? c.formSending : c.formSubmit}
                 </button>
+                {!turnstileToken && !loading && (
+                  <p className="text-xs text-gray-500 text-center">{c.formWaitCheck}</p>
+                )}
+                {error && (
+                  <p role="alert" className="text-sm text-red-600 text-center">
+                    {c.formError}{' '}
+                    <a href="https://wa.me/359898436561" className="underline font-semibold">WhatsApp</a>
+                  </p>
+                )}
 
                 <p className="text-xs text-gray-400 text-center">{c.privacy}</p>
               </form>
