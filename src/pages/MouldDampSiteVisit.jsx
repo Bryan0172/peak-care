@@ -30,7 +30,7 @@ const content = {
     ctaSecondary: 'Пишете в WhatsApp',
     stepsHeadline: 'Как протича',
     steps: [
-      { title: 'Изпращате ни населеното място и три снимки', text: 'на това, което виждате: засегнатата стена, ъгъла, помещението. Чрез формата или във WhatsApp.' },
+      { title: 'Изпращате ни населеното място и три снимки', text: 'на това, което виждате: засегнатата стена, ъгъла, помещението. Снимките изпращате във WhatsApp, а във формата пишете населеното място и кратко описание.' },
       { title: 'Идваме на оглед на място, в най-скоро време след запитването.', text: 'Измерваме стената на няколко височини спрямо сравнителна стена и при нужда проверяваме точката на оросяване и правим инфрачервени снимки. Така различаваме конденз от теч, покачваща се влага, топлинен мост или вода отвън.' },
       { title: 'Получавате кратко писмено резюме', text: 'какво сме установили на място и какво предлагаме, със снимки, за да решите, където и да сте.' },
       { title: 'Вие решавате.', text: 'Ако е нужна работа, я изпълняваме и отстраняваме причината, със строителен надзор и фотодокументация от отварянето на стената до крайното състояние. Ако не е нужна, ще знаете и това.' },
@@ -62,7 +62,7 @@ const content = {
     ctaSecondary: 'Message on WhatsApp',
     stepsHeadline: 'What happens',
     steps: [
-      { title: 'You send the town and three photos', text: 'of what you see: the affected wall, the corner, the room. By form or WhatsApp.' },
+      { title: 'You send the town and three photos', text: 'of what you see: the affected wall, the corner, the room. Photos go by WhatsApp; the form takes your town and a short description.' },
       { title: 'We visit on site, promptly after your request.', text: 'We measure the wall at several heights against a reference wall and, where needed, check the dew point and take infrared readings. This separates condensation from a leak, rising damp, a cold bridge or water entering from outside.' },
       { title: 'You receive a short written summary', text: 'of what we found on site and what we propose, with photographs, so you can decide from wherever you are.' },
       { title: 'You decide.', text: 'If work is needed, we carry it out and treat the cause, with supervision and photo documentation from the opening of the wall to the finished state. If no work is needed, you know that too.' },

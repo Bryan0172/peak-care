@@ -14,8 +14,10 @@ function readOrigin() {
 }
 
 export default function ContactSection() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const c = t.contact
+  // EIL 19.10.2026 (dot-Befund, MARKETING-Ersatztext): mailto-Betreff in Seitensprache statt immer deutsch.
+  const videoSubject = lang === 'en' ? 'Book a video analysis' : lang === 'bg' ? 'Заявка за видеоанализ' : 'Videoanalyse buchen'
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -143,7 +145,7 @@ export default function ContactSection() {
                   <h3 className="text-white font-bold text-lg">{c.videoTitle}</h3>
                   <p className="text-gray-400 text-sm mt-1 leading-relaxed">{c.videoDesc}</p>
                   <a
-                    href="mailto:peakcare@peak-care.com?subject=Videoanalyse buchen"
+                    href={`mailto:peakcare@peak-care.com?subject=${encodeURIComponent(videoSubject)}`}
                     className="inline-block mt-4 bg-teal-500 hover:bg-teal-400 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
                   >
                     {c.bookVideo}

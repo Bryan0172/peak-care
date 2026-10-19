@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
+import { counterpartPath } from '../data/langPairs'
 
 const LANGS = [
   { code: 'de', label: 'DE', full: 'Deutsch' },
@@ -12,6 +13,17 @@ export default function Header() {
   const { lang, setLang, t } = useLang()
   const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  // EIL 19.10.2026: Sprachwechsel auf einer Seite mit Gegenstueck fuehrt auf die Seite in
+  // dieser Sprache (src/data/langPairs.js); sonst wie bisher nur Rahmen umschalten.
+  const switchLang = (code) => {
+    setLang(code)
+    setLangOpen(false)
+    const target = counterpartPath(location.pathname, code)
+    if (target) navigate(`${target}/`)
+  }
 
   const navItems = [
     { to: '/', label: t.nav.home },
@@ -80,7 +92,7 @@ export default function Header() {
                 {LANGS.map((l) => (
                   <button
                     key={l.code}
-                    onClick={() => { setLang(l.code); setLangOpen(false) }}
+                    onClick={() => switchLang(l.code)}
                     className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center justify-between ${
                       lang === l.code
                         ? 'bg-teal-50 text-teal-700 font-semibold'
@@ -137,7 +149,7 @@ export default function Header() {
           {LANGS.map((l) => (
             <button
               key={l.code}
-              onClick={() => { setLang(l.code); setLangOpen(false) }}
+              onClick={() => switchLang(l.code)}
               className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors ${
                 lang === l.code ? 'bg-teal-500 text-white' : 'bg-gray-100 text-gray-700'
               }`}

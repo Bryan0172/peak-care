@@ -18,7 +18,9 @@ export default function Footer() {
       label: isEn ? 'Technical Property Oversight' : isBg ? 'Технически надзор на имоти' : 'Technische Immobilienüberwachung' },
     { to: '/service/renovierung-umbau-ausbau-bulgarien',
       label: isEn ? 'Renovation & Conversion' : isBg ? 'Саниране и преустройство' : 'Renovierung & Umbau' },
-    { to: '/service/schimmelbeseitigung-bansko',
+    // EIL 19.10.2026 (dot-Befund): EN zeigte auf die deutsche Seite. EN -> EN-Seite, BG -> die
+    // bulgarische Feuchte-/Schimmel-Seite (einzige BG-Seite zum Thema, war bisher ohne internen Link).
+    { to: isEn ? '/service/mold-removal-bansko' : isBg ? '/ogled-muhal-vlaga' : '/service/schimmelbeseitigung-bansko',
       label: isEn ? 'Mould & Damp' : isBg ? 'Мухъл и влага' : 'Schimmel & Feuchte' },
   ]
 

@@ -4,16 +4,16 @@ import { useLang } from '../context/LanguageContext'
 const content = {
   de: {
     meta: {
-      title: 'Hausverwaltung, eingetragen und versichert | Peak Care',
-      description: 'Peak Care ist im Register des MRRB als professioneller Hausverwalter nach Art. 47b ЗУЕС eingetragen, Bescheinigung Nr. 02-01-576. Hausverwaltung für Eigentümer und Eigentümergemeinschaften in Bulgarien.',
+      title: 'Hausverwaltung, eingetragen und berufshaftpflichtversichert | Peak Care',
+      description: 'Peak Care ist im Register des MRRB als professioneller Hausverwalter nach Art. 47b ЗУЕС eingetragen, Bescheinigung Nr. 02-01-576. Hausverwaltung für Eigentümer und Eigentümergemeinschaften in Bansko, Razlog, Blagoevgrad und Region, Sofia und Varna.',
       canonical: 'https://peak-care.com/service/hausverwaltung-bulgarien',
     },
     hero: {
       tag: 'PEAK CARE · BULGARIEN',
-      title: 'Hausverwaltung, eingetragen und versichert',
+      title: 'Hausverwaltung, eingetragen und berufshaftpflichtversichert',
     },
     intro: [
-      'Seit dem 10.09.2026 ist Peak Care im Register des Ministeriums für Regionalentwicklung und Bauwesen als professioneller Hausverwalter nach Art. 47b des Gesetzes über die Verwaltung von Wohnungseigentum (ЗУЕС) eingetragen, Bescheinigung Nr. 02-01-576, gültig bis 10.09.2031. Außerdem tragen wir die Berufshaftpflichtversicherung, die das Gesetz von eingetragenen Verwaltern verlangt.',
+      'Seit dem 10.09.2026 ist Peak Care im Register des Ministeriums für Regionalentwicklung und Bauwesen als professioneller Hausverwalter nach Art. 47b des Gesetzes über die Verwaltung von Wohnungseigentum (ЗУЕС) eingetragen, Bescheinigung Nr. 02-01-576, gültig bis 10.09.2031. Außerdem sind wir als professioneller Verwalter von Eigentümergemeinschaften und als Bauunternehmer berufshaftpflichtversichert.',
       'Der praktische Unterschied liegt nicht im Eintrag, sondern in seiner Prüfbarkeit. Wer aus dem Ausland eine Wohnung hier besitzt, muss sonst glauben, was ihm über den Verwalter gesagt wird. Diese Angabe lässt sich im öffentlichen Register nachschlagen, ohne uns zu fragen.',
     ],
     services: {
@@ -28,7 +28,7 @@ const content = {
     },
     forWhom: {
       headline: 'Für wen',
-      text: 'Eigentümer und Eigentümergemeinschaften von Wohngebäuden in Bulgarien, besonders Eigentümer, die nicht hier leben. Wir arbeiten direkt für die Eigentümer. Bestände anderer Verwaltungsfirmen übernehmen wir nicht.',
+      text: 'Eigentümer und Eigentümergemeinschaften von Wohngebäuden in Bulgarien, besonders Eigentümer, die nicht hier leben. Wir verwalten in Bansko, Razlog, Blagoevgrad und Region, Sofia und Varna. Wir arbeiten direkt für die Eigentümer. Bestände anderer Verwaltungsfirmen übernehmen wir nicht.',
     },
     connection: {
       headline: 'Wo es mit dem Gebäude selbst zusammenhängt',
@@ -41,16 +41,16 @@ const content = {
   },
   en: {
     meta: {
-      title: 'Building management, registered and insured | Peak Care',
-      description: 'Peak Care is entered in the MRDPW register as a professional property manager under Art. 47b ZUES, Certificate No. 02-01-576. Building management for owners and owners’ associations in Bulgaria.',
+      title: 'Building management, registered, with professional liability insurance | Peak Care',
+      description: 'Peak Care is entered in the MRDPW register as a professional property manager under Art. 47b ZUES, Certificate No. 02-01-576. Building management for owners and owners’ associations in Bansko, Razlog, Blagoevgrad and the region, Sofia and Varna.',
       canonical: 'https://peak-care.com/service/building-management-bulgaria',
     },
     hero: {
       tag: 'PEAK CARE · BULGARIA',
-      title: 'Building management, registered and insured',
+      title: 'Building management, registered, with professional liability insurance',
     },
     intro: [
-      'Since 10 September 2026 Peak Care has been entered in the register of the Ministry of Regional Development and Public Works as a professional property manager under Art. 47b of the Condominium Management Act (ZUES), Certificate No. 02-01-576, valid to 10 September 2031. We also hold the professional liability insurance the Act requires of registered managers.',
+      'Since 10 September 2026 Peak Care has been entered in the register of the Ministry of Regional Development and Public Works as a professional property manager under Art. 47b of the Condominium Management Act (ZUES), Certificate No. 02-01-576, valid to 10 September 2031. We also carry professional liability insurance as a professional manager of owners’ associations and as a building contractor.',
       'The practical difference is not the entry itself but the fact that it can be checked. An owner abroad otherwise has to take on trust what they are told about the person managing their building. This can be looked up in the public register without asking us.',
     ],
     services: {
@@ -65,7 +65,7 @@ const content = {
     },
     forWhom: {
       headline: 'Who this is for',
-      text: 'Owners and owners’ associations of residential buildings in Bulgaria, and especially owners who do not live here. We work for the owners directly. We do not take over portfolios from other management companies.',
+      text: 'Owners and owners’ associations of residential buildings in Bulgaria, and especially owners who do not live here. We manage buildings in Bansko, Razlog, Blagoevgrad and the region, Sofia and Varna. We work for the owners directly. We do not take over portfolios from other management companies.',
     },
     connection: {
       headline: 'Where it connects to the building itself',
@@ -87,7 +87,16 @@ const serviceSchema = {
     name: 'Peak Care',
     url: 'https://peak-care.com',
     telephone: '+359898436561',
-    areaServed: 'Bulgaria',
+    // EIL 19.10.2026 (Andreas-Regel Gebiete Hausverwaltung 17.10.): Bansko, Razlog, Blagoevgrad
+    // und Region, Sofia und Varna.
+    areaServed: [
+      { '@type': 'City', name: 'Bansko' },
+      { '@type': 'City', name: 'Razlog' },
+      { '@type': 'City', name: 'Blagoevgrad' },
+      { '@type': 'AdministrativeArea', name: 'Blagoevgrad Province' },
+      { '@type': 'City', name: 'Sofia' },
+      { '@type': 'City', name: 'Varna' },
+    ],
   },
   serviceType: 'Building Management',
   description: 'Peak Care is entered in the register of the Ministry of Regional Development and Public Works as a professional property manager under Art. 47b of the Condominium Management Act (ZUES), Certificate No. 02-01-576, valid to 10 September 2031.',

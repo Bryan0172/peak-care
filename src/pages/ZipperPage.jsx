@@ -1,15 +1,33 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getZipperPage } from '../data/zipperPages'
-import { withSlash } from '../hooks/useSEO'
+import { useSEO } from '../hooks/useSEO'
+import { getLangPair } from '../data/langPairs'
 
 export default function ZipperPage() {
   const { slug } = useParams()
   const page = getZipperPage(slug)
 
+  // EIL 19.10.2026 (dot-Befund): Title/Description/Canonical ueber useSEO statt Helmet. Helmet
+  // haengte eine ZWEITE <meta name="description"> an, die statische aus index.html (fuer alle
+  // Seiten identisch) blieb davor stehen -> 8 Leistungsseiten mit doppelter, gleicher
+  // Description. useSEO ersetzt den vorhandenen Tag. Dazu hreflang fuer die Sprachpaare.
+  const pair = page ? getLangPair(`/service/${slug}`) : null
+  const alternates = pair && pair.de && pair.en ? [
+    { hreflang: 'de', href: `https://peak-care.com${pair.de}` },
+    { hreflang: 'en', href: `https://peak-care.com${pair.en}` },
+    { hreflang: 'x-default', href: `https://peak-care.com${pair.en}` },
+  ] : null
+  useSEO({
+    title: page?.meta.title,
+    description: page?.meta.description,
+    canonical: page?.schema.url,
+    alternates,
+  })
+
   if (!page) return <Navigate to="/" replace />
 
-  const { meta, schema, hero, problems, service, trust, faqs, internalLinks } = page
+  const { schema, hero, problems, service, trust, faqs, internalLinks } = page
   const phone = '+359 89 843 6561'
   const email = 'peakcare@peak-care.com'
 
@@ -38,9 +56,6 @@ export default function ZipperPage() {
   return (
     <>
       <Helmet htmlAttributes={{ lang: page.lang }}>
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <link rel="canonical" href={withSlash(schema.url)} />
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchemaJson)}</script>
       </Helmet>
