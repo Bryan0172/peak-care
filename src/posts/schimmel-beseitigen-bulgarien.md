@@ -110,13 +110,13 @@ Viele unserer Kunden haben die gesamte Sanierung koordiniert, ohne selbst nach B
 Für kleine, oberflächliche Schimmelflecken (< 0,5 m²) auf nicht-porösem Untergrund (Fliesen, Glas): ja, mit geeignetem Biozid und Atemschutz. Für alles andere — besonders auf Putz, Gipskarton, Holz oder bei Schimmel nach Wasserschaden — ist professionelle Beseitigung die sicherere und langfristig günstigere Wahl.
 
 **Wie lange hält eine professionelle Schimmelbeseitigung?**
-Bei fachgerechter Ausführung mit Ursachenbehebung: dauerhaft. Wir geben 2 Jahre Garantie auf alle Sanierungsarbeiten. Ohne Ursachenbehebung: 3–18 Monate, dann kommt der Schimmel zurück.
+Bei fachgerechter Ausführung mit Ursachenbehebung: dauerhaft. Die Gewährleistung nennen wir fallbezogen in unserem schriftlichen Angebot; sie hängt von der Bausubstanz und der gewählten Ausführung ab. Ohne Ursachenbehebung: 3–18 Monate, dann kommt der Schimmel zurück.
 
 **Muss ich bei der Sanierung anwesend sein?**
 Nein. Wir koordinieren über Ihre Hausverwaltung oder einen lokalen Vertreter. Die Videoanalyse genügt für die Kostenschätzung.
 
 **Was passiert wenn der Schimmel nach der Sanierung wiederkommt?**
-Innerhalb der 2-jährigen Garantiezeit: kostenlose Nachbesserung. Wenn eine neue Ursache (z. B. neue Leckage) vorliegt, besprechen wir das transparent.
+Innerhalb der im Angebot vereinbarten Gewährleistung bessern wir kostenlos nach. Wenn eine neue Ursache (z. B. neue Leckage) vorliegt, besprechen wir das transparent.
 
 ---
 

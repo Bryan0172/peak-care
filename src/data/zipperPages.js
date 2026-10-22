@@ -6,8 +6,8 @@ export const zipperPages = [
     slug: 'schimmelbeseitigung-bansko',
     lang: 'de',
     meta: {
-      title: 'Schimmelbeseitigung Bansko – Professionell & mit 2 Jahren Garantie | Peak Care',
-      description: 'Schimmelbeseitigung in Bansko: Ursachenanalyse, dauerhafte Sanierung, 2 Jahre Garantie. Jetzt kostenlose Videoanalyse buchen – Peak Care, vor Ort in Bansko.',
+      title: 'Schimmelbeseitigung Bansko – Ursache finden, dauerhaft sanieren | Peak Care',
+      description: 'Schimmelbeseitigung in Bansko: Ursachenanalyse, dauerhafte Sanierung, Fotodokumentation. Jetzt kostenlose Videoanalyse buchen – Peak Care, vor Ort in Bansko.',
     },
     schema: {
       name: 'Peak Care – Schimmelbeseitigung Bansko',
@@ -18,7 +18,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · 25+ Jahre internationale Erfahrung · Vor Ort in Bansko',
       headline: 'Schimmelbeseitigung in Bansko',
-      sub: 'Schimmel in Ihrer Wohnung oder Ihrem Haus in Bansko? Wir beseitigen die Ursache – nicht nur das Symptom. Mit 2 Jahren Garantie auf alle Sanierungsarbeiten.',
+      sub: 'Schimmel in Ihrer Wohnung oder Ihrem Haus in Bansko? Wir beseitigen die Ursache – nicht nur das Symptom. Die Gewährleistung nennen wir fallbezogen in unserem schriftlichen Angebot.',
       cta: 'Kostenlose Videoanalyse buchen',
     },
     problems: [
@@ -31,13 +31,13 @@ export const zipperPages = [
       items: [
         { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Sie filmen die betroffenen Bereiche — wir analysieren in 30 Minuten und nennen Ihnen konkrete Maßnahmen und Kosten. Ohne Anreise, ohne Wartezeit.' },
         { step: '2', title: 'Vor-Ort-Diagnose', desc: 'Wir messen Feuchtigkeitswerte, identifizieren die Ursache (Kondensat, Leckage, Kältebrücke) und erstellen einen schriftlichen Sanierungsplan.' },
-        { step: '3', title: 'Professionelle Sanierung', desc: 'Beseitigung mit bioziden Mitteln, Trockenlegung, Abdichtung, Neuaufbau der betroffenen Flächen. 2 Jahre Garantie auf alle Arbeiten.' },
+        { step: '3', title: 'Professionelle Sanierung', desc: 'Beseitigung mit bioziden Mitteln, Trockenlegung, Abdichtung, Neuaufbau der betroffenen Flächen. Abschlussbericht mit Fotos.' },
       ],
     },
     trust: [
-      { icon: '🛡️', title: '2 Jahre Garantie', desc: 'Auf alle Sanierungsarbeiten. Schriftlich.' },
+      { icon: '🛡️', title: 'Schriftliches Angebot', desc: 'Ursache, Maßnahmen, Ablauf und Gewährleistung, bezogen auf Ihren Fall.' },
       { icon: '📍', title: 'Vor Ort in Bansko', desc: 'Kein langer Anfahrtsweg. Schnelle Reaktionszeiten.' },
-      { icon: '🏆', title: '500+ sanierte Objekte', desc: 'Davon viele Bansko-Ferienimmobilien westeuropäischer Eigentümer.' },
+      { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in Bansko.' },
     ],
     faqs: [
       { q: 'Was kostet Schimmelbeseitigung in Bansko?', a: 'Die Kosten hängen von Fläche und Ursache ab. Nach der kostenlosen Videoanalyse nennen wir Ihnen einen verbindlichen Festpreis — transparent und ohne Aufschlag vor Ort.' },
@@ -58,7 +58,7 @@ export const zipperPages = [
     lang: 'de',
     meta: {
       title: 'Schimmelbeseitigung Sofia – Professionell & dauerhaft | Peak Care',
-      description: 'Schimmelbeseitigung in Sofia: Ursachenanalyse, dauerhafte Sanierung mit 2 Jahren Garantie. Peak Care – 25+ Jahre Erfahrung, bulgarienweiter Service.',
+      description: 'Schimmelbeseitigung in Sofia: Ursachenanalyse, dauerhafte Sanierung, Fotodokumentation. Peak Care – 25+ Jahre Erfahrung, bulgarienweiter Service.',
     },
     schema: {
       name: 'Peak Care – Schimmelbeseitigung Sofia',
@@ -69,7 +69,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · 25+ Jahre internationale Erfahrung · Bulgarienweiter Service',
       headline: 'Schimmelbeseitigung in Sofia',
-      sub: 'Schimmelprobleme in Ihrer Sofia-Immobilie? Wir sanieren dauerhaft – mit Ursachenanalyse, professioneller Behandlung und 2 Jahren Garantie.',
+      sub: 'Schimmelprobleme in Ihrer Sofia-Immobilie? Wir sanieren dauerhaft – mit Ursachenanalyse, professioneller Behandlung und schriftlichem Angebot.',
       cta: 'Kostenlose Videoanalyse buchen',
     },
     problems: [
@@ -82,11 +82,11 @@ export const zipperPages = [
       items: [
         { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Schicken Sie uns ein kurzes Video der betroffenen Bereiche – wir analysieren in 30 Minuten und nennen Ihnen Kosten und nächste Schritte.' },
         { step: '2', title: 'Feuchtigkeitsmessung & Diagnose', desc: 'Wir identifizieren die genaue Ursache: Kondensation, Wasserschaden, Kältebrücke oder eindringende Feuchtigkeit von außen.' },
-        { step: '3', title: 'Sanierung mit Garantie', desc: 'Biozide Behandlung, Trockenlegung, Abdichtung, Wiederverschluss. 2 Jahre Garantie. Abschlussbericht mit Fotos.' },
+        { step: '3', title: 'Sanierung und Bericht', desc: 'Biozide Behandlung, Trockenlegung, Abdichtung, Wiederverschluss. Abschlussbericht mit Fotos.' },
       ],
     },
     trust: [
-      { icon: '🛡️', title: '2 Jahre Garantie', desc: 'Schriftlich auf alle Sanierungsarbeiten.' },
+      { icon: '🛡️', title: 'Schriftliches Angebot', desc: 'Ursache, Maßnahmen, Ablauf und Gewährleistung, bezogen auf Ihren Fall.' },
       { icon: '🇩🇪', title: 'DACH-Erfahrung', desc: '25+ Jahre Expertise aus Deutschland, Österreich, Schweiz – jetzt in Bulgarien.' },
       { icon: '📋', title: 'Schriftlicher Bericht', desc: 'Ursache, Maßnahmen, Fotos vorher/nachher – für Versicherungen und Vermieter.' },
     ],
@@ -108,7 +108,7 @@ export const zipperPages = [
     lang: 'de',
     meta: {
       title: 'Kellerabdichtung Bansko – Dauerhaft gegen Feuchtigkeit | Peak Care',
-      description: 'Kellerabdichtung in Bansko: Innen- und Außenabdichtung, Drainagesysteme, 2 Jahre Garantie. Kostenlose Videoanalyse – Peak Care Bansko.',
+      description: 'Kellerabdichtung in Bansko: Innen- und Außenabdichtung, Drainagesysteme, Fotodokumentation. Kostenlose Videoanalyse – Peak Care Bansko.',
     },
     schema: {
       name: 'Peak Care – Kellerabdichtung Bansko',
@@ -119,7 +119,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · Bansko · Kellerabdichtung & Trockenlegung',
       headline: 'Kellerabdichtung in Bansko',
-      sub: 'Nasser Keller in Ihrer Bansko-Immobilie? Wir dichten dauerhaft ab – von innen und außen. Mit 2 Jahren Garantie auf alle Abdichtungsarbeiten.',
+      sub: 'Nasser Keller in Ihrer Bansko-Immobilie? Wir dichten dauerhaft ab – von innen und außen. Die Gewährleistung nennen wir fallbezogen in unserem schriftlichen Angebot.',
       cta: 'Kostenlose Videoanalyse buchen',
     },
     problems: [
@@ -137,7 +137,7 @@ export const zipperPages = [
     },
     trust: [
       { icon: '💧', title: 'Innen + außen', desc: 'Wir kennen beide Methoden und wählen die für Ihre Situation sinnvollste.' },
-      { icon: '🛡️', title: '2 Jahre Garantie', desc: 'Schriftlich auf Abdichtungsarbeiten.' },
+      { icon: '🛡️', title: 'Schriftliches Angebot', desc: 'Ursache, Maßnahmen, Ablauf und Gewährleistung, bezogen auf Ihren Fall.' },
       { icon: '🔧', title: 'Lokale Fachkräfte', desc: 'Erfahrene Teams vor Ort in Bansko – kurze Wege, schnelle Termine.' },
     ],
     faqs: [
@@ -185,7 +185,7 @@ export const zipperPages = [
       ],
     },
     trust: [
-      { icon: '🏆', title: '500+ sanierte Objekte', desc: 'Davon viele in der Bansko-Region.' },
+      { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in der Region Bansko.' },
       { icon: '📸', title: 'Foto-Updates', desc: 'Regelmäßige Fortschrittsfotos – Sie sehen jeden Schritt ohne Anreise.' },
       { icon: '🤝', title: 'Festpreisangebote', desc: 'Kein Aufschlag nach Beginn der Arbeiten. Wir halten was wir anbieten.' },
     ],
@@ -205,8 +205,8 @@ export const zipperPages = [
     slug: 'mold-removal-bansko',
     lang: 'en',
     meta: {
-      title: 'Mold Removal Bansko – Professional Service, 2-Year Guarantee | Peak Care',
-      description: 'Professional mold removal in Bansko, Bulgaria. Root cause analysis, permanent remediation, 2-year guarantee. Free video assessment – Peak Care Bansko.',
+      title: 'Mold Removal Bansko – Find the Cause, Fix It for Good | Peak Care',
+      description: 'Professional mold removal in Bansko, Bulgaria. Root cause analysis, permanent remediation, photo documentation. Free video assessment – Peak Care Bansko.',
     },
     schema: {
       name: 'Peak Care – Mold Removal Bansko',
@@ -217,7 +217,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · Based in Bansko · 25+ Years Experience',
       headline: 'Mold Removal in Bansko',
-      sub: 'Mold in your Bansko property? We eliminate the root cause — not just the surface. Professional remediation with a 2-year written guarantee.',
+      sub: 'Mold in your Bansko property? We eliminate the root cause — not just the surface. We set out the warranty for your specific case in our written proposal.',
       cta: 'Book Free Video Assessment',
     },
     problems: [
@@ -230,13 +230,13 @@ export const zipperPages = [
       items: [
         { step: '1', title: 'Free Video Assessment', desc: 'Film the affected areas on your phone. We analyse within 30 minutes and give you specific recommendations and a cost estimate — without any travel costs.' },
         { step: '2', title: 'Root Cause Diagnosis', desc: 'We measure moisture levels, identify the source (condensation, leaks, thermal bridges, rising damp) and provide a written remediation plan.' },
-        { step: '3', title: 'Professional Remediation', desc: 'Biocide treatment, drying, sealing, surface restoration. Full documentation with before/after photos. 2-year written guarantee.' },
+        { step: '3', title: 'Professional Remediation', desc: 'Biocide treatment, drying, sealing, surface restoration. Full documentation with before/after photos.' },
       ],
     },
     trust: [
-      { icon: '🛡️', title: '2-Year Written Guarantee', desc: 'On all remediation work. No fine print.' },
+      { icon: '🛡️', title: 'Written Proposal', desc: 'Cause, measures, sequence and warranty, specific to your case.' },
       { icon: '📍', title: 'Based in Bansko', desc: 'Fast response times. No expensive travel charges.' },
-      { icon: '🏆', title: '500+ Properties Treated', desc: 'Many of them Bansko holiday apartments owned by British and European investors.' },
+      { icon: '🏆', title: '25+ Years of Experience', desc: 'International construction experience, now on the ground in Bansko.' },
     ],
     faqs: [
       { q: 'How much does mold removal cost in Bansko?', a: 'It depends on the affected area and the root cause. We provide a binding fixed-price quote after the free video assessment — transparent, with no surprises on site.' },
@@ -258,7 +258,7 @@ export const zipperPages = [
     lang: 'en',
     meta: {
       title: 'Mold Removal Sofia – Professional & Permanent | Peak Care Bulgaria',
-      description: 'Professional mold removal in Sofia, Bulgaria. Cause analysis, biocide treatment, 2-year guarantee. Free video assessment – Peak Care, nationwide service.',
+      description: 'Professional mold removal in Sofia, Bulgaria. Cause analysis, biocide treatment, photo documentation. Free video assessment – Peak Care, nationwide service.',
     },
     schema: {
       name: 'Peak Care – Mold Removal Sofia',
@@ -269,7 +269,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · Bulgaria-Wide Service · 25+ Years Experience',
       headline: 'Mold Removal in Sofia',
-      sub: "Sofia's panel-block apartments are among the most mold-prone in Europe. We fix it permanently — root cause first, 2-year written guarantee.",
+      sub: "Sofia's panel-block apartments are among the most mold-prone in Europe. We fix it permanently — root cause first, written proposal for your case.",
       cta: 'Book Free Video Assessment',
     },
     problems: [
@@ -282,11 +282,11 @@ export const zipperPages = [
       items: [
         { step: '1', title: 'Free Video Assessment', desc: 'Send us a short video of the affected areas. We assess the situation within 30 minutes and give you a cost estimate and action plan.' },
         { step: '2', title: 'Moisture Testing & Diagnosis', desc: 'We identify the exact cause: condensation, water ingress, thermal bridge or rising damp. Written diagnosis report provided.' },
-        { step: '3', title: 'Permanent Remediation', desc: 'Biocide treatment, structural drying, sealing, surface restoration. Before/after photo documentation. 2-year guarantee.' },
+        { step: '3', title: 'Permanent Remediation', desc: 'Biocide treatment, structural drying, sealing, surface restoration. Before/after photo documentation.' },
       ],
     },
     trust: [
-      { icon: '🛡️', title: '2-Year Guarantee', desc: 'Written guarantee on all remediation work.' },
+      { icon: '🛡️', title: 'Written Proposal', desc: 'Cause, measures, sequence and warranty, specific to your case.' },
       { icon: '🇩🇪', title: 'European Standards', desc: '25+ years experience from DACH countries — applied in Bulgaria.' },
       { icon: '📋', title: 'Written Report', desc: 'Suitable for insurance claims, rental disputes and property sales.' },
     ],
@@ -337,7 +337,7 @@ export const zipperPages = [
       ],
     },
     trust: [
-      { icon: '🏆', title: '500+ Properties Renovated', desc: 'Including many Bansko holiday apartments for UK and European owners.' },
+      { icon: '🏆', title: '25+ Years of Experience', desc: 'International construction experience, now on the ground in Bulgaria.' },
       { icon: '📸', title: 'Photo Updates', desc: 'Regular progress photos — you see every step without travelling.' },
       { icon: '💶', title: 'Fixed Prices', desc: 'No cost creep after work starts. We stand behind our quotes.' },
     ],
@@ -388,7 +388,7 @@ export const zipperPages = [
       ],
     },
     trust: [
-      { icon: '🏆', title: '500+ sanierte Objekte', desc: 'Davon viele Komplettrenovierungen für westeuropäische Eigentümer in Bulgarien.' },
+      { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in Bulgarien.' },
       { icon: '🇩🇪', title: 'DACH-Standard', desc: '25+ Jahre Erfahrung aus Deutschland, Österreich und der Schweiz – konsequent in Bulgarien angewendet.' },
       { icon: '📸', title: 'Foto-Updates & Festpreis', desc: 'Sie sehen jeden Fortschritt. Keine Überraschungen bei der Abrechnung.' },
     ],

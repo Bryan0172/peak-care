@@ -15,7 +15,7 @@ That is an expensive mistake.
 
 Basement mold is never an isolated problem. It is a symptom: your building is absorbing water. And when water penetrates masonry, it rarely stays in the basement. It migrates upward.
 
-After 25 years and more than 500 remediated properties across Europe, I see the same pattern repeatedly: owners who planned to "deal with the basement eventually" find themselves three years later facing a remediation bill three times higher than it would have been with early action.
+After 25 years of work across Europe, I see the same pattern repeatedly: owners who planned to "deal with the basement eventually" find themselves three years later facing a remediation bill three times higher than it would have been with early action.
 
 This article explains what basement mold really means, what it costs – and what permanently eliminates it.
 
@@ -110,7 +110,7 @@ Before any measure is taken, the source of moisture must be identified. Water pr
 - Condensation → Insulation, ventilation concept
 - Cracks → Crack injection or pressure grouting
 
-**Step 3: Mold removal with guarantee**
+**Step 3: Mold removal and documentation**
 Only once the cause is eliminated can existing mold be permanently removed. Professional mold removal includes biocide treatment, mechanical removal of affected material, and disinfection with long-term protection.
 
 **Step 4: Documentation**
@@ -148,7 +148,7 @@ Or download our **free Mold Instant Check** – 10 questions that immediately cl
 
 **peak-care.com/schimmel-sofort-check**
 
-25 years of experience. 500+ remediated properties. We know basements.
+25 years of experience. We know basements.
 
 ---
 

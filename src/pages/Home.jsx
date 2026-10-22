@@ -362,9 +362,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
             {[
-              { value: '500+', label: t.stats.objects },
+              { value: 'DE · EN · BG', label: t.stats.objects },
               { value: '25+', label: t.stats.years },
-              { value: '98%', label: t.stats.satisfaction },
+              { value: '1:1', label: t.stats.satisfaction },
               { value: '30 min', label: t.stats.response },
             ].map((s) => (
               <div key={s.label}>

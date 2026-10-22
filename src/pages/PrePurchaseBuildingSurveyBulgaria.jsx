@@ -18,7 +18,7 @@ const WA = 'https://wa.me/359898436561'
 const content = {
   de: {
     meta: {
-      title: 'Immobilie in Bulgarien kaufen: vorher prüfen lassen – unabhängiges Bau-Gutachten | Peak Care',
+      title: 'Immobilie in Bulgarien kaufen: vorher prüfen lassen – unabhängige technische Bauprüfung | Peak Care',
       description: 'Immobilie in Bulgarien kaufen? Vorher unabhängig prüfen lassen. Ein erfahrener Bauexperte prüft Bausubstanz, Feuchte, Statik & versteckte Mängel vor Ort – strukturierter Inspektionsbericht mit Fotodokumentation, Mängelliste und Renovierungskosten-Orientierung. Für internationale Investoren und Bauherren.',
       canonical: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien',
     },

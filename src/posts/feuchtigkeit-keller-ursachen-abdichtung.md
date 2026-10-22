@@ -143,7 +143,7 @@ Unser Vorgehen:
 
 2. **Vor-Ort-Diagnose:** Mit professionellen Feuchtigkeitsmessgeräten, Thermografiekamera und Erfahrung ermitteln wir die genaue Ursache.
 
-3. **Sanierungsplan:** Ein klares Angebot – welche Maßnahme in welcher Reihenfolge, was das kostet, und welches Ergebnis Sie erwarten können. Mit 2 Jahren Garantie auf unsere Abdichtungsarbeiten.
+3. **Sanierungsplan:** Ein klares Angebot – welche Maßnahme in welcher Reihenfolge, was das kostet, und welches Ergebnis Sie erwarten können. Die Gewährleistung nennen wir fallbezogen im selben schriftlichen Angebot.
 
 ## Fazit
 

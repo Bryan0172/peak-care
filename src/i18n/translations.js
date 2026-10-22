@@ -17,8 +17,8 @@ export const translations = {
       sub: 'Von der Begutachtung der Bausubstanz vor dem Kauf über Renovierung, Um- und Ausbau bis zur technischen Immobilienüberwachung aus der Ferne – klare Diagnose, koordinierte Umsetzung, kontrolliertes Ergebnis. Alles aus einer Hand, nach deutschem Standard. Schimmel, Feuchte und Schallschutz inklusive.',
       btnPrimary: 'Begutachtung anfragen',
       btnSecondary: 'Leistungen ansehen',
-      trust1: 'Über 500 sanierte Objekte',
-      trust2: 'Zertifizierte Fachkräfte',
+      trust1: '25+ Jahre internationale Erfahrung',
+      trust2: 'Ursache zuerst, dann Sanierung',
       trust3: 'Videoanalyse auf Anfrage',
     },
 
@@ -63,8 +63,8 @@ export const translations = {
       },
       mold: {
         title: 'Schimmel- & Feuchtigkeitssanierung',
-        desc: 'Professionelle Ursachenanalyse, Entfernung und dauerhafte Sanierung von Schimmel- und Feuchteschäden – eine unserer Spezialitäten, mit zertifizierten Methoden und 2 Jahren Garantie.',
-        features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', '2 Jahre Garantie'],
+        desc: 'Professionelle Ursachenanalyse, Entfernung und dauerhafte Sanierung von Schimmel- und Feuchteschäden – eine unserer Spezialitäten, mit schriftlichem Befund und Fotodokumentation.',
+        features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', 'Fotodokumentation'],
       },
       crisis: {
         title: 'Krisenvorsorge & Beratung',
@@ -83,9 +83,9 @@ export const translations = {
 
     // Stats
     stats: {
-      objects: 'Sanierte Objekte',
+      objects: 'Angebot und Bericht in Ihrer Sprache',
       years: 'Jahre internationale Erfahrung',
-      satisfaction: 'Zufriedene Kunden',
+      satisfaction: 'Ein Ansprechpartner von Befund bis Abnahme',
       response: 'Videoanalyse auf Anfrage',
     },
 
@@ -163,8 +163,8 @@ export const translations = {
       sub: 'From assessing the building fabric before you buy, through renovation, conversion and extension, to remote technical property oversight – clear diagnosis, coordinated execution, controlled results. Everything from one source, to German standards. Mold, moisture and sound insulation included.',
       btnPrimary: 'Request an assessment',
       btnSecondary: 'View services',
-      trust1: 'Over 500 renovated properties',
-      trust2: 'Certified specialists',
+      trust1: '25+ years of international experience',
+      trust2: 'Root cause first, then remediation',
       trust3: 'Video analysis on request',
     },
 
@@ -208,8 +208,8 @@ export const translations = {
       },
       mold: {
         title: 'Mold & Moisture Remediation',
-        desc: 'Professional root-cause analysis, removal and permanent remediation of mold and moisture damage – one of our specialties, with certified methods and a 2-year guarantee.',
-        features: ['Root cause analysis', 'Mold removal', 'Protective coating', '2-year guarantee'],
+        desc: 'Professional root-cause analysis, removal and permanent remediation of mold and moisture damage – one of our specialties, with a written assessment and photo documentation.',
+        features: ['Root cause analysis', 'Mold removal', 'Protective coating', 'Photo documentation'],
       },
       crisis: {
         title: 'Crisis Preparedness & Consulting',
@@ -224,9 +224,9 @@ export const translations = {
       allArticles: 'All Articles →',
     },
     stats: {
-      objects: 'Buildings Restored',
+      objects: 'Proposal and report in your language',
       years: 'Years International Experience',
-      satisfaction: 'Satisfied Clients',
+      satisfaction: 'One contact from assessment to handover',
       response: 'Video Analysis on Request',
     },
     contact: {
@@ -298,8 +298,8 @@ export const translations = {
       sub: 'От оценка на сградната конструкция преди покупка, през реновиране, преустройство и разширение, до дистанционен технически надзор на имота – ясна диагностика, координирано изпълнение, контролиран резултат. Всичко от един изпълнител, по немски стандарт. Мухъл, влага и шумоизолация включително.',
       btnPrimary: 'Заявете оценка',
       btnSecondary: 'Вижте услугите',
-      trust1: 'Над 500 реновирани обекта',
-      trust2: 'Сертифицирани специалисти',
+      trust1: '25+ години международен опит',
+      trust2: 'Първо причината, после санирането',
       trust3: 'Видеоанализ при запитване',
     },
 
@@ -343,8 +343,8 @@ export const translations = {
       },
       mold: {
         title: 'Саниране на мухъл и влага',
-        desc: 'Професионален анализ на причините, отстраняване и трайно саниране на щети от мухъл и влага – една от нашите специалности, със сертифицирани методи и 2 години гаранция.',
-        features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', '2 години гаранция'],
+        desc: 'Професионален анализ на причините, отстраняване и трайно саниране на щети от мухъл и влага – една от нашите специалности, с писмено становище и фотодокументация.',
+        features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', 'Фотодокументация'],
       },
       crisis: {
         title: 'Кризисна готовност и консултации',
@@ -359,9 +359,9 @@ export const translations = {
       allArticles: 'Всички статии →',
     },
     stats: {
-      objects: 'Санирани обекта',
+      objects: 'Оферта и доклад на вашия език',
       years: 'Години международен опит',
-      satisfaction: 'Доволни клиенти',
+      satisfaction: 'Един контакт от огледа до приемането',
       response: 'Видеоанализ при запитване',
     },
     contact: {

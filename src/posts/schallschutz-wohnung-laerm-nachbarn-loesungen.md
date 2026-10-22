@@ -110,8 +110,8 @@ Bei komplexeren Situationen oder wenn eine genaue Messung erforderlich ist, komm
 **Schritt 3: Maßnahmenplan und Angebot**
 Sie erhalten einen konkreten Maßnahmenplan – priorisiert nach Wirkung und Kosten. Kein Einheitspaket, sondern eine Lösung die zu Ihrer Wohnung und Ihrem Budget passt.
 
-**Schritt 4: Umsetzung mit Garantie**
-Wir führen die Arbeiten durch oder koordinieren lokale Handwerksbetriebe – mit Qualitätskontrolle und Garantie.
+**Schritt 4: Umsetzung und Abnahme**
+Wir führen die Arbeiten durch oder koordinieren lokale Handwerksbetriebe – mit Qualitätskontrolle. Die Gewährleistung nennen wir fallbezogen in unserem schriftlichen Angebot.
 
 ## Haben Sie ein Schallschutz- oder Lärmschutzproblem in Ihrer Wohnung?
 
@@ -129,7 +129,7 @@ Wenn Sie zwei oder mehr Fragen mit Ja beantwortet haben: Es gibt eine Lösung �
 
 **peak-care.com** | peakcare@peak-care.com | +359 89 843 6561
 
-25 Jahre Erfahrung. 500+ sanierte Objekte. Schallschutz ist lösbar.
+25 Jahre Erfahrung. Schallschutz ist lösbar.
 
 ---
 

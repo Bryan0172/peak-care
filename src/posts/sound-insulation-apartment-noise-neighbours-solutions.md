@@ -110,8 +110,8 @@ For more complex situations or when precise measurement is required, we come to 
 **Step 3: Action plan and quotation**
 You receive a concrete action plan – prioritised by effectiveness and cost. Not an off-the-shelf package, but a solution tailored to your apartment and budget.
 
-**Step 4: Implementation with guarantee**
-We carry out the work or coordinate local contractors – with quality control and guarantee.
+**Step 4: Implementation and handover**
+We carry out the work or coordinate local contractors – with quality control. We set out the warranty for your specific case in our written proposal.
 
 ## Do You Have a Sound Insulation Problem in Your Apartment in Bulgaria?
 
@@ -129,7 +129,7 @@ If you answered yes to two or more: there is a solution – the right analysis i
 
 **peak-care.com** | peakcare@peak-care.com | +359 89 843 6561
 
-25 years of experience. 500+ remediated properties. Sound insulation is solvable.
+25 years of experience. Sound insulation is solvable.
 
 ---
 

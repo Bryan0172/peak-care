@@ -15,7 +15,7 @@ Das ist ein teurer Irrtum.
 
 Schimmel im Keller ist nie ein isoliertes Problem. Er ist ein Symptom: Ihr Gebäude zieht Wasser. Und wenn Wasser ins Mauerwerk eindringt, geschieht das in der Regel nicht nur im Keller – sondern von dort aus weiter nach oben.
 
-Nach 25 Jahren und über 500 sanierten Objekten sehe ich dasselbe Muster immer wieder: Hausbesitzer, die den Keller „irgendwann mal" angehen wollten, stehen drei Jahre später vor einem Sanierungsschaden, der das Dreifache gekostet hätte, wenn man früher gehandelt hätte.
+Nach 25 Jahren Berufserfahrung sehe ich dasselbe Muster immer wieder: Hausbesitzer, die den Keller „irgendwann mal" angehen wollten, stehen drei Jahre später vor einem Sanierungsschaden, der das Dreifache gekostet hätte, wenn man früher gehandelt hätte.
 
 Dieser Artikel erklärt, was Schimmel im Keller wirklich bedeutet, was er kostet – und was ihn dauerhaft beseitigt.
 
@@ -110,7 +110,7 @@ Bevor eine einzige Maßnahme ergriffen wird, muss klar sein woher die Feuchtigke
 - Kondenswasser → Dämmung, Lüftungskonzept
 - Risse → Rissinjektion oder Verpressung
 
-**Schritt 3: Schimmelbeseitigung mit Garantie**
+**Schritt 3: Schimmelbeseitigung und Dokumentation**
 Erst wenn die Ursache beseitigt ist, kann der bestehende Schimmel dauerhaft entfernt werden. Professionelle Schimmelbeseitigung umfasst Biozid-Behandlung, mechanisches Abtragen des befallenen Materials und Desinfektion mit Langzeitschutz.
 
 **Schritt 4: Dokumentation**
@@ -148,7 +148,7 @@ Oder laden Sie unseren **kostenlosen Schimmel-Sofort-Check** herunter – 10 Fra
 
 **peak-care.com/schimmel-sofort-check**
 
-25 Jahre Erfahrung. 500+ sanierte Objekte. Wir kennen Keller.
+25 Jahre Erfahrung. Wir kennen Keller.
 
 ---
 

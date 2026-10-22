@@ -146,7 +146,7 @@ You show us the problem over a video call. We assess the visible signs, ask targ
 With professional moisture meters and thermal imaging, we establish exactly where the moisture is, how deep it has penetrated, and what is driving it.
 
 **3. Remediation plan**
-A clear proposal — which measures, in which sequence, at what cost, and what outcome you can expect. With a 2-year guarantee on all our waterproofing work.
+A clear proposal — which measures, in which sequence, at what cost, and what outcome you can expect. We set out the warranty for your specific case in the same written proposal.
 
 ## In Summary
 
