@@ -2,7 +2,8 @@ import { useSEO } from '../hooks/useSEO'
 
 // Datenschutzerklaerung peak-care.com — erstellt 2026-06-17.
 // Inhaltlich an die tatsaechliche Datenverarbeitung der Seite angepasst:
-// Netlify-Hosting + Netlify-Forms-Kontaktformular, Google Analytics 4 (Consent Mode v2),
+// Netlify-Hosting + Kontaktformular (Netlify Function lead -> Brevo, Spamschutz Cloudflare Turnstile),
+// Google Analytics 4 (Consent Mode v2),
 // Google Fonts. DSGVO-Betroffenenrechte.
 // 02.08.2026: Abschnitt "Zahlungsabwicklung (Stripe)" entfernt — E-Book-Shop komplett
 // abgeschaltet (Andreas-Entscheid), Website verarbeitet keine Zahlungsdaten mehr.
@@ -68,7 +69,8 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">7. Kontaktaufnahme &amp; Kontaktformular</h2>
-            <p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht), um Ihre Anfrage zu bearbeiten. Die Übermittlung des Formulars erfolgt über den Formular-Dienst unseres Hosters Netlify (Netlify Forms). Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen/Vertragsanbahnung) bzw. lit. f DSGVO (Bearbeitung von Anfragen). Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+            <p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht), um Ihre Anfrage zu bearbeiten. Die Übermittlung des Formulars erfolgt über eine Funktion unseres Hosters Netlify; die Anfrage wird uns anschließend per E-Mail über den Versanddienst <strong>Brevo</strong> (Brevo SAS, Paris, Frankreich) zugestellt, der als Auftragsverarbeiter für uns tätig ist. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen/Vertragsanbahnung) bzw. lit. f DSGVO (Bearbeitung von Anfragen). Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+            <p className="mt-3">Zum Schutz vor Spam und automatisierten Anfragen nutzen wir <strong>Cloudflare Turnstile</strong> (Cloudflare, Inc., San Francisco, USA). Dabei werden technische Daten wie Ihre IP-Adresse und Browser-Merkmale an Cloudflare übermittelt, um festzustellen, ob die Anfrage von einem Menschen stammt. Rechtsgrundlage ist unser berechtigtes Interesse an einem missbrauchsfreien Kontaktformular (Art. 6 Abs. 1 lit. f DSGVO). Eine Übermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework, hilfsweise der EU-Standardvertragsklauseln.</p>
           </section>
 
           <section>
