@@ -15,7 +15,7 @@ export default function Datenschutz() {
     canonical: 'https://peak-care.com/datenschutz',
   })
 
-  const updated = '2. August 2026'
+  const updated = '23. Oktober 2026'
 
   return (
     <div className="bg-white">
@@ -69,6 +69,13 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">7. Kontaktaufnahme &amp; Kontaktformular</h2>
             <p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht), um Ihre Anfrage zu bearbeiten. Die Übermittlung des Formulars erfolgt über den Formular-Dienst unseres Hosters Netlify (Netlify Forms). Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen/Vertragsanbahnung) bzw. lit. f DSGVO (Bearbeitung von Anfragen). Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">7a. Kontakt über WhatsApp und digitaler Assistent</h2>
+            <p>Wenn Sie uns über WhatsApp (+359 89 843 6561) schreiben, verarbeiten wir Ihre Telefonnummer, Ihren Profilnamen, Ihre Nachrichten und die von Ihnen gesendeten Fotos, um Ihre Anfrage zu bearbeiten (Art. 6 Abs. 1 lit. b DSGVO, vorvertragliche Maßnahmen, bzw. lit. f DSGVO, Bearbeitung von Anfragen). Anbieter des Dienstes ist WhatsApp Ireland Limited, Dublin, Irland (Meta-Konzern). Eine Übermittlung in die USA kann nicht ausgeschlossen werden; sie erfolgt nach den Angaben des Anbieters auf Grundlage des EU-US Data Privacy Framework bzw. der EU-Standardvertragsklauseln.</p>
+            <p className="mt-3">Erste Antworten auf WhatsApp kann ein KI-gestützter Assistent von Meta geben. Er erfasst Ihr Anliegen und übergibt es an einen Mitarbeiter von Peak Care. Verbindliche Aussagen zu Leistungen, Terminen und Kosten macht ausschließlich ein Mitarbeiter. Bitte senden Sie über WhatsApp keine Ausweis-, Bank- oder Gesundheitsdaten.</p>
+            <p className="mt-3">Chats ohne anschließenden Auftrag löschen wir spätestens nach sechs Monaten; im Übrigen gelten die gesetzlichen Aufbewahrungsfristen. Weitere Informationen: <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">Datenschutzrichtlinie von WhatsApp</a>.</p>
           </section>
 
           <section>
