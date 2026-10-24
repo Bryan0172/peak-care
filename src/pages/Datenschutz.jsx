@@ -16,7 +16,7 @@ export default function Datenschutz() {
     canonical: 'https://peak-care.com/datenschutz',
   })
 
-  const updated = '23. Oktober 2026'
+  const updated = '24. Oktober 2026'
 
   return (
     <div className="bg-white">
