@@ -12,6 +12,11 @@ export default function Footer() {
   const isBg = lang === 'bg'
   const svcHead = isEn ? 'Services' : isBg ? 'Услуги' : 'Leistungen'
   const services = [
+    // Sichtbarkeitsstrategie 26.10.2026 (Andreas-Freigabe, SEO-Beitrag 24.10.): /service/hausverwaltung-bulgarien/ war
+    // eine Waise (0 interne Links, Google: 'URL is unknown'). Site-weiter Link; die Seite gibt es nur auf DE und EN,
+    // BG-Besucher bekommen die EN-Seite mit '(EN)' im Label.
+    { to: isEn || isBg ? '/service/building-management-bulgaria' : '/service/hausverwaltung-bulgarien',
+      label: isEn ? 'Property Management' : isBg ? 'Управление на имоти (EN)' : 'Hausverwaltung' },
     { to: isEn ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien',
       label: isEn ? 'Pre-Purchase Building Inspection' : isBg ? 'Техническа проверка преди покупка' : 'Bauinspektion vor dem Kauf' },
     { to: isEn ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien',
