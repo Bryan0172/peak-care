@@ -1,6 +1,6 @@
 import { useSEO } from '../hooks/useSEO'
 import { useLang } from '../context/LanguageContext'
-import { Link } from 'react-router-dom'
+import { Link } from '../components/Link'
 
 const content = {
   de: {

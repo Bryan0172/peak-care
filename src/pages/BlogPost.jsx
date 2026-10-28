@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { Link, withTrailingSlash } from '../components/Link'
 import { Helmet } from 'react-helmet-async'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -143,7 +144,10 @@ export default function BlogPost() {
 
         {/* Content */}
         <div className="prose-content">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{ a: ({ node, href, children, ...rest }) => <a href={withTrailingSlash(href)} {...rest}>{children}</a> }}
+          >{post.content}</ReactMarkdown>
         </div>
 
         {/* CTA */}

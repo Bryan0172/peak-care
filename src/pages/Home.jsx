@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '../components/Link'
 import Hero from '../components/Hero'
 import ServiceCards from '../components/ServiceCards'
 import NewsBlock from '../components/NewsBlock'
@@ -151,7 +151,7 @@ export default function Home() {
               <div>
                 <h3 className="text-white font-semibold text-sm mb-1">{t.pillars.item3Title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{t.pillars.item3Text}</p>
-                <a href="/service/renovierung-umbau-ausbau-bulgarien" className="inline-block mt-2 text-xs text-teal-400 hover:text-teal-300 underline underline-offset-2">
+                <a href="/service/renovierung-umbau-ausbau-bulgarien/" className="inline-block mt-2 text-xs text-teal-400 hover:text-teal-300 underline underline-offset-2">
                   {t.pillars.cta} →
                 </a>
               </div>

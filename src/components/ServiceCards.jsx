@@ -1,4 +1,5 @@
 import { useLang } from '../context/LanguageContext'
+import { withTrailingSlash } from './Link'
 
 const VIDEO_SRC = '/Videoanalyse.mp4'
 
@@ -156,7 +157,7 @@ export default function ServiceCards() {
                   ))}
                 </ul>
                 {svc.link ? (
-                  <a href={svc.link} className="btn-secondary text-center text-sm">
+                  <a href={withTrailingSlash(svc.link)} className="btn-secondary text-center text-sm">
                     {moreText}
                   </a>
                 ) : (

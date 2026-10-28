@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from './Link'
 import { useLang } from '../context/LanguageContext'
 import { listedPosts as allPosts } from '../data/posts'
 

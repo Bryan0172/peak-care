@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, NavLink } from './Link'
 import { useLang } from '../context/LanguageContext'
 import { counterpartPath } from '../data/langPairs'
 

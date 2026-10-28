@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
+import { Link } from '../components/Link'
 import { Helmet } from 'react-helmet-async'
 import { getZipperPage } from '../data/zipperPages'
 import { useSEO } from '../hooks/useSEO'
