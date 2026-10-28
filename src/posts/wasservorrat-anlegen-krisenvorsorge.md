@@ -105,7 +105,7 @@ Wasser zu lagern ist so unspektakulär wie eine Versicherung abzuschließen. Man
 
 ---
 
-Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 30 Minuten, ohne Anreise.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 15 Minuten, ohne Anreise.
 
 ---
 

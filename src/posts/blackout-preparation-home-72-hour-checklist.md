@@ -136,7 +136,7 @@ You don't need to plan for an apocalyptic scenario. But 72 hours without electri
 
 **Start today with step one:** Check your torch. Batteries in the house? Powerbank charged?
 
-If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](/#kontakt), 30 minutes, no travel required.
+If you want to know how resilient your building actually is — damp, waterproofing, heating, roof: [book a video analysis](/#kontakt), 15 minutes, no travel required.
 
 ---
 

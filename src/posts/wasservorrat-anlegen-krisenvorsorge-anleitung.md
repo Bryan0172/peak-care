@@ -198,7 +198,7 @@ Das einzige, was Menschen davon abhält, ist der Gedanke: "Bei uns passiert das 
 
 Beginnen Sie heute. Mit 24 Flaschen. Das dauert 20 Minuten.
 
-Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 30 Minuten, ohne Anreise.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 15 Minuten, ohne Anreise.
 
 ---
 

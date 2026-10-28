@@ -97,11 +97,11 @@ We regularly see apartments where owners have invested thousands of euros in mea
 
 **A real example:** Client in Sofia, old build, 1978. Complains of noise from above. Has impact sound insulation laid under laminate flooring in his own apartment — a four-figure investment. Result: no difference. Why? Underlay beneath laminate in the lower apartment has no measurable acoustic effect – it must be installed in the upper apartment. Additionally, part of the problem was airborne sound (voices) transmitting through a thin partition wall.
 
-**The solution:** Before any investment, a professional acoustic analysis. In 30 minutes via video, the situation can be assessed and a concrete action plan prepared.
+**The solution:** Before any investment, a professional acoustic analysis. In 15 minutes via video, the situation can be assessed and a concrete action plan prepared.
 
 ## How We Work
 
-**Step 1: Video analysis (30 minutes)**
+**Step 1: Video analysis (15 minutes)**
 You show us the affected areas and describe when and how the noise occurs. We ask targeted questions (When is it worst? From which direction? Does it vary seasonally?) and make an initial assessment of the noise source.
 
 **Step 2: On-site inspection**
@@ -125,7 +125,7 @@ Five self-assessment questions:
 
 If you answered yes to two or more: there is a solution – the right analysis is the first step.
 
-**Book a free 30-minute video analysis now.** We assess your situation, identify the probable cause and tell you what can be done about it.
+**Book a free 15-minute video analysis now.** We assess your situation, identify the probable cause and tell you what can be done about it.
 
 **peak-care.com** | peakcare@peak-care.com | +359 89 843 6561
 

@@ -139,7 +139,7 @@ Wir arbeiten seit 25 Jahren mit Immobilien in Bulgarien – und Feuchtigkeitspro
 
 Unser Vorgehen:
 
-1. **Videoanalyse (30 Min., kostenlos):** Sie zeigen uns das Problem per Videoanruf. Wir beurteilen die sichtbaren Zeichen, stellen gezielte Fragen zur Geschichte des Problems – und geben Ihnen eine erste Einschätzung: Was ist die Ursache? Welche Maßnahmen sind realistisch?
+1. **Videoanalyse (15 Min., kostenlos):** Sie zeigen uns das Problem per Videoanruf. Wir beurteilen die sichtbaren Zeichen, stellen gezielte Fragen zur Geschichte des Problems – und geben Ihnen eine erste Einschätzung: Was ist die Ursache? Welche Maßnahmen sind realistisch?
 
 2. **Vor-Ort-Diagnose:** Mit professionellen Feuchtigkeitsmessgeräten, Thermografiekamera und Erfahrung ermitteln wir die genaue Ursache.
 
@@ -153,7 +153,7 @@ Der gefährlichste Fehler ist Abwarten. Wasser findet immer mehr Wege ins Mauerw
 
 ---
 
-**Haben Sie Feuchtigkeit im Keller?** Buchen Sie jetzt eine [kostenlose 30-minütige Videoanalyse](/#kontakt) – wir beurteilen Ihr Schadensbild, benennen die Ursache und erläutern die sinnvollen nächsten Schritte. Ohne Anfahrtskosten, ohne Verpflichtung.
+**Haben Sie Feuchtigkeit im Keller?** Buchen Sie jetzt eine [kostenlose 15-minütige Videoanalyse](/#kontakt) – wir beurteilen Ihr Schadensbild, benennen die Ursache und erläutern die sinnvollen nächsten Schritte. Ohne Anfahrtskosten, ohne Verpflichtung.
 
 Planen Sie den Kauf einer Immobilie in Bulgarien und wollen solche Ursachen vorab ausschließen? Unsere [Bauinspektion vor dem Kauf in Bulgarien](/bauinspektion-vor-dem-kauf-bulgarien) prüft genau das, bevor Sie unterschreiben.
 

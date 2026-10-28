@@ -105,7 +105,7 @@ Dafür gerüstet zu sein kostet Sie weniger als 200 € und zwei Stunden Vorbere
 
 ---
 
-Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 30 Minuten, ohne Anreise.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 15 Minuten, ohne Anreise.
 
 ---
 

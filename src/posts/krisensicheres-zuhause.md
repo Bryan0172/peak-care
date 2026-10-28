@@ -148,7 +148,7 @@ Wir begleiten Sie nicht nur mit Wissen – wir machen Ihr Gebäude krisenfest:
 - **Kellerabdichtung** gegen Überflutung
 - **Rückstauklappeninstallation**
 - **Schimmelinspektion und -beseitigung** – bevor es zur Krisenbelastung wird
-- **Videoanalyse Ihres Objekts** – bequem von zu Hause, in 30 Minuten
+- **Videoanalyse Ihres Objekts** – bequem von zu Hause, in 15 Minuten
 
 **Warten Sie nicht auf den Ernstfall. Der kommt unangekündigt.**
 

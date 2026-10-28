@@ -97,11 +97,11 @@ Wir sehen regelmäßig Wohnungen, in denen Eigentümer Tausende Euro in Maßnahm
 
 **Beispiel aus der Praxis:** Kunde in Sofia, Altbau, Bj. 1978. Klagt über Lärm von oben. Lässt in der eigenen Wohnung Trittschalldämmung unter dem Laminat verlegen — eine vierstellige Investition. Ergebnis: Kein Unterschied. Warum? Trittschalldämmung unter dem Laminat in der unteren Wohnung bringt keinen messbaren Effekt – sie muss in der oberen Wohnung verlegt werden. Zusätzlich war das Problem teilweise Luftschall (Stimmen), der über eine dünne Trennwand übertragen wurde.
 
-**Die Lösung:** Vor jeder Investition eine professionelle Schallschutzanalyse. In 30 Minuten lässt sich via Video die Situation einschätzen und ein konkreter Maßnahmenplan erstellen.
+**Die Lösung:** Vor jeder Investition eine professionelle Schallschutzanalyse. In 15 Minuten lässt sich via Video die Situation einschätzen und ein konkreter Maßnahmenplan erstellen.
 
 ## So gehen wir vor
 
-**Schritt 1: Videoanalyse (30 Minuten)**
+**Schritt 1: Videoanalyse (15 Minuten)**
 Sie zeigen uns die betroffenen Bereiche, schildern wann und wie der Lärm auftritt. Wir stellen gezielte Fragen (Wann ist es am schlimmsten? Aus welcher Richtung? Veränderungen je nach Jahreszeit?) und machen eine erste Einschätzung der Lärmquelle.
 
 **Schritt 2: Vor-Ort-Inspektion**
@@ -125,7 +125,7 @@ Fünf Fragen zur Selbsteinschätzung:
 
 Wenn Sie zwei oder mehr Fragen mit Ja beantwortet haben: Es gibt eine Lösung – die richtige Analyse ist der erste Schritt.
 
-**Buchen Sie jetzt eine kostenlose 30-minütige Videoanalyse.** Wir schauen uns Ihre Situation an, nennen Ihnen die wahrscheinliche Ursache und was dagegen zu tun ist.
+**Buchen Sie jetzt eine kostenlose 15-minütige Videoanalyse.** Wir schauen uns Ihre Situation an, nennen Ihnen die wahrscheinliche Ursache und was dagegen zu tun ist.
 
 **peak-care.com** | peakcare@peak-care.com | +359 89 843 6561
 

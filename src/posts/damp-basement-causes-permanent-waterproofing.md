@@ -139,7 +139,7 @@ We have been working with properties in Bulgaria for 25 years. Basement dampness
 
 Our process:
 
-**1. Video analysis (30 minutes, free of charge)**
+**1. Video analysis (15 minutes, free of charge)**
 You show us the problem over a video call. We assess the visible signs, ask targeted questions about the history of the issue, and give you an initial assessment: what is likely causing it, and what realistic options exist.
 
 **2. On-site diagnosis**
@@ -156,7 +156,7 @@ The most dangerous mistake is waiting. Water always finds more pathways into mas
 
 ---
 
-**Do you have dampness in your basement?** Book a [free 30-minute video analysis](/#kontakt) — we assess your situation, identify the likely cause, and walk you through the realistic options. No travel costs, no obligation.
+**Do you have dampness in your basement?** Book a [free 15-minute video analysis](/#kontakt) — we assess your situation, identify the likely cause, and walk you through the realistic options. No travel costs, no obligation.
 
 ---
 

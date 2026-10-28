@@ -99,7 +99,7 @@ If you live in the UK and want to rent out or use your Bansko apartment: you nee
 
 ## What an Independent Building Assessment Costs — and What It's Worth
 
-We offer a 30-minute video analysis where you show us the property (via video, photos, or a video call with on-site visit). We assess:
+We offer a 15-minute video analysis where you show us the property (via video, photos, or a video call with on-site visit). We assess:
 
 - Visible structural defects
 - Damp and mold risks
@@ -130,7 +130,7 @@ Bulgaria — and Bansko in particular — is a real market with real opportuniti
 
 The best protection is knowledge: What does renovation actually cost? What condition is the building structure in? What will you face after the purchase?
 
-**Planning a property purchase in Bulgaria?** Talk to us first — before you buy. A [30-minute video analysis](/#kontakt) gives you an independent initial assessment of the property and renovation costs.
+**Planning a property purchase in Bulgaria?** Talk to us first — before you buy. A [15-minute video analysis](/#kontakt) gives you an independent initial assessment of the property and renovation costs.
 
 ---
 

@@ -112,7 +112,7 @@ Yes. Mold spores can cause respiratory problems, allergic reactions, and with pr
 For small, surface-level areas (under 0.5 m²), yes — with the right products and protective equipment. For larger areas or recurring mold: professional help is cheaper than repeated failed attempts.
 
 **What does mold remediation cost?**
-It depends on the extent of the damage. Our 30-minute video analysis gives you an initial assessment and cost estimate — no travel costs, no obligation.
+It depends on the extent of the damage. Our 15-minute video analysis gives you an initial assessment and cost estimate — no travel costs, no obligation.
 
 ---
 
@@ -125,7 +125,7 @@ In most cases, that means:
 2. Check and replace silicone seals (short-term)
 3. Root cause analysis if mold keeps returning (professional)
 
-Do you have bathroom mold that keeps coming back? [Book a 30-minute video analysis](/#kontakt) — we'll assess your situation, identify the cause, and give you a cost estimate. Direct, no travel costs, no obligation.
+Do you have bathroom mold that keeps coming back? [Book a 15-minute video analysis](/#kontakt) — we'll assess your situation, identify the cause, and give you a cost estimate. Direct, no travel costs, no obligation.
 
 ---
 

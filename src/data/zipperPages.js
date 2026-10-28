@@ -29,7 +29,7 @@ export const zipperPages = [
     service: {
       headline: 'Unsere Leistungen in Bansko',
       items: [
-        { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Sie filmen die betroffenen Bereiche — wir analysieren in 30 Minuten und nennen Ihnen konkrete Maßnahmen und Kosten. Ohne Anreise, ohne Wartezeit.' },
+        { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Sie filmen die betroffenen Bereiche — wir analysieren sie und nennen Ihnen konkrete Maßnahmen und Kosten. Ohne Anreise, ohne Wartezeit.' },
         { step: '2', title: 'Vor-Ort-Diagnose', desc: 'Wir messen Feuchtigkeitswerte, identifizieren die Ursache (Kondensat, Leckage, Kältebrücke) und erstellen einen schriftlichen Sanierungsplan.' },
         { step: '3', title: 'Professionelle Sanierung', desc: 'Beseitigung mit bioziden Mitteln, Trockenlegung, Abdichtung, Neuaufbau der betroffenen Flächen. Abschlussbericht mit Fotos.' },
       ],
@@ -80,7 +80,7 @@ export const zipperPages = [
     service: {
       headline: 'Unsere Leistungen in Sofia',
       items: [
-        { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Schicken Sie uns ein kurzes Video der betroffenen Bereiche – wir analysieren in 30 Minuten und nennen Ihnen Kosten und nächste Schritte.' },
+        { step: '1', title: 'Videoanalyse (kostenlos)', desc: 'Schicken Sie uns ein kurzes Video der betroffenen Bereiche – wir analysieren es und nennen Ihnen Kosten und nächste Schritte.' },
         { step: '2', title: 'Feuchtigkeitsmessung & Diagnose', desc: 'Wir identifizieren die genaue Ursache: Kondensation, Wasserschaden, Kältebrücke oder eindringende Feuchtigkeit von außen.' },
         { step: '3', title: 'Sanierung und Bericht', desc: 'Biozide Behandlung, Trockenlegung, Abdichtung, Wiederverschluss. Abschlussbericht mit Fotos.' },
       ],
@@ -228,7 +228,7 @@ export const zipperPages = [
     service: {
       headline: 'Our Mold Removal Service in Bansko',
       items: [
-        { step: '1', title: 'Free Video Assessment', desc: 'Film the affected areas on your phone. We analyse within 30 minutes and give you specific recommendations and a cost estimate — without any travel costs.' },
+        { step: '1', title: 'Free Video Assessment', desc: 'Film the affected areas on your phone. We analyse them and give you specific recommendations and a cost estimate — without any travel costs.' },
         { step: '2', title: 'Root Cause Diagnosis', desc: 'We measure moisture levels, identify the source (condensation, leaks, thermal bridges, rising damp) and provide a written remediation plan.' },
         { step: '3', title: 'Professional Remediation', desc: 'Biocide treatment, drying, sealing, surface restoration. Full documentation with before/after photos.' },
       ],
@@ -280,7 +280,7 @@ export const zipperPages = [
     service: {
       headline: 'Our Mold Removal Service in Sofia',
       items: [
-        { step: '1', title: 'Free Video Assessment', desc: 'Send us a short video of the affected areas. We assess the situation within 30 minutes and give you a cost estimate and action plan.' },
+        { step: '1', title: 'Free Video Assessment', desc: 'Send us a short video of the affected areas. We assess the situation and give you a cost estimate and action plan.' },
         { step: '2', title: 'Moisture Testing & Diagnosis', desc: 'We identify the exact cause: condensation, water ingress, thermal bridge or rising damp. Written diagnosis report provided.' },
         { step: '3', title: 'Permanent Remediation', desc: 'Biocide treatment, structural drying, sealing, surface restoration. Before/after photo documentation.' },
       ],

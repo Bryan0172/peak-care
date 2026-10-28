@@ -81,8 +81,8 @@ export default function ZipperPage() {
           </a>
           <p className="mt-3 text-sm text-gray-400">
             {page.lang === 'de'
-              ? 'Kostenlos · Keine Anreise · Antwort in 30 Minuten'
-              : 'Free · No travel costs · Response within 30 minutes'}
+              ? 'Kostenlos · Keine Anreise'
+              : 'Free · No travel costs'}
           </p>
         </div>
       </section>
@@ -167,8 +167,8 @@ export default function ZipperPage() {
           </h2>
           <p className="text-gray-600 mb-6">
             {page.lang === 'de'
-              ? '30 Minuten. Kostenlos. Konkrete Antworten und ein Festpreisangebot.'
-              : '30 minutes. Free. Concrete answers and a fixed-price quote.'}
+              ? '15 Minuten. Kostenlos. Konkrete Antworten und ein Festpreisangebot.'
+              : '15 minutes. Free. Concrete answers and a fixed-price quote.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

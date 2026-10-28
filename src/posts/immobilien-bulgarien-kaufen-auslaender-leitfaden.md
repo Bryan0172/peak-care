@@ -97,7 +97,7 @@ Wenn Sie in Deutschland wohnen und die Wohnung in Bansko vermieten oder für sic
 
 ## Was eine unabhängige Gebäudeanalyse kostet — und was sie wert ist
 
-Wir bieten eine 30-minütige Videoanalyse an, bei der Sie uns Ihr Kaufobjekt zeigen (per Video, Fotos oder Videokonferenz mit Vor-Ort-Besichtigung). Wir beurteilen:
+Wir bieten eine 15-minütige Videoanalyse an, bei der Sie uns Ihr Kaufobjekt zeigen (per Video, Fotos oder Videokonferenz mit Vor-Ort-Besichtigung). Wir beurteilen:
 
 - Sichtbare Mängel der Bausubstanz
 - Schimmel- und Feuchtigkeitsrisiken
@@ -132,7 +132,7 @@ Der beste Schutz ist Wissen: Was kostet Renovierung wirklich? In welchem Zustand
 
 Genau dafür sind wir da.
 
-**Planen Sie einen Immobilienkauf in Bulgarien?** Sprechen Sie zuerst mit uns — bevor Sie kaufen. Eine [30-minütige Videoanalyse](/#kontakt) gibt Ihnen eine erste unabhängige Einschätzung des Objekts und der Renovierungskosten.
+**Planen Sie einen Immobilienkauf in Bulgarien?** Sprechen Sie zuerst mit uns — bevor Sie kaufen. Eine [15-minütige Videoanalyse](/#kontakt) gibt Ihnen eine erste unabhängige Einschätzung des Objekts und der Renovierungskosten.
 
 ---
 

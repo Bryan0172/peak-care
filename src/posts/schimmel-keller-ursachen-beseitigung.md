@@ -142,7 +142,7 @@ Wenn Sie eine Immobilie in der Bansko-Region besitzen oder kaufen möchten: Eine
 
 Wenn Sie unsicher sind ob Ihr Keller ein ernstes Problem hat – oder wenn Sie bereits Schimmel entdeckt haben und wissen wollen was der nächste Schritt ist:
 
-**Buchen Sie eine 30-minütige Online-Videoanalyse.** Sie zeigen uns per Video oder Fotos den betroffenen Bereich, wir geben Ihnen eine erste Einschätzung der Ursache und einen konkreten Maßnahmenplan – kostenlos, ohne Verpflichtung.
+**Buchen Sie eine 15-minütige Online-Videoanalyse.** Sie zeigen uns per Video oder Fotos den betroffenen Bereich, wir geben Ihnen eine erste Einschätzung der Ursache und einen konkreten Maßnahmenplan – kostenlos, ohne Verpflichtung.
 
 Oder laden Sie unseren **kostenlosen Schimmel-Sofort-Check** herunter – 10 Fragen die sofort Klarheit bringen ob Ihr Keller ein akutes Problem hat.
 

@@ -137,7 +137,7 @@ Sie müssen nicht für ein apokalyptisches Szenario planen. Aber 72 Stunden ohne
 
 **Starten Sie heute mit Schritt 1:** Taschenlampe prüfen. Batterien im Haus? Powerbank aufgeladen?
 
-Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 30 Minuten, ohne Anreise.
+Wenn Sie wissen wollen, wie belastbar Ihr Gebäude tatsächlich ist — Feuchte, Abdichtung, Heizung, Dach: [Videoanalyse buchen](/#kontakt), 15 Minuten, ohne Anreise.
 
 Haben Sie Fragen zur Infrastruktur Ihres Gebäudes (Heizung, Wasserleitungen, Schimmelschutz bei Heizungsausfall)? [Buchen Sie eine Videoanalyse](/#kontakt) — direkt und ohne Anfahrtskosten.
 

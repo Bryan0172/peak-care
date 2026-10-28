@@ -38,8 +38,8 @@ export const translations = {
       sub: 'Von der Bausubstanz-Begutachtung vor dem Kauf über Renovierung und Um-/Ausbau bis zur technischen Immobilienüberwachung – für ausländische und inländische Investoren und Eigentümer. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
       videoAnalysis: {
         title: 'Kostenlose Begutachtung per Videoanalyse',
-        desc: 'Sie filmen das Objekt – wir liefern in 30 Minuten eine fachliche Ersteinschätzung der Bausubstanz, konkrete Empfehlungen und einen Kostenrahmen. Ideal vor einer Kaufentscheidung oder aus der Ferne, ganz ohne Anreise.',
-        features: ['30 Minuten live per Video', 'Einschätzung der Bausubstanz', 'Handlungsempfehlung', 'Kostenrahmen'],
+        desc: 'Sie filmen das Objekt – wir liefern Ihnen eine fachliche Ersteinschätzung der Bausubstanz, konkrete Empfehlungen und einen Kostenrahmen. Ideal vor einer Kaufentscheidung oder aus der Ferne, ganz ohne Anreise.',
+        features: ['15 Minuten live per Video', 'Einschätzung der Bausubstanz', 'Handlungsempfehlung', 'Kostenrahmen'],
       },
       inspection: {
         title: 'Bausubstanz-Begutachtung vor dem Kauf',
@@ -92,8 +92,8 @@ export const translations = {
     // Contact
     contact: {
       headline: 'Videoanalyse buchen oder Kontakt aufnehmen',
-      sub: 'Buchen Sie eine 30-minütige Videoanalyse oder schreiben Sie uns. Wir melden uns innerhalb von 24 Stunden. Vorortinspektion nur auf Anfrage.',
-      videoTitle: 'Videoanalyse – 30 Min',
+      sub: 'Buchen Sie eine 15-minütige Videoanalyse oder schreiben Sie uns. Wir melden uns innerhalb von 24 Stunden. Vorortinspektion nur auf Anfrage.',
+      videoTitle: 'Videoanalyse – 15 Min',
       videoDesc: 'Schadensbeurteilung per Video. Konkrete Maßnahmen und Kostenschätzung – direkt im Gespräch.',
       bookVideo: 'Videoanalyse buchen',
       phone: 'Telefon',
@@ -135,7 +135,7 @@ export const translations = {
       notFound: 'Artikel nicht gefunden',
       backToBlog: 'Zum Blog',
       ctaHeadline: 'Problem mit Schimmel oder Feuchtigkeit?',
-      ctaSub: 'Buchen Sie eine Videoanalyse – in 30 Minuten haben Sie Klarheit und einen konkreten Maßnahmenplan.',
+      ctaSub: 'Buchen Sie eine Videoanalyse – danach haben Sie Klarheit und einen konkreten Maßnahmenplan.',
       ctaBtn: 'Videoanalyse buchen',
       related: 'Weitere Artikel',
     },
@@ -183,8 +183,8 @@ export const translations = {
       sub: 'From pre-purchase building assessment through renovation and conversion to remote technical property oversight – for foreign and domestic investors and owners. Mold, moisture and sound insulation as specialties.',
       videoAnalysis: {
         title: 'Free assessment by video',
-        desc: 'You film the property – within 30 minutes we provide a professional first assessment of the building fabric, concrete recommendations and a cost range. Ideal before a purchase decision or from abroad, with no travel needed.',
-        features: ['30-minute live video call', 'Building-fabric assessment', 'Recommendation', 'Cost range'],
+        desc: 'You film the property – we provide a professional first assessment of the building fabric, concrete recommendations and a cost range. Ideal before a purchase decision or from abroad, with no travel needed.',
+        features: ['15-minute live video call', 'Building-fabric assessment', 'Recommendation', 'Cost range'],
       },
       inspection: {
         title: 'Pre-purchase building assessment',
@@ -231,8 +231,8 @@ export const translations = {
     },
     contact: {
       headline: 'Book a Video Analysis or Get in Touch',
-      sub: 'Book a 30-minute video analysis or send us a message. We respond within 24 hours. On-site inspection by appointment only.',
-      videoTitle: 'Video Analysis – 30 min',
+      sub: 'Book a 15-minute video analysis or send us a message. We respond within 24 hours. On-site inspection by appointment only.',
+      videoTitle: 'Video Analysis – 15 min',
       videoDesc: 'Damage assessment via video. Concrete measures, cost estimate – directly in the conversation.',
       bookVideo: 'Book Video Analysis',
       phone: 'Phone',
@@ -270,7 +270,7 @@ export const translations = {
       notFound: 'Article not found',
       backToBlog: 'Back to Blog',
       ctaHeadline: 'Mold or moisture problems?',
-      ctaSub: 'Book a video analysis – get a concrete action plan in 30 minutes.',
+      ctaSub: 'Book a video analysis – afterwards you have a concrete action plan.',
       ctaBtn: 'Book Video Analysis',
       related: 'More Articles',
     },
@@ -318,8 +318,8 @@ export const translations = {
       sub: 'От оценка на сградата преди покупка през реновиране и преустройство до технически надзор – за чуждестранни и местни инвеститори и собственици. Мухъл, влага и шумоизолация като специалности.',
       videoAnalysis: {
         title: 'Безплатна оценка чрез видео',
-        desc: 'Вие заснемате обекта – в рамките на 30 минути даваме професионална първоначална оценка на сградната конструкция, конкретни препоръки и ценови диапазон. Идеално преди решение за покупка или от разстояние, без пътуване.',
-        features: ['30 минути живо видео', 'Оценка на конструкцията', 'Препоръка', 'Ценови диапазон'],
+        desc: 'Вие заснемате обекта – даваме професионална първоначална оценка на сградната конструкция, конкретни препоръки и ценови диапазон. Идеално преди решение за покупка или от разстояние, без пътуване.',
+        features: ['15 минути живо видео', 'Оценка на конструкцията', 'Препоръка', 'Ценови диапазон'],
       },
       inspection: {
         title: 'Оценка на сградата преди покупка',
@@ -366,8 +366,8 @@ export const translations = {
     },
     contact: {
       headline: 'Запазете видеоанализ или се свържете с нас',
-      sub: 'Запазете 30-минутен видеоанализ или ни пишете. Отговаряме до 24 часа. Оглед на място само по заявка.',
-      videoTitle: 'Видеоанализ – 30 мин',
+      sub: 'Запазете 15-минутен видеоанализ или ни пишете. Отговаряме до 24 часа. Оглед на място само по заявка.',
+      videoTitle: 'Видеоанализ – 15 мин',
       videoDesc: 'Оценка на щетите чрез видео. Конкретни мерки и ценова оценка – директно в разговора.',
       bookVideo: 'Запази видеоанализ',
       phone: 'Телефон',
@@ -405,7 +405,7 @@ export const translations = {
       notFound: 'Статията не е намерена',
       backToBlog: 'Към блога',
       ctaHeadline: 'Проблеми с мухъл или влага?',
-      ctaSub: 'Запазете видеоанализ – за 30 минути получавате яснота и конкретен план за действие.',
+      ctaSub: 'Запазете видеоанализ – след видеоанализа получавате яснота и конкретен план за действие.',
       ctaBtn: 'Запази видеоанализ',
       related: 'Още статии',
     },

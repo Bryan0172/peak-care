@@ -94,7 +94,7 @@ Wie finde ich einen zuverlässigen Handwerker in Bulgarien? Wie kontrolliere ich
 
 Unser Ablauf für Auslandseigentümer:
 
-**Schritt 1 — Videoanalyse.** Sie filmen die betroffenen Bereiche mit dem Handy. 10 Minuten Video. Wir analysieren und nennen Ihnen innerhalb von 30 Minuten eine erste Einschätzung: Was ist das Problem? Was braucht es? Was kostet es ungefähr?
+**Schritt 1 — Videoanalyse.** Sie filmen die betroffenen Bereiche mit dem Handy. 10 Minuten Video. Wir analysieren es und nennen Ihnen eine erste Einschätzung: Was ist das Problem? Was braucht es? Was kostet es ungefähr?
 
 **Schritt 2 — Schriftliches Angebot.** Nach der Videoanalyse erhalten Sie ein schriftliches Angebot in Deutsch oder Englisch. Mit Festpreis, Zeitplan und Garantiebedingungen.
 
@@ -122,7 +122,7 @@ Innerhalb der im Angebot vereinbarten Gewährleistung bessern wir kostenlos nach
 
 Schimmel in Ihrer bulgarischen Immobilie — egal ob in Bansko, Sofia, Plovdiv oder an der Schwarzmeerküste?
 
-Schicken Sie uns ein kurzes Video. Keine Anreise, keine Wartezeit. In 30 Minuten wissen Sie was das Problem ist, was es kostet, und wie wir es dauerhaft lösen.
+Schicken Sie uns ein kurzes Video. Keine Anreise, keine Wartezeit. Danach wissen Sie, was das Problem ist, was es kostet, und wie wir es dauerhaft lösen.
 
 **[Jetzt Videoanalyse buchen →](/#kontakt)**
 

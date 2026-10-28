@@ -91,7 +91,7 @@ Wird ein Wasserschaden nicht innerhalb von 24 bis 48 Stunden vollständig getroc
 
 Nach einem Rückstauereignis reicht es nicht, das Wasser abzupumpen und die Oberflächen zu trocknen. Das Wasser zieht ins Mauerwerk — und dort beginnt die eigentliche Gefahr. Wenn Sie nach einem Wasserschaden einen modrigen Geruch wahrnehmen, ist das Schimmel — auch wenn Sie nichts sehen.
 
-In diesem Fall empfehlen wir unsere **[kostenlose Videoanalyse](/#kontakt)**: In 30 Minuten analysieren wir den Zustand Ihres Gebäudes und geben Ihnen eine konkrete Einschätzung, was zu tun ist.
+In diesem Fall empfehlen wir unsere **[kostenlose Videoanalyse](/#kontakt)**: In 15 Minuten analysieren wir den Zustand Ihres Gebäudes und geben Ihnen eine konkrete Einschätzung, was zu tun ist.
 
 ## Fazit
 
@@ -106,7 +106,7 @@ Der Einbau kostet einen Bruchteil dessen, was ein Wasserschaden kostet. Wer ihn 
 
 ---
 
-**Haben Sie Fragen zu Ihrem Gebäude?** Unsere [kostenlose 30-Minuten-Videoanalyse](/#kontakt) gibt Ihnen eine konkrete Einschätzung — ohne Vor-Ort-Termin, direkt online.
+**Haben Sie Fragen zu Ihrem Gebäude?** Unsere [kostenlose 15-Minuten-Videoanalyse](/#kontakt) gibt Ihnen eine konkrete Einschätzung — ohne Vor-Ort-Termin, direkt online.
 
 ---
 

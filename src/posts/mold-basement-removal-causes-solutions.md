@@ -142,7 +142,7 @@ If you own or are considering purchasing property in the Bansko region: a profes
 
 If you are uncertain whether your basement has a serious problem – or if you have already discovered mold and want to know the next step:
 
-**Book a 30-minute online video analysis.** Show us the affected area via video or photos, and we will give you a first assessment of the cause and a concrete action plan – free of charge, without obligation.
+**Book a 15-minute online video analysis.** Show us the affected area via video or photos, and we will give you a first assessment of the cause and a concrete action plan – free of charge, without obligation.
 
 Or download our **free Mold Instant Check** – 10 questions that immediately clarify whether your basement has an acute problem.
 

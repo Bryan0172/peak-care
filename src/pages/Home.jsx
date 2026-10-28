@@ -365,7 +365,7 @@ export default function Home() {
               { value: 'DE · EN · BG', label: t.stats.objects },
               { value: '25+', label: t.stats.years },
               { value: '1:1', label: t.stats.satisfaction },
-              { value: '30 min', label: t.stats.response },
+              { value: 'Video', label: t.stats.response },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-4xl font-extrabold text-white mb-1">{s.value}</div>

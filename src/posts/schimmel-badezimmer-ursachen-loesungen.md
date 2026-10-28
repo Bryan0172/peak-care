@@ -95,7 +95,7 @@ Unser Tipp: Warten Sie nicht, bis der Schimmel sich ausgebreitet hat. Je früher
 
 ---
 
-**Haben Sie Schimmel im Badezimmer, der immer wieder zurückkommt?** Buchen Sie eine [30-minütige Videoanalyse](/#kontakt) — wir beurteilen Ihr Schadensbild, nennen die Ursache und geben eine erste Kostenschätzung. Direkt, ohne Anfahrtskosten.
+**Haben Sie Schimmel im Badezimmer, der immer wieder zurückkommt?** Buchen Sie eine [15-minütige Videoanalyse](/#kontakt) — wir beurteilen Ihr Schadensbild, nennen die Ursache und geben eine erste Kostenschätzung. Direkt, ohne Anfahrtskosten.
 
 ---
 

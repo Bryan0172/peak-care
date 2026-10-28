@@ -115,7 +115,7 @@ Rufen Sie uns an wenn:
 - Sie die Ursache nicht kennen
 - Die Immobilie in Bulgarien liegt und Sie nicht vor Ort sind
 
-Unsere [kostenlose 30-Minuten-Videoanalyse](/#kontakt) zeigt Ihnen, was wirklich hinter Ihren Schimmelflecken steckt — und was es kostet, das dauerhaft zu lösen.
+Unsere [kostenlose 15-Minuten-Videoanalyse](/#kontakt) zeigt Ihnen, was wirklich hinter Ihren Schimmelflecken steckt — und was es kostet, das dauerhaft zu lösen.
 
 ## FAQ: Schimmelflecken an der Wand
 
@@ -133,7 +133,7 @@ Wenn der Schimmel durch bauliche Mängel entsteht (Kältebrücken, Risse, fehler
 
 ---
 
-Haben Sie Schimmelflecken, die immer wieder zurückkommen? [Buchen Sie jetzt die kostenlose Videoanalyse](/#kontakt) — 30 Minuten, konkrete Ursache, verbindliche Kostenschätzung.
+Haben Sie Schimmelflecken, die immer wieder zurückkommen? [Buchen Sie jetzt die kostenlose Videoanalyse](/#kontakt) — 15 Minuten, konkrete Ursache, verbindliche Kostenschätzung.
 
 ---
 
