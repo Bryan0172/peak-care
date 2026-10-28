@@ -114,5 +114,3 @@ Der Einbau kostet einen Bruchteil dessen, was ein Wasserschaden kostet. Wer ihn 
 
 - [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung](/blog/feuchtigkeit-keller-ursachen-abdichtung)
 - [Schimmel im Keller: Ursachen und dauerhafte Beseitigung](/blog/schimmel-keller-ursachen-beseitigung)
-- [Blackout-Vorbereitung: Die 72-Stunden-Checkliste für Ihr Zuhause](/blog/blackout-vorbereitung-zuhause-72-stunden)
-- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause)

@@ -114,5 +114,3 @@ Installing one costs a fraction of what flood damage costs. Postponing it means 
 
 - [Damp Basement: Causes and Permanent Waterproofing](/blog/damp-basement-causes-permanent-waterproofing)
 - [Mold in the Basement: Causes, Removal and Permanent Solutions](/blog/mold-basement-removal-causes-solutions)
-- [Blackout Preparation: The 72-Hour Home Checklist](/blog/blackout-preparation-home-72-hour-checklist)
-- [Emergency Water Supply: A Practical Guide for Crisis Preparedness](/blog/emergency-water-supply-crisis-preparedness-guide)
