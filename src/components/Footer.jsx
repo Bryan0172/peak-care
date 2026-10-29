@@ -100,6 +100,8 @@ export default function Footer() {
         © {new Date().getFullYear()} Peak Care. {f.rights}
         {' · '}
         <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy' : isBg ? 'Поверителност' : 'Datenschutz'}</Link>
+        {' · '}
+        <Link to="/impressum" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Legal Notice' : isBg ? 'Правна информация' : 'Impressum'}</Link>
       </div>
     </footer>
   )
