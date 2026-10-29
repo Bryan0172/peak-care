@@ -72,7 +72,7 @@ Transparenz ist uns wichtiger als ein gutes Gefühl. Deshalb sagen wir hier auch
 | Kellerfeuchte, gesamtes Kellergeschoss | Innenabdichtung (kristallin) + Drainage | Deutlich umfangreicher, abhängig von der Zugänglichkeit |
 | Chronischer Schimmel über mehrere Räume, Altbaustruktur | Vollsanierung inkl. Ursachenbehebung | Individuell nach Diagnose |
 
-Was das im Einzelfall kostet, hängt von Ausmaß, Ursache und Zugänglichkeit ab — und diese drei Dinge sieht man erst, wenn man hinsieht. Wer Ihnen vorher eine Zahl nennt, rät. Sie bekommen von uns einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse**: eine Zahl, die steht, statt einer Spanne, die sich später nach oben bewegt.
+Was das im Einzelfall kostet, hängt von Ausmaß, Ursache und Zugänglichkeit ab — und diese drei Dinge sieht man erst, wenn man hinsieht. Wer Ihnen vorher eine Zahl nennt, rät. Sie bekommen von uns ein **verbindliches schriftliches Angebot nach der Begehung**, aus dem Ist-Zustand, und Nachträge nur mit Ihrer schriftlichen Zustimmung — statt einer Spanne, die sich später nach oben bewegt.
 
 ## Schwarzer Schimmel in Bulgarien: Wann es gefährlich wird
 
@@ -96,7 +96,7 @@ Unser Ablauf für Auslandseigentümer:
 
 **Schritt 1 — Videoanalyse.** Sie filmen die betroffenen Bereiche mit dem Handy. 10 Minuten Video. Wir analysieren es und nennen Ihnen eine erste Einschätzung: Was ist das Problem? Was braucht es? Was kostet es ungefähr?
 
-**Schritt 2 — Schriftliches Angebot.** Nach der Videoanalyse erhalten Sie ein schriftliches Angebot in Deutsch oder Englisch. Mit Festpreis, Zeitplan und Garantiebedingungen.
+**Schritt 2 — Schriftliches Angebot.** Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot in Deutsch oder Englisch, aus dem Ist-Zustand, mit Zeitplan und Garantiebedingungen. Nachträge nur mit Ihrer schriftlichen Zustimmung.
 
 **Schritt 3 — Ausführung mit Fotodokumentation.** Wir führen die Arbeiten durch und schicken Ihnen Fotos vor, während und nach der Sanierung. Sie sehen jeden Schritt — auch wenn Sie nicht vor Ort sind.
 
@@ -113,7 +113,7 @@ Für kleine, oberflächliche Schimmelflecken (< 0,5 m²) auf nicht-porösem Unte
 Bei fachgerechter Ausführung mit Ursachenbehebung: dauerhaft. Die Gewährleistung nennen wir fallbezogen in unserem schriftlichen Angebot; sie hängt von der Bausubstanz und der gewählten Ausführung ab. Ohne Ursachenbehebung: 3–18 Monate, dann kommt der Schimmel zurück.
 
 **Muss ich bei der Sanierung anwesend sein?**
-Nein. Wir koordinieren über Ihre Hausverwaltung oder einen lokalen Vertreter. Die Videoanalyse genügt für die Kostenschätzung.
+Nein. Wir koordinieren über Ihre Hausverwaltung oder einen lokalen Vertreter. Die Videoanalyse klärt den ersten Schritt; das verbindliche schriftliche Angebot folgt nach der Begehung.
 
 **Was passiert wenn der Schimmel nach der Sanierung wiederkommt?**
 Innerhalb der im Angebot vereinbarten Gewährleistung bessern wir kostenlos nach. Wenn eine neue Ursache (z. B. neue Leckage) vorliegt, besprechen wir das transparent.

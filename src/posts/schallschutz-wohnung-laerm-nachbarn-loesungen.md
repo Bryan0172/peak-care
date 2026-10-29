@@ -87,7 +87,7 @@ Die entscheidende Frage ist nicht, was eine Maßnahme kostet — sondern ob sie 
 | Balkonverglasung Schallschutz | Außenlärm, wenn der Balkon die Schwachstelle ist | Verglaste Fläche |
 | Gesamtsanierung | Mehrere Schallwege gleichzeitig | Wohnungsgröße |
 
-**Warum hier keine Preise stehen:** Weil die Zahl ohne die Diagnose wertlos ist — und mit der Diagnose brauchen Sie keine Spanne mehr, sondern einen verbindlichen Festpreis. Den bekommen Sie nach einer **kostenlosen Videoanalyse**.
+**Warum hier keine Preise stehen:** Weil die Zahl ohne die Diagnose wertlos ist — und mit der Diagnose brauchen Sie keine Spanne mehr, sondern ein verbindliches schriftliches Angebot. Das bekommen Sie nach der Begehung, aus dem Ist-Zustand; der erste Schritt ist eine **kostenlose Videoanalyse**.
 
 **Wichtig:** Diese Zahlen sind nur dann sinnvoll, wenn vorher eine Analyse der tatsächlichen Schallquelle erfolgt. Eine Trittschalldämmung hilft nicht gegen Luftschall. Neue Fenster helfen nicht gegen Trittschall von oben.
 

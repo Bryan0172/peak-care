@@ -106,7 +106,7 @@ Does the dampness appear or worsen within 24–48 hours of heavy rain? → Hydro
 | External tanking with drainage | Severe hydrostatic pressure | Professional work — excavation; access governs the effort |
 | Full basement waterproofing renovation | Widespread structural damage | Professional work — several methods combined |
 
-**The first two rows you can handle yourself, and the shops price them openly.** For the four professional methods we deliberately quote no ranges: the actual effort depends on the cause, the extent of the damage, and how accessible the structure is — and none of those can be assessed from a distance. What you get instead is a **binding fixed price following a free video assessment**: a figure you can rely on, rather than a range that grows once work begins.
+**The first two rows you can handle yourself, and the shops price them openly.** For the four professional methods we deliberately quote no ranges: the actual effort depends on the cause, the extent of the damage, and how accessible the structure is — and none of those can be assessed from a distance. What you get instead is a **binding written quote after the on-site inspection**, based on the actual condition, and any additions only with your written approval — rather than a range that grows once work begins.
 
 ## The Most Common Mistakes in Basement Waterproofing
 

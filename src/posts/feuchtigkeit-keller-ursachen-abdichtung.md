@@ -106,7 +106,7 @@ Kommen nasse Stellen nur nach Starkregen? → Druckwasser. Ganzjährig, unabhän
 | Außenabdichtung mit Drainage | Starkes Druckwasser | Fachleistung – Erdarbeiten, Zugänglichkeit entscheidet |
 | Vollständige Kellersanierung | Schwerer Gesamtschaden | Fachleistung – mehrere Verfahren kombiniert |
 
-**Die ersten beiden Zeilen können Sie selbst erledigen, und die Preise dafür stehen in jedem Baumarkt.** Für die vier Fachleistungen nennen wir hier bewusst keine Spannen: Der tatsächliche Aufwand hängt von Ursache, Schadensausmaß und Zugänglichkeit ab, und keines dieser drei Dinge lässt sich aus der Ferne schätzen. Sie bekommen einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse** — eine Zahl, auf die Sie sich verlassen können, statt einer Spanne, die während der Arbeit wächst.
+**Die ersten beiden Zeilen können Sie selbst erledigen, und die Preise dafür stehen in jedem Baumarkt.** Für die vier Fachleistungen nennen wir hier bewusst keine Spannen: Der tatsächliche Aufwand hängt von Ursache, Schadensausmaß und Zugänglichkeit ab, und keines dieser drei Dinge lässt sich aus der Ferne schätzen. Sie bekommen ein **verbindliches schriftliches Angebot nach der Begehung**, aus dem Ist-Zustand, und Nachträge nur mit Ihrer schriftlichen Zustimmung — statt einer Spanne, die während der Arbeit wächst.
 
 ## Die häufigsten Fehler bei der Kellerabdichtung
 
