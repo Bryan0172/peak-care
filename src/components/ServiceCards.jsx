@@ -74,7 +74,19 @@ export default function ServiceCards() {
       highlight: false,
       data: s.mold,
     },
-  ]
+    {
+      // Legionellen-Landingpage (30.10.2026): Karte nur, wo es Text in der Sprache gibt (vorerst DE).
+      key: 'legionella',
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3c-3 4.5-6 7.8-6 11a6 6 0 0012 0c0-3.2-3-6.5-6-11z" />
+        </svg>
+      ),
+      highlight: false,
+      data: s.legionella,
+      link: '/legionellen-wasserhygiene-hotel-bulgarien',
+    },
+  ].filter((svc) => svc.data)
 
   return (
     <section id="leistungen" className="py-20 bg-gray-50">

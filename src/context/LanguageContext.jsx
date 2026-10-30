@@ -41,6 +41,8 @@ const DE_ROUTE_PATHS = [
   // REQ-2026-10-12-WEB-HEALTH-ROUTING-AN-SEO-PAKET-16-10 (2): Lead-Magnet ist german-only
   // (Titel/Texte DE), lieferte aber lang="en" aus — gleiche Fehlerklasse wie /datenschutz.
   '/schimmel-sofort-check',
+  // Legionellen-Landingpage (30.10.2026): vorerst german-only, sonst lang="en" wie /datenschutz.
+  '/legionellen-wasserhygiene-hotel-bulgarien',
 ]
 
 // A186-SEO (29.07., Andreas-Go): /en und /bg sind jetzt echte, eigenständig indexierte

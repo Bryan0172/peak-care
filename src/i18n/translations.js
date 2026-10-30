@@ -66,6 +66,11 @@ export const translations = {
         desc: 'Professionelle Ursachenanalyse, Entfernung und dauerhafte Sanierung von Schimmel- und Feuchteschäden – eine unserer Spezialitäten, mit schriftlichem Befund und Fotodokumentation.',
         features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', 'Fotodokumentation'],
       },
+      legionella: {
+        title: 'Legionellen & Wasserhygiene für Hotels',
+        desc: 'Technische Ausgangslage im Hotel-Wassersystem, Einordnung der Pflichten nach Наредба 9 und ein dokumentierter Maßnahmenplan, abgestimmt mit akkreditierten Laboren und der RZI. Wir sind kein Labor und versprechen keine Keimfreiheit, sondern Klarheit.',
+        features: ['Unterlagen & Begehung', 'Warm-/Kaltwasserschemata', 'Maßnahmenliste & Umsetzung', 'Dokumentation für die RZI'],
+      },
       crisis: {
         title: 'Krisenvorsorge & Beratung',
         desc: 'Gebäude-Risikoanalyse, Notfallplanung und Infrastruktur-Absicherung – für Eigentümer, die ihr Objekt zusätzlich gegen Ausfälle absichern wollen.',
