@@ -63,7 +63,7 @@ function getRoutes() {
   // 02.08.2026: /ebooks, /erfolg, /mentaler-schutzschild, /krisensicheres-zuhause entfernt —
   // E-Book-Shop komplett aus dem Angebot genommen (Andreas-Entscheid), diese Pfade sind jetzt
   // reine 301-Redirects in netlify.toml, keine App.jsx-Routen mehr, brauchen kein Prerender.
-  ;['/schimmel-sofort-check', '/datenschutz',
+  ;['/schimmel-sofort-check', '/datenschutz', '/impressum',
     '/technical-property-oversight-bulgaria', '/technische-immobilienueberwachung-bulgarien',
     '/bauinspektion-vor-dem-kauf-bulgarien', '/pre-purchase-building-inspection-bulgaria',
     '/en', '/bg', // A186-SEO 29.07.: eigene, indexierbare Sprachvarianten der Startseite
