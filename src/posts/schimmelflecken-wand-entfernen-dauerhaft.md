@@ -98,7 +98,7 @@ Kalkputz hat natürliche biozide Eigenschaften und reguliert Feuchtigkeit besser
 | Große Flächen | Putzabtrag **plus** Ursachenbehebung — die Fläche allein reicht nicht |
 | Feuchtigkeitseintritt von außen | Kellerabdichtung; die Wand innen zu behandeln wäre verlorene Arbeit |
 
-**Was das kostet, sagen wir Ihnen nach der Diagnose — verbindlich, als Festpreis nach einer kostenlosen Videoanalyse.** Eine Spanne vorab würde nur so lange halten, bis jemand hinter den Putz sieht.
+**Was das kostet, steht nach der Begehung im verbindlichen schriftlichen Angebot, aus dem Ist-Zustand.** Nachträge nur mit Ihrer schriftlichen Zustimmung. Eine Spanne vorab würde nur so lange halten, bis jemand hinter den Putz sieht.
 
 **Wichtig:** Günstige Lösungen ohne Ursachenbehebung kosten mehr — weil sie wiederholt werden müssen. Markus hat dreimal gestrichen. Beim vierten Mal haben wir die Ursache beseitigt. Seither kein Schimmel mehr.
 
@@ -133,7 +133,7 @@ Wenn der Schimmel durch bauliche Mängel entsteht (Kältebrücken, Risse, fehler
 
 ---
 
-Haben Sie Schimmelflecken, die immer wieder zurückkommen? [Buchen Sie jetzt die kostenlose Videoanalyse](/#kontakt) — 15 Minuten, konkrete Ursache, verbindliche Kostenschätzung.
+Haben Sie Schimmelflecken, die immer wieder zurückkommen? [Buchen Sie jetzt die kostenlose Videoanalyse](/#kontakt) — 15 Minuten, konkrete Ursache, klarer nächster Schritt.
 
 ---
 

@@ -82,7 +82,7 @@ Which measure applies is decided by the cause – not by preference and not by b
 | Mold removal and disinfection | The infestation itself – never on its own, always with the cause |
 | Basement floor screed remediation | A saturated floor build-up |
 
-**Why there is no price range here:** Whether your basement needs one of these measures or four depends on the cause, and the cause is only established after diagnosis. A figure quoted in advance would be guesswork. What you get instead is a **binding fixed price following a free video assessment**.
+**Why there is no price range here:** Whether your basement needs one of these measures or four depends on the cause, and the cause is only established after diagnosis. A figure quoted in advance would be guesswork. What you get instead is a **binding written quote after the on-site inspection**, based on the actual condition. Any additions only with your written approval.
 
 Whatever the remediation costs, compare it with the cost of inaction:
 

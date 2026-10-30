@@ -40,9 +40,9 @@ export const zipperPages = [
       { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in Bansko.' },
     ],
     faqs: [
-      { q: 'Was kostet Schimmelbeseitigung in Bansko?', a: 'Die Kosten hängen von Fläche und Ursache ab. Nach der kostenlosen Videoanalyse nennen wir Ihnen einen verbindlichen Festpreis — transparent und ohne Aufschlag vor Ort.' },
+      { q: 'Was kostet Schimmelbeseitigung in Bansko?', a: 'Die Kosten hängen von Fläche und Ursache ab. Nach der kostenlosen Videoanalyse und der Begehung erhalten Sie ein verbindliches schriftliches Angebot, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
       { q: 'Wie lange dauert die Sanierung?', a: 'Eine typische Schimmelsanierung in einer Wohnung dauert 1–2 Tage. Komplexere Fälle mit Ursachenbehebung (z. B. Kellerabdichtung) 2–5 Tage. Sie bekommen vorab einen klaren Zeitplan.' },
-      { q: 'Können Sie auch bei unbewohnten Objekten arbeiten?', a: 'Ja – das ist ein häufiger Fall. Wir koordinieren über Ihre Hausverwaltung oder einen Vertreter vor Ort. Videoanalyse vorher genügt für die Kostenschätzung.' },
+      { q: 'Können Sie auch bei unbewohnten Objekten arbeiten?', a: 'Ja – das ist ein häufiger Fall. Wir koordinieren über Ihre Hausverwaltung oder einen Vertreter vor Ort. Die Videoanalyse klärt vorab den nächsten Schritt; das verbindliche schriftliche Angebot folgt nach der Begehung.' },
     ],
     internalLinks: [
       { href: '/blog/schimmel-keller-ursachen-beseitigung', text: 'Schimmel im Keller: Ursachen & dauerhafte Beseitigung' },
@@ -141,7 +141,7 @@ export const zipperPages = [
       { icon: '🔧', title: 'Lokale Fachkräfte', desc: 'Erfahrene Teams vor Ort in Bansko – kurze Wege, schnelle Termine.' },
     ],
     faqs: [
-      { q: 'Was kostet eine Kellerabdichtung in Bansko?', a: 'Die Kosten hängen von der Methode (Innen-/Außenabdichtung, Drainage) und vom Objekt ab. Den exakten Festpreis nennen wir Ihnen nach der kostenlosen Videoanalyse oder Vor-Ort-Besichtigung.' },
+      { q: 'Was kostet eine Kellerabdichtung in Bansko?', a: 'Die Kosten hängen von der Methode (Innen-/Außenabdichtung, Drainage) und vom Objekt ab. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
       { q: 'Innenabdichtung oder Außenabdichtung – was ist besser?', a: 'Außenabdichtung ist technisch überlegen – sie hält Wasser vor dem Eindringen ab. Innenabdichtung ist die Wahl wenn Außenarbeiten nicht möglich sind (angrenzende Gebäude, keine Zufahrt). Wir empfehlen nach Lage.' },
       { q: 'Wie lange hält eine Kellerabdichtung?', a: 'Kristalline Systeme: 20–30 Jahre bei fachgerechter Ausführung. Außenabdichtungen mit Drainage: ähnlich lang. Voraussetzung: kein neuer mechanischer Schaden (z. B. Risse durch Erdbewegung).' },
     ],
@@ -179,7 +179,7 @@ export const zipperPages = [
     service: {
       headline: 'Was wir in Bansko sanieren',
       items: [
-        { step: '1', title: 'Zustandsanalyse & Kostenschätzung', desc: 'Videoanalyse kostenlos. Vor-Ort-Begehung mit schriftlichem Zustandsbericht und Kostenrahmen. Kein verstecktes Aufschlagen vor Ort.' },
+        { step: '1', title: 'Zustandsanalyse & schriftliches Angebot', desc: 'Videoanalyse kostenlos. Vor-Ort-Begehung mit schriftlichem Zustandsbericht und verbindlichem schriftlichem Angebot aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
         { step: '2', title: 'Schwerpunktsanierungen', desc: 'Schimmel, Feuchtigkeit, Kellerabdichtung, Fassadenrisse, Dachleckagen, Schallschutz – alles aus einer Hand. Keine Koordination verschiedener Gewerke nötig.' },
         { step: '3', title: 'Komplettrenovierung', desc: 'Böden, Wände, Küche, Bad, Elektrik, Heizung. Mit Projektmanagement und laufenden Fotoupdates – auch wenn Sie nicht vor Ort sind.' },
       ],
@@ -187,11 +187,11 @@ export const zipperPages = [
     trust: [
       { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in der Region Bansko.' },
       { icon: '📸', title: 'Foto-Updates', desc: 'Regelmäßige Fortschrittsfotos – Sie sehen jeden Schritt ohne Anreise.' },
-      { icon: '🤝', title: 'Festpreisangebote', desc: 'Kein Aufschlag nach Beginn der Arbeiten. Wir halten was wir anbieten.' },
+      { icon: '🤝', title: 'Schriftliches Angebot', desc: 'Verbindlich nach der Begehung, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
     ],
     faqs: [
-      { q: 'Was kostet eine Komplettrenovierung in Bansko?', a: 'Das hängt vom Umfang ab (reine Renovierung vs. inkl. Küche und Bad). Den verbindlichen Festpreis erhalten Sie nach der kostenlosen Videoanalyse — vorher wäre jede Zahl geraten. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
-      { q: 'Kann ich die Sanierung aus Deutschland koordinieren?', a: 'Ja – das ist der Normalfall. Videoanalyse → Angebot → Auftragserteilung per E-Mail → Foto-Updates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Sanierung nicht vor Ort.' },
+      { q: 'Was kostet eine Komplettrenovierung in Bansko?', a: 'Das hängt vom Umfang ab (reine Renovierung vs. inkl. Küche und Bad). Ein verbindliches schriftliches Angebot erhalten Sie nach der Begehung, aus dem Ist-Zustand — vorher wäre jede Zahl geraten. Nachträge nur mit Ihrer schriftlichen Zustimmung. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
+      { q: 'Kann ich die Sanierung aus Deutschland koordinieren?', a: 'Ja – das ist der Normalfall. Videoanalyse → Begehung → schriftliches Angebot → Auftragserteilung per E-Mail → Foto-Updates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Sanierung nicht vor Ort.' },
       { q: 'Wie lange dauert eine Komplettrenovierung?', a: 'Schwerpunktsanierungen (Schimmel, Feuchtigkeit): 1–5 Tage. Vollrenovierung 50 m²: 3–6 Wochen. Wir erstellen vorab einen verbindlichen Zeitplan.' },
     ],
     internalLinks: [
@@ -228,7 +228,7 @@ export const zipperPages = [
     service: {
       headline: 'Our Mold Removal Service in Bansko',
       items: [
-        { step: '1', title: 'Free Video Assessment', desc: 'Film the affected areas on your phone. We analyse them and give you specific recommendations and a cost estimate — without any travel costs.' },
+        { step: '1', title: 'Free Video Assessment', desc: 'Film the affected areas on your phone. We analyse them and give you specific recommendations and the next step — without any travel costs.' },
         { step: '2', title: 'Root Cause Diagnosis', desc: 'We measure moisture levels, identify the source (condensation, leaks, thermal bridges, rising damp) and provide a written remediation plan.' },
         { step: '3', title: 'Professional Remediation', desc: 'Biocide treatment, drying, sealing, surface restoration. Full documentation with before/after photos.' },
       ],
@@ -239,8 +239,8 @@ export const zipperPages = [
       { icon: '🏆', title: '25+ Years of Experience', desc: 'International construction experience, now on the ground in Bansko.' },
     ],
     faqs: [
-      { q: 'How much does mold removal cost in Bansko?', a: 'It depends on the affected area and the root cause. We provide a binding fixed-price quote after the free video assessment — transparent, with no surprises on site.' },
-      { q: 'Can you work on properties I manage remotely?', a: "Yes — that's our most common scenario. We coordinate via your property manager or a local keyholder. The free video assessment is all we need to give you an accurate quote upfront." },
+      { q: 'How much does mold removal cost in Bansko?', a: 'It depends on the affected area and the root cause. After the free video assessment and the on-site inspection you receive a binding written quote, based on the actual condition. Any additions only with your written approval.' },
+      { q: 'Can you work on properties I manage remotely?', a: "Yes — that's our most common scenario. We coordinate via your property manager or a local keyholder. The free video assessment shows the next step; the binding written quote follows the on-site inspection." },
       { q: 'How long does mold remediation take?', a: 'A standard apartment takes 1–2 days. Cases requiring basement waterproofing or structural damp-proofing: 3–5 days. You receive a clear timeline before work begins.' },
     ],
     internalLinks: [
@@ -280,7 +280,7 @@ export const zipperPages = [
     service: {
       headline: 'Our Mold Removal Service in Sofia',
       items: [
-        { step: '1', title: 'Free Video Assessment', desc: 'Send us a short video of the affected areas. We assess the situation and give you a cost estimate and action plan.' },
+        { step: '1', title: 'Free Video Assessment', desc: 'Send us a short video of the affected areas. We assess the situation and give you an action plan.' },
         { step: '2', title: 'Moisture Testing & Diagnosis', desc: 'We identify the exact cause: condensation, water ingress, thermal bridge or rising damp. Written diagnosis report provided.' },
         { step: '3', title: 'Permanent Remediation', desc: 'Biocide treatment, structural drying, sealing, surface restoration. Before/after photo documentation.' },
       ],
@@ -320,7 +320,7 @@ export const zipperPages = [
     hero: {
       badge: 'PEAK CARE · Bansko · Renovation for International Property Owners',
       headline: 'Building Renovation in Bansko',
-      sub: 'Renovating your Bansko property from abroad? We manage the entire project — from assessment to handover — with regular photo updates and fixed-price quotes.',
+      sub: 'Renovating your Bansko property from abroad? We manage the entire project — from assessment to handover — with regular photo updates and a binding written quote after the on-site inspection.',
       cta: 'Book Free Video Assessment',
     },
     problems: [
@@ -331,7 +331,7 @@ export const zipperPages = [
     service: {
       headline: 'Our Renovation Services in Bansko',
       items: [
-        { step: '1', title: 'Assessment & Fixed Quote', desc: 'Free video assessment followed by on-site inspection. Written scope of work and fixed-price quote before any work begins. No on-site surprises.' },
+        { step: '1', title: 'Assessment & Written Quote', desc: 'Free video assessment followed by on-site inspection. Written scope of work and a binding written quote, based on the actual condition, before any work begins. Any additions only with your written approval.' },
         { step: '2', title: 'Remediation Works', desc: 'Mold removal, damp-proofing, basement waterproofing, facade repairs, sound insulation — all trades coordinated by us. No need to manage multiple contractors.' },
         { step: '3', title: 'Full Refurbishment', desc: 'Flooring, walls, kitchen, bathroom, electrics, heating. Regular photo updates throughout. Remote sign-off via video call.' },
       ],
@@ -339,11 +339,11 @@ export const zipperPages = [
     trust: [
       { icon: '🏆', title: '25+ Years of Experience', desc: 'International construction experience, now on the ground in Bulgaria.' },
       { icon: '📸', title: 'Photo Updates', desc: 'Regular progress photos — you see every step without travelling.' },
-      { icon: '💶', title: 'Fixed Prices', desc: 'No cost creep after work starts. We stand behind our quotes.' },
+      { icon: '💶', title: 'Written Quote', desc: 'Binding after the on-site inspection, based on the actual condition. Any additions only with your written approval.' },
     ],
     faqs: [
-      { q: 'How much does a full renovation cost in Bansko?', a: 'It depends on the scope (basic renovation vs. including kitchen and bathroom). You receive a binding fixed-price quote after the free video assessment — before that, any figure would be a guess. Construction and labour cost less in Bulgaria than in Western Europe; what decides the outcome is the standard of work you get for it.' },
-      { q: 'Can I manage the renovation without being there?', a: 'Yes — this is our standard model. Video assessment → fixed quote → contract by email → photo updates → remote sign-off. Many of our clients have never visited during the renovation.' },
+      { q: 'How much does a full renovation cost in Bansko?', a: 'It depends on the scope (basic renovation vs. including kitchen and bathroom). You receive a binding written quote after the on-site inspection, based on the actual condition — before that, any figure would be a guess. Any additions only with your written approval. Construction and labour cost less in Bulgaria than in Western Europe; what decides the outcome is the standard of work you get for it.' },
+      { q: 'Can I manage the renovation without being there?', a: 'Yes — this is our standard model. Video assessment → on-site inspection → written quote → contract by email → photo updates → remote sign-off. Many of our clients have never visited during the renovation.' },
       { q: 'Do you only work in Bansko?', a: 'Bansko is our main base, but we operate across Bulgaria — including Sofia, Plovdiv and the Black Sea coast. Contact us with your location for availability.' },
     ],
     internalLinks: [
@@ -382,7 +382,7 @@ export const zipperPages = [
     service: {
       headline: 'Unsere Leistungen in ganz Bulgarien',
       items: [
-        { step: '1', title: 'Analyse & Festpreisangebot', desc: 'Kostenlose Videoanalyse, danach Vor-Ort-Begehung mit schriftlichem Befundbericht und Festpreisangebot. Kein Aufschlag nach Auftragserteilung.' },
+        { step: '1', title: 'Analyse & schriftliches Angebot', desc: 'Kostenlose Videoanalyse, danach Vor-Ort-Begehung mit schriftlichem Befundbericht und verbindlichem schriftlichem Angebot aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
         { step: '2', title: 'Umbau & Ausbau', desc: 'Grundrissänderungen, Trockenbau, Innenausbau, Fenster und Türen, Elektrik, Heizung, Sanitär – alle Gewerke koordiniert aus einer Hand. Regelmäßige Fotoupdates für Sie als Auftraggeber.' },
         { step: '3', title: 'Komplettrenovierung', desc: 'Von der leeren Wohnung bis zum bezugsfertigen Objekt: Böden, Wände, Küche, Bad, komplette technische Installationen. Projektabnahme auch per Videokonferenz möglich.' },
       ],
@@ -390,13 +390,13 @@ export const zipperPages = [
     trust: [
       { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in Bulgarien.' },
       { icon: '🇩🇪', title: 'DACH-Standard', desc: '25+ Jahre Erfahrung aus Deutschland, Österreich und der Schweiz – konsequent in Bulgarien angewendet.' },
-      { icon: '📸', title: 'Foto-Updates & Festpreis', desc: 'Sie sehen jeden Fortschritt. Keine Überraschungen bei der Abrechnung.' },
+      { icon: '📸', title: 'Foto-Updates & schriftliches Angebot', desc: 'Sie sehen jeden Fortschritt. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
     ],
     faqs: [
-      { q: 'Was kostet eine Komplettrenovierung in Bulgarien?', a: 'Das hängt vom Umfang ab (reine Renovierung, mit Küche und Bad, Umbau/Ausbau). Den exakten Festpreis nennen wir Ihnen nach der kostenlosen Videoanalyse und Vor-Ort-Besichtigung — vorher wäre jede Zahl geraten. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
-      { q: 'Kann ich die Renovierung aus Deutschland koordinieren?', a: 'Ja – das ist der Standard bei uns. Videoanalyse → Angebot → Beauftragung per E-Mail → laufende Fotoupdates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Maßnahme nicht in Bulgarien.' },
+      { q: 'Was kostet eine Komplettrenovierung in Bulgarien?', a: 'Das hängt vom Umfang ab (reine Renovierung, mit Küche und Bad, Umbau/Ausbau). Ein verbindliches schriftliches Angebot erhalten Sie nach der Begehung, aus dem Ist-Zustand — vorher wäre jede Zahl geraten. Nachträge nur mit Ihrer schriftlichen Zustimmung. Bau- und Arbeitskosten liegen in Bulgarien niedriger als in Westeuropa; worauf es ankommt, ist die Ausführungsqualität, die Sie dafür bekommen.' },
+      { q: 'Kann ich die Renovierung aus Deutschland koordinieren?', a: 'Ja – das ist der Standard bei uns. Videoanalyse → Begehung → schriftliches Angebot → Beauftragung per E-Mail → laufende Fotoupdates → Abnahme per Videokonferenz. Viele unserer Kunden waren während der gesamten Maßnahme nicht in Bulgarien.' },
       { q: 'Arbeiten Sie nur in Bansko oder in ganz Bulgarien?', a: 'Wir arbeiten in ganz Bulgarien – mit Schwerpunkten in Bansko, Sofia, Plovdiv und an der Schwarzmeerküste. Teilen Sie uns Ihren genauen Standort mit, wir prüfen die Verfügbarkeit.' },
-      { q: 'Was bedeutet "nach deutschem Standard"?', a: 'Wir verwenden Materialien und Ausführungsverfahren, die in Deutschland, Österreich und der Schweiz üblich sind – inklusive schriftlicher Dokumentation, Festpreisangeboten und strukturierter Qualitätskontrolle bei jedem Schritt.' },
+      { q: 'Was bedeutet "nach deutschem Standard"?', a: 'Wir verwenden Materialien und Ausführungsverfahren, die in Deutschland, Österreich und der Schweiz üblich sind – inklusive schriftlicher Dokumentation, verbindlicher schriftlicher Angebote und strukturierter Qualitätskontrolle bei jedem Schritt.' },
     ],
     internalLinks: [
       { href: '/service/gebaudesanierung-bansko', text: 'Gebäudesanierung Bansko – Komplettrenovierung' },

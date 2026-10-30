@@ -82,7 +82,7 @@ Welche Maßnahme greift, entscheidet die Ursache – nicht der Wunsch und nicht 
 | Schimmelbeseitigung und Desinfektion | Den Befall selbst – nie allein, immer mit der Ursache |
 | Estrichsanierung Kellerboden | Durchnässten Bodenaufbau |
 
-**Warum hier keine Preisspanne steht:** Ob Ihr Keller eine dieser Maßnahmen braucht oder vier, hängt von der Ursache ab – und die steht erst nach der Diagnose fest. Eine Zahl vorab wäre geraten. Sie bekommen stattdessen einen **verbindlichen Festpreis nach einer kostenlosen Videoanalyse**.
+**Warum hier keine Preisspanne steht:** Ob Ihr Keller eine dieser Maßnahmen braucht oder vier, hängt von der Ursache ab – und die steht erst nach der Diagnose fest. Eine Zahl vorab wäre geraten. Sie bekommen stattdessen ein **verbindliches schriftliches Angebot nach der Begehung**, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.
 
 Was auch immer die Sanierung kostet: vergleichen Sie es mit dem, was passiert wenn Sie nichts tun:
 

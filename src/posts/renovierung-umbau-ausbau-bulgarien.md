@@ -83,7 +83,7 @@ Ein **Umbau** mit Grundrissänderungen wird von der Statik bestimmt: ob tragende
 
 Eine **Kernsanierung** wird davon bestimmt, wie viel der vorhandenen Substanz erhalten werden kann. Was hinter Putz und Estrich zum Vorschein kommt, ist vorher niemandem bekannt — auch uns nicht.
 
-**Was Sie von uns bekommen, ist deshalb kein Richtwert, sondern ein verbindlicher Festpreis nach Objektaufnahme.** Und eine Warnung, die unabhängig von jeder Zahl gilt: Angebote, die auffällig niedrig liegen, signalisieren Materialabstriche, fehlende Genehmigungskosten oder einen Auftragnehmer, der überlastet kalkuliert und unterliefert.
+**Was Sie von uns bekommen, ist deshalb kein Richtwert, sondern ein verbindliches schriftliches Angebot nach der Begehung, aus dem Ist-Zustand.** Nachträge nur mit Ihrer schriftlichen Zustimmung. Und eine Warnung, die unabhängig von jeder Zahl gilt: Angebote, die auffällig niedrig liegen, signalisieren Materialabstriche, fehlende Genehmigungskosten oder einen Auftragnehmer, der überlastet kalkuliert und unterliefert.
 
 ## Wie eine professionell begleitete Renovierung in Bulgarien abläuft
 
@@ -108,7 +108,7 @@ Das Ergebnis: Sie können in Deutschland leben und trotzdem sicher sein, dass Ih
 ## Häufige Fragen zur Renovierung in Bulgarien
 
 **Was kostet eine Kernsanierung in Bansko?**
-Das hängt von Objektgröße, Ausgangszustand und davon ab, wie viel der vorhandenen Substanz erhalten werden kann — und Letzteres zeigt sich erst, wenn Putz und Estrich geöffnet sind. Eine seriöse Zahl gibt es deshalb erst nach der Objektaufnahme; von uns bekommen Sie sie dann als verbindlichen Festpreis. Was sich auch ohne Zahl sagen lässt: auffällig günstige Angebote gehen in der Regel zu Lasten von Materialqualität oder Ausführungsstandard.
+Das hängt von Objektgröße, Ausgangszustand und davon ab, wie viel der vorhandenen Substanz erhalten werden kann — und Letzteres zeigt sich erst, wenn Putz und Estrich geöffnet sind. Eine seriöse Zahl gibt es deshalb erst nach der Objektaufnahme; von uns bekommen Sie dann ein verbindliches schriftliches Angebot, aus dem Ist-Zustand; Nachträge nur mit Ihrer schriftlichen Zustimmung. Was sich auch ohne Zahl sagen lässt: auffällig günstige Angebote gehen in der Regel zu Lasten von Materialqualität oder Ausführungsstandard.
 
 **Brauche ich für einen Umbau in Bulgarien eine Baugenehmigung?**
 Ja, in vielen Fällen. Ob und welche Genehmigungen erforderlich sind, hängt von der Art des Eingriffs und der Gemeinde ab. Strukturelle Eingriffe wie das Entfernen tragender Wände sind genehmigungspflichtig. Eine rechtliche Klärung vor Projektbeginn ist zwingend.

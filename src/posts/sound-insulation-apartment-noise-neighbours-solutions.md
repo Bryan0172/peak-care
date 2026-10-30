@@ -87,7 +87,7 @@ The decisive question is not what a measure costs — but whether it works again
 | Balcony acoustic glazing | Outdoor noise where the balcony is the weak point | Glazed area |
 | Full acoustic remediation | Several sound paths at once | Size of the apartment |
 
-**Why no prices appear here:** because the figure is worthless without the diagnosis — and once the diagnosis exists you no longer need a range, you need a binding fixed price. You get one after a **free video assessment**.
+**Why no prices appear here:** because the figure is worthless without the diagnosis — and once the diagnosis exists you no longer need a range, you need a binding written quote. You get one after the on-site inspection, based on the actual condition; the first step is a **free video assessment**.
 
 **Important:** These figures are only meaningful when preceded by an analysis of the actual noise source. Impact sound insulation does not help against airborne noise. New windows do not help against impact noise from above.
 
