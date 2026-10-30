@@ -6,7 +6,7 @@ import { useSEO } from '../hooks/useSEO'
 export default function Impressum() {
   useSEO({
     title: 'Impressum | Peak Care',
-    description: 'Impressum von peak-care.com — Anbieter, Registereintrag, USt-IdNr. und Kontakt.',
+    description: 'Impressum von peak-care.com — Anbieter, Registereintrag und Kontakt.',
     canonical: 'https://peak-care.com/impressum',
   })
 
@@ -32,8 +32,7 @@ export default function Impressum() {
             <h2 className="text-xl font-semibold text-gray-900 mb-3">Registereintrag</h2>
             <p>
               Rechtsform: Einpersonengesellschaft mit variablem Kapital (ЕДПК), Bulgarien<br />
-              UIC / ЕИК: 208465067<br />
-              USt-IdNr. (ДДС №): BG208465067
+              UIC / ЕИК: 208465067
             </p>
           </section>
 
