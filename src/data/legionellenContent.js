@@ -23,7 +23,7 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WASSERHYGIENE · BULGARIEN',
       title: 'Legionellen im Wassersystem von Hotels und öffentlichen Gebäuden: geprüft, behandelt, dokumentiert',
-      sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit für die jeweiligen Prüfungen akkreditierten Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
+      sub: 'Technische Bestandsaufnahme, Beprobung mit einem je Objekt vor Beauftragung eingebundenen, für die jeweilige Prüfung akkreditierten Labor, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
       cta: 'Ausgangslage besprechen',
       call: 'Anrufen',
     },
@@ -31,7 +31,7 @@ export const LEGIONELLEN_CONTENT = {
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
       ['Akkreditierte Labore', 'objektbezogen vor Beauftragung eingebunden'],
       ['Eigenes Team', 'Instandsetzung und Umbau in Bansko und Umgebung'],
-      ['Dipl.-Ing. HLS', 'verantwortlich, mit deutscher Zulassung für Arbeiten an Trinkwasserleitungen'],
+      ['Dipl.-Ing. HLS', 'technisch verantwortlich'],
     ],
     why: {
       headline: 'Warum das Thema jetzt auf den Tisch gehört',
@@ -66,7 +66,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Desinfektion und Kontrollbeprobung',
-          'Ist eine Desinfektion nötig, organisieren wir sie über einen nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit unserer Verantwortung für das Gesamtergebnis. Es kommen nur zugelassene Verfahren und Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
+          'Ist eine Desinfektion nötig, organisieren wir sie über einen nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit unserer Verantwortung für das Gesamtergebnis. Die Desinfektion beginnt erst, wenn der qualifizierte Ausführende bestätigt ist; es kommen nur zugelassene Verfahren und Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Dokumentation und Betriebsroutine',
@@ -91,7 +91,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Verantwortung und Erfahrung',
-      text: 'Verantwortlich ist ein deutscher Diplom-Ingenieur der Fachrichtung Heizung, Lüftung, Sanitär mit deutscher Zulassung für Arbeiten an Trinkwasserleitungen: Andreas Donner, Leiter von Peak Care. Er bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund. Nachweise legen wir auf Anfrage vor.',
+      text: 'Verantwortlich ist ein deutscher Diplom-Ingenieur der Fachrichtung Heizung, Lüftung, Sanitär: Andreas Donner, Leiter von Peak Care. Er bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund. Nachweise legen wir auf Anfrage vor.',
     },
     roles: {
       headline: 'Klare Zuständigkeiten',
@@ -152,9 +152,9 @@ export const LEGIONELLEN_CONTENT = {
     },
     schema: {
       name: 'Legionellen-Prüfung, Laboranalyse und Desinfektion für Hotels und öffentliche Gebäude',
-      serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, Laborkooperation, Instandsetzung, Desinfektion)',
+      serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, objektbezogene Laborbeauftragung, Instandsetzung, Desinfektion)',
       description:
-        'Technische Bestandsaufnahme, Beprobung und Laboranalyse in Kooperation mit akkreditierten Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
+        'Technische Bestandsaufnahme, Beprobung mit einem je Objekt eingebundenen akkreditierten Labor, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
     },
   },
 
@@ -168,7 +168,7 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WATER HYGIENE · BULGARIA',
       title: 'Legionella in the water systems of hotels and public buildings: assessed, treated, documented',
-      sub: 'Technical survey, laboratory analysis in cooperation with laboratories accredited for the relevant tests, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
+      sub: 'Technical survey, sampling with a laboratory accredited for the relevant test, engaged for each property before commissioning, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
       cta: 'Discuss your situation',
       call: 'Call us',
     },
@@ -176,7 +176,7 @@ export const LEGIONELLEN_CONTENT = {
       ['One point of contact', 'from the site survey to follow-up sampling'],
       ['Accredited laboratories', 'engaged per property before the assignment'],
       ['Our own team', 'remedial works and refurbishment in Bansko and the surrounding region'],
-      ['Dipl.-Ing. (HVAC/sanitary)', 'responsible, German authorisation to work on drinking-water installations'],
+      ['Dipl.-Ing. (HVAC/sanitary)', 'technically responsible'],
     ],
     why: {
       headline: 'Why this matters now',
@@ -211,7 +211,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Disinfection and follow-up sampling',
-          'If disinfection is necessary, we arrange it through a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with responsibility for the overall result. Only approved procedures and agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
+          'If disinfection is necessary, we arrange it through a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with responsibility for the overall result. Disinfection starts only once the qualified contractor has been confirmed; only approved procedures and agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
         ],
         [
           'Documentation and operating routine',
@@ -236,7 +236,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Responsibility and experience',
-      text: 'The responsible person is a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering, holding a German authorisation to work on drinking-water pipework: Andreas Donner, head of Peak Care. He brings experience from international construction and technical project management, including practice from the technical project management of a hotel water system in Germany with a Legionella finding. Evidence is available on request.',
+      text: 'The responsible person is a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering: Andreas Donner, head of Peak Care. He brings experience from international construction and technical project management, including practice from the technical project management of a hotel water system in Germany with a Legionella finding. Evidence is available on request.',
     },
     roles: {
       headline: 'Clear responsibilities',
@@ -297,9 +297,9 @@ export const LEGIONELLEN_CONTENT = {
     },
     schema: {
       name: 'Legionella assessment, laboratory analysis and disinfection for hotels and public buildings',
-      serviceType: 'Water hygiene for drinking-water installations (survey, laboratory cooperation, remedial works, disinfection)',
+      serviceType: 'Water hygiene for drinking-water installations (survey, property-specific laboratory engagement, remedial works, disinfection)',
       description:
-        'Technical survey, sampling and laboratory analysis in cooperation with accredited laboratories, remedial works, disinfection and follow-up sampling for hotels, accommodation and public buildings in Bulgaria.',
+        'Technical survey, sampling with an accredited laboratory engaged for each property, remedial works, disinfection and follow-up sampling for hotels, accommodation and public buildings in Bulgaria.',
     },
   },
 
@@ -313,7 +313,7 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
       title: 'Легионела във водните системи на хотели и обществени сгради: проверена, обработена, документирана',
-      sub: 'Техническа оценка, лабораторни анализи в сътрудничество с лаборатории, акредитирани за съответните изпитвания, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
+      sub: 'Техническа оценка, пробовземане с лаборатория, акредитирана за съответното изпитване и включена за всеки обект преди възлагането, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
     },
@@ -321,7 +321,7 @@ export const LEGIONELLEN_CONTENT = {
       ['Един контакт', 'от огледа до контролното пробовземане'],
       ['Акредитирани лаборатории', 'ангажирани за конкретния обект преди възлагането'],
       ['Собствен екип', 'ремонт и преустройство в Банско и региона'],
-      ['Дипл.-инж. ОВК/ВиК', 'отговорник, с германско разрешение за работа по инсталации за питейна вода'],
+      ['Дипл.-инж. ОВК/ВиК', 'технически отговорник'],
     ],
     why: {
       headline: 'Защо темата е важна точно сега',
@@ -356,7 +356,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Дезинфекция и контролно пробовземане',
-          'Ако е необходима дезинфекция, я организираме чрез изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с отговорност за цялостния резултат. Прилагат се само разрешени методи и средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
+          'Ако е необходима дезинфекция, я организираме чрез изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с отговорност за цялостния резултат. Дезинфекцията започва едва след потвърждаване на квалифицирания изпълнител; прилагат се само разрешени методи и средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Документация и експлоатационна рутина',
@@ -381,7 +381,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Отговорност и опит',
-      text: 'Отговорник е германски дипломиран инженер по отопление, вентилация и санитарна техника с германско разрешение за работа по тръбопроводи за питейна вода: Андреас Донер, ръководител на Peak Care. Той има опит в международното строителство и техническото управление на проекти, включително практика от техническото управление на проект за хотелска водна система в Германия с установена легионела. Доказателства представяме при поискване.',
+      text: 'Отговорник е германски дипломиран инженер по отопление, вентилация и санитарна техника: Андреас Донер, ръководител на Peak Care. Той има опит в международното строителство и техническото управление на проекти, включително практика от техническото управление на проект за хотелска водна система в Германия с установена легионела. Доказателства представяме при поискване.',
     },
     roles: {
       headline: 'Ясни отговорности',
@@ -442,9 +442,9 @@ export const LEGIONELLEN_CONTENT = {
     },
     schema: {
       name: 'Проверка за легионела, лабораторен анализ и дезинфекция за хотели и обществени сгради',
-      serviceType: 'Водна хигиена на инсталации за питейна вода (оглед, лабораторно сътрудничество, ремонт, дезинфекция)',
+      serviceType: 'Водна хигиена на инсталации за питейна вода (оглед, лаборатория за всеки обект, ремонт, дезинфекция)',
       description:
-        'Техническа оценка, пробовземане и лабораторен анализ в сътрудничество с акредитирани лаборатории, ремонт, дезинфекция и контролно пробовземане за хотели, места за настаняване и обществени сгради в България.',
+        'Техническа оценка, пробовземане с акредитирана лаборатория, включена за всеки обект, ремонт, дезинфекция и контролно пробовземане за хотели, места за настаняване и обществени сгради в България.',
     },
   },
 }

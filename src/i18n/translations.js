@@ -68,7 +68,7 @@ export const translations = {
       },
       legionella: {
         title: 'Legionellen & Wasserhygiene für Hotels und öffentliche Gebäude',
-        desc: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit akkreditierten Laboren, Instandsetzung und Desinfektion mit Kontrollbeprobung – aus einer Hand, dokumentiert für die RZI. Wir versprechen keine Keimfreiheit, sondern einen nachvollziehbaren Weg vom Befund zur Lösung.',
+        desc: 'Technische Bestandsaufnahme, Beprobung mit einem je Objekt eingebundenen akkreditierten Labor, Instandsetzung und Desinfektion mit Kontrollbeprobung – aus einer Hand, dokumentiert für die RZI. Wir versprechen keine Keimfreiheit, sondern einen nachvollziehbaren Weg vom Befund zur Lösung.',
         features: ['Begehung & Risikoeinschätzung', 'Analysen durch akkreditierte Labore', 'Instandsetzung & Desinfektion', 'Kontrollbeprobung & Dokumentation'],
       },
       crisis: {
@@ -218,7 +218,7 @@ export const translations = {
       },
       legionella: {
         title: 'Legionella & Water Hygiene for Hotels and Public Buildings',
-        desc: 'Technical survey, laboratory analysis in cooperation with accredited laboratories, remedial works and disinfection with follow-up sampling: from one source, documented for the RZI. We do not promise germ-free water, but a traceable path from finding to solution.',
+        desc: 'Technical survey, sampling with an accredited laboratory engaged for each property, remedial works and disinfection with follow-up sampling: from one source, documented for the RZI. We do not promise germ-free water, but a traceable path from finding to solution.',
         features: ['Survey & risk assessment', 'Accredited laboratories', 'Remedial works & disinfection', 'Follow-up sampling & documentation'],
       },
       crisis: {
@@ -358,7 +358,7 @@ export const translations = {
       },
       legionella: {
         title: 'Легионела и водна хигиена за хотели и обществени сгради',
-        desc: 'Техническа оценка, лабораторни анализи в сътрудничество с акредитирани лаборатории, ремонт и дезинфекция с контролно пробовземане: от един екип, документирано за РЗИ. Не обещаваме вода без бактерии, а проследим път от резултата до решението.',
+        desc: 'Техническа оценка, пробовземане с акредитирана лаборатория, включена за всеки обект, ремонт и дезинфекция с контролно пробовземане: от един екип, документирано за РЗИ. Не обещаваме вода без бактерии, а проследим път от резултата до решението.',
         features: ['Оглед и оценка на риска', 'Акредитирани лаборатории', 'Ремонт и дезинфекция', 'Контролно пробовземане и документация'],
       },
       crisis: {
