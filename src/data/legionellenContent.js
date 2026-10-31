@@ -23,20 +23,21 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WASSERHYGIENE · BULGARIEN',
       title: 'Legionellen im Wassersystem von Hotels und öffentlichen Gebäuden: geprüft, behandelt, dokumentiert',
-      sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung und Desinfektion: aus einer Hand, durch ein eigenes Team unter der Verantwortung eines Diplom-Ingenieurs HLS.',
+      sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
       cta: 'Ausgangslage besprechen',
       call: 'Anrufen',
     },
     facts: [
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
       ['Zugelassene Labore', 'Analysen in Kooperation mit akkreditierten Laboren'],
-      ['Eigenes Team', 'Instandsetzung und Desinfektion in Bansko und Umgebung'],
+      ['Eigenes Team', 'Instandsetzung und thermische Desinfektion in Bansko und Umgebung'],
       ['Dipl.-Ing. HLS', 'verantwortlich, mit Zulassung für Arbeiten an Trinkwasserleitungen'],
     ],
     why: {
       headline: 'Warum das Thema jetzt auf den Tisch gehört',
       paragraphs: [
         'Seit der Änderung der Наредба № 9 sind Unterkünfte der Klassen A und B (Hotels, Apartmentanlagen, Pensionen, Gästehäuser, Ferienhäuser, Campingplätze) verpflichtet, die interne Wasserverteilung einer Risikobewertung zu unterziehen und Legionellen sowie Blei zu überwachen. Der Monitoringplan wird mit der örtlichen Regionalen Gesundheitsinspektion (RZI) abgestimmt, die Laboruntersuchungen übernehmen akkreditierte Labore. Die Untersuchungsdaten mehrerer Jahre bilden die Grundlage der ersten Vorlage, deshalb lohnt es sich, früh und geordnet zu beginnen.',
+        'Neben Unterkünften nennt die Наредба № 9 (Art. 6г) ausdrücklich Krankenhäuser und ärztliche Einrichtungen sowie Krippen, Kindergärten und Schulen. Die Risikobewertung der internen Wasserverteilung geht an die RZI, an den Bürgermeister der Gemeinde und an den Wasserversorger.',
         'Die Wintersaison ist dafür ein betrieblicher Anlass: Zimmer werden nach Leerstand wieder belegt, Warmwasseranlagen laufen unter Volllast.',
       ],
     },
@@ -57,7 +58,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Beprobung und Laboranalyse',
-          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung organisieren wir in Kooperation mit zugelassenen, akkreditierten Laboren. Sie erhalten die Befunde zusammen mit unserer technischen Einordnung.',
+          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung erfolgen durch akkreditierte Labore, mit denen wir kooperieren. Wir schlagen die Probenstellen vor, organisieren Termin und Zugang, bereiten die Anlage vor und führen die Befunde im Bericht zusammen.',
         ],
         [
           'Instandsetzung und Umbau',
@@ -65,7 +66,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Desinfektion und Kontrollbeprobung',
-          'Wir desinfizieren das Trinkwassersystem, thermisch oder chemisch, je nach Anlage, Material und Vorgabe. Es kommen ausschließlich dafür zugelassene Verfahren und Mittel zum Einsatz. Anschließend lassen wir durch das Labor eine Kontrollbeprobung durchführen, die den Erfolg prüft.',
+          'Ist eine Desinfektion nötig, führen wir sie durch. Die thermische Desinfektion übernimmt unser eigenes Team unter der Verantwortung eines deutschen Diplom-Ingenieurs HLS. Für chemische Verfahren arbeiten wir mit einem beim bulgarischen Gesundheitsministerium eingetragenen Fachbetrieb, und es kommen nur zugelassene Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Dokumentation und Betriebsroutine',
@@ -96,7 +97,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Klare Zuständigkeiten',
       items: [
         'Die Risikobewertung nach Наредба № 9 reicht der Betreiber ein. Wir liefern die technischen Unterlagen und einen Entwurf.',
-        'Laborbefunde stammen von den zugelassenen Laboren, mit denen wir zusammenarbeiten.',
+        'Laborbefunde stammen von den akkreditierten Laboren, mit denen wir zusammenarbeiten.',
+        'Chemische Desinfektion führt ein beim bulgarischen Gesundheitsministerium eingetragener Fachbetrieb in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
         'Wir geben keine Garantie auf Keimfreiheit und keine Zusage behördlicher Anerkennung. Deshalb folgt auf jede Desinfektion eine Kontrollbeprobung.',
         'Wir stellen keine medizinischen Diagnosen.',
         'Eigenbrunnen, Küche, Pools, Spa und Whirlpools sowie Kühltürme gehören nicht zum Standardumfang, sondern nur nach Einzelprüfung.',
@@ -118,8 +120,8 @@ export const LEGIONELLEN_CONTENT = {
           'Wir klären die technische Ursache, etwa Stagnation, stillgelegte Leitungen oder zu niedrige Warmwassertemperatur, beheben sie, desinfizieren das System und lassen den Erfolg durch eine Kontrollbeprobung prüfen. Alle Schritte werden dokumentiert.',
         ],
         [
-          'Desinfizieren Sie selbst?',
-          'Ja. Wir desinfizieren das Trinkwassersystem, thermisch oder chemisch, je nach Anlage und Vorgabe, mit dafür zugelassenen Verfahren und Mitteln. Eine Garantie auf Keimfreiheit geben wir nicht, deshalb folgt immer eine Kontrollbeprobung.',
+          'Führen Sie die Desinfektion durch?',
+          'Ja, wir führen die Desinfektion als Leistung durch und verantworten sie. Die thermische Desinfektion übernimmt unser eigenes Team, die chemische ein beim bulgarischen Gesundheitsministerium eingetragener Fachbetrieb in unserer Koordination, jeweils mit zugelassenen Mitteln. Eine Garantie auf Keimfreiheit geben wir nicht, deshalb folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Was kostet das?',
@@ -127,7 +129,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Arbeiten Sie auch für öffentliche Gebäude?',
-          'Ja. Wir unterstützen Betreiber von Hotels und Ferienanlagen ebenso wie von öffentlichen Gebäuden, etwa Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen oder Verwaltungsgebäuden, bei Bestandsaufnahme, Beprobung mit zugelassenen Laboren, Instandsetzung und Desinfektion. Welche Pflichten im Einzelfall gelten, klären wir mit Ihnen und der zuständigen Stelle.',
+          'Ja. Wir unterstützen Betreiber von Hotels und Ferienanlagen ebenso wie von öffentlichen Gebäuden, etwa Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen oder Verwaltungsgebäuden, bei Bestandsaufnahme, Beprobung mit zugelassenen Laboren, Instandsetzung und Desinfektion. Für Krankenhäuser, Krippen, Kindergärten und Schulen nennt die Наредба № 9 eine Pflicht zur Risikobewertung der internen Wasserverteilung; welche Pflichten im Einzelfall gelten, klären wir mit Ihnen und der zuständigen Stelle.',
         ],
         [
           'In welchen Regionen arbeiten Sie?',
@@ -166,20 +168,21 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WATER HYGIENE · BULGARIA',
       title: 'Legionella in the water systems of hotels and public buildings: assessed, treated, documented',
-      sub: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works and disinfection: from one source, by our own team under the responsibility of a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
+      sub: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
       cta: 'Discuss your situation',
       call: 'Call us',
     },
     facts: [
       ['One point of contact', 'from the site survey to follow-up sampling'],
       ['Approved laboratories', 'analysis in cooperation with accredited laboratories'],
-      ['Our own team', 'remedial works and disinfection in Bansko and the surrounding region'],
+      ['Our own team', 'remedial works and thermal disinfection in Bansko and the surrounding region'],
       ['Dipl.-Ing. (HVAC/sanitary)', 'responsible, authorised to work on drinking-water installations'],
     ],
     why: {
       headline: 'Why this matters now',
       paragraphs: [
         'Since the amendment of Ordinance No. 9 (Наредба № 9), accommodation of classes A and B (hotels, apartment complexes, guesthouses, holiday homes, campsites) must carry out a risk assessment of the internal water distribution and monitor for Legionella and lead. The monitoring plan is agreed with the local Regional Health Inspectorate (RZI); laboratory tests are carried out by accredited laboratories. Several years of test data form the basis of the first submission, so it pays to start early and in an orderly way.',
+        'Besides accommodation, Ordinance No. 9 (Art. 6g) expressly names hospitals and medical facilities as well as nurseries, kindergartens and schools. The risk assessment of the internal water distribution goes to the RZI, to the mayor of the municipality and to the water utility.',
         'The winter season is an operational trigger: rooms are reoccupied after vacancy, and hot-water systems run at full load.',
       ],
     },
@@ -200,7 +203,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Sampling and laboratory analysis',
-          'We agree sampling points and the monitoring plan with the RZI. We organise sampling and laboratory testing in cooperation with approved, accredited laboratories. You receive the results together with our technical interpretation.',
+          'We agree sampling points and the monitoring plan with the RZI. Sampling and laboratory testing are carried out by accredited laboratories we cooperate with. We propose the sampling points, organise the appointment and access, prepare the installation and consolidate the results in the report.',
         ],
         [
           'Remedial works and refurbishment',
@@ -208,7 +211,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Disinfection and follow-up sampling',
-          'We disinfect the drinking-water system, thermally or chemically, depending on the installation, materials and requirements. Only procedures and agents approved for this purpose are used. The laboratory then carries out follow-up sampling to verify the result.',
+          'If disinfection is necessary, we carry it out. Our own team performs thermal disinfection under the responsibility of a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering. For chemical procedures we work with a specialist contractor registered with the Bulgarian Ministry of Health, and only approved agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
         ],
         [
           'Documentation and operating routine',
@@ -239,7 +242,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Clear responsibilities',
       items: [
         'The operator submits the risk assessment under Ordinance No. 9. We provide the technical documents and a draft.',
-        'Laboratory results come from the approved laboratories we work with.',
+        'Laboratory results come from the accredited laboratories we work with.',
+        'Chemical disinfection is carried out by a specialist contractor registered with the Bulgarian Ministry of Health, under our coordination. We remain responsible for the overall result.',
         'We give no guarantee of freedom from germs and no assurance of official recognition. That is why every disinfection is followed by follow-up sampling.',
         'We do not make medical diagnoses.',
         'Private wells, kitchens, pools, spas and whirlpools and cooling towers are not part of the standard scope, only after individual review.',
@@ -261,8 +265,8 @@ export const LEGIONELLEN_CONTENT = {
           'We clarify the technical cause, for example stagnation, disused pipework or hot-water temperatures that are too low, remedy it, disinfect the system and have the result verified by follow-up sampling. Every step is documented.',
         ],
         [
-          'Do you carry out the disinfection yourselves?',
-          'Yes. We disinfect the drinking-water system, thermally or chemically, depending on the installation and requirements, using procedures and agents approved for this purpose. We give no guarantee of freedom from germs, so follow-up sampling always follows.',
+          'Do you carry out the disinfection?',
+          'Yes, we carry out disinfection as a service and take responsibility for it. Our own team performs thermal disinfection; a specialist contractor registered with the Bulgarian Ministry of Health performs chemical disinfection under our coordination, in each case with approved agents. We give no guarantee of freedom from germs, so follow-up sampling by an accredited laboratory always follows.',
         ],
         [
           'What does it cost?',
@@ -270,7 +274,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Do you also work for public buildings?',
-          'Yes. We support operators of hotels and resorts as well as public buildings, for example schools, kindergartens, hospitals, care and sports facilities or administrative buildings, with the survey, sampling with approved laboratories, remedial works and disinfection. Which obligations apply in an individual case, we clarify with you and the competent authority.',
+          'Yes. We support operators of hotels and resorts as well as public buildings, for example schools, kindergartens, hospitals, care and sports facilities or administrative buildings, with the survey, sampling with approved laboratories, remedial works and disinfection. For hospitals, nurseries, kindergartens and schools, Ordinance No. 9 names an obligation to carry out a risk assessment of the internal water distribution; which obligations apply in an individual case, we clarify with you and the competent authority.',
         ],
         [
           'Which regions do you cover?',
@@ -309,20 +313,21 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
       title: 'Легионела във водните системи на хотели и обществени сгради: проверена, обработена, документирана',
-      sub: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт и дезинфекция: от един екип, под отговорността на дипломиран инженер по отопление, вентилация и санитарна техника.',
+      sub: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
     },
     facts: [
       ['Един контакт', 'от огледа до контролното пробовземане'],
       ['Одобрени лаборатории', 'анализи в сътрудничество с акредитирани лаборатории'],
-      ['Собствен екип', 'ремонт и дезинфекция в Банско и региона'],
+      ['Собствен екип', 'ремонт и термична дезинфекция в Банско и региона'],
       ['Дипл.-инж. ОВК/ВиК', 'отговорник, с разрешение за работа по инсталации за питейна вода'],
     ],
     why: {
       headline: 'Защо темата е важна точно сега',
       paragraphs: [
         'След промяната в Наредба № 9 местата за настаняване от категории А и Б (хотели, апартаментни комплекси, пансиони, къщи за гости, ваканционни къщи, къмпинги) са длъжни да подложат вътрешното водоразпределение на оценка на риска и да следят за легионела и олово. Планът за мониторинг се съгласува с местната Регионална здравна инспекция (РЗИ), а лабораторните изследвания се извършват от акредитирани лаборатории. Данните от изследвания за няколко години са основа на първото представяне, затова си струва да се започне рано и подредено.',
+        'Освен местата за настаняване, Наредба № 9 (чл. 6г) изрично посочва болници и лечебни заведения, както и ясли, детски градини и училища. Оценката на риска на вътрешното водоразпределение се предоставя на РЗИ, на кмета на общината и на ВиК.',
         'Зимният сезон е оперативен повод: стаите се заемат отново след престой, а инсталациите за топла вода работят с пълно натоварване.',
       ],
     },
@@ -343,7 +348,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Пробовземане и лабораторен анализ',
-          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания организираме в сътрудничество с одобрени, акредитирани лаборатории. Получавате резултатите заедно с нашата техническа оценка.',
+          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания се извършват от акредитирани лаборатории, с които си сътрудничим. Предлагаме пунктовете за проби, организираме времето и достъпа, подготвяме инсталацията и обобщаваме резултатите в доклада.',
         ],
         [
           'Ремонт и преустройство',
@@ -351,7 +356,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Дезинфекция и контролно пробовземане',
-          'Дезинфекцираме системата за питейна вода, термично или химично, според инсталацията, материалите и изискванията. Прилагат се само одобрени за целта методи и средства. След това лабораторията извършва контролно пробовземане, което проверява резултата.',
+          'Ако е необходима дезинфекция, ние я изпълняваме. Термичната дезинфекция се извършва от нашия собствен екип под отговорността на германски дипломиран инженер по отопление, вентилация и санитарна техника. За химични методи работим с изпълнител, вписан в публичната база данни на Министерството на здравеопазването по Наредба № 1 от 2018 г., като се използват само разрешени средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Документация и експлоатационна рутина',
@@ -382,7 +387,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Ясни отговорности',
       items: [
         'Оценката на риска по Наредба № 9 се подава от оператора. Ние подготвяме техническите документи и проект.',
-        'Лабораторните резултати идват от одобрените лаборатории, с които работим.',
+        'Лабораторните резултати идват от акредитираните лаборатории, с които работим.',
+        'Химичната дезинфекция се извършва от изпълнител, вписан в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
         'Не даваме гаранция за липса на бактерии и не обещаваме признаване от органите. Затова след всяка дезинфекция следва контролно пробовземане.',
         'Не поставяме медицински диагнози.',
         'Собствени кладенци, кухни, басейни, спа и джакузита, както и охладителни кули не са част от стандартния обхват, а само след индивидуална проверка.',
@@ -404,8 +410,8 @@ export const LEGIONELLEN_CONTENT = {
           'Изясняваме техническата причина, например застояла вода, изведени от употреба тръбопроводи или твърде ниска температура на топлата вода, отстраняваме я, дезинфекцираме системата и проверяваме успеха с контролно пробовземане. Всички стъпки се документират.',
         ],
         [
-          'Вие ли извършвате дезинфекцията?',
-          'Да. Дезинфекцираме системата за питейна вода, термично или химично, според инсталацията и изискванията, с одобрени за целта методи и средства. Не даваме гаранция за липса на бактерии, затова винаги следва контролно пробовземане.',
+          'Извършвате ли дезинфекцията?',
+          'Да, изпълняваме дезинфекцията като услуга и носим отговорност за нея. Термичната дезинфекция се извършва от нашия собствен екип, а химичната – от изпълнител, вписан в публичната база данни на Министерството на здравеопазването, под наша координация, във всички случаи с разрешени средства. Не даваме гаранция за липса на бактерии, затова винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Колко струва?',
@@ -413,7 +419,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Работите ли и за обществени сгради?',
-          'Да. Подкрепяме оператори на хотели и ваканционни комплекси, както и на обществени сгради, например училища, детски градини, болници, здравни и спортни обекти или административни сгради, при огледа, пробовземането с одобрени лаборатории, ремонта и дезинфекцията. Кои задължения важат в конкретния случай, изясняваме заедно с вас и компетентния орган.',
+          'Да. Подкрепяме оператори на хотели и ваканционни комплекси, както и на обществени сгради, например училища, детски градини, болници, здравни и спортни обекти или административни сгради, при огледа, пробовземането с одобрени лаборатории, ремонта и дезинфекцията. За болници, ясли, детски градини и училища Наредба № 9 предвижда задължение за оценка на риска на вътрешното водоразпределение; кои задължения важат в конкретния случай, изясняваме заедно с вас и компетентния орган.',
         ],
         [
           'В кои региони работите?',
