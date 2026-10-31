@@ -18,20 +18,20 @@ export const LEGIONELLEN_CONTENT = {
     meta: {
       title: 'Legionellen in Hotels & öffentlichen Gebäuden | Peak Care',
       description:
-        'Peak Care begleitet Hotels, Ferienanlagen und öffentliche Gebäude in Bulgarien von der technischen Bestandsaufnahme über Laboranalysen mit zugelassenen Laboren bis zur Desinfektion und Kontrollbeprobung.',
+        'Peak Care begleitet Hotels, Ferienanlagen und öffentliche Gebäude in Bulgarien von der technischen Bestandsaufnahme über Laboranalysen durch akkreditierte Labore bis zur Desinfektion und Kontrollbeprobung.',
     },
     hero: {
       tag: 'PEAK CARE · WASSERHYGIENE · BULGARIEN',
       title: 'Legionellen im Wassersystem von Hotels und öffentlichen Gebäuden: geprüft, behandelt, dokumentiert',
-      sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
+      sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit für die jeweiligen Prüfungen akkreditierten Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
       cta: 'Ausgangslage besprechen',
       call: 'Anrufen',
     },
     facts: [
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
-      ['Zugelassene Labore', 'Analysen in Kooperation mit akkreditierten Laboren'],
+      ['Akkreditierte Labore', 'objektbezogen vor Beauftragung eingebunden'],
       ['Eigenes Team', 'Instandsetzung und Umbau in Bansko und Umgebung'],
-      ['Dipl.-Ing. HLS', 'verantwortlich, mit Zulassung für Arbeiten an Trinkwasserleitungen'],
+      ['Dipl.-Ing. HLS', 'verantwortlich, mit deutscher Zulassung für Arbeiten an Trinkwasserleitungen'],
     ],
     why: {
       headline: 'Warum das Thema jetzt auf den Tisch gehört',
@@ -47,7 +47,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Warum Technik und Labor zusammengehören',
-      text: 'Ein Laborbefund zeigt, dass ein Problem besteht, aber er behebt keine Ursache. Meist liegt sie in der Anlage: stehendes Wasser, stillgelegte Leitungen, zu niedrige Warmwassertemperatur, verschlissene Armaturen. Wir verbinden deshalb die Laboranalyse mit der technischen Ursachenbehebung, der Desinfektion und einer Kontrollbeprobung, die das Ergebnis erneut prüft. So entsteht ein nachvollziehbarer Weg vom Befund zur dokumentierten Lösung.',
+      text: 'Ein auffälliger Laborbefund kann Handlungsbedarf anzeigen, aber er behebt keine Ursache. Mögliche Ursachen in der Anlage sind: stehendes Wasser, stillgelegte Leitungen, zu niedrige Warmwassertemperatur, verschlissene Armaturen. Wir verbinden deshalb die Laboranalyse mit der technischen Ursachenbehebung, der Desinfektion und einer Kontrollbeprobung, die das Ergebnis erneut prüft. So entsteht ein nachvollziehbarer Weg vom Befund zur dokumentierten Lösung.',
     },
     program: {
       headline: 'Unser Leistungsprogramm in fünf Schritten',
@@ -91,13 +91,13 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Verantwortung und Erfahrung',
-      text: 'Verantwortlich ist ein deutscher Diplom-Ingenieur der Fachrichtung Heizung, Lüftung, Sanitär mit Zulassung für Arbeiten an Trinkwasserleitungen: Andreas Donner, Leiter von Peak Care. Er bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund. Nachweise legen wir auf Anfrage vor.',
+      text: 'Verantwortlich ist ein deutscher Diplom-Ingenieur der Fachrichtung Heizung, Lüftung, Sanitär mit deutscher Zulassung für Arbeiten an Trinkwasserleitungen: Andreas Donner, Leiter von Peak Care. Er bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund. Nachweise legen wir auf Anfrage vor.',
     },
     roles: {
       headline: 'Klare Zuständigkeiten',
       items: [
         'Die Risikobewertung nach Наредба № 9 reicht der Betreiber ein. Wir liefern die technischen Unterlagen und einen Entwurf.',
-        'Laborbefunde stammen von den akkreditierten Laboren, mit denen wir zusammenarbeiten.',
+        'Laborbefunde stammen von einem für die betreffenden Prüfungen akkreditierten Labor, das wir objektbezogen vor Beauftragung einbinden.',
         'Jede Desinfektion führt ein nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierter Ausführender in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
         'Wir geben keine Garantie auf Keimfreiheit und keine Zusage behördlicher Anerkennung. Deshalb folgt auf jede Desinfektion eine Kontrollbeprobung.',
         'Wir stellen keine medizinischen Diagnosen.',
@@ -113,7 +113,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Wie läuft eine Beprobung ab?',
-          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Analyse erfolgen durch zugelassene Labore, mit denen wir zusammenarbeiten. Sie erhalten die Befunde zusammen mit unserer technischen Einordnung.',
+          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Analyse erfolgen durch ein für die betreffenden Prüfungen akkreditiertes Labor, das wir objektbezogen vor Beauftragung einbinden. Sie erhalten die Befunde zusammen mit unserer technischen Einordnung.',
         ],
         [
           'Was passiert bei einem auffälligen Befund?',
@@ -129,7 +129,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Arbeiten Sie auch für öffentliche Gebäude?',
-          'Ja. Wir unterstützen Betreiber von Hotels und Ferienanlagen ebenso wie von öffentlichen Gebäuden, etwa Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen oder Verwaltungsgebäuden, bei Bestandsaufnahme, Beprobung mit zugelassenen Laboren, Instandsetzung und Desinfektion. Für Krankenhäuser, Krippen, Kindergärten und Schulen nennt die Наредба № 9 eine Pflicht zur Risikobewertung der internen Wasserverteilung; welche Pflichten im Einzelfall gelten, klären wir mit Ihnen und der zuständigen Stelle.',
+          'Ja. Wir unterstützen Betreiber von Hotels und Ferienanlagen ebenso wie von öffentlichen Gebäuden, etwa Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen oder Verwaltungsgebäuden, bei Bestandsaufnahme, Beprobung durch akkreditierte Labore, Instandsetzung und Desinfektion. Für Krankenhäuser, Krippen, Kindergärten und Schulen nennt die Наредба № 9 eine Pflicht zur Risikobewertung der internen Wasserverteilung; welche Pflichten im Einzelfall gelten, klären wir mit Ihnen und der zuständigen Stelle.',
         ],
         [
           'In welchen Regionen arbeiten Sie?',
@@ -154,7 +154,7 @@ export const LEGIONELLEN_CONTENT = {
       name: 'Legionellen-Prüfung, Laboranalyse und Desinfektion für Hotels und öffentliche Gebäude',
       serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, Laborkooperation, Instandsetzung, Desinfektion)',
       description:
-        'Technische Bestandsaufnahme, Beprobung und Laboranalyse in Kooperation mit zugelassenen Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
+        'Technische Bestandsaufnahme, Beprobung und Laboranalyse in Kooperation mit akkreditierten Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
     },
   },
 
@@ -163,20 +163,20 @@ export const LEGIONELLEN_CONTENT = {
     meta: {
       title: 'Legionella in Hotels & Public Buildings | Peak Care',
       description:
-        'Peak Care supports hotels, resorts and public buildings in Bulgaria from the technical survey and laboratory analysis with approved laboratories through to disinfection and follow-up sampling.',
+        'Peak Care supports hotels, resorts and public buildings in Bulgaria from the technical survey and laboratory analysis by accredited laboratories through to disinfection and follow-up sampling.',
     },
     hero: {
       tag: 'PEAK CARE · WATER HYGIENE · BULGARIA',
       title: 'Legionella in the water systems of hotels and public buildings: assessed, treated, documented',
-      sub: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
+      sub: 'Technical survey, laboratory analysis in cooperation with laboratories accredited for the relevant tests, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
       cta: 'Discuss your situation',
       call: 'Call us',
     },
     facts: [
       ['One point of contact', 'from the site survey to follow-up sampling'],
-      ['Approved laboratories', 'analysis in cooperation with accredited laboratories'],
+      ['Accredited laboratories', 'engaged per property before the assignment'],
       ['Our own team', 'remedial works and refurbishment in Bansko and the surrounding region'],
-      ['Dipl.-Ing. (HVAC/sanitary)', 'responsible, authorised to work on drinking-water installations'],
+      ['Dipl.-Ing. (HVAC/sanitary)', 'responsible, German authorisation to work on drinking-water installations'],
     ],
     why: {
       headline: 'Why this matters now',
@@ -192,7 +192,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Why engineering and laboratory belong together',
-      text: 'A laboratory result shows that a problem exists, but it does not remove the cause. The cause usually lies in the installation: stagnant water, disused pipework, hot-water temperatures that are too low, worn fittings. We therefore combine laboratory analysis with technical remediation, disinfection and follow-up sampling that checks the result again. The outcome is a traceable path from finding to documented solution.',
+      text: 'An abnormal laboratory result can indicate a need for action, but it does not remove the cause. Possible causes in the installation are: stagnant water, disused pipework, hot-water temperatures that are too low, worn fittings. We therefore combine laboratory analysis with technical remediation, disinfection and follow-up sampling that checks the result again. The outcome is a traceable path from finding to documented solution.',
     },
     program: {
       headline: 'Our service in five steps',
@@ -203,7 +203,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Sampling and laboratory analysis',
-          'We agree sampling points and the monitoring plan with the RZI. Sampling and laboratory testing are carried out by accredited laboratories we cooperate with. We propose the sampling points, organise the appointment and access, prepare the installation and consolidate the results in the report.',
+          'We agree sampling points and the monitoring plan with the RZI. Sampling and laboratory testing are carried out by a laboratory accredited for the relevant tests, engaged per property before the assignment. We propose the sampling points, organise the appointment and access, prepare the installation and consolidate the results in the report.',
         ],
         [
           'Remedial works and refurbishment',
@@ -236,13 +236,13 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Responsibility and experience',
-      text: 'The responsible person is a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering, authorised to work on drinking-water pipework: Andreas Donner, head of Peak Care. He brings experience from international construction and technical project management, including practice from the technical project management of a hotel water system in Germany with a Legionella finding. Evidence is available on request.',
+      text: 'The responsible person is a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering, holding a German authorisation to work on drinking-water pipework: Andreas Donner, head of Peak Care. He brings experience from international construction and technical project management, including practice from the technical project management of a hotel water system in Germany with a Legionella finding. Evidence is available on request.',
     },
     roles: {
       headline: 'Clear responsibilities',
       items: [
         'The operator submits the risk assessment under Ordinance No. 9. We provide the technical documents and a draft.',
-        'Laboratory results come from the accredited laboratories we work with.',
+        'Laboratory results come from a laboratory accredited for the relevant tests, engaged per property before the assignment.',
         'All disinfection is carried out by a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination. We remain responsible for the overall result.',
         'We give no guarantee of freedom from germs and no assurance of official recognition. That is why every disinfection is followed by follow-up sampling.',
         'We do not make medical diagnoses.',
@@ -258,7 +258,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'How does sampling work?',
-          'We agree sampling points and the monitoring plan with the RZI. Sampling and analysis are carried out by approved laboratories we work with. You receive the results together with our technical interpretation.',
+          'We agree sampling points and the monitoring plan with the RZI. Sampling and analysis are carried out by a laboratory accredited for the relevant tests, engaged per property before the assignment. You receive the results together with our technical interpretation.',
         ],
         [
           'What happens after an abnormal result?',
@@ -274,7 +274,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Do you also work for public buildings?',
-          'Yes. We support operators of hotels and resorts as well as public buildings, for example schools, kindergartens, hospitals, care and sports facilities or administrative buildings, with the survey, sampling with approved laboratories, remedial works and disinfection. For hospitals, nurseries, kindergartens and schools, Ordinance No. 9 names an obligation to carry out a risk assessment of the internal water distribution; which obligations apply in an individual case, we clarify with you and the competent authority.',
+          'Yes. We support operators of hotels and resorts as well as public buildings, for example schools, kindergartens, hospitals, care and sports facilities or administrative buildings, with the survey, sampling by accredited laboratories, remedial works and disinfection. For hospitals, nurseries, kindergartens and schools, Ordinance No. 9 names an obligation to carry out a risk assessment of the internal water distribution; which obligations apply in an individual case, we clarify with you and the competent authority.',
         ],
         [
           'Which regions do you cover?',
@@ -299,7 +299,7 @@ export const LEGIONELLEN_CONTENT = {
       name: 'Legionella assessment, laboratory analysis and disinfection for hotels and public buildings',
       serviceType: 'Water hygiene for drinking-water installations (survey, laboratory cooperation, remedial works, disinfection)',
       description:
-        'Technical survey, sampling and laboratory analysis in cooperation with approved laboratories, remedial works, disinfection and follow-up sampling for hotels, accommodation and public buildings in Bulgaria.',
+        'Technical survey, sampling and laboratory analysis in cooperation with accredited laboratories, remedial works, disinfection and follow-up sampling for hotels, accommodation and public buildings in Bulgaria.',
     },
   },
 
@@ -308,20 +308,20 @@ export const LEGIONELLEN_CONTENT = {
     meta: {
       title: 'Легионела в хотели и обществени сгради | Peak Care',
       description:
-        'Peak Care съпровожда хотели, ваканционни комплекси и обществени сгради в България от техническата оценка и лабораторните анализи с одобрени лаборатории до дезинфекцията и контролното пробовземане.',
+        'Peak Care съпровожда хотели, ваканционни комплекси и обществени сгради в България от техническата оценка и лабораторните анализи от акредитирани лаборатории до дезинфекцията и контролното пробовземане.',
     },
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
       title: 'Легионела във водните системи на хотели и обществени сгради: проверена, обработена, документирана',
-      sub: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
+      sub: 'Техническа оценка, лабораторни анализи в сътрудничество с лаборатории, акредитирани за съответните изпитвания, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
     },
     facts: [
       ['Един контакт', 'от огледа до контролното пробовземане'],
-      ['Одобрени лаборатории', 'анализи в сътрудничество с акредитирани лаборатории'],
+      ['Акредитирани лаборатории', 'ангажирани за конкретния обект преди възлагането'],
       ['Собствен екип', 'ремонт и преустройство в Банско и региона'],
-      ['Дипл.-инж. ОВК/ВиК', 'отговорник, с разрешение за работа по инсталации за питейна вода'],
+      ['Дипл.-инж. ОВК/ВиК', 'отговорник, с германско разрешение за работа по инсталации за питейна вода'],
     ],
     why: {
       headline: 'Защо темата е важна точно сега',
@@ -337,7 +337,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Защо техниката и лабораторията вървят заедно',
-      text: 'Лабораторният резултат показва, че има проблем, но не отстранява причината. Тя най-често е в инсталацията: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение.',
+      text: 'Отклоняващият се лабораторен резултат може да покаже необходимост от действие, но не отстранява причината. Възможни причини в инсталацията са: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение.',
     },
     program: {
       headline: 'Нашата услуга в пет стъпки',
@@ -348,7 +348,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Пробовземане и лабораторен анализ',
-          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания се извършват от акредитирани лаборатории, с които си сътрудничим. Предлагаме пунктовете за проби, организираме времето и достъпа, подготвяме инсталацията и обобщаваме резултатите в доклада.',
+          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането. Предлагаме пунктовете за проби, организираме времето и достъпа, подготвяме инсталацията и обобщаваме резултатите в доклада.',
         ],
         [
           'Ремонт и преустройство',
@@ -381,13 +381,13 @@ export const LEGIONELLEN_CONTENT = {
     },
     responsibility: {
       headline: 'Отговорност и опит',
-      text: 'Отговорник е германски дипломиран инженер по отопление, вентилация и санитарна техника с разрешение за работа по тръбопроводи за питейна вода: Андреас Донер, ръководител на Peak Care. Той има опит в международното строителство и техническото управление на проекти, включително практика от техническото управление на проект за хотелска водна система в Германия с установена легионела. Доказателства представяме при поискване.',
+      text: 'Отговорник е германски дипломиран инженер по отопление, вентилация и санитарна техника с германско разрешение за работа по тръбопроводи за питейна вода: Андреас Донер, ръководител на Peak Care. Той има опит в международното строителство и техническото управление на проекти, включително практика от техническото управление на проект за хотелска водна система в Германия с установена легионела. Доказателства представяме при поискване.',
     },
     roles: {
       headline: 'Ясни отговорности',
       items: [
         'Оценката на риска по Наредба № 9 се подава от оператора. Ние подготвяме техническите документи и проект.',
-        'Лабораторните резултати идват от акредитираните лаборатории, с които работим.',
+        'Лабораторните резултати идват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането.',
         'Всяка дезинфекция се извършва от изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
         'Не даваме гаранция за липса на бактерии и не обещаваме признаване от органите. Затова след всяка дезинфекция следва контролно пробовземане.',
         'Не поставяме медицински диагнози.',
@@ -403,7 +403,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Как протича пробовземането?',
-          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и анализът се извършват от одобрени лаборатории, с които работим. Получавате резултатите заедно с нашата техническа оценка.',
+          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и анализът се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането. Получавате резултатите заедно с нашата техническа оценка.',
         ],
         [
           'Какво се случва при отклоняващ се резултат?',
@@ -419,7 +419,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Работите ли и за обществени сгради?',
-          'Да. Подкрепяме оператори на хотели и ваканционни комплекси, както и на обществени сгради, например училища, детски градини, болници, здравни и спортни обекти или административни сгради, при огледа, пробовземането с одобрени лаборатории, ремонта и дезинфекцията. За болници, ясли, детски градини и училища Наредба № 9 предвижда задължение за оценка на риска на вътрешното водоразпределение; кои задължения важат в конкретния случай, изясняваме заедно с вас и компетентния орган.',
+          'Да. Подкрепяме оператори на хотели и ваканционни комплекси, както и на обществени сгради, например училища, детски градини, болници, здравни и спортни обекти или административни сгради, при огледа, пробовземането от акредитирани лаборатории, ремонта и дезинфекцията. За болници, ясли, детски градини и училища Наредба № 9 предвижда задължение за оценка на риска на вътрешното водоразпределение; кои задължения важат в конкретния случай, изясняваме заедно с вас и компетентния орган.',
         ],
         [
           'В кои региони работите?',
@@ -444,7 +444,7 @@ export const LEGIONELLEN_CONTENT = {
       name: 'Проверка за легионела, лабораторен анализ и дезинфекция за хотели и обществени сгради',
       serviceType: 'Водна хигиена на инсталации за питейна вода (оглед, лабораторно сътрудничество, ремонт, дезинфекция)',
       description:
-        'Техническа оценка, пробовземане и лабораторен анализ в сътрудничество с одобрени лаборатории, ремонт, дезинфекция и контролно пробовземане за хотели, места за настаняване и обществени сгради в България.',
+        'Техническа оценка, пробовземане и лабораторен анализ в сътрудничество с акредитирани лаборатории, ремонт, дезинфекция и контролно пробовземане за хотели, места за настаняване и обществени сгради в България.',
     },
   },
 }
