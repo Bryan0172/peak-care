@@ -16,13 +16,13 @@ export const LEGIONELLEN_CONTENT = {
   de: {
     htmlLang: 'de',
     meta: {
-      title: 'Legionellen im Hotel: Prüfung, Labor, Desinfektion | Peak Care',
+      title: 'Legionellen in Hotels & öffentlichen Gebäuden | Peak Care',
       description:
-        'Peak Care begleitet Hotels in Bulgarien von der technischen Bestandsaufnahme über Laboranalysen mit zugelassenen Laboren bis zur Desinfektion und Kontrollbeprobung.',
+        'Peak Care begleitet Hotels, Ferienanlagen und öffentliche Gebäude in Bulgarien von der technischen Bestandsaufnahme über Laboranalysen mit zugelassenen Laboren bis zur Desinfektion und Kontrollbeprobung.',
     },
     hero: {
       tag: 'PEAK CARE · WASSERHYGIENE · BULGARIEN',
-      title: 'Legionellen im Hotel-Wassersystem: geprüft, behandelt, dokumentiert',
+      title: 'Legionellen im Wassersystem von Hotels und öffentlichen Gebäuden: geprüft, behandelt, dokumentiert',
       sub: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung und Desinfektion: aus einer Hand, durch ein eigenes Team unter der Verantwortung eines Diplom-Ingenieurs HLS.',
       cta: 'Ausgangslage besprechen',
       call: 'Anrufen',
@@ -75,7 +75,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'Für wen wir arbeiten',
-      text: 'Für Betreiber von Hotels, Apartmentanlagen, Pensionen, Gästehäusern, Ferienanlagen und öffentlichen Gebäuden in Bansko, Razlog, Blagoevgrad und Region; Sofia und Plovdiv nach Terminabsprache.',
+      text: 'Für Betreiber von Hotels, Apartmentanlagen, Pensionen, Gästehäusern und Ferienanlagen sowie von öffentlichen Gebäuden wie Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen und Verwaltungsgebäuden. Schwerpunkt Bansko, Razlog, Blagoevgrad und Region; Sofia, Plovdiv und weitere Orte nach Terminabsprache.',
     },
     when: {
       headline: 'Wann Betreiber uns ansprechen',
@@ -85,6 +85,7 @@ export const LEGIONELLEN_CONTENT = {
         'Ein Gebäude oder Flügel geht nach Leerstand oder Umbau wieder in Betrieb.',
         'Die Unterlagen zum Wassersystem (Schemata, Wartung, Materialien) sind lückenhaft.',
         'Sie möchten Ihre Anlage vor der Saison absichern.',
+        'Sie betreiben ein öffentliches Gebäude mit zentraler Warmwasseranlage und möchten die Installation technisch prüfen lassen.',
       ],
     },
     responsibility: {
@@ -125,8 +126,12 @@ export const LEGIONELLEN_CONTENT = {
           'Preis auf Anfrage. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.',
         ],
         [
+          'Arbeiten Sie auch für öffentliche Gebäude?',
+          'Ja. Wir unterstützen Betreiber von Hotels und Ferienanlagen ebenso wie von öffentlichen Gebäuden, etwa Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen oder Verwaltungsgebäuden, bei Bestandsaufnahme, Beprobung mit zugelassenen Laboren, Instandsetzung und Desinfektion. Welche Pflichten im Einzelfall gelten, klären wir mit Ihnen und der zuständigen Stelle.',
+        ],
+        [
           'In welchen Regionen arbeiten Sie?',
-          'Bansko, Razlog, Blagoevgrad und Region; Sofia und Plovdiv nach Terminabsprache.',
+          'Schwerpunkt Bansko, Razlog, Blagoevgrad und Region; Sofia, Plovdiv und weitere Orte nach Terminabsprache.',
         ],
       ],
     },
@@ -144,23 +149,23 @@ export const LEGIONELLEN_CONTENT = {
       subject: 'Legionellen / Wasserhygiene',
     },
     schema: {
-      name: 'Legionellen-Prüfung, Laboranalyse und Desinfektion für Hotels',
+      name: 'Legionellen-Prüfung, Laboranalyse und Desinfektion für Hotels und öffentliche Gebäude',
       serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, Laborkooperation, Instandsetzung, Desinfektion)',
       description:
-        'Technische Bestandsaufnahme, Beprobung und Laboranalyse in Kooperation mit zugelassenen Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels und Unterkünfte in Bulgarien.',
+        'Technische Bestandsaufnahme, Beprobung und Laboranalyse in Kooperation mit zugelassenen Laboren, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
     },
   },
 
   en: {
     htmlLang: 'en',
     meta: {
-      title: 'Legionella in Hotels: Assessment, Lab, Disinfection | Peak Care',
+      title: 'Legionella in Hotels & Public Buildings | Peak Care',
       description:
-        'Peak Care supports hotels in Bulgaria from the technical survey and laboratory analysis with approved laboratories through to disinfection and follow-up sampling.',
+        'Peak Care supports hotels, resorts and public buildings in Bulgaria from the technical survey and laboratory analysis with approved laboratories through to disinfection and follow-up sampling.',
     },
     hero: {
       tag: 'PEAK CARE · WATER HYGIENE · BULGARIA',
-      title: 'Legionella in hotel water systems: assessed, treated, documented',
+      title: 'Legionella in the water systems of hotels and public buildings: assessed, treated, documented',
       sub: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works and disinfection: from one source, by our own team under the responsibility of a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
       cta: 'Discuss your situation',
       call: 'Call us',
@@ -213,7 +218,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'Who we work for',
-      text: 'Operators of hotels, apartment complexes, guesthouses, holiday complexes and public buildings in Bansko, Razlog, Blagoevgrad and the region; Sofia and Plovdiv by appointment.',
+      text: 'Operators of hotels, apartment complexes, guesthouses and holiday complexes, as well as public buildings such as schools, kindergartens, hospitals, care and sports facilities and administrative buildings. Focus on Bansko, Razlog, Blagoevgrad and the region; Sofia, Plovdiv and other locations by appointment.',
     },
     when: {
       headline: 'When operators contact us',
@@ -223,6 +228,7 @@ export const LEGIONELLEN_CONTENT = {
         'A building or wing returns to service after vacancy or refurbishment.',
         'The documents for the water system (diagrams, maintenance, materials) are incomplete.',
         'You want to secure your installation before the season.',
+        'You operate a public building with a central hot-water system and want the installation technically assessed.',
       ],
     },
     responsibility: {
@@ -263,8 +269,12 @@ export const LEGIONELLEN_CONTENT = {
           'Price on request. After the site visit you receive a binding written quotation based on the actual condition. Additional work only with your written consent.',
         ],
         [
+          'Do you also work for public buildings?',
+          'Yes. We support operators of hotels and resorts as well as public buildings, for example schools, kindergartens, hospitals, care and sports facilities or administrative buildings, with the survey, sampling with approved laboratories, remedial works and disinfection. Which obligations apply in an individual case, we clarify with you and the competent authority.',
+        ],
+        [
           'Which regions do you cover?',
-          'Bansko, Razlog, Blagoevgrad and the region; Sofia and Plovdiv by appointment.',
+          'Focus on Bansko, Razlog, Blagoevgrad and the region; Sofia, Plovdiv and other locations by appointment.',
         ],
       ],
     },
@@ -282,23 +292,23 @@ export const LEGIONELLEN_CONTENT = {
       subject: 'Legionella / water hygiene',
     },
     schema: {
-      name: 'Legionella assessment, laboratory analysis and disinfection for hotels',
+      name: 'Legionella assessment, laboratory analysis and disinfection for hotels and public buildings',
       serviceType: 'Water hygiene for drinking-water installations (survey, laboratory cooperation, remedial works, disinfection)',
       description:
-        'Technical survey, sampling and laboratory analysis in cooperation with approved laboratories, remedial works, disinfection and follow-up sampling for hotels and accommodation in Bulgaria.',
+        'Technical survey, sampling and laboratory analysis in cooperation with approved laboratories, remedial works, disinfection and follow-up sampling for hotels, accommodation and public buildings in Bulgaria.',
     },
   },
 
   bg: {
     htmlLang: 'bg',
     meta: {
-      title: 'Легионела в хотел: проверка, лаборатория, дезинфекция | Peak Care',
+      title: 'Легионела в хотели и обществени сгради | Peak Care',
       description:
-        'Peak Care съпровожда хотели в България от техническата оценка и лабораторните анализи с одобрени лаборатории до дезинфекцията и контролното пробовземане.',
+        'Peak Care съпровожда хотели, ваканционни комплекси и обществени сгради в България от техническата оценка и лабораторните анализи с одобрени лаборатории до дезинфекцията и контролното пробовземане.',
     },
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
-      title: 'Легионела във водната система на хотела: проверена, обработена, документирана',
+      title: 'Легионела във водните системи на хотели и обществени сгради: проверена, обработена, документирана',
       sub: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт и дезинфекция: от един екип, под отговорността на дипломиран инженер по отопление, вентилация и санитарна техника.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
@@ -351,7 +361,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'За кого работим',
-      text: 'За оператори на хотели, апартаментни комплекси, пансиони, къщи за гости, ваканционни комплекси и обществени сгради в Банско, Разлог, Благоевград и региона; София и Пловдив по договаряне.',
+      text: 'За оператори на хотели, апартаментни комплекси, пансиони, къщи за гости и ваканционни комплекси, както и на обществени сгради като училища, детски градини, болници, здравни и спортни обекти и административни сгради. Основен фокус Банско, Разлог, Благоевград и региона; София, Пловдив и други места по договаряне.',
     },
     when: {
       headline: 'Кога операторите се обръщат към нас',
@@ -361,6 +371,7 @@ export const LEGIONELLEN_CONTENT = {
         'Сграда или крило се връща в експлоатация след престой или преустройство.',
         'Документите за водната система (схеми, поддръжка, материали) са непълни.',
         'Искате да подсигурите инсталацията си преди сезона.',
+        'Управлявате обществена сграда с централна инсталация за топла вода и искате инсталацията да бъде технически проверена.',
       ],
     },
     responsibility: {
@@ -401,8 +412,12 @@ export const LEGIONELLEN_CONTENT = {
           'Цена при запитване. След огледа получавате обвързваща писмена оферта според реалното състояние. Допълнителни работи само с вашето писмено съгласие.',
         ],
         [
+          'Работите ли и за обществени сгради?',
+          'Да. Подкрепяме оператори на хотели и ваканционни комплекси, както и на обществени сгради, например училища, детски градини, болници, здравни и спортни обекти или административни сгради, при огледа, пробовземането с одобрени лаборатории, ремонта и дезинфекцията. Кои задължения важат в конкретния случай, изясняваме заедно с вас и компетентния орган.',
+        ],
+        [
           'В кои региони работите?',
-          'Банско, Разлог, Благоевград и региона; София и Пловдив по договаряне.',
+          'Основен фокус Банско, Разлог, Благоевград и региона; София, Пловдив и други места по договаряне.',
         ],
       ],
     },
@@ -420,10 +435,10 @@ export const LEGIONELLEN_CONTENT = {
       subject: 'Легионела / водна хигиена',
     },
     schema: {
-      name: 'Проверка за легионела, лабораторен анализ и дезинфекция за хотели',
+      name: 'Проверка за легионела, лабораторен анализ и дезинфекция за хотели и обществени сгради',
       serviceType: 'Водна хигиена на инсталации за питейна вода (оглед, лабораторно сътрудничество, ремонт, дезинфекция)',
       description:
-        'Техническа оценка, пробовземане и лабораторен анализ в сътрудничество с одобрени лаборатории, ремонт, дезинфекция и контролно пробовземане за хотели и места за настаняване в България.',
+        'Техническа оценка, пробовземане и лабораторен анализ в сътрудничество с одобрени лаборатории, ремонт, дезинфекция и контролно пробовземане за хотели, места за настаняване и обществени сгради в България.',
     },
   },
 }

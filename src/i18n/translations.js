@@ -67,7 +67,7 @@ export const translations = {
         features: ['Ursachenanalyse', 'Schimmelentfernung', 'Schutzanstrich', 'Fotodokumentation'],
       },
       legionella: {
-        title: 'Legionellen & Wasserhygiene für Hotels',
+        title: 'Legionellen & Wasserhygiene für Hotels und öffentliche Gebäude',
         desc: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung und Desinfektion mit Kontrollbeprobung – aus einer Hand, dokumentiert für die RZI. Wir versprechen keine Keimfreiheit, sondern einen nachvollziehbaren Weg vom Befund zur Lösung.',
         features: ['Begehung & Risikoeinschätzung', 'Labor mit zugelassenen Laboren', 'Instandsetzung & Desinfektion', 'Kontrollbeprobung & Dokumentation'],
       },
@@ -217,7 +217,7 @@ export const translations = {
         features: ['Root cause analysis', 'Mold removal', 'Protective coating', 'Photo documentation'],
       },
       legionella: {
-        title: 'Legionella & Water Hygiene for Hotels',
+        title: 'Legionella & Water Hygiene for Hotels and Public Buildings',
         desc: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works and disinfection with follow-up sampling: from one source, documented for the RZI. We do not promise germ-free water, but a traceable path from finding to solution.',
         features: ['Survey & risk assessment', 'Approved laboratories', 'Remedial works & disinfection', 'Follow-up sampling & documentation'],
       },
@@ -357,7 +357,7 @@ export const translations = {
         features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', 'Фотодокументация'],
       },
       legionella: {
-        title: 'Легионела и водна хигиена за хотели',
+        title: 'Легионела и водна хигиена за хотели и обществени сгради',
         desc: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт и дезинфекция с контролно пробовземане: от един екип, документирано за РЗИ. Не обещаваме вода без бактерии, а проследим път от резултата до решението.',
         features: ['Оглед и оценка на риска', 'Одобрени лаборатории', 'Ремонт и дезинфекция', 'Контролно пробовземане и документация'],
       },
