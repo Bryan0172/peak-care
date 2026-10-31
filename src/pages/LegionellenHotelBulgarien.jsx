@@ -4,7 +4,7 @@ import { withTrailingSlash } from '../components/Link'
 // Legionellen-Landingpage (REQ-2026-10-30-EIL-LEGIONELLEN-LANDINGPAGE-ZUERST-BEHOERDENMAIL-MONTAG-02-11,
 // Andreas-Auftrag 30.10.2026). Nur DE: die Leitfassung von MARKETING liegt bisher nur deutsch vor,
 // EN/BG folgen erst mit freigegebenem Text (kein erfundener Wortlaut). Leistungen und Grenzen aus dem
-// CONSTRUCTION-Leistungsumfang 30.10. (§1/§2/§6). Leitplanken: keine Preise, kein Labor-/Desinfektions-
+// CONSTRUCTION-Leistungsumfang 30.10. (§1/§2/§6, Nachtrag §6a/§6b 31.10.: eigene Ausführung, Dipl.-Ing. HLS). Leitplanken: keine Preise, kein Labor-/Desinfektions-
 // anspruch, keine Partner- oder Projektnamen, keine Keimfreiheitszusage, keine Winterspitze.
 const CANONICAL = 'https://peak-care.com/legionellen-wasserhygiene-hotel-bulgarien'
 
@@ -48,7 +48,7 @@ const c = {
       'Getrennte Warm- und Kaltwasserschemata je Gebäude erstellen oder aktualisieren.',
       'Einen Vorschlag für Probenstellen, den Sie mit der RZI und dem Labor abstimmen.',
       'Eine priorisierte Liste der technischen Ursachen und Maßnahmen, etwa Stagnation, stillgelegte Leitungen oder zu niedrige Warmwassertemperatur.',
-      'Bauliche und installationstechnische Umsetzung der freigegebenen Maßnahmen durch unser eigenes Team.',
+      'Bauliche und installationstechnische Umsetzung der freigegebenen Maßnahmen durch unser eigenes Team: Totleitungen zurückbauen, Armaturen und Filter tauschen, Dämmung trennen, Leitungsabschnitte erneuern, Zugänglichkeit und Spülanschlüsse herstellen. Den konkreten Umfang legen wir nach Prüfung der Anlage fest.',
       'Eine Betriebsroutine als Entwurf, zum Beispiel Spülplan für unbelegte Zimmer und Temperaturprotokoll, abgestimmt auf den örtlichen Plan.',
       'Koordination von Labor, Hotelleitung und Unterlagen für die RZI, mit einem Bericht über Ergebnisse und offene Punkte.',
       'Im selben Termin eine Ersteinschätzung von Feuchte- und Schimmelursachen im Gebäude.',
@@ -60,13 +60,13 @@ const c = {
       ['Ausgangslage erfassen', 'Objekt, vorhandene Unterlagen, bisherige Befunde.'],
       ['Umfang und Zuständigkeiten klären', 'was Ihre Anlage braucht und wer was übernimmt.'],
       ['Fachstellen koordinieren', 'Probenahme und Laboruntersuchung durch akkreditierte Stellen, Abstimmung mit der RZI.'],
-      ['Maßnahmen umsetzen', 'Bauliche und installationstechnische Maßnahmen, etwa Rückbau stillgelegter Leitungen, Austausch von Armaturen und Filtern, Dämmung, führt unser eigenes Team in Bansko und Umgebung aus. Desinfektion, Probenahme und Laboranalyse übernehmen dafür qualifizierte beziehungsweise akkreditierte Fachstellen; wir koordinieren und dokumentieren.'],
+      ['Maßnahmen umsetzen', 'Bauliche und installationstechnische Maßnahmen, etwa Rückbau stillgelegter Leitungen, Austausch von Armaturen und Filtern, Dämmung, führt unser eigenes Team in Bansko und Umgebung unter der Verantwortung eines Diplom-Ingenieurs HLS aus. Probenahme und Laboranalyse bleiben beim akkreditierten Labor; Desinfektion bieten wir nicht an. Wir koordinieren und dokumentieren.'],
       ['Dokumentieren', 'Ergebnisse und offene Punkte nachvollziehbar festhalten.'],
     ],
   },
   experience: {
     headline: 'Erfahrung',
-    text: 'Andreas Donner, Leiter von Peak Care, bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund.',
+    text: 'Verantwortlich ist ein deutscher Diplom-Ingenieur der Fachrichtung Heizung, Lüftung, Sanitär mit Zulassung für Arbeiten an Trinkwasserleitungen: Andreas Donner, Leiter von Peak Care. Er bringt Erfahrung aus internationalem Bau- und technischem Projektmanagement mit, darunter Praxis aus dem technischen Projektmanagement eines Hotel-Wassersystems in Deutschland mit Legionellenbefund.',
   },
   limits: {
     headline: 'Was wir nicht tun',
