@@ -30,7 +30,7 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
       ['Zugelassene Labore', 'Analysen in Kooperation mit akkreditierten Laboren'],
-      ['Eigenes Team', 'Instandsetzung und thermische Desinfektion in Bansko und Umgebung'],
+      ['Eigenes Team', 'Instandsetzung und Umbau in Bansko und Umgebung'],
       ['Dipl.-Ing. HLS', 'verantwortlich, mit Zulassung für Arbeiten an Trinkwasserleitungen'],
     ],
     why: {
@@ -66,7 +66,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Desinfektion und Kontrollbeprobung',
-          'Ist eine Desinfektion nötig, führen wir sie durch. Die thermische Desinfektion übernimmt unser eigenes Team unter der Verantwortung eines deutschen Diplom-Ingenieurs HLS. Für chemische Verfahren arbeiten wir mit einem beim bulgarischen Gesundheitsministerium eingetragenen Fachbetrieb, und es kommen nur zugelassene Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
+          'Ist eine Desinfektion nötig, organisieren wir sie über einen nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit unserer Verantwortung für das Gesamtergebnis. Es kommen nur zugelassene Verfahren und Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Dokumentation und Betriebsroutine',
@@ -98,7 +98,7 @@ export const LEGIONELLEN_CONTENT = {
       items: [
         'Die Risikobewertung nach Наредба № 9 reicht der Betreiber ein. Wir liefern die technischen Unterlagen und einen Entwurf.',
         'Laborbefunde stammen von den akkreditierten Laboren, mit denen wir zusammenarbeiten.',
-        'Chemische Desinfektion führt ein beim bulgarischen Gesundheitsministerium eingetragener Fachbetrieb in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
+        'Jede Desinfektion führt ein nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierter Ausführender in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
         'Wir geben keine Garantie auf Keimfreiheit und keine Zusage behördlicher Anerkennung. Deshalb folgt auf jede Desinfektion eine Kontrollbeprobung.',
         'Wir stellen keine medizinischen Diagnosen.',
         'Eigenbrunnen, Küche, Pools, Spa und Whirlpools sowie Kühltürme gehören nicht zum Standardumfang, sondern nur nach Einzelprüfung.',
@@ -120,8 +120,8 @@ export const LEGIONELLEN_CONTENT = {
           'Wir klären die technische Ursache, etwa Stagnation, stillgelegte Leitungen oder zu niedrige Warmwassertemperatur, beheben sie, desinfizieren das System und lassen den Erfolg durch eine Kontrollbeprobung prüfen. Alle Schritte werden dokumentiert.',
         ],
         [
-          'Führen Sie die Desinfektion durch?',
-          'Ja, wir führen die Desinfektion als Leistung durch und verantworten sie. Die thermische Desinfektion übernimmt unser eigenes Team, die chemische ein beim bulgarischen Gesundheitsministerium eingetragener Fachbetrieb in unserer Koordination, jeweils mit zugelassenen Mitteln. Eine Garantie auf Keimfreiheit geben wir nicht, deshalb folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
+          'Bieten Sie die Desinfektion an?',
+          'Ja, wir bieten die Desinfektion als Leistung an und verantworten das Gesamtergebnis. Ausgeführt wird sie von einem nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit zugelassenen Mitteln. Eine Garantie auf Keimfreiheit geben wir nicht, deshalb folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Was kostet das?',
@@ -175,7 +175,7 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['One point of contact', 'from the site survey to follow-up sampling'],
       ['Approved laboratories', 'analysis in cooperation with accredited laboratories'],
-      ['Our own team', 'remedial works and thermal disinfection in Bansko and the surrounding region'],
+      ['Our own team', 'remedial works and refurbishment in Bansko and the surrounding region'],
       ['Dipl.-Ing. (HVAC/sanitary)', 'responsible, authorised to work on drinking-water installations'],
     ],
     why: {
@@ -211,7 +211,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Disinfection and follow-up sampling',
-          'If disinfection is necessary, we carry it out. Our own team performs thermal disinfection under the responsibility of a German graduate engineer (Dipl.-Ing.) in heating, ventilation and sanitary engineering. For chemical procedures we work with a specialist contractor registered with the Bulgarian Ministry of Health, and only approved agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
+          'If disinfection is necessary, we arrange it through a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with responsibility for the overall result. Only approved procedures and agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
         ],
         [
           'Documentation and operating routine',
@@ -243,7 +243,7 @@ export const LEGIONELLEN_CONTENT = {
       items: [
         'The operator submits the risk assessment under Ordinance No. 9. We provide the technical documents and a draft.',
         'Laboratory results come from the accredited laboratories we work with.',
-        'Chemical disinfection is carried out by a specialist contractor registered with the Bulgarian Ministry of Health, under our coordination. We remain responsible for the overall result.',
+        'All disinfection is carried out by a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination. We remain responsible for the overall result.',
         'We give no guarantee of freedom from germs and no assurance of official recognition. That is why every disinfection is followed by follow-up sampling.',
         'We do not make medical diagnoses.',
         'Private wells, kitchens, pools, spas and whirlpools and cooling towers are not part of the standard scope, only after individual review.',
@@ -265,8 +265,8 @@ export const LEGIONELLEN_CONTENT = {
           'We clarify the technical cause, for example stagnation, disused pipework or hot-water temperatures that are too low, remedy it, disinfect the system and have the result verified by follow-up sampling. Every step is documented.',
         ],
         [
-          'Do you carry out the disinfection?',
-          'Yes, we carry out disinfection as a service and take responsibility for it. Our own team performs thermal disinfection; a specialist contractor registered with the Bulgarian Ministry of Health performs chemical disinfection under our coordination, in each case with approved agents. We give no guarantee of freedom from germs, so follow-up sampling by an accredited laboratory always follows.',
+          'Do you offer disinfection?',
+          'Yes, we offer disinfection as a service and take responsibility for the overall result. It is carried out by a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with approved agents. We give no guarantee of freedom from germs, so follow-up sampling by an accredited laboratory always follows.',
         ],
         [
           'What does it cost?',
@@ -320,7 +320,7 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['Един контакт', 'от огледа до контролното пробовземане'],
       ['Одобрени лаборатории', 'анализи в сътрудничество с акредитирани лаборатории'],
-      ['Собствен екип', 'ремонт и термична дезинфекция в Банско и региона'],
+      ['Собствен екип', 'ремонт и преустройство в Банско и региона'],
       ['Дипл.-инж. ОВК/ВиК', 'отговорник, с разрешение за работа по инсталации за питейна вода'],
     ],
     why: {
@@ -356,7 +356,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Дезинфекция и контролно пробовземане',
-          'Ако е необходима дезинфекция, ние я изпълняваме. Термичната дезинфекция се извършва от нашия собствен екип под отговорността на германски дипломиран инженер по отопление, вентилация и санитарна техника. За химични методи работим с изпълнител, вписан в публичната база данни на Министерството на здравеопазването по Наредба № 1 от 2018 г., като се използват само разрешени средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
+          'Ако е необходима дезинфекция, я организираме чрез изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с отговорност за цялостния резултат. Прилагат се само разрешени методи и средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Документация и експлоатационна рутина',
@@ -388,7 +388,7 @@ export const LEGIONELLEN_CONTENT = {
       items: [
         'Оценката на риска по Наредба № 9 се подава от оператора. Ние подготвяме техническите документи и проект.',
         'Лабораторните резултати идват от акредитираните лаборатории, с които работим.',
-        'Химичната дезинфекция се извършва от изпълнител, вписан в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
+        'Всяка дезинфекция се извършва от изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
         'Не даваме гаранция за липса на бактерии и не обещаваме признаване от органите. Затова след всяка дезинфекция следва контролно пробовземане.',
         'Не поставяме медицински диагнози.',
         'Собствени кладенци, кухни, басейни, спа и джакузита, както и охладителни кули не са част от стандартния обхват, а само след индивидуална проверка.',
@@ -410,8 +410,8 @@ export const LEGIONELLEN_CONTENT = {
           'Изясняваме техническата причина, например застояла вода, изведени от употреба тръбопроводи или твърде ниска температура на топлата вода, отстраняваме я, дезинфекцираме системата и проверяваме успеха с контролно пробовземане. Всички стъпки се документират.',
         ],
         [
-          'Извършвате ли дезинфекцията?',
-          'Да, изпълняваме дезинфекцията като услуга и носим отговорност за нея. Термичната дезинфекция се извършва от нашия собствен екип, а химичната – от изпълнител, вписан в публичната база данни на Министерството на здравеопазването, под наша координация, във всички случаи с разрешени средства. Не даваме гаранция за липса на бактерии, затова винаги следва контролно пробовземане от акредитирана лаборатория.',
+          'Предлагате ли дезинфекция?',
+          'Да, предлагаме дезинфекцията като услуга и носим отговорност за цялостния резултат. Тя се извършва от изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с разрешени средства. Не даваме гаранция за липса на бактерии, затова винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Колко струва?',
