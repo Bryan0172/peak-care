@@ -17,6 +17,7 @@ const HausverwaltungBulgaria             = lazy(() => import('./pages/Hausverwal
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
 const Impressum          = lazy(() => import('./pages/Impressum'))
 const MouldDampSiteVisit = lazy(() => import('./pages/MouldDampSiteVisit'))
+const LegionellenHotelBulgarien = lazy(() => import('./pages/LegionellenHotelBulgarien'))
 
 // Setzt <html lang> auf die tatsaechliche Seitensprache (P3 aus dem Web-Health-Report,
 // Andreas-Go 22.07.). Ohne das lieferte JEDE Route lang="de" — auch die englischen —,
@@ -76,6 +77,8 @@ export default function App() {
                 {/* W2 PC-3 Landeseite (V-WERBEKAMPAGNE 13.10.2026): nur BG + EN */}
                 <Route path="/ogled-muhal-vlaga" element={<MouldDampSiteVisit />} />
                 <Route path="/mould-damp-site-visit-bulgaria" element={<MouldDampSiteVisit />} />
+                {/* Legionellen-Landingpage (Andreas-Auftrag 30.10.2026): vorerst nur DE */}
+                <Route path="/legionellen-wasserhygiene-hotel-bulgarien" element={<LegionellenHotelBulgarien />} />
               </Routes>
             </Suspense>
           </main>
