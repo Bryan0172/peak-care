@@ -16,6 +16,8 @@ const EN_ROUTE_PATHS = [
   '/service/building-management-bulgaria',
   // W2 PC-3 Landeseite (13.10.2026), EN-Haelfte des BG/EN-Paars
   '/mould-damp-site-visit-bulgaria',
+  // Legionellen-Landingpage (31.10.2026), EN-Fassung
+  '/legionella-water-hygiene-hotels-bulgaria',
 ]
 
 // W2 PC-3 Landeseite (13.10.2026): erste eigenstaendige BG-Unterseite. Gleiche
@@ -23,6 +25,8 @@ const EN_ROUTE_PATHS = [
 // auf defaultLang zurueck und lieferte englischen Rahmen um bulgarischen Text.
 const BG_ROUTE_PATHS = [
   '/ogled-muhal-vlaga',
+  // Legionellen-Landingpage (31.10.2026), BG-Fassung
+  '/legionela-vodna-higiena-hoteli-bulgaria',
 ]
 
 // REQ-2026-08-25-PC-UND-PCAI-ANTWORTEN-…-DUPLIKATE: same bug class as EN_ROUTE_PATHS

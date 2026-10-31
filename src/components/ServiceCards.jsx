@@ -1,5 +1,6 @@
 import { useLang } from '../context/LanguageContext'
 import { withTrailingSlash } from './Link'
+import { LEGIONELLEN_PATHS } from '../data/legionellenContent'
 
 const VIDEO_SRC = '/Videoanalyse.mp4'
 
@@ -75,7 +76,7 @@ export default function ServiceCards() {
       data: s.mold,
     },
     {
-      // Legionellen-Landingpage (30.10.2026): Karte nur, wo es Text in der Sprache gibt (vorerst DE).
+      // Legionellen-Landingpage (30.10.2026, DE/EN/BG seit 31.10.): Link je Sprache.
       key: 'legionella',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +85,7 @@ export default function ServiceCards() {
       ),
       highlight: false,
       data: s.legionella,
-      link: '/legionellen-wasserhygiene-hotel-bulgarien',
+      link: LEGIONELLEN_PATHS[lang] || LEGIONELLEN_PATHS.de,
     },
   ].filter((svc) => svc.data)
 

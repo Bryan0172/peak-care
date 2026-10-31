@@ -77,8 +77,10 @@ export default function App() {
                 {/* W2 PC-3 Landeseite (V-WERBEKAMPAGNE 13.10.2026): nur BG + EN */}
                 <Route path="/ogled-muhal-vlaga" element={<MouldDampSiteVisit />} />
                 <Route path="/mould-damp-site-visit-bulgaria" element={<MouldDampSiteVisit />} />
-                {/* Legionellen-Landingpage (Andreas-Auftrag 30.10.2026): vorerst nur DE */}
-                <Route path="/legionellen-wasserhygiene-hotel-bulgarien" element={<LegionellenHotelBulgarien />} />
+                {/* Legionellen-Landingpage (Andreas-Auftrag 30.10.2026): DE/EN/BG */}
+                <Route path="/legionellen-wasserhygiene-hotel-bulgarien" element={<LegionellenHotelBulgarien lang="de" />} />
+                <Route path="/legionella-water-hygiene-hotels-bulgaria" element={<LegionellenHotelBulgarien lang="en" />} />
+                <Route path="/legionela-vodna-higiena-hoteli-bulgaria" element={<LegionellenHotelBulgarien lang="bg" />} />
               </Routes>
             </Suspense>
           </main>

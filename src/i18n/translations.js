@@ -68,8 +68,8 @@ export const translations = {
       },
       legionella: {
         title: 'Legionellen & Wasserhygiene für Hotels',
-        desc: 'Technische Ausgangslage im Hotel-Wassersystem, Einordnung der Pflichten nach Наредба 9 und ein dokumentierter Maßnahmenplan, abgestimmt mit akkreditierten Laboren und der RZI. Wir sind kein Labor und versprechen keine Keimfreiheit, sondern Klarheit.',
-        features: ['Unterlagen & Begehung', 'Warm-/Kaltwasserschemata', 'Maßnahmenliste & Umsetzung', 'Dokumentation für die RZI'],
+        desc: 'Technische Bestandsaufnahme, Laboranalysen in Kooperation mit zugelassenen Laboren, Instandsetzung und Desinfektion mit Kontrollbeprobung – aus einer Hand, dokumentiert für die RZI. Wir versprechen keine Keimfreiheit, sondern einen nachvollziehbaren Weg vom Befund zur Lösung.',
+        features: ['Begehung & Risikoeinschätzung', 'Labor mit zugelassenen Laboren', 'Instandsetzung & Desinfektion', 'Kontrollbeprobung & Dokumentation'],
       },
       crisis: {
         title: 'Krisenvorsorge & Beratung',
@@ -216,6 +216,11 @@ export const translations = {
         desc: 'Professional root-cause analysis, removal and permanent remediation of mold and moisture damage – one of our specialties, with a written assessment and photo documentation.',
         features: ['Root cause analysis', 'Mold removal', 'Protective coating', 'Photo documentation'],
       },
+      legionella: {
+        title: 'Legionella & Water Hygiene for Hotels',
+        desc: 'Technical survey, laboratory analysis in cooperation with approved laboratories, remedial works and disinfection with follow-up sampling: from one source, documented for the RZI. We do not promise germ-free water, but a traceable path from finding to solution.',
+        features: ['Survey & risk assessment', 'Approved laboratories', 'Remedial works & disinfection', 'Follow-up sampling & documentation'],
+      },
       crisis: {
         title: 'Crisis Preparedness & Consulting',
         desc: 'Building risk analysis, emergency planning and infrastructure protection – for owners who want to additionally safeguard their property against outages.',
@@ -350,6 +355,11 @@ export const translations = {
         title: 'Саниране на мухъл и влага',
         desc: 'Професионален анализ на причините, отстраняване и трайно саниране на щети от мухъл и влага – една от нашите специалности, с писмено становище и фотодокументация.',
         features: ['Анализ на причините', 'Отстраняване на мухъл', 'Защитно покритие', 'Фотодокументация'],
+      },
+      legionella: {
+        title: 'Легионела и водна хигиена за хотели',
+        desc: 'Техническа оценка, лабораторни анализи в сътрудничество с одобрени лаборатории, ремонт и дезинфекция с контролно пробовземане: от един екип, документирано за РЗИ. Не обещаваме вода без бактерии, а проследим път от резултата до решението.',
+        features: ['Оглед и оценка на риска', 'Одобрени лаборатории', 'Ремонт и дезинфекция', 'Контролно пробовземане и документация'],
       },
       crisis: {
         title: 'Кризисна готовност и консултации',

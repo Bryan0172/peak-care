@@ -14,6 +14,7 @@ export const LANG_PAIRS = [
   { de: '/bauinspektion-vor-dem-kauf-bulgarien', en: '/pre-purchase-building-inspection-bulgaria' },
   { de: '/technische-immobilienueberwachung-bulgarien', en: '/technical-property-oversight-bulgaria' },
   { en: '/mould-damp-site-visit-bulgaria', bg: '/ogled-muhal-vlaga' },
+  { de: '/legionellen-wasserhygiene-hotel-bulgarien', en: '/legionella-water-hygiene-hotels-bulgaria', bg: '/legionela-vodna-higiena-hoteli-bulgaria' },
 ]
 
 const norm = (p) => (p || '/').replace(/\/$/, '') || '/'
