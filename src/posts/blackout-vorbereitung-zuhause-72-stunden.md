@@ -145,7 +145,7 @@ Haben Sie Fragen zur Infrastruktur Ihres Gebäudes (Heizung, Wasserleitungen, Sc
 
 ## Weiterführende Artikel
 
-- [Wasservorrat anlegen: Schritt-für-Schritt-Anleitung für die Krisenvorsorge](/blog/wasservorrat-anlegen-krisenvorsorge)
+- [Wasservorrat anlegen: Schritt-für-Schritt-Anleitung für die Krisenvorsorge](/blog/wasservorrat-anlegen-krisenvorsorge-anleitung)
 - [Rückstauklappe: Warum jeder Hausbesitzer eine braucht](/blog/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht)
-- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause)
-- [Schimmel im Winter: Warum er entsteht und was wirklich hilft](/blog/schimmel-im-winter)
+- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause-fuer-familien)
+- [Schimmel im Winter: Warum er entsteht und was wirklich hilft](/blog/schimmel-im-winter-erkennen)

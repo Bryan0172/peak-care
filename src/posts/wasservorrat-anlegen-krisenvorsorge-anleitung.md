@@ -228,5 +228,5 @@ Bei 4 Litern pro Person und Tag: 160 Liter. Als Mineralwasser ab ca. 40–60 €
 
 - [Blackout-Vorbereitung: Die 72-Stunden-Checkliste für Ihr Zuhause](/blog/blackout-vorbereitung-zuhause-72-stunden)
 - [Rückstauklappe: Warum jeder Hausbesitzer eine braucht](/blog/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht)
-- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause)
+- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause-fuer-familien)
 - [Feuchtigkeit im Keller: Ursachen, Schäden und Abdichtung](/blog/feuchtigkeit-keller-ursachen-abdichtung)

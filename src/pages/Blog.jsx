@@ -120,7 +120,7 @@ export default function Blog() {
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed flex-grow">{post.excerpt}</p>
                 <div className="flex items-center justify-between mt-4 pt-3 border-t border-gray-100">
-                  <span className="text-xs text-gray-400">{formatDate(post.date, lang)}</span>
+                  <span className="text-xs text-gray-400">{formatDate(post.date, lang)} · <span className="uppercase">{post.lang || 'de'}</span></span>
                   <span className="text-teal-600 text-sm font-medium group-hover:underline">{b.readMore}</span>
                 </div>
               </div>

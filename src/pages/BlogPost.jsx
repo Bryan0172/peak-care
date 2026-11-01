@@ -77,7 +77,10 @@ export default function BlogPost() {
     )
   }
 
-  const related = listedPosts.filter((p) => p.slug !== slug).slice(0, 2)
+  // Weitere Artikel in der Sprache des Artikels (01.11.2026: keine deutschen Titel unter englischen Artikeln)
+  const others = listedPosts.filter((p) => p.slug !== slug)
+  const sameLangOthers = others.filter((p) => (p.lang || 'de') === (post.lang || 'de'))
+  const related = (sameLangOthers.length >= 2 ? sameLangOthers : others).slice(0, 2)
   const heroImg = POST_IMAGES[slug]
 
   return (

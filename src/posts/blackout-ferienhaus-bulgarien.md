@@ -135,7 +135,7 @@ Ja, besonders wenn das Objekt älter als 15 Jahre ist, über eine ältere Elektr
 ## Weiterführende Artikel
 
 - [Blackout-Vorbereitung: Die 72-Stunden-Checkliste für Ihr Zuhause](/blog/blackout-vorbereitung-zuhause-72-stunden)
-- [Wasservorrat anlegen: Schritt-für-Schritt-Anleitung](/blog/wasservorrat-anlegen)
-- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause)
+- [Wasservorrat anlegen: Schritt-für-Schritt-Anleitung](/blog/wasservorrat-anlegen-krisenvorsorge-anleitung)
+- [Krisensicheres Zuhause: Der vollständige Schutzplan](/blog/krisensicheres-zuhause-fuer-familien)
 - [Feuchtigkeit im Keller: Ursachen und dauerhafte Lösung](/blog/feuchtigkeit-keller-ursachen-abdichtung)
 - [Immobilien kaufen in Bulgarien: Der ehrliche Leitfaden](/blog/immobilien-bulgarien-kaufen-auslaender-leitfaden)
