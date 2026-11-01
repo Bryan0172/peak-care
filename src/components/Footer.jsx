@@ -22,7 +22,10 @@ export default function Footer() {
     { to: isEn ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien',
       label: isEn ? 'Technical Property Oversight' : isBg ? 'Технически надзор на имоти' : 'Technische Immobilienüberwachung' },
     { to: '/service/renovierung-umbau-ausbau-bulgarien',
-      label: isEn ? 'Renovation & Conversion' : isBg ? 'Саниране и преустройство' : 'Renovierung & Umbau' },
+      label: isEn ? 'Renovation & Conversion (DE)' : isBg ? 'Саниране и преустройство (DE)' : 'Renovierung & Umbau' },
+    // Legionellen-Seite (live 01.11.2026): site-weiter Footer-Link in der Sprache des Besuchers, alle drei Sprachfassungen existieren.
+    { to: isEn ? '/legionella-water-hygiene-hotels-bulgaria' : isBg ? '/legionela-vodna-higiena-hoteli-bulgaria' : '/legionellen-wasserhygiene-hotel-bulgarien',
+      label: isEn ? 'Legionella & Water Hygiene' : isBg ? 'Легионела и водна хигиена' : 'Legionellen & Wasserhygiene' },
     // EIL 19.10.2026 (dot-Befund): EN zeigte auf die deutsche Seite. EN -> EN-Seite, BG -> die
     // bulgarische Feuchte-/Schimmel-Seite (einzige BG-Seite zum Thema, war bisher ohne internen Link).
     { to: isEn ? '/service/mold-removal-bansko' : isBg ? '/ogled-muhal-vlaga' : '/service/schimmelbeseitigung-bansko',
