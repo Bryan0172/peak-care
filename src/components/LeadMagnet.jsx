@@ -6,9 +6,9 @@ const CONTENT = {
   de: {
     badge: 'KOSTENLOS',
     headline: 'Haben Sie ein verstecktes Schimmelproblem?',
-    sub: 'Finden Sie es in 5 Minuten heraus — mit unserem kostenlosen 5-Punkte-Sofort-Check.',
+    sub: 'Finden Sie es in 5 Minuten heraus — mit unserem kostenlosen 10-Punkte-Sofort-Check.',
     bullets: [
-      '5-Punkte-Check zum sofortigen Einsatz in Ihrer Immobilie',
+      '10-Punkte-Check zum sofortigen Einsatz in Ihrer Immobilie',
       'Klare Auswertung: Kein Risiko / Erhöhtes Risiko / Dringend handeln',
       'Konkrete nächste Schritte für jedes Szenario',
     ],
@@ -23,9 +23,9 @@ const CONTENT = {
   en: {
     badge: 'FREE',
     headline: 'Do you have a hidden mold problem?',
-    sub: 'Find out in 5 minutes — with our free 5-point quick check.',
+    sub: 'Find out in 5 minutes — with our free 10-point quick check.',
     bullets: [
-      '5-point check for immediate use at your property',
+      '10-point check for immediate use at your property',
       'Clear result: No risk / Elevated risk / Urgent action needed',
       'Concrete next steps for every scenario',
     ],
@@ -40,9 +40,9 @@ const CONTENT = {
   bg: {
     badge: 'БЕЗПЛАТНО',
     headline: 'Имате скрит проблем с мухъл?',
-    sub: 'Разберете за 5 минути — с нашата безплатна проверка.',
+    sub: 'Разберете за 5 минути — с нашата безплатна проверка от 10 точки (PDF на немски и английски).',
     bullets: [
-      'Проверка в 5 стъпки за вашия имот',
+      'Проверка в 10 точки за вашия имот',
       'Ясна оценка: Без риск / Повишен риск / Спешно действие',
       'Конкретни следващи стъпки за всеки сценарий',
     ],
