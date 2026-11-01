@@ -1,16 +1,17 @@
 import { useSEO } from '../hooks/useSEO'
 
 // Privacy Policy (EN) of peak-care.com — 01.11.2026. Content-faithful English version of src/pages/Datenschutz.jsx
-// (German is the binding original text). Prepared at Andreas' direction, no new legal statements added.
+// Prepared at Andreas' direction (01.11.2026), based on the translation delivered by dot/Root; no new legal statements added.
 
 export default function PrivacyPolicy() {
   useSEO({
     title: 'Privacy Policy | Peak Care',
-    description: 'Privacy policy of peak-care.com: how we process personal data (hosting, analytics with consent, contact form) under the GDPR. English version; the German text is binding.',
+    description: 'Privacy policy of peak-care.com: how we process personal data (hosting, analytics with consent, contact form) under the GDPR.',
     canonical: 'https://peak-care.com/privacy-policy',
     alternates: [
       { hreflang: 'de', href: 'https://peak-care.com/datenschutz/' },
       { hreflang: 'en', href: 'https://peak-care.com/privacy-policy/' },
+      { hreflang: 'bg', href: 'https://peak-care.com/politika-za-poveritelnost/' },
       { hreflang: 'x-default', href: 'https://peak-care.com/privacy-policy/' },
     ],
   })
@@ -21,11 +22,7 @@ export default function PrivacyPolicy() {
     <div className="bg-white">
       <div className="max-w-3xl mx-auto px-6 pt-32 pb-24">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Privacy Policy</h1>
-        <p className="text-sm text-gray-500 mb-4">Last updated: {updated}</p>
-        <p className="text-sm text-gray-500 mb-10">
-          This is an English version for convenience. In case of doubt, the German version applies:{' '}
-          <a href="/datenschutz/" className="text-teal-600 underline">Datenschutzerklärung (DE)</a>.
-        </p>
+        <p className="text-sm text-gray-500 mb-10">Last updated: {updated} · <a href="/datenschutz/" className="text-teal-600 underline">Datenschutzerklärung (DE)</a></p>
 
         <div className="space-y-8 text-gray-700 leading-relaxed text-[15px]">
 
@@ -56,7 +53,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">4. Cookies &amp; consent</h2>
             <p>We use technically necessary cookies to ensure the operation of the website. Cookies and similar technologies that are not strictly necessary (in particular for reach measurement/analytics) are used only with your <strong>express consent</strong> via our consent banner (Art. 6(1)(a) GDPR, Section 25(1) TTDSG).</p>
-            <p className="mt-3">Until you consent, analytics services remain disabled (default: “denied” in Google Consent Mode). You can withdraw your consent at any time with effect for the future by deleting the stored choice in your browser (website data/cookies for peak-care.com) and reloading the page — the banner will then appear again.</p>
+            <p className="mt-3">Until you give your consent, analytics storage is denied by default (default setting: “denied” in Google Consent Mode). You can withdraw your consent at any time with effect for the future by deleting the stored choice in your browser (website data/cookies for peak-care.com) and reloading the page — the banner will then appear again.</p>
           </section>
 
           <section>
@@ -66,8 +63,8 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">6. Google Fonts</h2>
-            <p>For a consistent display of fonts, this website embeds fonts from Google Fonts (Google Ireland Limited). When a page is accessed, a connection to Google servers is established for this purpose, and your IP address is transmitted to Google. The legal basis is our legitimate interest in an appealing presentation (Art. 6(1)(f) GDPR). Further information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">Google privacy</a>.</p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">6. Fonts</h2>
+            <p>The Inter typeface is provided locally by our website. No connection to Google Fonts servers is established for this font integration.</p>
           </section>
 
           <section>

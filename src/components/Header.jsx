@@ -23,6 +23,8 @@ export default function Header() {
   const switchLang = (code) => {
     setLang(code)
     setLangOpen(false)
+    // Explizite Sprachwahl immer vor jedem Return merken (dot 08:44Z): sonst laedt /#kontakt nach DE-Home -> EN-Seite wieder DE.
+    try { sessionStorage.setItem('pc_lang', code) } catch (e) { /* privat/blockiert */ }
     const target = counterpartPath(location.pathname, code)
     if (target) {
       navigate(`${target}/`)
@@ -32,7 +34,6 @@ export default function Header() {
     // Deutsch bleibt Sitzungszustand (es gibt keine deutsche Startseite). Gewaehlte Sprache ueberlebt Neuladen.
     const p = (location.pathname || '/').replace(/\/$/, '') || '/'
     if (p === '/' || p === '/bg' || p === '/en') {
-      try { sessionStorage.setItem('pc_lang', code) } catch (e) { /* privat/blockiert */ }
       if (code === 'bg') navigate(`/bg/${location.hash || ''}`)
       else if (p !== '/') navigate(`/${location.hash || ''}`)
     }

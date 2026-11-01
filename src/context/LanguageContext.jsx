@@ -29,6 +29,8 @@ const BG_ROUTE_PATHS = [
   '/ogled-muhal-vlaga',
   // Legionellen-Landingpage (31.10.2026), BG-Fassung
   '/legionela-vodna-higiena-hoteli-bulgaria',
+  // Politika za poveritelnost BG (01.11.2026)
+  '/politika-za-poveritelnost',
 ]
 
 // REQ-2026-08-25-PC-UND-PCAI-ANTWORTEN-…-DUPLIKATE: same bug class as EN_ROUTE_PATHS

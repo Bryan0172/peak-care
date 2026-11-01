@@ -16,6 +16,7 @@ const PrePurchaseBuildingSurveyBulgaria  = lazy(() => import('./pages/PrePurchas
 const HausverwaltungBulgaria             = lazy(() => import('./pages/HausverwaltungBulgaria'))
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
 const PrivacyPolicy      = lazy(() => import('./pages/PrivacyPolicy'))
+const PrivacyPolicyBg    = lazy(() => import('./pages/PrivacyPolicyBg'))
 const Impressum          = lazy(() => import('./pages/Impressum'))
 const MouldDampSiteVisit = lazy(() => import('./pages/MouldDampSiteVisit'))
 const LegionellenHotelBulgarien = lazy(() => import('./pages/LegionellenHotelBulgarien'))
@@ -99,6 +100,7 @@ export default function App() {
                 <Route path="/pre-purchase-building-inspection-bulgaria" element={<PrePurchaseBuildingSurveyBulgaria />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/politika-za-poveritelnost" element={<PrivacyPolicyBg />} />
                 <Route path="/impressum" element={<Impressum />} />
                 {/* W2 PC-3 Landeseite (V-WERBEKAMPAGNE 13.10.2026): nur BG + EN */}
                 <Route path="/ogled-muhal-vlaga" element={<MouldDampSiteVisit />} />

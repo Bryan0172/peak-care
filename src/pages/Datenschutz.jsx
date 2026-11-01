@@ -17,6 +17,7 @@ export default function Datenschutz() {
     alternates: [
       { hreflang: 'de', href: 'https://peak-care.com/datenschutz/' },
       { hreflang: 'en', href: 'https://peak-care.com/privacy-policy/' },
+      { hreflang: 'bg', href: 'https://peak-care.com/politika-za-poveritelnost/' },
       { hreflang: 'x-default', href: 'https://peak-care.com/datenschutz/' },
     ],
   })
@@ -58,7 +59,7 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-3">4. Cookies &amp; Einwilligung</h2>
             <p>Technisch notwendige Cookies setzen wir ein, um den Betrieb der Website zu gewährleisten. Cookies und vergleichbare Technologien, die nicht zwingend erforderlich sind (insbesondere zur Reichweitenmessung/Analyse), setzen wir nur mit Ihrer <strong>ausdrücklichen Einwilligung</strong> über unser Einwilligungs-Banner ein (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TTDSG).</p>
-            <p className="mt-3">Bis zu Ihrer Einwilligung bleiben Analyse-Dienste deaktiviert (Standard: „denied" im Google Consent Mode). Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die gespeicherte Auswahl in Ihrem Browser löschen (Website-Daten/Cookies für peak-care.com) und die Seite neu laden — das Banner erscheint dann erneut.</p>
+            <p className="mt-3">Bis zu Ihrer Einwilligung ist die Analyse-Speicherung standardmäßig verweigert (Standard: „denied" im Google Consent Mode). Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die gespeicherte Auswahl in Ihrem Browser löschen (Website-Daten/Cookies für peak-care.com) und die Seite neu laden — das Banner erscheint dann erneut.</p>
           </section>
 
           <section>
@@ -68,8 +69,8 @@ export default function Datenschutz() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">6. Google Fonts</h2>
-            <p>Zur einheitlichen Darstellung von Schriftarten bindet diese Website Schriften von Google Fonts (Google Ireland Limited) ein. Beim Aufruf einer Seite wird hierzu eine Verbindung zu Servern von Google hergestellt, wobei Ihre IP-Adresse an Google übermittelt wird. Rechtsgrundlage ist unser berechtigtes Interesse an einer ansprechenden Darstellung (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-teal-600 underline">Google-Datenschutz</a>.</p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">6. Schriftarten</h2>
+            <p>Die Schriftart Inter wird von unserer Website lokal bereitgestellt. Für diese Schrifteinbindung wird keine Verbindung zu Servern von Google Fonts hergestellt.</p>
           </section>
 
           <section>
