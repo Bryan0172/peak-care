@@ -22,7 +22,7 @@ export const zipperPages = [
       cta: 'Kostenlose Videoanalyse buchen',
     },
     problems: [
-      { icon: '🔍', title: 'Schimmel wächst schnell', text: 'In Bankos Klima – feucht im Winter, heiß im Sommer – breitet sich Schimmel in unbewohnten Objekten innerhalb von Wochen aus. Besonders in Kellern, Bädern und schlecht gelüfteten Räumen.' },
+      { icon: '🔍', title: 'Schimmel wächst schnell', text: 'In Banskos Klima – feucht im Winter, heiß im Sommer – breitet sich Schimmel in unbewohnten Objekten innerhalb von Wochen aus. Besonders in Kellern, Bädern und schlecht gelüfteten Räumen.' },
       { icon: '🏠', title: 'Auslandseigentümer unterschätzen das Risiko', text: 'Wenn Sie Ihre Immobilie in Bansko nur saisonal nutzen, bemerken Sie das Problem oft zu spät. Was mit einem Fleck beginnt, wird zur vollständigen Wandinfiltration.' },
       { icon: '💰', title: 'Günstige Lösungen kosten mehr', text: 'Schimmelspray aus dem Baumarkt entfernt das Sichtbare – nicht die Ursache. In 3–6 Monaten ist alles wieder da. Wir sanieren dauerhaft: Ursache identifizieren, beseitigen, versiegeln.' },
     ],
@@ -123,7 +123,7 @@ export const zipperPages = [
       cta: 'Kostenlose Videoanalyse buchen',
     },
     problems: [
-      { icon: '❄️', title: 'Bankos Winter ist feucht', text: 'Schneeschmelze und Frühjahrsregen setzen Kellerwände unter Druck. Ohne funktionierende Abdichtung dringt Wasser in Risse und Fugen ein – oft unbemerkt, bis der Schaden sichtbar ist.' },
+      { icon: '❄️', title: 'Banskos Winter ist feucht', text: 'Schneeschmelze und Frühjahrsregen setzen Kellerwände unter Druck. Ohne funktionierende Abdichtung dringt Wasser in Risse und Fugen ein – oft unbemerkt, bis der Schaden sichtbar ist.' },
       { icon: '🏔️', title: 'Bergklima beschleunigt Verschleiß', text: 'Temperaturschwankungen zwischen -15°C im Winter und +30°C im Sommer lassen Beton arbeiten. Mikrorisse entstehen, durch die Feuchtigkeit eindringt und Schimmel folgt.' },
       { icon: '🏠', title: 'Ferienimmobilien ohne regelmäßige Kontrolle', text: 'Wer seine Bansko-Immobilie nur saisonal nutzt, bemerkt Feuchtigkeitsprobleme oft erst wenn der Schaden groß ist. Vorbeugen kostet ein Zehntel der späteren Sanierung.' },
     ],
