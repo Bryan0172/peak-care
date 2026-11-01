@@ -10,7 +10,9 @@ export default function ServiceCards() {
   // BG: diese Seiten gibt es nur auf DE und EN; BG-Besucher bekommen die EN-Seite, im Label gekennzeichnet (01.11.2026).
   const oversightUrl = lang === 'de' ? '/technische-immobilienueberwachung-bulgarien' : '/technical-property-oversight-bulgaria'
   const surveyUrl = lang === 'de' ? '/bauinspektion-vor-dem-kauf-bulgarien' : '/pre-purchase-building-inspection-bulgaria'
-  const moreText = lang === 'en' ? 'Learn more →' : lang === 'bg' ? 'Научете повече (EN) →' : 'Mehr erfahren →'
+  const moreText = lang === 'en' ? 'Learn more →' : lang === 'bg' ? 'Научете повече →' : 'Mehr erfahren →'
+  // BG: Bauinspektion/Ueberwachung gibt es nur auf EN -> Etikett (EN); Legionellen hat eine eigene BG-Seite
+  const moreTextEn = lang === 'bg' ? 'Научете повече (EN) →' : moreText
 
   const services = [
     {
@@ -33,6 +35,7 @@ export default function ServiceCards() {
       highlight: false,
       data: s.inspection,
       link: surveyUrl,
+      linkText: moreTextEn,
     },
     {
       key: 'renovation',
@@ -55,6 +58,7 @@ export default function ServiceCards() {
       highlight: false,
       data: s.oversight,
       link: oversightUrl,
+      linkText: moreTextEn,
     },
     {
       key: 'soundInsulation',
@@ -172,7 +176,7 @@ export default function ServiceCards() {
                 </ul>
                 {svc.link ? (
                   <a href={withTrailingSlash(svc.link)} className="btn-secondary text-center text-sm">
-                    {moreText}
+                    {svc.linkText || moreText}
                   </a>
                 ) : (
                   <a href="#kontakt" className="btn-secondary text-center text-sm">
