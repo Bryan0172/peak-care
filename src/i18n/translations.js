@@ -180,7 +180,7 @@ export const translations = {
       item2Text: 'One point of contact for all trades: diagnosis, planning, execution and sign-off. No managing multiple contractors – we handle it.',
       item3Title: 'To German Standards',
       item3Text: 'Material quality, workmanship and project documentation meet DACH standards – for investors who demand quality and value reliable partnerships.',
-      cta: 'More on renovation & construction',
+      cta: 'More on renovation & construction (DE)',
     },
 
     services: {
@@ -320,7 +320,7 @@ export const translations = {
       item2Text: 'Един контакт за всички занаяти: диагностика, планиране, изпълнение и приемане. Не координирате различни майстори – ние поемаме това.',
       item3Title: 'По немски стандарт',
       item3Text: 'Избор на материали, качество на изпълнение и проектна документация по стандартите на DACH региона – за инвеститори, които изискват качество и ценят надеждно партньорство.',
-      cta: 'Повече за реновирането',
+      cta: 'Повече за реновирането (DE)',
     },
 
     services: {

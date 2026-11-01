@@ -296,7 +296,7 @@ export default function TechnicalPropertyOversightBulgaria() {
                 {lang === 'de' ? 'Service' : 'Service'}
               </div>
               <div className="text-sm text-gray-200 font-medium leading-snug">
-                {lang === 'de' ? 'Kellerabdichtung Bulgarien' : 'Basement Waterproofing Bulgaria'}
+                {lang === 'de' ? 'Kellerabdichtung Bulgarien' : 'Basement Waterproofing Bulgaria (DE)'}
               </div>
             </Link>
             <a

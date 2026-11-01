@@ -170,7 +170,7 @@ export default function BlogPost() {
             {[
               { to: lang === 'en' ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien', label: lang === 'en' ? 'Pre-Purchase Building Inspection' : lang === 'bg' ? 'Техническа проверка преди покупка' : 'Bauinspektion vor dem Kauf' },
               { to: lang === 'en' ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien', label: lang === 'en' ? 'Technical Property Oversight' : lang === 'bg' ? 'Технически надзор на имоти' : 'Technische Immobilienüberwachung' },
-              { to: '/service/renovierung-umbau-ausbau-bulgarien', label: lang === 'en' ? 'Renovation & Conversion' : lang === 'bg' ? 'Саниране и преустройство' : 'Renovierung & Umbau' },
+              { to: '/service/renovierung-umbau-ausbau-bulgarien', label: lang === 'en' ? 'Renovation & Conversion (DE)' : lang === 'bg' ? 'Саниране и преустройство (DE)' : 'Renovierung & Umbau' },
             ].map((s) => (
               <Link key={s.to} to={s.to} className="block bg-white border border-gray-200 rounded-lg p-4 text-sm font-medium text-gray-800 hover:border-teal-500 hover:text-teal-600 transition-colors">
                 {s.label} →

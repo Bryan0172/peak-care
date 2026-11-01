@@ -197,8 +197,8 @@ const content = {
     related: 'Related services',
     relatedLinks: [
       { to: '/technical-property-oversight-bulgaria', label: 'Ongoing property oversight', tag: 'Service' },
-      { to: '/service/renovierung-umbau-ausbau-bulgarien', label: 'Renovation & conversion Bulgaria', tag: 'Service' },
-      { to: '/service/kellerabdichtung-bansko', label: 'Basement waterproofing & damp control', tag: 'Service' },
+      { to: '/service/renovierung-umbau-ausbau-bulgarien', label: 'Renovation & conversion Bulgaria (DE)', tag: 'Service' },
+      { to: '/service/kellerabdichtung-bansko', label: 'Basement waterproofing & damp control (DE)', tag: 'Service' },
     ],
   },
 
@@ -290,8 +290,8 @@ const content = {
     related: 'Свързани услуги',
     relatedLinks: [
       { to: '/technische-immobilienueberwachung-bulgarien', label: 'Текущ надзор на имота', tag: 'Услуга' },
-      { to: '/service/renovierung-umbau-ausbau-bulgarien', label: 'Саниране и преустройство', tag: 'Услуга' },
-      { to: '/service/kellerabdichtung-bansko', label: 'Хидроизолация на сутерен', tag: 'Услуга' },
+      { to: '/service/renovierung-umbau-ausbau-bulgarien', label: 'Саниране и преустройство (DE)', tag: 'Услуга' },
+      { to: '/service/kellerabdichtung-bansko', label: 'Хидроизолация на сутерен (DE)', tag: 'Услуга' },
     ],
   },
 }
