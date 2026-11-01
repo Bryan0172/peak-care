@@ -58,7 +58,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Beprobung und Laboranalyse',
-          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung erfolgen durch akkreditierte Labore, mit denen wir kooperieren. Wir schlagen die Probenstellen vor, organisieren Termin und Zugang, bereiten die Anlage vor und führen die Befunde im Bericht zusammen.',
+          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung erfolgen durch ein für die betreffenden Prüfungen akkreditiertes Labor, das wir objektbezogen vor Beauftragung einbinden. Wir schlagen die Probenstellen vor, organisieren Termin und Zugang, bereiten die Anlage vor und führen die Befunde im Bericht zusammen.',
         ],
         [
           'Instandsetzung und Umbau',
