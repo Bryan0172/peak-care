@@ -41,7 +41,7 @@ export const zipperPages = [
     ],
     faqs: [
       { q: 'Was kostet Schimmelbeseitigung in Bansko?', a: 'Die Kosten hängen von Fläche und Ursache ab. Nach der kostenlosen Videoanalyse und der Begehung erhalten Sie ein verbindliches schriftliches Angebot, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.' },
-      { q: 'Wie lange dauert die Sanierung?', a: 'Eine typische Schimmelsanierung in einer Wohnung dauert 1–2 Tage. Komplexere Fälle mit Ursachenbehebung (z. B. Kellerabdichtung) 2–5 Tage. Sie bekommen vorab einen klaren Zeitplan.' },
+      { q: 'Wie lange dauert die Sanierung?', a: 'Je nach Umfang und Ursache: Eine typische Schimmelsanierung in einer Wohnung dauert oft 1–2 Tage, komplexere Fälle mit Ursachenbehebung (z. B. Kellerabdichtung) meist 2–5 Tage. Die Dauer hängt vom Umfang Ihres Falls ab; Sie bekommen vorab einen klaren Zeitplan.' },
       { q: 'Können Sie auch bei unbewohnten Objekten arbeiten?', a: 'Ja – das ist ein häufiger Fall. Wir koordinieren über Ihre Hausverwaltung oder einen Vertreter vor Ort. Die Videoanalyse klärt vorab den nächsten Schritt; das verbindliche schriftliche Angebot folgt nach der Begehung.' },
     ],
     internalLinks: [
@@ -222,8 +222,8 @@ export const zipperPages = [
     },
     problems: [
       { icon: '🏔️', title: "Bansko's climate accelerates mold growth", text: "High humidity in winter, temperature swings between seasons, and frequent periods when properties sit empty — Bansko's climate is ideal for mold. Unoccupied properties are especially at risk." },
-      { icon: '🔍', title: 'Surface treatments fail within months', text: 'Painting over mold or using spray products hides the problem for 3–6 months. Without addressing the moisture source — condensation, leaking pipes, thermal bridges — mold always returns.' },
-      { icon: '💷', title: 'Mold reduces property value and rental yield', text: 'Visible mold costs you 10–20% on resale. Guests leave negative reviews. Tenants move out. A one-time professional remediation protects your investment long-term.' },
+      { icon: '🔍', title: 'Surface treatments often fail within months', text: 'Painting over mold or using spray products often hides the problem only for a limited time. Without addressing the moisture source — condensation, leaking pipes, thermal bridges — mold typically returns.' },
+      { icon: '💷', title: 'Mold reduces property value and rental yield', text: 'Visible mold can reduce resale value and rental income, depending on the case. Guests may leave negative reviews and tenants may move out. Addressing the cause professionally helps protect your investment.' },
     ],
     service: {
       headline: 'Our Mold Removal Service in Bansko',
@@ -241,7 +241,7 @@ export const zipperPages = [
     faqs: [
       { q: 'How much does mold removal cost in Bansko?', a: 'It depends on the affected area and the root cause. After the free video assessment and the on-site inspection you receive a binding written quote, based on the actual condition. Any additions only with your written approval.' },
       { q: 'Can you work on properties I manage remotely?', a: "Yes — that's our most common scenario. We coordinate via your property manager or a local keyholder. The free video assessment shows the next step; the binding written quote follows the on-site inspection." },
-      { q: 'How long does mold remediation take?', a: 'A standard apartment takes 1–2 days. Cases requiring basement waterproofing or structural damp-proofing: 3–5 days. You receive a clear timeline before work begins.' },
+      { q: 'How long does mold remediation take?', a: 'Depending on scope and cause: a standard apartment often takes 1–2 days; cases requiring basement waterproofing or structural damp-proofing usually take 2–5 days. The duration depends on the scope of your case, and you receive a clear timeline before work begins.' },
     ],
     internalLinks: [
       { href: '/blog/mold-basement-removal-causes-solutions', text: 'Mold in the Basement: Causes and Permanent Solutions' },

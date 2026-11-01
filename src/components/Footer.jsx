@@ -1,3 +1,4 @@
+import { homePath } from '../utils/homePath'
 import { Link } from './Link'
 import { useLang } from '../context/LanguageContext'
 
@@ -62,10 +63,10 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-gray-400 mb-3 uppercase text-xs tracking-wider">{f.nav}</h3>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li><Link to="/" className="hover:text-teal-400 transition-colors">{n.home}</Link></li>
+            <li><Link to={homePath(lang)} className="hover:text-teal-400 transition-colors">{n.home}</Link></li>
             <li><Link to="/blog" className="hover:text-teal-400 transition-colors">{n.blog}</Link></li>
-            <li><a href="/#leistungen" className="hover:text-teal-400 transition-colors">{n.services}</a></li>
-            <li><a href="/#kontakt" className="hover:text-teal-400 transition-colors">{n.contact}</a></li>
+            <li><a href={homePath(lang, '#leistungen')} className="hover:text-teal-400 transition-colors">{n.services}</a></li>
+            <li><a href={homePath(lang, '#kontakt')} className="hover:text-teal-400 transition-colors">{n.contact}</a></li>
           </ul>
         </div>
 
@@ -102,7 +103,7 @@ export default function Footer() {
       <div className="border-t border-white/5 text-center text-gray-600 text-xs py-4 px-4">
         © {new Date().getFullYear()} Peak Care. {f.rights}
         {' · '}
-        <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy (DE)' : isBg ? 'Поверителност (DE)' : 'Datenschutz'}</Link>
+        <Link to={isEn ? '/privacy-policy' : '/datenschutz'} className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy' : isBg ? 'Поверителност (DE)' : 'Datenschutz'}</Link>
         {' · '}
         <Link to="/impressum" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Legal Notice (DE)' : isBg ? 'Правна информация (DE)' : 'Impressum'}</Link>
       </div>

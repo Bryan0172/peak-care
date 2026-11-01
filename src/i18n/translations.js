@@ -38,8 +38,8 @@ export const translations = {
       sub: 'Von der Bausubstanz-Begutachtung vor dem Kauf über Renovierung und Um-/Ausbau bis zur technischen Immobilienüberwachung – für ausländische und inländische Investoren und Eigentümer. Schimmel, Feuchte und Schallschutz als Spezialgebiete.',
       videoAnalysis: {
         title: 'Kostenlose Begutachtung per Videoanalyse',
-        desc: 'Sie filmen das Objekt – wir liefern Ihnen eine fachliche Ersteinschätzung der Bausubstanz, konkrete Empfehlungen und einen Kostenrahmen. Ideal vor einer Kaufentscheidung oder aus der Ferne, ganz ohne Anreise.',
-        features: ['15 Minuten live per Video', 'Einschätzung der Bausubstanz', 'Handlungsempfehlung', 'Kostenrahmen'],
+        desc: 'Sie filmen das Objekt – wir liefern Ihnen eine fachliche Ersteinschätzung der Bausubstanz, Empfehlungen zu Ihrem Fall und einen unverbindlichen Kostenrahmen. Ideal vor einer Kaufentscheidung oder aus der Ferne, ganz ohne Anreise.',
+        features: ['15 Minuten live per Video', 'Einschätzung der Bausubstanz', 'Handlungsempfehlung', 'Unverbindlicher Kostenrahmen'],
       },
       inspection: {
         title: 'Bausubstanz-Begutachtung vor dem Kauf',
@@ -99,7 +99,7 @@ export const translations = {
       headline: 'Videoanalyse buchen oder Kontakt aufnehmen',
       sub: 'Buchen Sie eine 15-minütige Videoanalyse oder schreiben Sie uns. Wir melden uns innerhalb von 24 Stunden. Vorortinspektion nur auf Anfrage.',
       videoTitle: 'Videoanalyse – 15 Min',
-      videoDesc: 'Schadensbeurteilung per Video. Konkrete Maßnahmen und der nächste Schritt – direkt im Gespräch.',
+      videoDesc: 'Schadensbeurteilung per Video: erste, unverbindliche Einschätzung und der empfohlene nächste Schritt – direkt im Gespräch.',
       bookVideo: 'Videoanalyse buchen',
       phone: 'Telefon',
       email: 'E-Mail',
@@ -188,8 +188,8 @@ export const translations = {
       sub: 'From pre-purchase building assessment through renovation and conversion to remote technical property oversight – for foreign and domestic investors and owners. Mold, moisture and sound insulation as specialties.',
       videoAnalysis: {
         title: 'Free assessment by video',
-        desc: 'You film the property – we provide a professional first assessment of the building fabric, concrete recommendations and a cost range. Ideal before a purchase decision or from abroad, with no travel needed.',
-        features: ['15-minute live video call', 'Building-fabric assessment', 'Recommendation', 'Cost range'],
+        desc: 'You film the property – we provide a professional first assessment of the building fabric, recommendations for your case and a non-binding cost range. Ideal before a purchase decision or from abroad, with no travel needed.',
+        features: ['15-minute live video call', 'Building-fabric assessment', 'Recommendation', 'Non-binding cost range'],
       },
       inspection: {
         title: 'Pre-purchase building assessment',
@@ -243,7 +243,7 @@ export const translations = {
       headline: 'Book a Video Analysis or Get in Touch',
       sub: 'Book a 15-minute video analysis or send us a message. We respond within 24 hours. On-site inspection by appointment only.',
       videoTitle: 'Video Analysis – 15 min',
-      videoDesc: 'Damage assessment via video. Concrete measures and the next step – directly in the conversation.',
+      videoDesc: 'Damage assessment via video: a first, non-binding assessment and the recommended next step – directly in the conversation.',
       bookVideo: 'Book Video Analysis',
       phone: 'Phone',
       email: 'Email',
@@ -329,7 +329,7 @@ export const translations = {
       videoAnalysis: {
         title: 'Безплатна оценка чрез видео',
         desc: 'Вие заснемате обекта – даваме професионална първоначална оценка на сградната конструкция, конкретни препоръки и ценови диапазон. Идеално преди решение за покупка или от разстояние, без пътуване.',
-        features: ['15 минути живо видео', 'Оценка на конструкцията', 'Препоръка', 'Ценови диапазон'],
+        features: ['15 минути живо видео', 'Оценка на конструкцията', 'Препоръка', 'Ориентировъчен ценови диапазон'],
       },
       inspection: {
         title: 'Оценка на сградата преди покупка',
@@ -383,7 +383,7 @@ export const translations = {
       headline: 'Запазете видеоанализ или се свържете с нас',
       sub: 'Запазете 15-минутен видеоанализ или ни пишете. Отговаряме до 24 часа. Оглед на място само по заявка.',
       videoTitle: 'Видеоанализ – 15 мин',
-      videoDesc: 'Оценка на щетите чрез видео. Конкретни мерки и ценова оценка – директно в разговора.',
+      videoDesc: 'Оценка на щетите чрез видео: първоначална, необвързваща оценка и препоръчана следваща стъпка – директно в разговора.',
       bookVideo: 'Запази видеоанализ',
       phone: 'Телефон',
       email: 'Имейл',

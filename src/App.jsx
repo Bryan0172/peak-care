@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { LanguageProvider, useLang } from './context/LanguageContext'
 import { Suspense, lazy, useEffect } from 'react'
@@ -15,6 +15,7 @@ const TechnicalPropertyOversightBulgaria = lazy(() => import('./pages/TechnicalP
 const PrePurchaseBuildingSurveyBulgaria  = lazy(() => import('./pages/PrePurchaseBuildingSurveyBulgaria'))
 const HausverwaltungBulgaria             = lazy(() => import('./pages/HausverwaltungBulgaria'))
 const Datenschutz        = lazy(() => import('./pages/Datenschutz'))
+const PrivacyPolicy      = lazy(() => import('./pages/PrivacyPolicy'))
 const Impressum          = lazy(() => import('./pages/Impressum'))
 const MouldDampSiteVisit = lazy(() => import('./pages/MouldDampSiteVisit'))
 const LegionellenHotelBulgarien = lazy(() => import('./pages/LegionellenHotelBulgarien'))
@@ -38,6 +39,29 @@ function HtmlLang() {
   return null
 }
 
+// Anker (#kontakt, #leistungen) nach vollem Seitenaufruf: Die Seite wird erst clientseitig aufgebaut,
+// der Browser findet den Anker beim Laden noch nicht (01.11.2026, dot P1.3 "Kontaktweg").
+function HashScroll() {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (!hash) return undefined
+    const id = decodeURIComponent(hash.slice(1))
+    let tries = 0
+    const t = setInterval(() => {
+      const el = document.getElementById(id)
+      tries += 1
+      if (el) {
+        el.scrollIntoView({ block: 'start', behavior: 'instant' })
+        clearInterval(t)
+      } else if (tries > 25) {
+        clearInterval(t)
+      }
+    }, 120)
+    return () => clearInterval(t)
+  }, [pathname, hash])
+  return null
+}
+
 function PageLoader() {
   return (
     <div className="flex items-center justify-center min-h-[40vh]">
@@ -52,6 +76,7 @@ export default function App() {
     <LanguageProvider>
       <BrowserRouter>
         <HtmlLang />
+        <HashScroll />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
@@ -73,6 +98,7 @@ export default function App() {
                 <Route path="/bauinspektion-vor-dem-kauf-bulgarien" element={<PrePurchaseBuildingSurveyBulgaria />} />
                 <Route path="/pre-purchase-building-inspection-bulgaria" element={<PrePurchaseBuildingSurveyBulgaria />} />
                 <Route path="/datenschutz" element={<Datenschutz />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/impressum" element={<Impressum />} />
                 {/* W2 PC-3 Landeseite (V-WERBEKAMPAGNE 13.10.2026): nur BG + EN */}
                 <Route path="/ogled-muhal-vlaga" element={<MouldDampSiteVisit />} />

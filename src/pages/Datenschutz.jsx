@@ -14,6 +14,11 @@ export default function Datenschutz() {
     title: 'Datenschutzerklärung | Peak Care',
     description: 'Datenschutzerklärung von peak-care.com — wie wir personenbezogene Daten verarbeiten (Hosting, Analyse mit Einwilligung, Kontaktformular) nach DSGVO.',
     canonical: 'https://peak-care.com/datenschutz',
+    alternates: [
+      { hreflang: 'de', href: 'https://peak-care.com/datenschutz/' },
+      { hreflang: 'en', href: 'https://peak-care.com/privacy-policy/' },
+      { hreflang: 'x-default', href: 'https://peak-care.com/datenschutz/' },
+    ],
   })
 
   const updated = '24. Oktober 2026'

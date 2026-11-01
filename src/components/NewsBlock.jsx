@@ -20,8 +20,10 @@ export default function NewsBlock() {
   // Startseite zeigt Artikel in der Sprache des Besuchers (01.11.2026, Andreas: keine deutschen Teaser auf EN/BG).
   // Es gibt keine bulgarischen Artikel: BG zeigt die englischen. Ohne Treffer: alle Artikel wie bisher.
   const postLang = lang === 'bg' ? 'en' : lang
-  const sameLang = allPosts.filter((p) => (p.lang || 'de') === postLang)
-  const latest = (sameLang.length >= 3 ? sameLang : allPosts).slice(0, 3)
+  // PC10 (Andreas 01.11.): Heizungspflicht-/GModG-Artikel nicht auf der Startseite; er bleibt im Blog.
+  const startPosts = allPosts.filter((p) => p.slug !== 'waermeplanung-2026-heizung-feuchte')
+  const sameLang = startPosts.filter((p) => (p.lang || 'de') === postLang)
+  const latest = (sameLang.length >= 3 ? sameLang : startPosts).slice(0, 3)
 
   return (
     <section className="py-20 bg-white">
@@ -62,6 +64,11 @@ export default function NewsBlock() {
                 <span className={`absolute top-3 left-3 text-xs font-medium px-2 py-0.5 rounded-full ${categoryColors[post.category] || 'bg-gray-100 text-gray-600'}`}>
                   {post.category}
                 </span>
+                {lang !== (post.lang || 'de') && (
+                  <span className="absolute top-3 right-3 text-xs font-semibold px-2 py-0.5 rounded-full bg-black/60 text-white">
+                    {lang === 'bg' ? 'На английски' : (post.lang || 'de').toUpperCase()}
+                  </span>
+                )}
               </div>
 
               <div className="p-5 flex flex-col flex-grow">

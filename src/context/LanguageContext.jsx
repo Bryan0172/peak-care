@@ -18,6 +18,8 @@ const EN_ROUTE_PATHS = [
   '/mould-damp-site-visit-bulgaria',
   // Legionellen-Landingpage (31.10.2026), EN-Fassung
   '/legionella-water-hygiene-hotels-bulgaria',
+  // Privacy Policy EN (01.11.2026)
+  '/privacy-policy',
 ]
 
 // W2 PC-3 Landeseite (13.10.2026): erste eigenstaendige BG-Unterseite. Gleiche

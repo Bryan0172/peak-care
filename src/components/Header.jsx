@@ -1,3 +1,4 @@
+import { homePath } from '../utils/homePath'
 import { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { Link, NavLink } from './Link'
@@ -38,10 +39,10 @@ export default function Header() {
   }
 
   const navItems = [
-    { to: '/', label: t.nav.home },
+    { to: homePath(lang), label: t.nav.home },
     { to: '/blog', label: t.nav.blog },
-    { to: '/#leistungen', label: t.nav.services, hash: true },
-    { to: '/#kontakt', label: t.nav.contact, hash: true },
+    { to: homePath(lang, '#leistungen'), label: t.nav.services, hash: true },
+    { to: homePath(lang, '#kontakt'), label: t.nav.contact, hash: true },
   ]
 
   return (
@@ -49,7 +50,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0">
+        <Link to={homePath(lang)} className="flex items-center gap-2 group shrink-0">
           <span className="bg-teal-500 text-white font-bold text-xl w-9 h-9 flex items-center justify-center rounded-lg">
             P
           </span>
@@ -73,7 +74,7 @@ export default function Header() {
               <NavLink
                 key={item.label}
                 to={item.to}
-                end={item.to === '/'}
+                end={item.to === '/' || item.to === '/bg/'}
                 className={({ isActive }) =>
                   `text-sm font-medium transition-colors ${
                     isActive ? 'text-teal-600' : 'text-gray-600 hover:text-teal-600'
@@ -191,7 +192,7 @@ export default function Header() {
               <NavLink
                 key={item.label}
                 to={item.to}
-                end={item.to === '/'}
+                end={item.to === '/' || item.to === '/bg/'}
                 onClick={() => setMenuOpen(false)}
                 className={({ isActive }) =>
                   `block py-2.5 font-medium border-b border-gray-50 ${

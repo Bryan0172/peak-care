@@ -1,3 +1,4 @@
+import { homePath } from '../utils/homePath'
 import { useParams } from 'react-router-dom'
 import { Link, withTrailingSlash } from '../components/Link'
 import { Helmet } from 'react-helmet-async'
@@ -109,7 +110,7 @@ export default function BlogPost() {
       <div className="max-w-3xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-400 mb-8 flex items-center gap-2 flex-wrap">
-          <Link to="/" className="hover:text-teal-600 transition-colors">{t.nav.home}</Link>
+          <Link to={homePath(lang)} className="hover:text-teal-600 transition-colors">{t.nav.home}</Link>
           <span>/</span>
           <Link to="/blog" className="hover:text-teal-600 transition-colors">{b.headline}</Link>
           <span>/</span>
@@ -157,7 +158,7 @@ export default function BlogPost() {
         <div className="mt-12 bg-gray-950 rounded-2xl p-8 text-center">
           <h3 className="text-xl font-bold text-white mb-2">{b.ctaHeadline}</h3>
           <p className="text-gray-400 mb-5">{b.ctaSub}</p>
-          <a href="/#kontakt" className="btn-primary">{b.ctaBtn}</a>
+          <a href={homePath(lang, '#kontakt')} className="btn-primary">{b.ctaBtn}</a>
         </div>
 
         {/* Money-Page-Verlinkung (REFOCUS Cluster-Rebalancing): rankende Blog-Sichtbarkeit auf Hoch-Wert-Leistungen leiten */}

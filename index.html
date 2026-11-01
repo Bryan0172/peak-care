@@ -74,14 +74,14 @@
         // Sprache des Banners folgt <html lang> (wird von der App gesetzt, Sprachwechsel inklusive) — 01.11.2026
         var L={
           de:{t:'Wir verwenden Cookies für anonyme Statistik (Google Analytics), um unsere Website zu verbessern — nur mit Ihrer Einwilligung. Notwendige Funktionen bleiben davon unberührt. Mehr in unserer ',l:'Datenschutzerklärung',n:'Ablehnen',o:'Akzeptieren',a:'Cookie-Einwilligung'},
-          en:{t:'We use cookies for anonymous statistics (Google Analytics) to improve our website — only with your consent. Essential functions are not affected. More in our ',l:'Privacy policy (German)',n:'Reject',o:'Accept',a:'Cookie consent'},
+          en:{t:'We use cookies for anonymous statistics (Google Analytics) to improve our website — only with your consent. Essential functions are not affected. More in our ',l:'Privacy policy',n:'Reject',o:'Accept',a:'Cookie consent'},
           bg:{t:'Използваме бисквитки за анонимна статистика (Google Analytics), за да подобряваме уебсайта си — само с Вашето съгласие. Необходимите функции не се засягат. Повече в нашата ',l:'Политика за поверителност (на немски)',n:'Отказ',o:'Приемам',a:'Съгласие за бисквитки'}
         };
         function applyLang(){
           var k=(document.documentElement.getAttribute('lang')||'de').slice(0,2); var c=L[k]||L.de;
           var tx=document.getElementById('pc-text'); if(!tx)return;
           tx.innerHTML=''; tx.appendChild(document.createTextNode(c.t));
-          var a=document.createElement('a'); a.href='/datenschutz/'; a.style.color='#5eead4'; a.style.textDecoration='underline'; a.textContent=c.l; tx.appendChild(a); tx.appendChild(document.createTextNode('.'));
+          var a=document.createElement('a'); a.href=(k==='en')?'/privacy-policy/':'/datenschutz/'; a.style.color='#5eead4'; a.style.textDecoration='underline'; a.textContent=c.l; tx.appendChild(a); tx.appendChild(document.createTextNode('.'));
           var n=document.getElementById('pc-no'), o=document.getElementById('pc-ok'); if(n)n.textContent=c.n; if(o)o.textContent=c.o; el.setAttribute('aria-label',c.a);
         }
         applyLang();
