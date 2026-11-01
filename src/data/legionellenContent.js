@@ -62,7 +62,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Instandsetzung und Umbau',
-          'Unser eigenes Team setzt die freigegebenen Maßnahmen um: Totleitungen zurückbauen, Armaturen und Filter tauschen, Dämmung trennen, Leitungsabschnitte erneuern, Zugänglichkeit und Spülanschlüsse herstellen. Den konkreten Umfang legen wir nach Prüfung der Anlage fest.',
+          'Unser eigenes Team setzt die freigegebenen Maßnahmen um: Totleitungen zurückbauen, Armaturen und Filter tauschen, Dämmung erneuern oder ergänzen, Leitungsabschnitte erneuern, Zugänglichkeit und Spülanschlüsse herstellen. Den konkreten Umfang legen wir nach Prüfung der Anlage fest.',
         ],
         [
           'Desinfektion und Kontrollbeprobung',
@@ -117,7 +117,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Was passiert bei einem auffälligen Befund?',
-          'Wir klären die technische Ursache, etwa Stagnation, stillgelegte Leitungen oder zu niedrige Warmwassertemperatur, beheben sie, desinfizieren das System und lassen den Erfolg durch eine Kontrollbeprobung prüfen. Alle Schritte werden dokumentiert.',
+          'Wir klären die technische Ursache, etwa Stagnation, stillgelegte Leitungen oder zu niedrige Warmwassertemperatur, beheben sie, lassen das System durch einen registrierten Ausführenden desinfizieren und prüfen den Erfolg mit einer Kontrollbeprobung. Alle Schritte werden dokumentiert.',
         ],
         [
           'Bieten Sie die Desinfektion an?',
@@ -125,7 +125,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Was kostet das?',
-          'Preis auf Anfrage. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, auf Grundlage des festgestellten Zustands. Nachträge nur mit Ihrer schriftlichen Zustimmung.',
+          'Preis auf Anfrage. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, auf Basis des Ist-Zustands. Nachträge nur mit Ihrer schriftlichen Zustimmung.',
         ],
         [
           'Arbeiten Sie auch für öffentliche Gebäude?',
@@ -207,7 +207,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Remedial works and refurbishment',
-          'Our own team carries out the approved measures: removing dead legs, replacing fittings and filters, separating insulation, renewing pipe sections, providing access and flushing connections. We define the exact scope after inspecting the installation.',
+          'Our own team carries out the approved measures: removing dead legs, replacing fittings and filters, renewing or supplementing insulation, renewing pipe sections, providing access and flushing connections. We define the exact scope after inspecting the installation.',
         ],
         [
           'Disinfection and follow-up sampling',
@@ -262,7 +262,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'What happens after an abnormal result?',
-          'We clarify the technical cause, for example stagnation, disused pipework or hot-water temperatures that are too low, remedy it, disinfect the system and have the result verified by follow-up sampling. Every step is documented.',
+          'We clarify the technical cause, for example stagnation, disused pipework or hot-water temperatures that are too low, remedy it, have the system disinfected by a registered contractor and verify the result by follow-up sampling. Every step is documented.',
         ],
         [
           'Do you offer disinfection?',
@@ -312,8 +312,8 @@ export const LEGIONELLEN_CONTENT = {
     },
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
-      title: 'Легионела и водна хигиена: оценка, мерки и документирани резултати',
-      sub: 'Техническа оценка, пробовземане с лаборатория, акредитирана за съответното изпитване и ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането, ремонт, дезинфекция и контролно пробовземане: един контакт, под техническото ръководство на дипломиран инженер по отопление, вентилация и санитарна техника.',
+      title: 'Легионела във водните системи на хотели и обществени сгради: проверка, отстраняване, документация',
+      sub: 'Техническа оценка, лабораторни изследвания, ремонт, дезинфекция и контролна проба: един контакт, техническа отговорност на дипломиран инженер по ОВК и ВиК.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
     },
@@ -333,18 +333,18 @@ export const LEGIONELLEN_CONTENT = {
     },
     what: {
       headline: 'Какво е легионела',
-      text: 'Легионелите са бактерии, които се размножават в топла, застояла вода и могат да бъдат вдишани със ситни капчици, например при къпане или в джакузи. Те могат да причинят тежка пневмония. В доклада на ЕС/ЕИП за 2024 г. са съобщени 15 362 случая; при 12 041 случая с известен изход са отчетени 1 117 смъртни случая (ECDC, 2026). Тези данни от съобщения не описват нито риска за отделен гост на хотела, нито световна бройка. За операторите са решаващи конкретната инсталация, задължителната оценка на риска и професионално съгласуван план за контрол и мерки.',
+      text: 'Легионелите са бактерии, които се размножават в топла, застояла вода и могат да бъдат вдишани със ситни капчици, например при къпане или в джакузи. Те могат да причинят тежка пневмония. В доклада на ЕС/ЕИП за 2024 г. са съобщени 15 362 случая; при 12 041 случая с известен изход са отчетени 1 117 смъртни случая (ECDC, 2026). Тези данни от съобщения не описват нито риска за отделен гост на хотела, нито световен брой. За операторите са решаващи конкретната инсталация, задължителната оценка на риска и професионално съгласуван план за контрол и мерки.',
     },
     together: {
       headline: 'Защо техниката и лабораторията вървят заедно',
-      text: 'Отклоняващият се лабораторен резултат може да покаже необходимост от действие, но не отстранява причината. Възможни причини в инсталацията са: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение. Който веднъж го е подредил, не се налага да импровизира при нужда.',
+      text: 'Резултат с отклонение от допустимите стойности може да покаже необходимост от действие, но не отстранява причината. Възможни причини в инсталацията са: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение. Който веднъж го е подредил, не се налага да импровизира при нужда.',
     },
     program: {
       headline: 'Нашата услуга в пет стъпки',
       items: [
         [
           'Оглед и техническа оценка на риска',
-          'Преглеждаме оценката на риска, плана за мониторинг, лабораторните резултати, историята на поддръжката и повредите и плановете, и обхождаме инсталацията за питейна вода: водовземане, приготвяне и съхранение на топла вода, циркулация, щрангове, крайни точки, изведени от употреба и рядко използвани тръбопроводи, температури при съда, връщането и най-отдалечената точка, състояние на арматури, душове и филтри. Изготвяме или актуализираме отделни схеми за топла и студена вода по сгради и посочваме писмено несъответствията спрямо Наредба № 9.',
+          'Преглеждаме оценката на риска, плана за мониторинг, лабораторните резултати, историята на поддръжката и повредите и плановете, и обхождаме инсталацията за питейна вода: водовземане, приготвяне и съхранение на топла вода, циркулация, щрангове, крайни точки, изведени от употреба и рядко използвани тръбопроводи, температури при бойлера, връщането и най-отдалечената точка, състояние на арматури, душове и филтри. Изготвяме или актуализираме отделни схеми за топла и студена вода по сгради и посочваме писмено несъответствията спрямо Наредба № 9.',
         ],
         [
           'Пробовземане и лабораторен анализ',
@@ -352,7 +352,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Ремонт и преустройство',
-          'Нашият собствен екип извършва одобрените мерки: премахване на слепи тръбопроводи, подмяна на арматури и филтри, разделяне на изолацията, подмяна на участъци от тръби, осигуряване на достъп и връзки за промиване. Конкретния обем определяме след проверка на инсталацията.',
+          'Нашият собствен екип извършва одобрените мерки: премахване на слепи тръбопроводи, подмяна на арматури и филтри, подмяна или допълване на изолацията на тръбите, подмяна на участъци от тръби, осигуряване на достъп и връзки за промиване. Конкретния обем определяме след проверка на инсталацията.',
         ],
         [
           'Дезинфекция и контролно пробовземане',
@@ -372,7 +372,7 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Кога операторите се обръщат към нас',
       items: [
         'Искате да подготвите оценката на риска и плана за мониторинг и не знаете откъде да започнете.',
-        'Лабораторен резултат е отклоняващ се и ви трябва подреден технически път.',
+        'Лабораторен резултат показва отклонение и ви трябва подреден технически път.',
         'Сграда или крило се връща в експлоатация след престой или преустройство.',
         'Документите за водната система (схеми, поддръжка, материали) са непълни.',
         'Искате да подсигурите инсталацията си преди сезона.',
@@ -406,8 +406,8 @@ export const LEGIONELLEN_CONTENT = {
           'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и анализът се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането. Получавате резултатите заедно с нашата техническа оценка.',
         ],
         [
-          'Какво се случва при отклоняващ се резултат?',
-          'Изясняваме техническата причина, например застояла вода, изведени от употреба тръбопроводи или твърде ниска температура на топлата вода, отстраняваме я, дезинфекцираме системата и проверяваме успеха с контролно пробовземане. Всички стъпки се документират.',
+          'Какво се случва при резултат с отклонение?',
+          'Изясняваме техническата причина, например застояла вода, изведени от употреба тръбопроводи или твърде ниска температура на топлата вода, отстраняваме я, организираме дезинфекция чрез вписан изпълнител и проверяваме успеха с контролно пробовземане. Всички стъпки се документират.',
         ],
         [
           'Предлагате ли дезинфекция?',
@@ -434,7 +434,7 @@ export const LEGIONELLEN_CONTENT = {
       linkText: 'Към страницата за оглед на мухъл и влага →',
     },
     cta: {
-      headline: 'Обсъдете техническото изходно състояние',
+      headline: 'Опишете ни ситуацията',
       text: 'Съобщете ни вида на обекта и мястото, лицето за контакт и повода. Моля, не ни изпращайте здравни данни.',
       price: 'Цена при запитване.',
       btn: 'Изпратете имейл',
