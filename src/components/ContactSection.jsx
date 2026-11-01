@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useId } from 'react'
 import { useLang } from '../context/LanguageContext'
 import { useLocation } from 'react-router-dom'
 import { refZusatz } from '../utils/quellkennung'
@@ -17,6 +17,7 @@ function readOrigin() {
 
 export default function ContactSection() {
   const { t, lang } = useLang()
+  const uid = useId() // eindeutige Feld-IDs je Instanz (a11y: label/id-Bindung, 01.11.2026)
   const { pathname } = useLocation()
   const c = t.contact
   // EIL 19.10.2026 (dot-Befund, MARKETING-Ersatztext): mailto-Betreff in Seitensprache statt immer deutsch.
@@ -236,8 +237,9 @@ export default function ContactSection() {
                 <input type="hidden" name="form-name" value="kontakt" />
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">{c.formName} *</label>
+                  <label htmlFor={`${uid}-name`} className="block text-sm font-medium text-gray-700 mb-1">{c.formName} *</label>
                   <input
+                    id={`${uid}-name`}
                     name="name"
                     type="text"
                     required
@@ -250,8 +252,9 @@ export default function ContactSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">{c.formEmail} *</label>
+                    <label htmlFor={`${uid}-email`} className="block text-sm font-medium text-gray-700 mb-1">{c.formEmail} *</label>
                     <input
+                      id={`${uid}-email`}
                       name="email"
                       type="email"
                       required
@@ -262,8 +265,9 @@ export default function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">{c.formPhone}</label>
+                    <label htmlFor={`${uid}-phone`} className="block text-sm font-medium text-gray-700 mb-1">{c.formPhone}</label>
                     <input
+                      id={`${uid}-phone`}
                       name="phone"
                       type="tel"
                       value={form.phone}
@@ -275,8 +279,9 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">{c.formMessage} *</label>
+                  <label htmlFor={`${uid}-message`} className="block text-sm font-medium text-gray-700 mb-1">{c.formMessage} *</label>
                   <textarea
+                    id={`${uid}-message`}
                     name="message"
                     required
                     rows={4}

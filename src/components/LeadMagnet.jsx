@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import { useLang } from '../context/LanguageContext'
 import TurnstileWidget from './TurnstileWidget'
 
@@ -58,6 +58,7 @@ const CONTENT = {
 
 export default function LeadMagnet() {
   const { lang } = useLang()
+  const uid = useId()
   const c = CONTENT[lang] || CONTENT.de
 
   const [email, setEmail] = useState('')
@@ -131,10 +132,11 @@ export default function LeadMagnet() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+                  <label htmlFor={`${uid}-email`} className="block text-sm font-semibold text-gray-700 mb-1.5">
                     {c.placeholder}
                   </label>
                   <input
+                    id={`${uid}-email`}
                     type="email"
                     required
                     value={email}

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import TurnstileWidget from '../components/TurnstileWidget'
 import { useSEO } from '../hooks/useSEO'
 
@@ -25,6 +25,7 @@ export default function LeadMagnet() {
       },
     },
   })
+  const uid = useId()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [status, setStatus] = useState('idle') // idle | loading | success | error
@@ -99,10 +100,11 @@ export default function LeadMagnet() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor={`${uid}-name`} className="block text-sm font-medium text-gray-700 mb-1">
                   Vorname / First name
                 </label>
                 <input
+                  id={`${uid}-name`}
                   type="text"
                   value={name}
                   onChange={e => setName(e.target.value)}
@@ -111,10 +113,11 @@ export default function LeadMagnet() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor={`${uid}-email`} className="block text-sm font-medium text-gray-700 mb-1">
                   E-Mail *
                 </label>
                 <input
+                  id={`${uid}-email`}
                   type="email"
                   value={email}
                   onChange={e => setEmail(e.target.value)}

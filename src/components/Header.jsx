@@ -143,7 +143,9 @@ export default function Header() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="p-2 rounded-md text-gray-700 hover:bg-gray-100"
-            aria-label="Menü"
+            aria-label={menuOpen ? (lang === 'en' ? 'Close menu' : lang === 'bg' ? 'Затвори менюто' : 'Menü schließen') : (lang === 'en' ? 'Open menu' : lang === 'bg' ? 'Отвори менюто' : 'Menü öffnen')}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {menuOpen
@@ -174,7 +176,7 @@ export default function Header() {
 
       {/* Mobile nav menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pb-4">
+        <div id="mobile-nav" className="lg:hidden bg-white border-t border-gray-100 px-4 pb-4">
           {navItems.map((item) =>
             item.hash ? (
               <a

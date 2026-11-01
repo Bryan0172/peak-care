@@ -102,9 +102,9 @@ export default function Footer() {
       <div className="border-t border-white/5 text-center text-gray-600 text-xs py-4 px-4">
         © {new Date().getFullYear()} Peak Care. {f.rights}
         {' · '}
-        <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy' : isBg ? 'Поверителност' : 'Datenschutz'}</Link>
+        <Link to="/datenschutz" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Privacy Policy (DE)' : isBg ? 'Поверителност (DE)' : 'Datenschutz'}</Link>
         {' · '}
-        <Link to="/impressum" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Legal Notice' : isBg ? 'Правна информация' : 'Impressum'}</Link>
+        <Link to="/impressum" className="hover:text-teal-400 transition-colors underline">{isEn ? 'Legal Notice (DE)' : isBg ? 'Правна информация (DE)' : 'Impressum'}</Link>
       </div>
     </footer>
   )
