@@ -30,15 +30,15 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
       ['Akkreditierte Labore', 'objektbezogen vor Beauftragung eingebunden'],
-      ['Eigenes Team', 'Instandsetzung und Umbau in Bansko und Umgebung'],
+      ['Eigenes Team', 'Service, Instandsetzung und Umbau in ganz Bulgarien'],
       ['Dipl.-Ing. HLS', 'technisch verantwortlich'],
     ],
     why: {
       headline: 'Warum das Thema jetzt auf den Tisch gehört',
       paragraphs: [
         'Seit der Änderung der Наредба № 9 sind Unterkünfte der Klassen A und B (Hotels, Apartmentanlagen, Pensionen, Gästehäuser, Ferienhäuser, Campingplätze) verpflichtet, die interne Wasserverteilung einer Risikobewertung zu unterziehen und Legionellen sowie Blei zu überwachen. Der Monitoringplan wird mit der örtlichen Regionalen Gesundheitsinspektion (RZI) abgestimmt, die Laboruntersuchungen übernehmen akkreditierte Labore. Die Untersuchungsdaten mehrerer Jahre bilden die Grundlage der ersten Vorlage, deshalb lohnt es sich, früh und geordnet zu beginnen.',
-        'Neben Unterkünften nennt die Наредба № 9 (Art. 6г) ausdrücklich Krankenhäuser und ärztliche Einrichtungen sowie Krippen, Kindergärten und Schulen. Die Risikobewertung der internen Wasserverteilung geht an die RZI, an den Bürgermeister der Gemeinde und an den Wasserversorger.',
-        'Die Wintersaison ist dafür ein betrieblicher Anlass: Zimmer werden nach Leerstand wieder belegt, Warmwasseranlagen laufen unter Volllast.',
+        'Neben Unterkünften nennt die Наредба № 9 (Art. 6г) ausdrücklich Krankenhäuser und ärztliche Einrichtungen sowie Krippen, Kindergärten und Schulen. Die Risikobewertung der internen Wasserverteilung geht an die RZI, an den Bürgermeister der Gemeinde und an den Wasserversorger. Verantwortlich bleibt dabei der Betreiber: für die Gesundheit von Gästen, Mitarbeitern und Besuchern, und dafür, im Ernstfall belegen zu können, dass rechtzeitig und fachgerecht gehandelt wurde.',
+        'Die Saisonzeiten sind dafür ein betrieblicher Anlass: Zimmer werden nach Leerstand wieder belegt, Warmwasseranlagen laufen unter Volllast. Wer vor dem Saisonstart prüft, bestimmt Zeitpunkt und Vorgehen selbst; wer erst auf einen Befund reagiert, nicht mehr.',
       ],
     },
     what: {
@@ -47,7 +47,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Warum Technik und Labor zusammengehören',
-      text: 'Ein auffälliger Laborbefund kann Handlungsbedarf anzeigen, aber er behebt keine Ursache. Mögliche Ursachen in der Anlage sind: stehendes Wasser, stillgelegte Leitungen, zu niedrige Warmwassertemperatur, verschlissene Armaturen. Wir verbinden deshalb die Laboranalyse mit der technischen Ursachenbehebung, der Desinfektion und einer Kontrollbeprobung, die das Ergebnis erneut prüft. So entsteht ein nachvollziehbarer Weg vom Befund zur dokumentierten Lösung.',
+      text: 'Ein auffälliger Laborbefund kann Handlungsbedarf anzeigen, aber er behebt keine Ursache. Mögliche Ursachen in der Anlage sind: stehendes Wasser, stillgelegte Leitungen, zu niedrige Warmwassertemperatur, verschlissene Armaturen. Wir verbinden deshalb die Laboranalyse mit der technischen Ursachenbehebung, der Desinfektion und einer Kontrollbeprobung, die das Ergebnis erneut prüft. So entsteht ein nachvollziehbarer Weg vom Befund zur dokumentierten Lösung. Wer das einmal geordnet aufgesetzt hat, muss im Ernstfall nicht improvisieren.',
     },
     program: {
       headline: 'Unser Leistungsprogramm in fünf Schritten',
@@ -76,7 +76,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'Für wen wir arbeiten',
-      text: 'Für Betreiber von Hotels, Apartmentanlagen, Pensionen, Gästehäusern und Ferienanlagen sowie von öffentlichen Gebäuden wie Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen und Verwaltungsgebäuden. Schwerpunkt Bansko, Razlog, Blagoevgrad und Region; Sofia, Plovdiv und weitere Orte nach Terminabsprache.',
+      text: 'Für Betreiber von Hotels, Apartmentanlagen, Pensionen, Gästehäusern und Ferienanlagen sowie von öffentlichen Gebäuden wie Schulen, Kindergärten, Krankenhäusern, Pflege- und Sporteinrichtungen und Verwaltungsgebäuden. Schwerpunkt Urlaubsregionen in Bulgarien, Sofia, Plovdiv, Varna, Burgas, Veliko Tarnovo und weitere Orte nach Terminabsprache.',
     },
     when: {
       headline: 'Wann Betreiber uns ansprechen',
@@ -101,7 +101,7 @@ export const LEGIONELLEN_CONTENT = {
         'Jede Desinfektion führt ein nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierter Ausführender in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
         'Wir geben keine Garantie auf Keimfreiheit und keine Zusage behördlicher Anerkennung. Deshalb folgt auf jede Desinfektion eine Kontrollbeprobung.',
         'Wir stellen keine medizinischen Diagnosen.',
-        'Eigenbrunnen, Küche, Pools, Spa und Whirlpools sowie Kühltürme gehören nicht zum Standardumfang, sondern nur nach Einzelprüfung.',
+        'Eigenbrunnen, Küche, Pools, Spa und Whirlpools sowie Kühltürme gehören mit zum Standardumfang. Basis hierfür bildet eine Einzelprüfung.',
       ],
     },
     faq: {
@@ -133,13 +133,13 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'In welchen Regionen arbeiten Sie?',
-          'Schwerpunkt Bansko, Razlog, Blagoevgrad und Region; Sofia, Plovdiv und weitere Orte nach Terminabsprache.',
+          'Schwerpunkt Urlaubsregionen in Bulgarien, Sofia, Plovdiv, Varna, Burgas, Veliko Tarnovo und weitere Orte nach Terminabsprache.',
         ],
       ],
     },
     mold: {
       headline: 'Feuchte und Schimmel',
-      text: 'Dieselbe technische Sorgfalt gilt für Feuchte- und Schimmelursachen in Gebäuden.',
+      text: 'Dieselbe technische Sorgfalt gilt für Feuchte- und Schimmelursachen in Gebäuden, Spa-Einrichtungen und überall dort, wo Probleme mit Schimmel auftreten können. Beide Themen haben oft dieselbe Wurzel: Feuchtigkeit, die lange unbemerkt bleibt.',
       link: '/service/schimmelbeseitigung-bansko',
       linkText: 'Zur Seite Schimmel- und Feuchtigkeitssanierung →',
     },
@@ -175,15 +175,15 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['One point of contact', 'from the site survey to follow-up sampling'],
       ['Accredited laboratories', 'engaged per property before the assignment'],
-      ['Our own team', 'remedial works and refurbishment in Bansko and the surrounding region'],
+      ['Our own team', 'service, remedial works and refurbishment across Bulgaria'],
       ['Dipl.-Ing. (HVAC/sanitary)', 'technically responsible'],
     ],
     why: {
       headline: 'Why this matters now',
       paragraphs: [
         'Since the amendment of Ordinance No. 9 (Наредба № 9), accommodation of classes A and B (hotels, apartment complexes, guesthouses, holiday homes, campsites) must carry out a risk assessment of the internal water distribution and monitor for Legionella and lead. The monitoring plan is agreed with the local Regional Health Inspectorate (RZI); laboratory tests are carried out by accredited laboratories. Several years of test data form the basis of the first submission, so it pays to start early and in an orderly way.',
-        'Besides accommodation, Ordinance No. 9 (Art. 6g) expressly names hospitals and medical facilities as well as nurseries, kindergartens and schools. The risk assessment of the internal water distribution goes to the RZI, to the mayor of the municipality and to the water utility.',
-        'The winter season is an operational trigger: rooms are reoccupied after vacancy, and hot-water systems run at full load.',
+        'Besides accommodation, Ordinance No. 9 (Art. 6g) expressly names hospitals and medical facilities as well as nurseries, kindergartens and schools. The risk assessment of the internal water distribution goes to the RZI, to the mayor of the municipality and to the water utility. The operator remains responsible throughout: for the health of guests, staff and visitors, and for being able to show, if it comes to it, that action was taken in good time and professionally.',
+        'The seasonal periods are an operational trigger: rooms are reoccupied after vacancy, and hot-water systems run at full load. Those who check before the season starts decide the timing and approach themselves; those who only react to a finding no longer do.',
       ],
     },
     what: {
@@ -192,7 +192,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Why engineering and laboratory belong together',
-      text: 'An abnormal laboratory result can indicate a need for action, but it does not remove the cause. Possible causes in the installation are: stagnant water, disused pipework, hot-water temperatures that are too low, worn fittings. We therefore combine laboratory analysis with technical remediation, disinfection and follow-up sampling that checks the result again. The outcome is a traceable path from finding to documented solution.',
+      text: 'An abnormal laboratory result can indicate a need for action, but it does not remove the cause. Possible causes in the installation are: stagnant water, disused pipework, hot-water temperatures that are too low, worn fittings. We therefore combine laboratory analysis with technical remediation, disinfection and follow-up sampling that checks the result again. The outcome is a traceable path from finding to documented solution. Once this is set up in an orderly way, you do not have to improvise if it comes to it.',
     },
     program: {
       headline: 'Our service in five steps',
@@ -221,7 +221,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'Who we work for',
-      text: 'Operators of hotels, apartment complexes, guesthouses and holiday complexes, as well as public buildings such as schools, kindergartens, hospitals, care and sports facilities and administrative buildings. Focus on Bansko, Razlog, Blagoevgrad and the region; Sofia, Plovdiv and other locations by appointment.',
+      text: 'Operators of hotels, apartment complexes, guesthouses and holiday complexes, as well as public buildings such as schools, kindergartens, hospitals, care and sports facilities and administrative buildings. Focus on the holiday regions of Bulgaria, Sofia, Plovdiv, Varna, Burgas, Veliko Tarnovo and other locations by appointment.',
     },
     when: {
       headline: 'When operators contact us',
@@ -246,7 +246,7 @@ export const LEGIONELLEN_CONTENT = {
         'All disinfection is carried out by a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination. We remain responsible for the overall result.',
         'We give no guarantee of freedom from germs and no assurance of official recognition. That is why every disinfection is followed by follow-up sampling.',
         'We do not make medical diagnoses.',
-        'Private wells, kitchens, pools, spas and whirlpools and cooling towers are not part of the standard scope, only after individual review.',
+        'Private wells, kitchens, pools, spas and whirlpools and cooling towers are part of the standard scope. The basis for this is an individual review.',
       ],
     },
     faq: {
@@ -278,13 +278,13 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Which regions do you cover?',
-          'Focus on Bansko, Razlog, Blagoevgrad and the region; Sofia, Plovdiv and other locations by appointment.',
+          'Focus on the holiday regions of Bulgaria, Sofia, Plovdiv, Varna, Burgas, Veliko Tarnovo and other locations by appointment.',
         ],
       ],
     },
     mold: {
       headline: 'Moisture and mould',
-      text: 'The same technical care applies to moisture and mould causes in buildings.',
+      text: 'The same technical care applies to the causes of moisture and mould in buildings, spa facilities and wherever mould problems can occur. Both topics often share the same root: moisture that goes unnoticed for a long time.',
       link: '/service/mold-removal-bansko',
       linkText: 'To our mould and moisture remediation page →',
     },
@@ -320,15 +320,15 @@ export const LEGIONELLEN_CONTENT = {
     facts: [
       ['Един контакт', 'от огледа до контролното пробовземане'],
       ['Акредитирани лаборатории', 'ангажирани за конкретния обект преди възлагането'],
-      ['Собствен екип', 'ремонт и преустройство в Банско и региона'],
+      ['Собствен екип', 'сервиз, ремонт и преустройство в цяла България'],
       ['Дипл.-инж. ОВК/ВиК', 'технически отговорник'],
     ],
     why: {
       headline: 'Защо темата е важна точно сега',
       paragraphs: [
         'След промяната в Наредба № 9 местата за настаняване от категории А и Б (хотели, апартаментни комплекси, пансиони, къщи за гости, ваканционни къщи, къмпинги) са длъжни да подложат вътрешното водоразпределение на оценка на риска и да следят за легионела и олово. Планът за мониторинг се съгласува с местната Регионална здравна инспекция (РЗИ), а лабораторните изследвания се извършват от акредитирани лаборатории. Данните от изследвания за няколко години са основа на първото представяне, затова си струва да се започне рано и подредено.',
-        'Освен местата за настаняване, Наредба № 9 (чл. 6г) изрично посочва болници и лечебни заведения, както и ясли, детски градини и училища. Оценката на риска на вътрешното водоразпределение се предоставя на РЗИ, на кмета на общината и на ВиК.',
-        'Зимният сезон е оперативен повод: стаите се заемат отново след престой, а инсталациите за топла вода работят с пълно натоварване.',
+        'Освен местата за настаняване, Наредба № 9 (чл. 6г) изрично посочва болници и лечебни заведения, както и ясли, детски градини и училища. Оценката на риска на вътрешното водоразпределение се предоставя на РЗИ, на кмета на общината и на ВиК. Отговорност остава на оператора: за здравето на гостите, персонала и посетителите и за това, при нужда да може да докаже, че е действано навреме и професионално.',
+        'Сезонните периоди са оперативен повод: стаите се заемат отново след престой, а инсталациите за топла вода работят с пълно натоварване. Който проверява преди началото на сезона, сам определя момента и подхода; който реагира едва при резултат – вече не.',
       ],
     },
     what: {
@@ -337,7 +337,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     together: {
       headline: 'Защо техниката и лабораторията вървят заедно',
-      text: 'Отклоняващият се лабораторен резултат може да покаже необходимост от действие, но не отстранява причината. Възможни причини в инсталацията са: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение.',
+      text: 'Отклоняващият се лабораторен резултат може да покаже необходимост от действие, но не отстранява причината. Възможни причини в инсталацията са: застояла вода, изведени от употреба тръбопроводи, твърде ниска температура на топлата вода, износена арматура. Затова свързваме лабораторния анализ с техническото отстраняване на причината, дезинфекцията и контролно пробовземане, което проверява резултата отново. Така се получава проследим път от резултата до документирано решение. Който веднъж го е подредил, не се налага да импровизира при нужда.',
     },
     program: {
       headline: 'Нашата услуга в пет стъпки',
@@ -366,7 +366,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     audience: {
       headline: 'За кого работим',
-      text: 'За оператори на хотели, апартаментни комплекси, пансиони, къщи за гости и ваканционни комплекси, както и на обществени сгради като училища, детски градини, болници, здравни и спортни обекти и административни сгради. Основен фокус Банско, Разлог, Благоевград и региона; София, Пловдив и други места по договаряне.',
+      text: 'За оператори на хотели, апартаментни комплекси, пансиони, къщи за гости и ваканционни комплекси, както и на обществени сгради като училища, детски градини, болници, здравни и спортни обекти и административни сгради. Основен фокус курортните региони в България, София, Пловдив, Варна, Бургас, Велико Търново и други места по договаряне.',
     },
     when: {
       headline: 'Кога операторите се обръщат към нас',
@@ -391,7 +391,7 @@ export const LEGIONELLEN_CONTENT = {
         'Всяка дезинфекция се извършва от изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
         'Не даваме гаранция за липса на бактерии и не обещаваме признаване от органите. Затова след всяка дезинфекция следва контролно пробовземане.',
         'Не поставяме медицински диагнози.',
-        'Собствени кладенци, кухни, басейни, спа и джакузита, както и охладителни кули не са част от стандартния обхват, а само след индивидуална проверка.',
+        'Собствени кладенци, кухни, басейни, спа и джакузита, както и охладителни кули са част от стандартния обхват. Основа за това е индивидуална проверка.',
       ],
     },
     faq: {
@@ -423,13 +423,13 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'В кои региони работите?',
-          'Основен фокус Банско, Разлог, Благоевград и региона; София, Пловдив и други места по договаряне.',
+          'Основен фокус курортните региони в България, София, Пловдив, Варна, Бургас, Велико Търново и други места по договаряне.',
         ],
       ],
     },
     mold: {
       headline: 'Влага и мухъл',
-      text: 'Същата техническа грижа прилагаме и при причините за влага и мухъл в сгради.',
+      text: 'Същата техническа грижа прилагаме и при причините за влага и мухъл в сгради, спа съоръжения и навсякъде, където могат да възникнат проблеми с мухъл. И двете теми често имат един и същ корен: влага, която дълго остава незабелязана.',
       link: '/ogled-muhal-vlaga',
       linkText: 'Към страницата за оглед на мухъл и влага →',
     },

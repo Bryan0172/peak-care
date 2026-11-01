@@ -45,6 +45,9 @@ export default function LegionellenHotelBulgarien({ lang = 'de' }) {
         { '@type': 'AdministrativeArea', name: 'Blagoevgrad Province' },
         { '@type': 'City', name: 'Sofia' },
         { '@type': 'City', name: 'Plovdiv' },
+        { '@type': 'City', name: 'Varna' },
+        { '@type': 'City', name: 'Burgas' },
+        { '@type': 'City', name: 'Veliko Tarnovo' },
       ],
     },
   }
