@@ -66,7 +66,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Desinfektion und Kontrollbeprobung',
-          'Ist eine Desinfektion nötig, organisieren wir sie über einen nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit unserer Verantwortung für das Gesamtergebnis. Die Desinfektion beginnt erst, wenn der qualifizierte Ausführende bestätigt ist; es kommen nur zugelassene Verfahren und Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
+          'Ist eine Desinfektion nötig, organisieren wir sie unter Erfüllung der anwendbaren Voraussetzungen über einen geeigneten qualifizierten Partner, nämlich einen nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierten Ausführenden, in unserer Koordination und mit unserer Verantwortung für das Gesamtergebnis. Die Desinfektion beginnt erst, wenn der qualifizierte Ausführende bestätigt ist; es kommen nur zugelassene Verfahren und Mittel zum Einsatz. Danach folgt immer eine Kontrollbeprobung durch ein akkreditiertes Labor.',
         ],
         [
           'Dokumentation und Betriebsroutine',
@@ -211,7 +211,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Disinfection and follow-up sampling',
-          'If disinfection is necessary, we arrange it through a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with responsibility for the overall result. Disinfection starts only once the qualified contractor has been confirmed; only approved procedures and agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
+          'If disinfection is necessary, we arrange it, meeting the applicable requirements, through a suitable qualified partner, namely a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination and with responsibility for the overall result. Disinfection starts only once the qualified contractor has been confirmed; only approved procedures and agents are used. An accredited laboratory always carries out follow-up sampling afterwards.',
         ],
         [
           'Documentation and operating routine',
@@ -356,7 +356,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Дезинфекция и контролно пробовземане',
-          'Ако е необходима дезинфекция, я организираме чрез изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с отговорност за цялостния резултат. Дезинфекцията започва едва след потвърждаване на квалифицирания изпълнител; прилагат се само разрешени методи и средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
+          'Ако е необходима дезинфекция, я организираме при изпълнение на приложимите изисквания чрез подходящ квалифициран партньор, а именно изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация и с отговорност за цялостния резултат. Дезинфекцията започва едва след потвърждаване на квалифицирания изпълнител; прилагат се само разрешени методи и средства. След това винаги следва контролно пробовземане от акредитирана лаборатория.',
         ],
         [
           'Документация и експлоатационна рутина',
