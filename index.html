@@ -65,7 +65,7 @@
         var el=document.getElementById('pc-consent');
         if(!el)return;
         var stored=null; try{stored=localStorage.getItem('pc_consent');}catch(e){}
-        if(!stored){el.classList.add('pc-show');}
+        if(!stored){el.classList.add('pc-show');}else{el.classList.remove('pc-show');} // 01.11.2026: Prerender schreibt pc-show fest ins HTML; bei gespeicherter Wahl wieder entfernen
         function choose(v){
           try{localStorage.setItem('pc_consent',v);}catch(e){}
           gtag('consent','update',{'analytics_storage': v==='granted'?'granted':'denied'});
