@@ -23,13 +23,13 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WASSERHYGIENE · BULGARIEN',
       title: 'Legionellen im Wassersystem von Hotels und öffentlichen Gebäuden: geprüft, behandelt, dokumentiert',
-      sub: 'Technische Bestandsaufnahme, Beprobung mit einem je Objekt vor Beauftragung eingebundenen, für die jeweilige Prüfung akkreditierten Labor, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
+      sub: 'Technische Bestandsaufnahme, Beprobung durch ein für die jeweilige Prüfung akkreditiertes Labor, das nach Abstimmung des Auftragsumfangs und vor der Probenahme für das konkrete Objekt eingebunden wird, Instandsetzung, Desinfektion und Kontrollbeprobung: ein Ansprechpartner, technisch verantwortet von einem Diplom-Ingenieur HLS.',
       cta: 'Ausgangslage besprechen',
       call: 'Anrufen',
     },
     facts: [
       ['Ein Ansprechpartner', 'von der Begehung bis zur Kontrollbeprobung'],
-      ['Akkreditierte Labore', 'objektbezogen vor Beauftragung eingebunden'],
+      ['Akkreditierte Labore', 'objektbezogen vor der Probenahme eingebunden'],
       ['Eigenes Team', 'Service, Instandsetzung und Umbau in ganz Bulgarien'],
       ['Dipl.-Ing. HLS', 'technisch verantwortlich'],
     ],
@@ -37,8 +37,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Warum das Thema jetzt auf den Tisch gehört',
       paragraphs: [
         'Seit der Änderung der Наредба № 9 sind Unterkünfte der Klassen A und B (Hotels, Apartmentanlagen, Pensionen, Gästehäuser, Ferienhäuser, Campingplätze) verpflichtet, die interne Wasserverteilung einer Risikobewertung zu unterziehen und Legionellen sowie Blei zu überwachen. Der Monitoringplan wird mit der örtlichen Regionalen Gesundheitsinspektion (RZI) abgestimmt, die Laboruntersuchungen übernehmen akkreditierte Labore. Die Untersuchungsdaten mehrerer Jahre bilden die Grundlage der ersten Vorlage, deshalb lohnt es sich, früh und geordnet zu beginnen.',
-        'Neben Unterkünften nennt die Наредба № 9 (Art. 6г) ausdrücklich Krankenhäuser und ärztliche Einrichtungen sowie Krippen, Kindergärten und Schulen. Die Risikobewertung der internen Wasserverteilung geht an die RZI, an den Bürgermeister der Gemeinde und an den Wasserversorger. Verantwortlich bleibt dabei der Betreiber: für die Gesundheit von Gästen, Mitarbeitern und Besuchern, und dafür, im Ernstfall belegen zu können, dass rechtzeitig und fachgerecht gehandelt wurde.',
-        'Die Saisonzeiten sind dafür ein betrieblicher Anlass: Zimmer werden nach Leerstand wieder belegt, Warmwasseranlagen laufen unter Volllast. Wer vor dem Saisonstart prüft, bestimmt Zeitpunkt und Vorgehen selbst; wer erst auf einen Befund reagiert, nicht mehr.',
+        'Neben Unterkünften erfasst Art. 6г der Наредба № 9 weitere ausdrücklich genannte prioritäre Einrichtungen, darunter Krankenhäuser, bestimmte weitere Gesundheitseinrichtungen, Kinderkrippen, Kindergärten und Schulen. Die Risikobewertung der internen Wasserverteilung geht an die RZI, an den Bürgermeister der Gemeinde und an den Wasserversorger. Verantwortlich bleibt dabei der Betreiber: für die Gesundheit von Gästen, Mitarbeitern und Besuchern, und dafür, im Ernstfall belegen zu können, dass rechtzeitig und fachgerecht gehandelt wurde.',
+        'Die Saisonzeiten sind dafür ein betrieblicher Anlass: Zimmer werden nach Leerstand wieder belegt, Warmwasseranlagen laufen unter Volllast. Wer vor Saisonbeginn prüft, kann notwendige Maßnahmen besser in den Betrieb einplanen und muss bei einem auffälligen Befund weniger improvisieren.',
       ],
     },
     what: {
@@ -58,7 +58,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Beprobung und Laboranalyse',
-          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung erfolgen durch ein für die betreffenden Prüfungen akkreditiertes Labor, das wir objektbezogen vor Beauftragung einbinden. Wir schlagen die Probenstellen vor, organisieren Termin und Zugang, bereiten die Anlage vor und führen die Befunde im Bericht zusammen.',
+          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Laboruntersuchung erfolgen durch ein für die jeweiligen Prüfungen akkreditiertes Labor, das nach Abstimmung des Auftragsumfangs und vor der Probenahme für das konkrete Objekt eingebunden wird. Wir schlagen die Probenstellen vor, organisieren Termin und Zugang, bereiten die Anlage vor und führen die Befunde im Bericht zusammen.',
         ],
         [
           'Instandsetzung und Umbau',
@@ -97,7 +97,7 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Klare Zuständigkeiten',
       items: [
         'Die Risikobewertung nach Наредба № 9 reicht der Betreiber ein. Wir liefern die technischen Unterlagen und einen Entwurf.',
-        'Laborbefunde stammen von einem für die betreffenden Prüfungen akkreditierten Labor, das wir objektbezogen vor Beauftragung einbinden.',
+        'Laborbefunde stammen von einem für die betreffenden Prüfungen akkreditierten Labor, das wir objektbezogen vor der Probenahme einbinden.',
         'Jede Desinfektion führt ein nach der Наредба № 1 von 2018 beim bulgarischen Gesundheitsministerium registrierter Ausführender in unserer Koordination aus. Wir verantworten das Gesamtergebnis.',
         'Wir geben keine Garantie auf Keimfreiheit und keine Zusage behördlicher Anerkennung. Deshalb folgt auf jede Desinfektion eine Kontrollbeprobung.',
         'Wir stellen keine medizinischen Diagnosen.',
@@ -113,7 +113,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Wie läuft eine Beprobung ab?',
-          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Analyse erfolgen durch ein für die betreffenden Prüfungen akkreditiertes Labor, das wir objektbezogen vor Beauftragung einbinden. Sie erhalten die Befunde zusammen mit unserer technischen Einordnung.',
+          'Probenstellen und Monitoringplan stimmen wir mit der RZI ab. Probenahme und Analyse erfolgen durch ein für die jeweiligen Prüfungen akkreditiertes Labor, das nach Abstimmung des Auftragsumfangs und vor der Probenahme für das konkrete Objekt eingebunden wird. Sie erhalten die Befunde zusammen mit unserer technischen Einordnung.',
         ],
         [
           'Was passiert bei einem auffälligen Befund?',
@@ -125,7 +125,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Was kostet das?',
-          'Preis auf Anfrage. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, aus dem Ist-Zustand. Nachträge nur mit Ihrer schriftlichen Zustimmung.',
+          'Preis auf Anfrage. Nach der Begehung erhalten Sie ein verbindliches schriftliches Angebot, auf Grundlage des festgestellten Zustands. Nachträge nur mit Ihrer schriftlichen Zustimmung.',
         ],
         [
           'Arbeiten Sie auch für öffentliche Gebäude?',
@@ -139,7 +139,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     mold: {
       headline: 'Feuchte und Schimmel',
-      text: 'Dieselbe technische Sorgfalt gilt für Feuchte- und Schimmelursachen in Gebäuden, Spa-Einrichtungen und überall dort, wo Probleme mit Schimmel auftreten können. Beide Themen haben oft dieselbe Wurzel: Feuchtigkeit, die lange unbemerkt bleibt.',
+      text: 'Dieselbe technische Sorgfalt gilt für Feuchte- und Schimmelursachen in Gebäuden, Spa-Einrichtungen und überall dort, wo Probleme mit Schimmel auftreten können. Auch bei Feuchte und Schimmel gilt: Ursachen feststellen, gezielt beheben und die Ergebnisse dokumentieren.',
       link: '/service/schimmelbeseitigung-bansko',
       linkText: 'Zur Seite Schimmel- und Feuchtigkeitssanierung →',
     },
@@ -152,7 +152,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     schema: {
       name: 'Legionellen-Prüfung, Laboranalyse und Desinfektion für Hotels und öffentliche Gebäude',
-      serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, objektbezogene Laborbeauftragung, Instandsetzung, Desinfektion)',
+      serviceType: 'Wasserhygiene Trinkwasser-Installation (Bestandsaufnahme, objektbezogen eingebundenes akkreditiertes Labor, Instandsetzung, Desinfektion)',
       description:
         'Technische Bestandsaufnahme, Beprobung mit einem je Objekt eingebundenen akkreditierten Labor, Instandsetzung, Desinfektion und Kontrollbeprobung für Hotels, Unterkünfte und öffentliche Gebäude in Bulgarien.',
     },
@@ -168,13 +168,13 @@ export const LEGIONELLEN_CONTENT = {
     hero: {
       tag: 'PEAK CARE · WATER HYGIENE · BULGARIA',
       title: 'Legionella in the water systems of hotels and public buildings: assessed, treated, documented',
-      sub: 'Technical survey, sampling with a laboratory accredited for the relevant test, engaged for each property before commissioning, remedial works, disinfection and follow-up sampling: one point of contact, technically responsible under a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
+      sub: 'Technical survey, sampling by a laboratory accredited for the relevant tests, engaged for the property after the scope of work has been agreed and before sampling, remedial works, disinfection and follow-up sampling: one point of contact, under the technical supervision of a qualified engineer (Dipl.-Ing., heating, ventilation and sanitary engineering).',
       cta: 'Discuss your situation',
       call: 'Call us',
     },
     facts: [
       ['One point of contact', 'from the site survey to follow-up sampling'],
-      ['Accredited laboratories', 'engaged per property before the assignment'],
+      ['Accredited laboratories', 'engaged for the property after the scope of work has been agreed and before sampling'],
       ['Our own team', 'service, remedial works and refurbishment across Bulgaria'],
       ['Dipl.-Ing. (HVAC/sanitary)', 'technically responsible'],
     ],
@@ -182,8 +182,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Why this matters now',
       paragraphs: [
         'Since the amendment of Ordinance No. 9 (Наредба № 9), accommodation of classes A and B (hotels, apartment complexes, guesthouses, holiday homes, campsites) must carry out a risk assessment of the internal water distribution and monitor for Legionella and lead. The monitoring plan is agreed with the local Regional Health Inspectorate (RZI); laboratory tests are carried out by accredited laboratories. Several years of test data form the basis of the first submission, so it pays to start early and in an orderly way.',
-        'Besides accommodation, Ordinance No. 9 (Art. 6g) expressly names hospitals and medical facilities as well as nurseries, kindergartens and schools. The risk assessment of the internal water distribution goes to the RZI, to the mayor of the municipality and to the water utility. The operator remains responsible throughout: for the health of guests, staff and visitors, and for being able to show, if it comes to it, that action was taken in good time and professionally.',
-        'The seasonal periods are an operational trigger: rooms are reoccupied after vacancy, and hot-water systems run at full load. Those who check before the season starts decide the timing and approach themselves; those who only react to a finding no longer do.',
+        'In addition to accommodation, Article 6г of Ordinance No. 9 covers other specifically designated priority premises, including hospitals, certain other healthcare facilities, nurseries, kindergartens and schools. The risk assessment of the internal water distribution goes to the RZI, to the mayor of the municipality and to the water utility. The operator remains responsible throughout: for the health of guests, staff and visitors, and for being able to show, if it comes to it, that action was taken in good time and professionally.',
+        'The seasonal periods are an operational trigger: rooms are reoccupied after vacancy, and hot-water systems run at full load. Checking before the season starts helps operators plan necessary measures around operations and reduces the need to improvise if a result is abnormal.',
       ],
     },
     what: {
@@ -203,7 +203,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Sampling and laboratory analysis',
-          'We agree sampling points and the monitoring plan with the RZI. Sampling and laboratory testing are carried out by a laboratory accredited for the relevant tests, engaged per property before the assignment. We propose the sampling points, organise the appointment and access, prepare the installation and consolidate the results in the report.',
+          'We agree sampling points and the monitoring plan with the RZI. Sampling and laboratory testing are carried out by a laboratory accredited for the relevant tests, engaged for the property after the scope of work has been agreed and before sampling. We propose the sampling points, organise the appointment and access, prepare the installation and consolidate the results in the report.',
         ],
         [
           'Remedial works and refurbishment',
@@ -242,7 +242,7 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Clear responsibilities',
       items: [
         'The operator submits the risk assessment under Ordinance No. 9. We provide the technical documents and a draft.',
-        'Laboratory results come from a laboratory accredited for the relevant tests, engaged per property before the assignment.',
+        'Laboratory results come from a laboratory accredited for the relevant tests, engaged for the property after the scope of work has been agreed and before sampling.',
         'All disinfection is carried out by a contractor registered with the Bulgarian Ministry of Health under Ordinance No. 1 of 2018, under our coordination. We remain responsible for the overall result.',
         'We give no guarantee of freedom from germs and no assurance of official recognition. That is why every disinfection is followed by follow-up sampling.',
         'We do not make medical diagnoses.',
@@ -258,7 +258,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'How does sampling work?',
-          'We agree sampling points and the monitoring plan with the RZI. Sampling and analysis are carried out by a laboratory accredited for the relevant tests, engaged per property before the assignment. You receive the results together with our technical interpretation.',
+          'We agree sampling points and the monitoring plan with the RZI. Sampling and analysis are carried out by a laboratory accredited for the relevant tests, engaged for the property after the scope of work has been agreed and before sampling. You receive the results together with our technical interpretation.',
         ],
         [
           'What happens after an abnormal result?',
@@ -284,7 +284,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     mold: {
       headline: 'Moisture and mould',
-      text: 'The same technical care applies to the causes of moisture and mould in buildings, spa facilities and wherever mould problems can occur. Both topics often share the same root: moisture that goes unnoticed for a long time.',
+      text: 'The same technical care applies to the causes of moisture and mould in buildings, spa facilities and wherever mould problems can occur. The same approach applies to moisture and mould: identify the causes, address them and document the results.',
       link: '/service/mold-removal-bansko',
       linkText: 'To our mould and moisture remediation page →',
     },
@@ -312,14 +312,14 @@ export const LEGIONELLEN_CONTENT = {
     },
     hero: {
       tag: 'PEAK CARE · ВОДНА ХИГИЕНА · БЪЛГАРИЯ',
-      title: 'Легионела във водните системи на хотели и обществени сгради: проверена, обработена, документирана',
-      sub: 'Техническа оценка, пробовземане с лаборатория, акредитирана за съответното изпитване и включена за всеки обект преди възлагането, ремонт, дезинфекция и контролно пробовземане: един контакт, технически отговорност на дипломиран инженер по отопление, вентилация и санитарна техника.',
+      title: 'Легионела и водна хигиена: оценка, мерки и документирани резултати',
+      sub: 'Техническа оценка, пробовземане с лаборатория, акредитирана за съответното изпитване и ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането, ремонт, дезинфекция и контролно пробовземане: един контакт, под техническото ръководство на дипломиран инженер по отопление, вентилация и санитарна техника.',
       cta: 'Обсъдете ситуацията',
       call: 'Обадете се',
     },
     facts: [
       ['Един контакт', 'от огледа до контролното пробовземане'],
-      ['Акредитирани лаборатории', 'ангажирани за конкретния обект преди възлагането'],
+      ['Акредитирани лаборатории', 'ангажирани за конкретния обект преди пробовземането'],
       ['Собствен екип', 'сервиз, ремонт и преустройство в цяла България'],
       ['Дипл.-инж. ОВК/ВиК', 'технически отговорник'],
     ],
@@ -327,8 +327,8 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Защо темата е важна точно сега',
       paragraphs: [
         'След промяната в Наредба № 9 местата за настаняване от категории А и Б (хотели, апартаментни комплекси, пансиони, къщи за гости, ваканционни къщи, къмпинги) са длъжни да подложат вътрешното водоразпределение на оценка на риска и да следят за легионела и олово. Планът за мониторинг се съгласува с местната Регионална здравна инспекция (РЗИ), а лабораторните изследвания се извършват от акредитирани лаборатории. Данните от изследвания за няколко години са основа на първото представяне, затова си струва да се започне рано и подредено.',
-        'Освен местата за настаняване, Наредба № 9 (чл. 6г) изрично посочва болници и лечебни заведения, както и ясли, детски градини и училища. Оценката на риска на вътрешното водоразпределение се предоставя на РЗИ, на кмета на общината и на ВиК. Отговорност остава на оператора: за здравето на гостите, персонала и посетителите и за това, при нужда да може да докаже, че е действано навреме и професионално.',
-        'Сезонните периоди са оперативен повод: стаите се заемат отново след престой, а инсталациите за топла вода работят с пълно натоварване. Който проверява преди началото на сезона, сам определя момента и подхода; който реагира едва при резултат – вече не.',
+        'Освен местата за настаняване, чл. 6г от Наредба № 9 обхваща и други изрично посочени приоритетни обекти, сред които болници, определени други лечебни заведения, детски ясли, детски градини и училища. Оценката на риска на вътрешното водоразпределение се предоставя на РЗИ, на кмета на общината и на ВиК. Отговорността остава на оператора: за здравето на гостите, персонала и посетителите и за това, при нужда да може да докаже, че е действано навреме и професионално.',
+        'Сезонните периоди са оперативен повод: стаите се заемат отново след престой, а инсталациите за топла вода работят с пълно натоварване. Проверката преди началото на сезона помага необходимите мерки да се планират според работата на обекта и намалява нуждата от импровизация при отклонения в резултатите.',
       ],
     },
     what: {
@@ -348,7 +348,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Пробовземане и лабораторен анализ',
-          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането. Предлагаме пунктовете за проби, организираме времето и достъпа, подготвяме инсталацията и обобщаваме резултатите в доклада.',
+          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и лабораторните изследвания се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането. Предлагаме пунктовете за проби, организираме времето и достъпа, подготвяме инсталацията и обобщаваме резултатите в доклада.',
         ],
         [
           'Ремонт и преустройство',
@@ -387,7 +387,7 @@ export const LEGIONELLEN_CONTENT = {
       headline: 'Ясни отговорности',
       items: [
         'Оценката на риска по Наредба № 9 се подава от оператора. Ние подготвяме техническите документи и проект.',
-        'Лабораторните резултати идват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането.',
+        'Лабораторните резултати идват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането.',
         'Всяка дезинфекция се извършва от изпълнител, вписан по Наредба № 1 от 2018 г. в публичната база данни на Министерството на здравеопазването, под наша координация. Носим отговорност за цялостния резултат.',
         'Не даваме гаранция за липса на бактерии и не обещаваме признаване от органите. Затова след всяка дезинфекция следва контролно пробовземане.',
         'Не поставяме медицински диагнози.',
@@ -403,7 +403,7 @@ export const LEGIONELLEN_CONTENT = {
         ],
         [
           'Как протича пробовземането?',
-          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и анализът се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект преди възлагането. Получавате резултатите заедно с нашата техническа оценка.',
+          'Пунктовете за вземане на проби и плана за мониторинг съгласуваме с РЗИ. Пробовземането и анализът се извършват от лаборатория, акредитирана за съответните изпитвания, ангажирана за конкретния обект след уточняване на обхвата на възлагането и преди пробовземането. Получавате резултатите заедно с нашата техническа оценка.',
         ],
         [
           'Какво се случва при отклоняващ се резултат?',
@@ -429,7 +429,7 @@ export const LEGIONELLEN_CONTENT = {
     },
     mold: {
       headline: 'Влага и мухъл',
-      text: 'Същата техническа грижа прилагаме и при причините за влага и мухъл в сгради, спа съоръжения и навсякъде, където могат да възникнат проблеми с мухъл. И двете теми често имат един и същ корен: влага, която дълго остава незабелязана.',
+      text: 'Същата техническа грижа прилагаме и при причините за влага и мухъл в сгради, спа съоръжения и навсякъде, където могат да възникнат проблеми с мухъл. Същият подход важи и при влага и мухъл: установяване на причините, целенасоченото им отстраняване и документиране на резултатите.',
       link: '/ogled-muhal-vlaga',
       linkText: 'Към страницата за оглед на мухъл и влага →',
     },
