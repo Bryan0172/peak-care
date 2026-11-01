@@ -17,10 +17,10 @@ export default function Footer() {
     // BG-Besucher bekommen die EN-Seite mit '(EN)' im Label.
     { to: isEn || isBg ? '/service/building-management-bulgaria' : '/service/hausverwaltung-bulgarien',
       label: isEn ? 'Property Management' : isBg ? 'Управление на имоти (EN)' : 'Hausverwaltung' },
-    { to: isEn ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien',
-      label: isEn ? 'Pre-Purchase Building Inspection' : isBg ? 'Техническа проверка преди покупка' : 'Bauinspektion vor dem Kauf' },
-    { to: isEn ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien',
-      label: isEn ? 'Technical Property Oversight' : isBg ? 'Технически надзор на имоти' : 'Technische Immobilienüberwachung' },
+    { to: isEn || isBg ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien',
+      label: isEn ? 'Pre-Purchase Building Inspection' : isBg ? 'Техническа проверка преди покупка (EN)' : 'Bauinspektion vor dem Kauf' },
+    { to: isEn || isBg ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien',
+      label: isEn ? 'Technical Property Oversight' : isBg ? 'Технически надзор на имоти (EN)' : 'Technische Immobilienüberwachung' },
     { to: '/service/renovierung-umbau-ausbau-bulgarien',
       label: isEn ? 'Renovation & Conversion (DE)' : isBg ? 'Саниране и преустройство (DE)' : 'Renovierung & Umbau' },
     // Legionellen-Seite (live 01.11.2026): site-weiter Footer-Link in der Sprache des Besuchers, alle drei Sprachfassungen existieren.

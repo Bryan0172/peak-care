@@ -23,7 +23,18 @@ export default function Header() {
     setLang(code)
     setLangOpen(false)
     const target = counterpartPath(location.pathname, code)
-    if (target) navigate(`${target}/`)
+    if (target) {
+      navigate(`${target}/`)
+      return
+    }
+    // Startseite (01.11.2026, dot-Befund P1.1): BG hat eine eigene URL (/bg/), EN ist die Wurzel;
+    // Deutsch bleibt Sitzungszustand (es gibt keine deutsche Startseite). Gewaehlte Sprache ueberlebt Neuladen.
+    const p = (location.pathname || '/').replace(/\/$/, '') || '/'
+    if (p === '/' || p === '/bg' || p === '/en') {
+      try { sessionStorage.setItem('pc_lang', code) } catch (e) { /* privat/blockiert */ }
+      if (code === 'bg') navigate(`/bg/${location.hash || ''}`)
+      else if (p !== '/') navigate(`/${location.hash || ''}`)
+    }
   }
 
   const navItems = [

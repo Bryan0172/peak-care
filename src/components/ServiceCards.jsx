@@ -7,9 +7,10 @@ const VIDEO_SRC = '/Videoanalyse.mp4'
 export default function ServiceCards() {
   const { t, lang } = useLang()
   const s = t.services
-  const oversightUrl = lang === 'en' ? '/technical-property-oversight-bulgaria' : '/technische-immobilienueberwachung-bulgarien'
-  const surveyUrl = lang === 'en' ? '/pre-purchase-building-inspection-bulgaria' : '/bauinspektion-vor-dem-kauf-bulgarien'
-  const moreText = lang === 'en' ? 'Learn more →' : lang === 'bg' ? 'Научете повече →' : 'Mehr erfahren →'
+  // BG: diese Seiten gibt es nur auf DE und EN; BG-Besucher bekommen die EN-Seite, im Label gekennzeichnet (01.11.2026).
+  const oversightUrl = lang === 'de' ? '/technische-immobilienueberwachung-bulgarien' : '/technical-property-oversight-bulgaria'
+  const surveyUrl = lang === 'de' ? '/bauinspektion-vor-dem-kauf-bulgarien' : '/pre-purchase-building-inspection-bulgaria'
+  const moreText = lang === 'en' ? 'Learn more →' : lang === 'bg' ? 'Научете повече (EN) →' : 'Mehr erfahren →'
 
   const services = [
     {

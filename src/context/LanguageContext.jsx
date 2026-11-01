@@ -79,6 +79,12 @@ function initialLang() {
   if (DE_ROUTE_PATHS.includes(path)) return 'de'
   if (BG_ROUTE_PATHS.includes(path)) return 'bg'
   if (LANG_ROUTE_PREFIXES[path]) return LANG_ROUTE_PREFIXES[path]
+  // Startseite: zuvor gewaehlte Sprache Deutsch ueberlebt das Neuladen (Sitzung); sonst EN wie bisher.
+  if (path === '/') {
+    try {
+      if (window.sessionStorage.getItem('pc_lang') === 'de') return 'de'
+    } catch (e) { /* privat/blockiert */ }
+  }
   const blogMatch = path.match(BLOG_POST_PATH)
   if (blogMatch) {
     const post = getPostBySlug(blogMatch[1])

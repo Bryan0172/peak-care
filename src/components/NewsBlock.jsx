@@ -17,7 +17,11 @@ const categoryColors = {
 
 export default function NewsBlock() {
   const { lang, t } = useLang()
-  const latest = allPosts.slice(0, 3)
+  // Startseite zeigt Artikel in der Sprache des Besuchers (01.11.2026, Andreas: keine deutschen Teaser auf EN/BG).
+  // Es gibt keine bulgarischen Artikel: BG zeigt die englischen. Ohne Treffer: alle Artikel wie bisher.
+  const postLang = lang === 'bg' ? 'en' : lang
+  const sameLang = allPosts.filter((p) => (p.lang || 'de') === postLang)
+  const latest = (sameLang.length >= 3 ? sameLang : allPosts).slice(0, 3)
 
   return (
     <section className="py-20 bg-white">

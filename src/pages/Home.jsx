@@ -168,15 +168,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-teal-400 mb-3">
-              {lang === 'en' ? 'Selected Projects' : 'Ausgewählte Projekte'}
+              {lang === 'en' ? 'Selected Projects' : lang === 'bg' ? 'Избрани проекти' : 'Ausgewählte Projekte'}
             </span>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              {lang === 'en' ? 'Real cases. Documented results.' : 'Echte Fälle. Dokumentierte Ergebnisse.'}
+              {lang === 'en' ? 'Real cases. Documented results.' : lang === 'bg' ? 'Реални случаи. Документирани резултати.' : 'Echte Fälle. Dokumentierte Ergebnisse.'}
             </h2>
             <p className="text-gray-400 text-sm max-w-xl mx-auto">
-              {lang === 'en'
-                ? 'Each project is different. The approach is always the same: identify the real cause, define the right fix, and control the execution until the result is stable.'
-                : 'Jedes Projekt ist anders. Die Vorgehensweise bleibt gleich: Ursache erkennen, die richtige Lösung definieren und die Umsetzung bis zu einem stabilen Ergebnis kontrollieren.'}
+              {lang === 'en' ? 'Each project is different. The approach is always the same: identify the real cause, define the right fix, and control the execution until the result is stable.' : lang === 'bg' ? 'Всеки проект е различен. Подходът остава един и същ: да се установи истинската причина, да се определи правилното решение и да се контролира изпълнението до постигане на стабилен резултат.' : 'Jedes Projekt ist anders. Die Vorgehensweise bleibt gleich: Ursache erkennen, die richtige Lösung definieren und die Umsetzung bis zu einem stabilen Ergebnis kontrollieren.'}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -185,32 +183,32 @@ export default function Home() {
             <div className="bg-gray-900 border border-teal-800/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">Sofia</span>
-                <span className="text-xs text-gray-500">{lang === 'en' ? 'Apartment' : 'Wohnung'}</span>
+                <span className="text-xs text-gray-500">{lang === 'en' ? 'Apartment' : lang === 'bg' ? 'Апартамент' : 'Wohnung'}</span>
               </div>
               <h3 className="text-white font-bold text-base mb-3">
-                {lang === 'en' ? 'Mold returning despite repeated treatments' : 'Schimmel trotz wiederholter Behandlung'}
+                {lang === 'en' ? 'Mold returning despite repeated treatments' : lang === 'bg' ? 'Мухъл, който се връща въпреки повторни третирания' : 'Schimmel trotz wiederholter Behandlung'}
               </h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : 'Ausgangslage'}</span><br />
-                  {lang === 'en' ? 'Ground-floor apartment in an older building in Sofia. Bedroom with limited ventilation.' : 'Erdgeschosswohnung in einem Altbau in Sofia. Schlafzimmer mit eingeschränkter Belüftung.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : lang === 'bg' ? 'Изходна ситуация' : 'Ausgangslage'}</span><br />
+                  {lang === 'en' ? 'Ground-floor apartment in an older building in Sofia. Bedroom with limited ventilation.' : lang === 'bg' ? 'Апартамент на партерен етаж в по-стара сграда в София. Спалня с ограничено проветряване.' : 'Erdgeschosswohnung in einem Altbau in Sofia. Schlafzimmer mit eingeschränkter Belüftung.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">Problem</span><br />
-                  {lang === 'en' ? 'The mold kept coming back. Several treatments had been done — each time it looked fixed, but only temporarily. Health symptoms started to appear. The real cause had never been addressed.' : 'Der Schimmel kam immer wieder. Mehrere Behandlungen wurden durchgeführt — jedes Mal schien es behoben, aber nur vorübergehend. Gesundheitliche Beschwerden traten auf. Die eigentliche Ursache wurde nie angegangen.'}
+                  <span className="font-semibold text-gray-300">{lang === 'bg' ? 'Проблем' : 'Problem'}</span><br />
+                  {lang === 'en' ? 'The mold kept coming back. Several treatments had been done — each time it looked fixed, but only temporarily. Health symptoms started to appear. The real cause had never been addressed.' : lang === 'bg' ? 'Мухълът се връщаше. Бяха направени няколко третирания – всеки път изглеждаше отстранен, но само временно. Появиха се здравословни оплаквания. Истинската причина никога не е била отстранена.' : 'Der Schimmel kam immer wieder. Mehrere Behandlungen wurden durchgeführt — jedes Mal schien es behoben, aber nur vorübergehend. Gesundheitliche Beschwerden traten auf. Die eigentliche Ursache wurde nie angegangen.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : 'Was sich geändert hat'}</span><br />
-                  {lang === 'en' ? 'We stopped treating the surface. Instead, we identified the actual source — moisture combined with structural weak points — and rebuilt the affected areas accordingly.' : 'Wir haben aufgehört, die Oberfläche zu behandeln. Stattdessen haben wir die eigentliche Quelle identifiziert — Feuchtigkeit kombiniert mit strukturellen Schwachstellen — und die betroffenen Bereiche neu aufgebaut.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : lang === 'bg' ? 'Какво се промени' : 'Was sich geändert hat'}</span><br />
+                  {lang === 'en' ? 'We stopped treating the surface. Instead, we identified the actual source — moisture combined with structural weak points — and rebuilt the affected areas accordingly.' : lang === 'bg' ? 'Спряхме да третираме повърхността. Вместо това установихме действителния източник – влага в съчетание със строителни слабости – и възстановихме засегнатите зони съответно.' : 'Wir haben aufgehört, die Oberfläche zu behandeln. Stattdessen haben wir die eigentliche Quelle identifiziert — Feuchtigkeit kombiniert mit strukturellen Schwachstellen — und die betroffenen Bereiche neu aufgebaut.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : 'Ergebnis'}</span><br />
-                  {lang === 'en' ? 'No visible recurrence after remediation. Stable indoor climate. For the first time, the problem was addressed at its source — not covered.' : 'Keine sichtbare Rückkehr nach der Sanierung. Stabiles Raumklima. Zum ersten Mal wurde das Problem an der Ursache behandelt — nicht überdeckt.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : lang === 'bg' ? 'Резултат' : 'Ergebnis'}</span><br />
+                  {lang === 'en' ? 'No visible recurrence after remediation. Stable indoor climate. For the first time, the problem was addressed at its source — not covered.' : lang === 'bg' ? 'Без видимо връщане след саниране. Стабилен микроклимат. За първи път проблемът е решен при източника – а не прикрит.' : 'Keine sichtbare Rückkehr nach der Sanierung. Stabiles Raumklima. Zum ersten Mal wurde das Problem an der Ursache behandelt — nicht überdeckt.'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Mold Removal' : 'Schimmelbeseitigung'}</span>
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Root Cause Fix' : 'Ursachenbehandlung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Mold Removal' : lang === 'bg' ? 'Отстраняване на мухъл' : 'Schimmelbeseitigung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Root Cause Fix' : lang === 'bg' ? 'Отстраняване на причината' : 'Ursachenbehandlung'}</span>
               </div>
             </div>
 
@@ -218,65 +216,65 @@ export default function Home() {
             <div className="bg-gray-900 border border-teal-800/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">Bansko</span>
-                <span className="text-xs text-gray-500">{lang === 'en' ? 'Holiday Property' : 'Ferienimmobilie'}</span>
+                <span className="text-xs text-gray-500">{lang === 'en' ? 'Holiday Property' : lang === 'bg' ? 'Ваканционен имот' : 'Ferienimmobilie'}</span>
               </div>
               <h3 className="text-white font-bold text-base mb-3">
-                {lang === 'en' ? 'Property losing value due to hidden structural issues' : 'Wertverlust durch versteckte Baumängel'}
+                {lang === 'en' ? 'Property losing value due to hidden structural issues' : lang === 'bg' ? 'Имот, губещ стойност заради скрити строителни проблеми' : 'Wertverlust durch versteckte Baumängel'}
               </h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : 'Ausgangslage'}</span><br />
-                  {lang === 'en' ? 'Holiday apartment in Bansko, unused for several years.' : 'Ferienwohnung in Bansko, seit mehreren Jahren ungenutzt.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : lang === 'bg' ? 'Изходна ситуация' : 'Ausgangslage'}</span><br />
+                  {lang === 'en' ? 'Holiday apartment in Bansko, unused for several years.' : lang === 'bg' ? 'Ваканционен апартамент в Банско, необитаван в продължение на няколко години.' : 'Ferienwohnung in Bansko, seit mehreren Jahren ungenutzt.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">Problem</span><br />
-                  {lang === 'en' ? 'Outdated surfaces were obvious — but the bigger issue was hidden: wear, inefficiencies, and structural weaknesses that made the property unattractive for rental.' : 'Veraltete Oberflächen waren offensichtlich — das größere Problem war jedoch verborgen: Verschleiß, Ineffizienzen und strukturelle Schwächen, die die Immobilie unattraktiv für die Vermietung machten.'}
+                  <span className="font-semibold text-gray-300">{lang === 'bg' ? 'Проблем' : 'Problem'}</span><br />
+                  {lang === 'en' ? 'Outdated surfaces were obvious — but the bigger issue was hidden: wear, inefficiencies, and structural weaknesses that made the property unattractive for rental.' : lang === 'bg' ? 'Остарелите повърхности бяха очевидни – но по-големият проблем беше скрит: износване, неефективност и строителни слабости, които правеха имота непривлекателен за отдаване под наем.' : 'Veraltete Oberflächen waren offensichtlich — das größere Problem war jedoch verborgen: Verschleiß, Ineffizienzen und strukturelle Schwächen, die die Immobilie unattraktiv für die Vermietung machten.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : 'Was sich geändert hat'}</span><br />
-                  {lang === 'en' ? 'We didn\'t just renovate visually. We reworked the apartment from a usability and longevity perspective — layout, materials, and functional details.' : 'Wir haben nicht nur optisch renoviert. Wir haben die Wohnung aus der Perspektive von Nutzbarkeit und Langlebigkeit überarbeitet — Grundriss, Materialien und funktionale Details.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : lang === 'bg' ? 'Какво се промени' : 'Was sich geändert hat'}</span><br />
+                  {lang === 'en' ? 'We didn\'t just renovate visually. We reworked the apartment from a usability and longevity perspective — layout, materials, and functional details.' : lang === 'bg' ? 'Не го обновихме само визуално. Преработихме апартамента от гледна точка на използваемост и дълготрайност – разпределение, материали и функционални детайли.' : 'Wir haben nicht nur optisch renoviert. Wir haben die Wohnung aus der Perspektive von Nutzbarkeit und Langlebigkeit überarbeitet — Grundriss, Materialien und funktionale Details.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : 'Ergebnis'}</span><br />
-                  {lang === 'en' ? 'Significantly higher rental appeal. Stronger pricing potential. A property that works again — not just looks better.' : 'Deutlich höhere Vermietungsattraktivität. Stärkeres Preispotenzial. Eine Immobilie, die wieder funktioniert — nicht nur besser aussieht.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : lang === 'bg' ? 'Резултат' : 'Ergebnis'}</span><br />
+                  {lang === 'en' ? 'Significantly higher rental appeal. Stronger pricing potential. A property that works again — not just looks better.' : lang === 'bg' ? 'Значително по-висока привлекателност за наем. По-добър ценови потенциал. Имот, който отново функционира – а не просто изглежда по-добре.' : 'Deutlich höhere Vermietungsattraktivität. Stärkeres Preispotenzial. Eine Immobilie, die wieder funktioniert — nicht nur besser aussieht.'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Renovation' : 'Renovierung'}</span>
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Rental Value' : 'Vermietungswert'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Renovation' : lang === 'bg' ? 'Реновиране' : 'Renovierung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Rental Value' : lang === 'bg' ? 'Наемна стойност' : 'Vermietungswert'}</span>
               </div>
             </div>
 
             {/* Case 3 — Bulgaria */}
             <div className="bg-gray-900 border border-teal-800/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">Rural Bulgaria</span>
-                <span className="text-xs text-gray-500">{lang === 'en' ? 'Single-Family House' : 'Einfamilienhaus'}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">{lang === 'en' ? 'Rural Bulgaria' : lang === 'bg' ? 'Селски район в България' : 'Ländliches Bulgarien'}</span>
+                <span className="text-xs text-gray-500">{lang === 'en' ? 'Single-Family House' : lang === 'bg' ? 'Еднофамилна къща' : 'Einfamilienhaus'}</span>
               </div>
               <h3 className="text-white font-bold text-base mb-3">
-                {lang === 'en' ? 'Moisture damaging the building from inside' : 'Feuchtigkeit beschädigt Gebäude von innen'}
+                {lang === 'en' ? 'Moisture damaging the building from inside' : lang === 'bg' ? 'Влага, която разрушава сградата отвътре' : 'Feuchtigkeit beschädigt Gebäude von innen'}
               </h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : 'Ausgangslage'}</span><br />
-                  {lang === 'en' ? 'Older single-family house without modern sealing systems.' : 'Älteres Einfamilienhaus ohne moderne Abdichtungssysteme.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : lang === 'bg' ? 'Изходна ситуация' : 'Ausgangslage'}</span><br />
+                  {lang === 'en' ? 'Older single-family house without modern sealing systems.' : lang === 'bg' ? 'По-стара еднофамилна къща без съвременни хидроизолационни системи.' : 'Älteres Einfamilienhaus ohne moderne Abdichtungssysteme.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">Problem</span><br />
-                  {lang === 'en' ? 'Moisture rising through multiple walls. Damaged plaster, persistent damp air, declining living quality. This was not a cosmetic issue — it was structural.' : 'Feuchtigkeit stieg durch mehrere Wände auf. Beschädigter Putz, anhaltend feuchte Luft, sinkende Wohnqualität. Das war kein kosmetisches Problem — es war strukturell.'}
+                  <span className="font-semibold text-gray-300">{lang === 'bg' ? 'Проблем' : 'Problem'}</span><br />
+                  {lang === 'en' ? 'Moisture rising through multiple walls. Damaged plaster, persistent damp air, declining living quality. This was not a cosmetic issue — it was structural.' : lang === 'bg' ? 'Влага, издигаща се през няколко стени. Повредена мазилка, постоянно влажен въздух, намаляващо качество на живот. Това не беше козметичен проблем – той беше конструктивен.' : 'Feuchtigkeit stieg durch mehrere Wände auf. Beschädigter Putz, anhaltend feuchte Luft, sinkende Wohnqualität. Das war kein kosmetisches Problem — es war strukturell.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : 'Was sich geändert hat'}</span><br />
-                  {lang === 'en' ? 'We identified the exact source of moisture and implemented proper sealing solutions before restoring affected areas.' : 'Wir haben die genaue Feuchtigkeitsquelle identifiziert und ordentliche Abdichtungslösungen umgesetzt, bevor wir die betroffenen Bereiche wiederhergestellt haben.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : lang === 'bg' ? 'Какво се промени' : 'Was sich geändert hat'}</span><br />
+                  {lang === 'en' ? 'We identified the exact source of moisture and implemented proper sealing solutions before restoring affected areas.' : lang === 'bg' ? 'Установихме точния източник на влагата и приложихме подходящи хидроизолационни решения, преди да възстановим засегнатите зони.' : 'Wir haben die genaue Feuchtigkeitsquelle identifiziert und ordentliche Abdichtungslösungen umgesetzt, bevor wir die betroffenen Bereiche wiederhergestellt haben.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : 'Ergebnis'}</span><br />
-                  {lang === 'en' ? 'Dry walls. Stable indoor conditions. Long-term protection of the building — not temporary repair.' : 'Trockene Wände. Stabile Innenbedingungen. Langfristiger Schutz des Gebäudes — keine vorübergehende Reparatur.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : lang === 'bg' ? 'Резултат' : 'Ergebnis'}</span><br />
+                  {lang === 'en' ? 'Dry walls. Stable indoor conditions. Long-term protection of the building — not temporary repair.' : lang === 'bg' ? 'Сухи стени. Стабилни условия в помещенията. Дългосрочна защита на сградата – а не временен ремонт.' : 'Trockene Wände. Stabile Innenbedingungen. Langfristiger Schutz des Gebäudes — keine vorübergehende Reparatur.'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Waterproofing' : 'Abdichtung'}</span>
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Structural Fix' : 'Strukturelle Sanierung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Waterproofing' : lang === 'bg' ? 'Хидроизолация' : 'Abdichtung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Structural Fix' : lang === 'bg' ? 'Конструктивно саниране' : 'Strukturelle Sanierung'}</span>
               </div>
             </div>
 
@@ -284,32 +282,32 @@ export default function Home() {
             <div className="bg-gray-900 border border-teal-800/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">Burgas</span>
-                <span className="text-xs text-gray-500">{lang === 'en' ? 'Apartment' : 'Wohnung'}</span>
+                <span className="text-xs text-gray-500">{lang === 'en' ? 'Apartment' : lang === 'bg' ? 'Апартамент' : 'Wohnung'}</span>
               </div>
               <h3 className="text-white font-bold text-base mb-3">
-                {lang === 'en' ? 'Constant noise affecting daily life' : 'Dauerlärm beeinträchtigt den Alltag'}
+                {lang === 'en' ? 'Constant noise affecting daily life' : lang === 'bg' ? 'Постоянен шум, който засяга ежедневието' : 'Dauerlärm beeinträchtigt den Alltag'}
               </h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : 'Ausgangslage'}</span><br />
-                  {lang === 'en' ? 'Apartment located directly on a high-traffic road in Burgas.' : 'Wohnung direkt an einer stark befahrenen Straße in Burgas.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : lang === 'bg' ? 'Изходна ситуация' : 'Ausgangslage'}</span><br />
+                  {lang === 'en' ? 'Apartment located directly on a high-traffic road in Burgas.' : lang === 'bg' ? 'Апартамент, разположен директно на натоварен път в Бургас.' : 'Wohnung direkt an einer stark befahrenen Straße in Burgas.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">Problem</span><br />
-                  {lang === 'en' ? 'Continuous noise — especially at night and during work hours. Home office almost impossible.' : 'Dauerhafter Lärm — besonders nachts und während der Arbeitszeiten. Homeoffice nahezu unmöglich.'}
+                  <span className="font-semibold text-gray-300">{lang === 'bg' ? 'Проблем' : 'Problem'}</span><br />
+                  {lang === 'en' ? 'Continuous noise — especially at night and during work hours. Home office almost impossible.' : lang === 'bg' ? 'Непрекъснат шум – особено през нощта и в работно време. Работа от вкъщи – почти невъзможна.' : 'Dauerhafter Lärm — besonders nachts und während der Arbeitszeiten. Homeoffice nahezu unmöglich.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : 'Was sich geändert hat'}</span><br />
-                  {lang === 'en' ? 'We developed a targeted sound protection solution — combining wall and window adjustments to reduce external noise effectively.' : 'Wir haben eine gezielte Schallschutzlösung entwickelt — Kombination aus Wand- und Fensteranpassungen zur effektiven Reduzierung des Außenlärms.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : lang === 'bg' ? 'Какво се промени' : 'Was sich geändert hat'}</span><br />
+                  {lang === 'en' ? 'We developed a targeted sound protection solution — combining wall and window adjustments to reduce external noise effectively.' : lang === 'bg' ? 'Разработихме целенасочено решение за шумоизолация – комбинация от корекции по стени и прозорци за ефективно намаляване на външния шум.' : 'Wir haben eine gezielte Schallschutzlösung entwickelt — Kombination aus Wand- und Fensteranpassungen zur effektiven Reduzierung des Außenlärms.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : 'Ergebnis'}</span><br />
-                  {lang === 'en' ? 'Noticeably quieter environment. Usable living and working space again. Significant improvement in quality of life.' : 'Spürbar ruhigere Umgebung. Wieder nutzbarer Wohn- und Arbeitsraum. Deutliche Verbesserung der Lebensqualität.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : lang === 'bg' ? 'Резултат' : 'Ergebnis'}</span><br />
+                  {lang === 'en' ? 'Noticeably quieter environment. Usable living and working space again. Significant improvement in quality of life.' : lang === 'bg' ? 'Осезаемо по-тиха среда. Отново използваемо място за живот и работа. Значително подобрение на качеството на живот.' : 'Spürbar ruhigere Umgebung. Wieder nutzbarer Wohn- und Arbeitsraum. Deutliche Verbesserung der Lebensqualität.'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Sound Protection' : 'Schallschutz'}</span>
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Home Office' : 'Homeoffice'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Sound Protection' : lang === 'bg' ? 'Шумоизолация' : 'Schallschutz'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Home Office' : lang === 'bg' ? 'Работа от вкъщи' : 'Homeoffice'}</span>
               </div>
             </div>
 
@@ -317,41 +315,39 @@ export default function Home() {
             <div className="bg-gray-900 border border-teal-800/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-full">Varna</span>
-                <span className="text-xs text-gray-500">{lang === 'en' ? 'Rental Property' : 'Mietobjekt'}</span>
+                <span className="text-xs text-gray-500">{lang === 'en' ? 'Rental Property' : lang === 'bg' ? 'Наемен имот' : 'Mietobjekt'}</span>
               </div>
               <h3 className="text-white font-bold text-base mb-3">
-                {lang === 'en' ? 'Property not usable due to multiple issues' : 'Wohnung wegen mehrerer Mängel nicht nutzbar'}
+                {lang === 'en' ? 'Property not usable due to multiple issues' : lang === 'bg' ? 'Имот, негоден за ползване заради множество проблеми' : 'Wohnung wegen mehrerer Mängel nicht nutzbar'}
               </h3>
               <div className="space-y-2 mb-4">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : 'Ausgangslage'}</span><br />
-                  {lang === 'en' ? 'Rental apartment in Varna, vacant for a longer period.' : 'Mietwohnung in Varna, über einen längeren Zeitraum leer stehend.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Situation' : lang === 'bg' ? 'Изходна ситуация' : 'Ausgangslage'}</span><br />
+                  {lang === 'en' ? 'Rental apartment in Varna, vacant for a longer period.' : lang === 'bg' ? 'Наемен апартамент във Варна, необитаван за по-дълъг период.' : 'Mietwohnung in Varna, über einen längeren Zeitraum leer stehend.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">Problem</span><br />
-                  {lang === 'en' ? 'Combination of moisture, mold, and general deterioration. The apartment was not rentable in its condition.' : 'Kombination aus Feuchtigkeit, Schimmel und allgemeinem Verfall. Die Wohnung war in ihrem Zustand nicht vermietbar.'}
+                  <span className="font-semibold text-gray-300">{lang === 'bg' ? 'Проблем' : 'Problem'}</span><br />
+                  {lang === 'en' ? 'Combination of moisture, mold, and general deterioration. The apartment was not rentable in its condition.' : lang === 'bg' ? 'Комбинация от влага, мухъл и общо влошено състояние. Апартаментът не можеше да се отдава под наем в това състояние.' : 'Kombination aus Feuchtigkeit, Schimmel und allgemeinem Verfall. Die Wohnung war in ihrem Zustand nicht vermietbar.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : 'Was sich geändert hat'}</span><br />
-                  {lang === 'en' ? 'We approached the project as a system — removing root causes of moisture, eliminating mold, and fully restoring the property.' : 'Wir haben das Projekt als System angegangen — Beseitigung der Feuchtigkeitsursachen, Schimmelentfernung und vollständige Wiederherstellung der Immobilie.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'What changed' : lang === 'bg' ? 'Какво се промени' : 'Was sich geändert hat'}</span><br />
+                  {lang === 'en' ? 'We approached the project as a system — removing root causes of moisture, eliminating mold, and fully restoring the property.' : lang === 'bg' ? 'Подходихме към проекта като към система – отстраняване на причините за влагата, премахване на мухъла и пълно възстановяване на имота.' : 'Wir haben das Projekt als System angegangen — Beseitigung der Feuchtigkeitsursachen, Schimmelentfernung und vollständige Wiederherstellung der Immobilie.'}
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : 'Ergebnis'}</span><br />
-                  {lang === 'en' ? 'Fully functional, rentable apartment. Improved property value and long-term usability restored.' : 'Voll funktionsfähige, vermietbare Wohnung. Verbesserter Immobilienwert und langfristige Nutzbarkeit wiederhergestellt.'}
+                  <span className="font-semibold text-gray-300">{lang === 'en' ? 'Result' : lang === 'bg' ? 'Резултат' : 'Ergebnis'}</span><br />
+                  {lang === 'en' ? 'Fully functional, rentable apartment. Improved property value and long-term usability restored.' : lang === 'bg' ? 'Напълно функциониращ апартамент, подходящ за наем. Подобрена стойност на имота и възстановена дългосрочна използваемост.' : 'Voll funktionsfähige, vermietbare Wohnung. Verbesserter Immobilienwert und langfristige Nutzbarkeit wiederhergestellt.'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Full Restoration' : 'Vollsanierung'}</span>
-                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Rental Ready' : 'Vermietungsbereit'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Full Restoration' : lang === 'bg' ? 'Цялостно възстановяване' : 'Vollsanierung'}</span>
+                <span className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-md">{lang === 'en' ? 'Rental Ready' : lang === 'bg' ? 'Готов за отдаване' : 'Vermietungsbereit'}</span>
               </div>
             </div>
 
           </div>
           <div className="text-center mt-10">
             <p className="text-gray-400 text-sm max-w-2xl mx-auto">
-              {lang === 'en'
-                ? 'If your property has a recurring moisture, mold, renovation, noise or value-risk problem, we can assess the situation and define a practical solution path.'
-                : 'Wenn Ihre Immobilie ein wiederkehrendes Feuchtigkeits-, Schimmel-, Sanierungs-, Schallschutz- oder Wertverlustproblem hat, prüfen wir die Situation und entwickeln einen praktikablen Lösungsweg.'}
+              {lang === 'en' ? 'If your property has a recurring moisture, mold, renovation, noise or value-risk problem, we can assess the situation and define a practical solution path.' : lang === 'bg' ? 'Ако във Вашия имот има повтарящ се проблем с влага, мухъл, реновиране, шум или риск за стойността, можем да оценим ситуацията и да определим практичен път към решение.' : 'Wenn Ihre Immobilie ein wiederkehrendes Feuchtigkeits-, Schimmel-, Sanierungs-, Schallschutz- oder Wertverlustproblem hat, prüfen wir die Situation und entwickeln einen praktikablen Lösungsweg.'}
             </p>
           </div>
         </div>
