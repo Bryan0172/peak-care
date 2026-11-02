@@ -66,3 +66,16 @@
 .prose-content hr {
   @apply border-gray-200 my-6;
 }
+
+/* 02.11.2026: lange deutsche Woerter in Ueberschriften (Schimmelbeseitigung, berufshaftpflichtversichert) liefen bei 375 px ueber den Rand */
+h1, h2, h3 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 02.11.2026: Tabellen in Artikeln auf schmalen Bildschirmen seitlich scrollbar statt die Seite zu verbreitern */
+.prose-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
