@@ -31,6 +31,10 @@ export default function Footer() {
     // bulgarische Feuchte-/Schimmel-Seite (einzige BG-Seite zum Thema, war bisher ohne internen Link).
     { to: isEn ? '/service/mold-removal-bansko' : isBg ? '/ogled-muhal-vlaga' : '/service/schimmelbeseitigung-bansko',
       label: isEn ? 'Mould & Damp' : isBg ? 'Мухъл и влага' : 'Schimmel & Feuchte' },
+    // Indexierung 05.11.2026 (Andreas-Go): /service/schimmelbeseitigung-sofia/ war eine Waise (0 interne Links, Google:
+    // 'URL is unknown'). Site-weiter Link; EN -> EN-Seite, BG bekommt die EN-Seite mit '(EN)' im Label.
+    { to: isEn || isBg ? '/service/mold-removal-sofia' : '/service/schimmelbeseitigung-sofia',
+      label: isEn ? 'Mould Removal Sofia' : isBg ? 'Мухъл София (EN)' : 'Schimmelbeseitigung Sofia' },
   ]
 
   return (
