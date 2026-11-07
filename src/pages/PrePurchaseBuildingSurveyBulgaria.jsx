@@ -30,6 +30,7 @@ const content = {
       tag: 'IMMOBILIE KAUFEN IN BULGARIEN · PRÜFUNG VOR DEM KAUF',
       title: 'Immobilie in Bulgarien kaufen – wissen, was Sie unterschreiben.',
       subtitle: 'Eine unabhängige Besichtigung der Bausubstanz vor Ort, durch ein Bauunternehmen. Sie erfahren, was wir gesehen haben, was es voraussichtlich kostet und ob wir an Ihrer Stelle weitergehen würden.',
+      independentNote: 'Unabhängig vom Verkäufer und vom Makler. Ein späterer Sanierungsauftrag ist ein eigener Vertrag, den Sie frei vergeben.',
       ctaPrimary: 'Bauinspektion anfragen',
       ctaSecondary: 'Direkt per WhatsApp',
       micro: 'Unabhängige Besichtigung durch ein Bauunternehmen · Vor Ort in Bulgarien · Zusammenfassung auf Deutsch oder Englisch',
@@ -129,6 +130,7 @@ const content = {
       tag: 'BUYING PROPERTY IN BULGARIA · PRE-PURCHASE INSPECTION',
       title: 'Buying property in Bulgaria — know what you are signing.',
       subtitle: 'An independent visit to the property by a building contractor. You learn what we saw, what it is likely to cost, and whether we would go ahead in your place.',
+      independentNote: 'Independent of the seller and the agent. Any later renovation work is a separate contract, which you are free to award to anyone.',
       ctaPrimary: 'Request an inspection',
       ctaSecondary: 'Message on WhatsApp',
       micro: 'Independent visit by a building contractor · On site in Bulgaria · Summary in English or German',
@@ -228,6 +230,7 @@ const content = {
       tag: 'КУПУВАНЕ НА ИМОТ В БЪЛГАРИЯ · ПРОВЕРКА ПРЕДИ ПОКУПКА',
       title: 'Купувате имот в България — знайте какво подписвате.',
       subtitle: 'Независим оглед на конструкцията на място, от строителна фирма. Разбирате какво сме видели, колко вероятно ще струва и дали на ваше място бихме продължили.',
+      independentNote: 'Независимо от продавача и от брокера. Евентуален по-късен ремонт е отделен договор, който възлагате свободно на когото пожелаете.',
       ctaPrimary: 'Заявете проверка',
       ctaSecondary: 'Пишете в WhatsApp',
       micro: 'Независим оглед от строителна фирма · На място в България · Резюме на немски или английски',
@@ -379,7 +382,9 @@ export default function PrePurchaseBuildingSurveyBulgaria() {
         <div className="relative max-w-3xl mx-auto">
           <span className="text-xs font-bold tracking-widest text-teal-400 uppercase mb-4 block">{c.hero.tag}</span>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">{c.hero.title}</h1>
-          <p className="text-lg text-gray-300 mb-8 leading-relaxed">{c.hero.subtitle}</p>
+          <p className="text-lg text-gray-300 mb-4 leading-relaxed">{c.hero.subtitle}</p>
+          {/* Offenlegung neben dem Wort „unabhängig“ (Andreas 07.11.2026 „Zusatzsatz: ja“, Vorprüfung SEO 07.11.) */}
+          <p className="text-sm text-gray-400 mb-8 leading-relaxed">{c.hero.independentNote}</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="#kontakt" className="inline-block text-center bg-teal-600 hover:bg-teal-500 text-white font-semibold px-7 py-3 rounded transition-colors">
               {c.hero.ctaPrimary}
