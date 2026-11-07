@@ -6,9 +6,11 @@ import ContactSection from '../components/ContactSection'
 // ---------------------------------------------------------------------------
 // Premium-Landingpage: Bauinspektion VOR dem Kauf (Pre-Purchase Building Inspection)
 // Zielgruppe: ausländische + inländische Investoren und Bauherren in Bulgarien.
-// WICHTIG: Andreas ist KEIN zugelassener Baugutachter/Sachverständiger. Daher
-// bewusst NICHT "Baugutachten/Gutachter" (geschützter Begriff), sondern
-// "Bauinspektion / Bauexperte / Inspektionsbericht" — ehrlich & rechtssicher.
+// WICHTIG: Peak Care ist ein Bauunternehmen, kein zugelassener Gutachter/Sachverständiger.
+// Sprachregelung Andreas 22.08.2026: bewusst NICHT "Gutachten/Gutachter/Bauexperte",
+// sondern "Besichtigung durch ein Bauunternehmen / schriftliche Zusammenfassung".
+// "Inspektion/Bauinspektion" bleibt nur als Suchwort des Kunden (H1, Pfad, Knopf).
+// "Unabhängig" nur nach Andreas' A874-Regel 06.11.2026: wenn am selben Objekt nichts verdient wird.
 // Eigenständige, kaufintent-fokussierte Seite (getrennt von der laufenden
 // Immobilienüberwachung). Nutzt useSEO (NIE react-helmet) + lokalisiertes JSON-LD.
 // ---------------------------------------------------------------------------
@@ -18,37 +20,37 @@ const WA = 'https://wa.me/359898436561'
 const content = {
   de: {
     meta: {
-      title: 'Immobilie in Bulgarien kaufen: vorher prüfen lassen – unabhängige technische Bauprüfung | Peak Care',
-      description: 'Immobilie in Bulgarien kaufen? Vorher unabhängig prüfen lassen. Ein erfahrener Bauexperte prüft Bausubstanz, Feuchte, Statik & versteckte Mängel vor Ort – strukturierter Inspektionsbericht mit Fotodokumentation, Mängelliste und Renovierungskosten-Orientierung. Für internationale Investoren und Bauherren.',
+      title: 'Immobilie in Bulgarien kaufen: vorher prüfen lassen – unabhängige Besichtigung | Peak Care',
+      description: 'Immobilie in Bulgarien kaufen? Vorher ansehen lassen: unabhängige Besichtigung durch ein Bauunternehmen, mit Blick auf Bausubstanz, Feuchte und sichtbare Mängel. Schriftliche Zusammenfassung mit Fotos, Vorschlägen und Kostenspannen. Für Käufer im Ausland.',
       canonical: 'https://peak-care.com/bauinspektion-vor-dem-kauf-bulgarien',
     },
     hero: {
       tag: 'IMMOBILIE KAUFEN IN BULGARIEN · PRÜFUNG VOR DEM KAUF',
       title: 'Immobilie in Bulgarien kaufen – wissen, was Sie unterschreiben.',
-      subtitle: 'Eine unabhängige technische Inspektion der Bausubstanz, durchgeführt vor Ort von einem erfahrenen Bauexperten. Sie erhalten ein klares, ehrliches Bild des Objekts: was in Ordnung ist, was Sie kosten wird und ob sich der Kaufpreis rechtfertigt.',
+      subtitle: 'Eine unabhängige Besichtigung der Bausubstanz vor Ort, durch ein Bauunternehmen. Sie erfahren, was wir gesehen haben, was es voraussichtlich kostet und ob wir an Ihrer Stelle weitergehen würden.',
       ctaPrimary: 'Bauinspektion anfragen',
       ctaSecondary: 'Direkt per WhatsApp',
-      micro: 'Unabhängig vom Verkäufer · Vor-Ort in Bulgarien · Bericht auf Deutsch & Englisch',
+      micro: 'Unabhängige Besichtigung durch ein Bauunternehmen · Vor Ort in Bulgarien · Zusammenfassung auf Deutsch oder Englisch',
     },
     trust: [
-      { k: 'Unabhängig', v: 'Wir arbeiten für den Käufer – nicht für Makler oder Verkäufer.' },
-      { k: 'Vor Ort', v: 'Persönliche Inspektion in Bulgarien, nicht aus der Ferne.' },
+      { k: 'Offen', v: 'Was gegen den Kauf spricht, sagen wir schriftlich.' },
+      { k: 'Vor Ort', v: 'Persönliche Besichtigung in Bulgarien, nicht aus der Ferne.' },
       { k: 'Erfahrung', v: 'Jahrzehntelange Bau- und Sanierungspraxis in der Region.' },
-      { k: 'Verständlich', v: 'Klarer Bericht in Ihrer Sprache – kein Fachchinesisch.' },
+      { k: 'Verständlich', v: 'Klare Zusammenfassung in Ihrer Sprache – kein Fachchinesisch.' },
     ],
     stakes: {
       headline: 'Ein Immobilienkauf in Bulgarien verzeiht keine bösen Überraschungen',
       intro: 'Aus dem Ausland gekauft, vom Makler präsentiert, unter Zeitdruck entschieden – so entstehen die teuersten Fehler. Was auf Fotos und beim Besichtigungstermin gut aussieht, verbirgt oft genau die Mängel, die nach dem Kauf das Budget sprengen.',
       items: [
         { head: 'Feuchte & Schimmel hinter der Fassade', text: 'Aufsteigende Feuchtigkeit, undichte Dächer und Wärmebrücken zeigen sich oft erst Monate nach dem Kauf – die Sanierung kostet dann ein Vielfaches.' },
-        { head: 'Unterschätzte Renovierungskosten', text: 'Wer ohne Inspektion kauft, kalkuliert regelmäßig mit der Hälfte der tatsächlichen Kosten. Eine realistische Einschätzung vorab verändert die Verhandlung.' },
+        { head: 'Unterschätzte Renovierungskosten', text: 'Wer ohne Besichtigung kauft, kalkuliert leicht zu niedrig. Eine realistische Einschätzung vorab verändert die Verhandlung.' },
         { head: 'Verdeckte Bausubstanz-Schäden', text: 'Risse, marode Installationen, fehlerhafte Anbauten ohne Genehmigung – Verkäufer zeigen, was funktioniert. Wir zeigen, was nicht funktioniert.' },
-        { head: 'Kein Verhandlungshebel', text: 'Wer die Mängel kennt, verhandelt aus einer Position der Stärke. Ein dokumentierter Befund ist oft mehr wert als sein Preis.' },
+        { head: 'Kein Verhandlungshebel', text: 'Wer die Mängel kennt, verhandelt aus einer stärkeren Position.' },
       ],
     },
     scope: {
       headline: 'Was wir vor Ort prüfen',
-      sub: 'Eine systematische Sichtprüfung der kaufentscheidenden Bereiche – nach einer festen, dokumentierten Prüfsystematik und mit Fotos belegt, damit kein kaufentscheidender Bereich übersehen wird.',
+      sub: 'Wir besichtigen die zugänglichen Bereiche systematisch und dokumentieren sichtbare Befunde sowie die Grenzen der Besichtigung.',
       groups: [
         { title: 'Tragwerk & Substanz', items: ['Fundament & Keller', 'Wände, Risse & Setzungen', 'Decken & tragende Elemente', 'Dachstuhl & Dacheindeckung'] },
         { title: 'Feuchte & Bauklima', items: ['Aufsteigende & eindringende Feuchte', 'Schimmel & Salzausblühungen', 'Wärmebrücken & Dämmung', 'Belüftung & Kondensat'] },
@@ -60,42 +62,47 @@ const content = {
       headline: 'Was Sie erhalten',
       sub: 'Eine Entscheidungsgrundlage, mit der Sie kaufen, verhandeln oder ablehnen können.',
       items: [
-        { title: 'Strukturierter Inspektionsbericht', text: 'Schriftlich, übersichtlich gegliedert nach Gebäudebereichen – auf Deutsch oder Englisch.' },
-        { title: 'Fotodokumentation', text: 'Jeder relevante Befund mit Bild belegt – nachvollziehbar auch aus dem Ausland.' },
+        { title: 'Strukturierte Zusammenfassung', text: 'Schriftlich, übersichtlich gegliedert nach Gebäudebereichen – auf Deutsch oder Englisch.' },
+        { title: 'Fotodokumentation', text: 'Alles, was zählt, mit Bild belegt, nachvollziehbar auch aus dem Ausland.' },
         { title: 'Priorisierte Mängelliste', text: 'Sofort / mittelfristig / kosmetisch – Sie sehen, was wirklich drängt.' },
         { title: 'Renovierungskosten-Orientierung', text: 'Realistische Kostenspannen für die wichtigsten Maßnahmen, basierend auf lokaler Markterfahrung.' },
-        { title: 'Was nicht geprüft werden konnte – und warum', text: 'Der Bericht benennt ausdrücklich, welche Bereiche ohne Öffnung, Messgerät oder Zugang nicht beurteilt werden konnten – damit Sie genau wissen, worauf die Einschätzung beruht und wo eine Restunsicherheit bleibt.' },
-        { title: 'Klare Kauf-Einschätzung', text: 'Eine ehrliche Gesamtbeurteilung: solide, mit Vorbehalt, oder Finger weg.' },
-        { title: 'Bericht in 2–3 Werktagen', text: 'Nach dem Vor-Ort-Termin erhalten Sie die Dokumentation zeitnah – damit Sie entscheiden können.' },
+        { title: 'Was nicht geprüft werden konnte – und warum', text: 'Die Zusammenfassung nennt ausdrücklich, was ohne Öffnen, Messgerät oder Zugang nicht beurteilt werden konnte. So wissen Sie, worauf unsere Einschätzung beruht und wo eine Unsicherheit bleibt.' },
+        { title: 'Klare Einschätzung zum Kauf', text: 'Was wir an Ihrer Stelle täten: weitergehen, mit Vorbehalt weitergehen oder es lassen.' },
+        { title: 'Schriftliche Zusammenfassung', text: 'Nach der Besichtigung erhalten Sie alles schriftlich, damit Sie entscheiden können. Den Termin nennt das Angebot.' },
       ],
     },
     process: {
       headline: 'So läuft es ab',
       steps: [
-        { num: '01', title: 'Erstgespräch', text: 'Sie schildern das Objekt, den Standort und Ihren Zeitrahmen. Wir klären, was eine Inspektion leisten kann – persönlich, per WhatsApp oder Telefon.' },
-        { num: '02', title: 'Vor-Ort-Termin', text: 'Ein erfahrener Bauexperte inspiziert das Objekt systematisch und dokumentiert jeden relevanten Befund.' },
-        { num: '03', title: 'Schriftlicher Bericht', text: 'Sie erhalten die strukturierte Dokumentation mit Fotos, Mängelliste, Kostenorientierung und Kauf-Einschätzung.' },
-        { num: '04', title: 'Rückfragen & nächste Schritte', text: 'Wir besprechen den Bericht mit Ihnen und koordinieren auf Wunsch lokale Fachbetriebe für Sanierung oder Umbau.' },
+        { num: '01', title: 'Erstgespräch', text: 'Sie schildern das Objekt, den Standort und Ihren Zeitrahmen. Wir klären, was eine Besichtigung leisten kann – persönlich, per WhatsApp oder Telefon.' },
+        { num: '02', title: 'Vor-Ort-Termin', text: 'Unser Bauunternehmen besichtigt das Objekt systematisch und dokumentiert, was es sieht.' },
+        { num: '03', title: 'Schriftliche Zusammenfassung', text: 'Sie erhalten, was wir gesehen haben und was wir vorschlagen, mit Fotos, Mängelliste, Kostenspannen und unserer Einschätzung zum Kauf.' },
+        { num: '04', title: 'Rückfragen & nächste Schritte', text: 'Wir besprechen die Zusammenfassung mit Ihnen und koordinieren auf Wunsch lokale Fachbetriebe für Sanierung oder Umbau.' },
       ],
     },
     expert: {
-      tag: 'IHR BAUEXPERTE VOR ORT',
+      tag: 'IHR BAUUNTERNEHMEN VOR ORT',
       name: 'Andreas Donner · Peak Care',
-      text: 'Hinter Peak Care steht jahrzehntelange praktische Erfahrung mit Bausubstanz, Sanierung und Bauüberwachung in Bulgarien und der DACH-Region. Wir kennen die typischen Schwachstellen bulgarischer Immobilien – vom feuchten Plattenbau-Keller bis zum ungenehmigten Anbau – und sagen Ihnen unverblümt, was Sache ist. Unser einziges Interesse ist Ihre fundierte Entscheidung.',
-      points: ['Unabhängig vom Verkäufer', 'Lokale Marktkenntnis Bulgarien', 'Zweisprachige Berichte DE/EN'],
+      text: 'Hinter Peak Care steht jahrzehntelange praktische Erfahrung mit Bausubstanz, Sanierung und Bauüberwachung in Bulgarien und der DACH-Region. Wir kennen die typischen Schwachstellen bulgarischer Immobilien – vom feuchten Plattenbau-Keller bis zum ungenehmigten Anbau – und sagen Ihnen offen, was wir sehen.',
+      points: ['Unabhängige Besichtigung durch ein Bauunternehmen', 'Lokale Marktkenntnis Bulgarien', 'Zusammenfassung DE/EN'],
     },
     limitations: {
-      headline: 'Was diese Inspektion nicht ist',
-      text: 'Peak Care liefert eine erfahrungsbasierte technische Sichtprüfung – kein behördlich zertifiziertes Sachverständigengutachten, keine rechtliche Due-Diligence und keine steuerliche Beratung. Wo ein zertifiziertes Gutachten, ein Notar oder ein Anwalt erforderlich ist, nennen wir Ihnen die richtigen lokalen Ansprechpartner.',
+      headline: 'Was diese Besichtigung nicht ist',
+      text: 'Peak Care ist ein Bauunternehmen. Sie erhalten eine Besichtigung mit schriftlicher Zusammenfassung, kein Sachverständigengutachten, keine rechtliche Prüfung und keine Steuerberatung. Wo ein zertifiziertes Gutachten, ein Notar oder ein Anwalt nötig ist, sagen wir es Ihnen.',
     },
     faqHeadline: 'Häufige Fragen',
     faqs: [
-      { q: 'Wann sollte die Inspektion stattfinden?', a: 'Idealerweise vor der Unterschrift, sobald Sie ernsthaftes Kaufinteresse haben. Die Befunde geben Ihnen einen realen Verhandlungshebel und schützen vor teuren Überraschungen nach dem Kauf.' },
-      { q: 'Muss ich für die Inspektion in Bulgarien sein?', a: 'Nein. Erstgespräch und Abstimmung laufen per E-Mail, Telefon oder WhatsApp. Die Inspektion findet vor Ort statt – Sie müssen nicht anwesend sein. Den Bericht erhalten Sie digital.' },
-      { q: 'Wie lange dauert die Inspektion?', a: 'Der Vor-Ort-Termin dauert je nach Objektgröße typischerweise 2–4 Stunden. Den schriftlichen Bericht erhalten Sie in der Regel innerhalb von 2–3 Werktagen.' },
-      { q: 'Ist das ein offizielles Gutachten?', a: 'Nein – und das sagen wir offen. Es ist eine erfahrungsbasierte technische Sichtprüfung durch einen erfahrenen Bauexperten, kein behördlich zertifiziertes Sachverständigengutachten. Für amtlich anerkannte Gutachten vermitteln wir Ihnen die zuständigen Fachleute.' },
-      { q: 'Bekomme ich auch eine Einschätzung der Renovierungskosten?', a: 'Ja. Auf Basis der Vor-Ort-Befunde geben wir realistische Kostenspannen für die wichtigsten Maßnahmen an – damit Sie das Gesamtinvestment kalkulieren können.' },
-      { q: 'Prüfen Sie auch Neubauten und Wohnungen?', a: 'Ja – Häuser, Wohnungen, Altbauten und Neubauten. Gerade bei Neubau und Bauträger-Objekten lohnt eine unabhängige Inspektion vor Übergabe und Restzahlung.' },
+      { q: 'Ich lebe im Ausland und kann nicht anreisen. Können Sie eine Immobilie in Bulgarien für mich prüfen?', a: 'Ja. Wir besichtigen das Objekt in Ihrem Auftrag und stimmen den Zugang direkt mit dem Makler ab, Sie müssen nicht dabei sein. Alles Weitere läuft per E-Mail, Telefon oder WhatsApp, das Ergebnis bekommen Sie schriftlich.' },
+      { q: 'Was bekomme ich konkret?', a: 'Eine schriftliche Zusammenfassung auf Deutsch oder Englisch, nach Gebäuden gegliedert: was wir gesehen haben, was wir vorschlagen und welche Arbeiten zuerst nötig sind, damit das Gebäude sicher und wetterfest wird. Dazu Fotos von allem, was zählt, und kurze Videos, wo ein Bild nicht reicht und das Filmen sicher ist. Sanierungskosten nennen wir als Spannen, die Annahmen stehen daneben. Sie helfen bei der Planung und sind keine verbindlichen Angebote.' },
+      { q: 'Können Sie das Dach prüfen und sagen, ob sich die Ziegel wiederverwenden lassen?', a: 'Wir sehen uns Tragwerk, Holz und Eindeckung an, soweit sie sicher erreichbar sind, und sagen Ihnen, ob eine Wiederverwendung der Ziegel realistisch aussieht und welche Reparaturen nicht noch einen Winter warten sollten. Wir öffnen keine Bauteile. Was verdeckt ist, bleibt außerhalb dessen, wozu wir etwas sagen können.' },
+      { q: 'Können Sie bestätigen, dass das Gebäude statisch sicher ist?', a: 'Nein, das kann eine Besichtigung nicht leisten. Wir beschreiben Fundament und Wände, soweit sie sichtbar sind, dazu Anzeichen von Bewegung, Feuchte oder Verfall, und sagen Ihnen, welche Gebäude wir für erhaltenswert halten. Eine verbindliche Aussage zur Standsicherheit kommt von einem zugelassenen Statiker. Wenn Sie eine brauchen, sagen wir es und führen sie gesondert auf. Beauftragt wird nichts ohne Ihre Zustimmung.' },
+      { q: 'Wie schnell habe ich das Ergebnis?', a: 'Den Termin für die Besichtigung und die schriftliche Zusammenfassung nennen wir Ihnen im Angebot. Gebucht wird erst, wenn Sie Umfang und Gesamthonorar zugestimmt haben.' },
+      { q: 'Das Haus liegt auf dem Land, mit Brunnen und ohne Kanalanschluss. Können Sie die Frage der Klärgrube prüfen?', a: 'Vor Ort prüfen wir den verfügbaren Platz, den Abstand zum Brunnen und zu einem Bach, den Boden, soweit er sich beurteilen lässt, die Zufahrt für Maschinen und eine vorhandene Entwässerung, soweit sie sichtbar ist. Ob eine Anlage genehmigt wird, entscheiden die zuständigen Behörden; dafür können ein Bodentest und ein Fachplaner nötig sein. Ob das Brunnenwasser trinkbar ist, klärt ein Labor. Wir sagen Ihnen, was davon Sie brauchen, und führen es gesondert auf.' },
+      { q: 'Auf dem Grundstück stehen mehrere Gebäude. Können Sie zuerst nur das Haupthaus ansehen?', a: 'Ja. Wenn das Haus über den Kauf entscheidet, ist das meist der richtige Anfang. Die Anfahrt ist bei einem Gebäude dieselbe wie bei dreien, deshalb zeigen wir Ihnen im Vorschlag, was die übrigen zusätzlich kosten würden. Sie entscheiden dann, bevor etwas gebucht ist.' },
+      { q: 'Sollte ich mir das Objekt zuerst selbst ansehen?', a: 'Wenn Sie anreisen können, ja. Das ist die richtige Reihenfolge, und was Ihnen nicht zusagt, scheidet so aus, ohne dass Sie uns dafür brauchen. Kommen Sie zu uns, wenn Sie ein Objekt weiterverfolgen möchten. Können Sie nicht anreisen, bekommen Sie durch unsere Besichtigung ein Bild, auf das Sie sich stützen können, bevor Sie sich festlegen.' },
+      { q: 'Sie sind ein Bauunternehmen. Kann ich Ihnen trauen, und raten Sie mir auch vom Kauf ab?', a: 'Wir sind ein Bauunternehmen, keine Sachverständigen, und Sie erhalten weder ein amtliches Gutachten noch eine Rechtsauskunft. Spricht das, was wir sehen, gegen den Kauf, sagen wir das schriftlich und mit Fotos. Möchten Sie später sanieren, können Sie frei wählen, wer es macht. Wählen Sie uns, ist das ein eigener Vertrag.' },
+      { q: 'Was kostet das?', a: 'Preis auf Anfrage, denn Größe, Entfernung und Zahl der Gebäude sind verschieden. Bevor etwas gebucht wird, erhalten Sie ein Gesamthonorar einschließlich Anfahrt und anfallender Steuer. Fachleistungen stehen gesondert darin.' },
+      { q: 'Sehen Sie sich auch Neubauten und Wohnungen an?', a: 'Ja: Häuser, Wohnungen, Altbauten und Neubauten. Bei einem Bauträger-Objekt ist der beste Zeitpunkt vor Übergabe und Restzahlung.' },
     ],
     finalCta: {
       headline: 'Kaufen Sie mit Gewissheit, nicht mit Hoffnung',
@@ -111,37 +118,37 @@ const content = {
 
   en: {
     meta: {
-      title: 'Buying Property in Bulgaria? Independent Pre-Purchase Building Inspection | Peak Care',
-      description: 'Buying property in Bulgaria, from abroad? Independent pre-purchase building inspection. An experienced building expert inspects structure, damp, statics and hidden defects on site – structured inspection report with photo documentation, defect list and renovation cost orientation. For international investors and owners.',
+      title: 'Buying Property in Bulgaria? Independent Pre-Purchase Inspection by a Contractor | Peak Care',
+      description: 'Buying property in Bulgaria from abroad? Have it looked at first: an independent visit by a building contractor, who checks the fabric, damp and visible defects on your behalf. Written summary with photos, proposals and cost ranges.',
       canonical: 'https://peak-care.com/pre-purchase-building-inspection-bulgaria',
     },
     hero: {
       tag: 'BUYING PROPERTY IN BULGARIA · PRE-PURCHASE INSPECTION',
       title: 'Buying property in Bulgaria — know what you are signing.',
-      subtitle: 'An independent technical inspection of the building fabric, carried out on site by an experienced building expert. You get a clear, honest picture of the property: what is sound, what it will cost you, and whether the asking price is justified.',
+      subtitle: 'An independent visit to the property by a building contractor. You learn what we saw, what it is likely to cost, and whether we would go ahead in your place.',
       ctaPrimary: 'Request an inspection',
       ctaSecondary: 'Message on WhatsApp',
-      micro: 'Independent of the seller · On site in Bulgaria · Report in English & German',
+      micro: 'Independent visit by a building contractor · On site in Bulgaria · Summary in English or German',
     },
     trust: [
-      { k: 'Independent', v: 'We work for the buyer – not for agents or sellers.' },
-      { k: 'On site', v: 'A physical inspection in Bulgaria, not a remote opinion.' },
+      { k: 'Candid', v: 'If something speaks against the purchase, we say so in writing.' },
+      { k: 'On site', v: 'A physical visit in Bulgaria, not a remote opinion.' },
       { k: 'Experienced', v: 'Decades of building and renovation practice in the region.' },
-      { k: 'Clear', v: 'A plain-language report – no impenetrable jargon.' },
+      { k: 'Clear', v: 'A plain-language summary – no impenetrable jargon.' },
     ],
     stakes: {
       headline: 'Buying property in Bulgaria does not forgive nasty surprises',
       intro: 'Bought from abroad, presented by the agent, decided under time pressure – that is how the most expensive mistakes happen. What looks good in photos and at the viewing often hides exactly the defects that blow the budget after completion.',
       items: [
         { head: 'Damp & mould behind the facade', text: 'Rising damp, leaking roofs and thermal bridges often surface months after purchase – and the repair then costs many times more.' },
-        { head: 'Underestimated renovation costs', text: 'Buyers who proceed without an inspection routinely budget half the real cost. A realistic estimate up front changes the negotiation.' },
+        { head: 'Underestimated renovation costs', text: 'Buying without a visit makes it easy to budget too low. A realistic view beforehand changes the negotiation.' },
         { head: 'Hidden structural defects', text: 'Cracks, failing installations, unpermitted extensions – sellers show what works. We show what does not.' },
-        { head: 'No negotiating leverage', text: 'Knowing the defects lets you negotiate from strength. A documented finding is often worth far more than it costs.' },
+        { head: 'No negotiating leverage', text: 'If you know the defects, you negotiate from a stronger position.' },
       ],
     },
     scope: {
-      headline: 'What we inspect on site',
-      sub: 'A systematic visual inspection of the purchase-critical areas – following a fixed, documented method and evidenced with photos, so no purchase-critical area is overlooked.',
+      headline: 'What we look at on site',
+      sub: 'We inspect the accessible areas systematically and document visible findings and the limits of the inspection.',
       groups: [
         { title: 'Structure & fabric', items: ['Foundation & basement', 'Walls, cracks & settlement', 'Floors & load-bearing elements', 'Roof structure & covering'] },
         { title: 'Damp & building climate', items: ['Rising & penetrating damp', 'Mould & salt efflorescence', 'Thermal bridges & insulation', 'Ventilation & condensation'] },
@@ -151,44 +158,49 @@ const content = {
     },
     deliver: {
       headline: 'What you receive',
-      sub: 'A decision basis you can buy, negotiate or walk away on.',
+      sub: 'What you need to decide whether to buy, negotiate or walk away.',
       items: [
-        { title: 'Structured inspection report', text: 'Written, clearly organised by building area – in English or German.' },
-        { title: 'Photo documentation', text: 'Every relevant finding evidenced with an image – verifiable even from abroad.' },
+        { title: 'Structured summary', text: 'Written, clearly organised by building area – in English or German.' },
+        { title: 'Photo documentation', text: 'Everything that matters evidenced with an image, verifiable from abroad.' },
         { title: 'Prioritised defect list', text: 'Urgent / medium-term / cosmetic – you see what actually matters.' },
         { title: 'Renovation cost orientation', text: 'Realistic cost ranges for the key works, based on local market experience.' },
-        { title: 'What could not be assessed – and why', text: 'The report states explicitly which areas could not be judged without opening up, instruments or access – so you know exactly what the assessment rests on and where a residual uncertainty remains.' },
-        { title: 'Clear purchase verdict', text: 'An honest overall assessment: sound, proceed with caution, or walk away.' },
-        { title: 'Report in 2–3 working days', text: 'After the on-site visit you receive the documentation promptly – so you can decide.' },
+        { title: 'What could not be assessed – and why', text: 'The summary states explicitly which areas could not be judged without opening up, instruments or access, so you know what our view rests on and where uncertainty remains.' },
+        { title: 'A clear view on the purchase', text: 'What we would do in your place: go ahead, go ahead with caution, or leave it.' },
+        { title: 'Written summary', text: 'After the visit you receive everything in writing, so you can decide. The proposal states the timing.' },
       ],
     },
     process: {
       headline: 'How it works',
       steps: [
-        { num: '01', title: 'Initial call', text: 'You describe the property, location and your timeline. We clarify what an inspection can cover – in person, by WhatsApp or phone.' },
-        { num: '02', title: 'On-site visit', text: 'An experienced building expert inspects the property systematically and documents every relevant finding.' },
-        { num: '03', title: 'Written report', text: 'You receive structured documentation with photos, defect list, cost orientation and a purchase verdict.' },
-        { num: '04', title: 'Questions & next steps', text: 'We talk the report through with you and, if you wish, coordinate local contractors for renovation or conversion.' },
+        { num: '01', title: 'Initial call', text: 'You describe the property, location and your timeline. We clarify what a visit can cover – in person, by WhatsApp or phone.' },
+        { num: '02', title: 'On-site visit', text: 'Our building contractor visits the property, works through it systematically and records what we see.' },
+        { num: '03', title: 'Written summary', text: 'You receive what we saw and what we propose, with photos, a defect list, cost ranges and our view on the purchase.' },
+        { num: '04', title: 'Questions & next steps', text: 'We talk the summary through with you and, if you wish, coordinate local contractors for renovation or conversion.' },
       ],
     },
     expert: {
-      tag: 'YOUR BUILDING EXPERT ON SITE',
+      tag: 'YOUR BUILDING CONTRACTOR ON SITE',
       name: 'Andreas Donner · Peak Care',
-      text: 'Behind Peak Care stands decades of hands-on experience with building fabric, renovation and construction oversight in Bulgaria and the German-speaking region. We know the typical weak points of Bulgarian property – from the damp prefab basement to the unpermitted extension – and we tell you straight what the situation is. Our only interest is your well-founded decision.',
-      points: ['Independent of the seller', 'Local Bulgarian market knowledge', 'Bilingual reports EN/DE'],
+      text: 'Behind Peak Care stands decades of hands-on experience with building fabric, renovation and construction oversight in Bulgaria and the German-speaking region. We know the typical weak points of Bulgarian property – from the damp prefab basement to the unpermitted extension – and we tell you plainly what we see.',
+      points: ['Independent visit by a building contractor', 'Local Bulgarian market knowledge', 'Summary in EN/DE'],
     },
     limitations: {
-      headline: 'What this inspection is not',
-      text: 'Peak Care provides an experience-based technical visual inspection – not an officially certified expert appraisal, not legal due diligence and not tax advice. Where a certified appraisal, a notary or a lawyer is required, we point you to the right local professionals.',
+      headline: 'What this visit is not',
+      text: 'Peak Care is a building contractor. You receive a site visit and written summary, not an expert appraisal, legal due diligence or tax advice. Where a certified appraisal, a notary or a lawyer is needed, we tell you.',
     },
     faqHeadline: 'Frequently asked questions',
     faqs: [
-      { q: 'When should the inspection take place?', a: 'Ideally before signing, once you have serious purchase intent. The findings give you real negotiating leverage and protect you from expensive surprises after completion.' },
-      { q: 'Do I need to be in Bulgaria for the inspection?', a: 'No. The initial call and briefing run by email, phone or WhatsApp. The inspection happens on site – you do not need to be present. You receive the report digitally.' },
-      { q: 'How long does the inspection take?', a: 'The on-site visit typically takes 2–4 hours depending on property size. You usually receive the written report within 2–3 working days.' },
-      { q: 'Is this an official appraisal?', a: 'No – and we say so openly. It is an experience-based technical visual inspection by an experienced building expert, not an officially certified expert appraisal. For officially recognised appraisals we refer you to the relevant specialists.' },
-      { q: 'Do I also get a renovation cost estimate?', a: 'Yes. Based on the on-site findings we provide realistic cost ranges for the key works – so you can calculate the total investment.' },
-      { q: 'Do you also inspect new builds and apartments?', a: 'Yes – houses, apartments, older buildings and new builds. For new builds and developer units in particular, an independent inspection before handover and final payment is well worth it.' },
+      { q: 'I live abroad and cannot travel. Can you inspect a property in Bulgaria for me?', a: 'Yes. We visit the property on your behalf and arrange access directly with the estate agent, so you do not need to be there. Everything else runs by email, phone or WhatsApp, and you receive the result in writing.' },
+      { q: 'What do I actually receive?', a: 'A written summary in English or German, organised building by building: what we saw, what we propose, and which work comes first to make the building safe and weatherproof. It comes with photographs of everything that matters and short videos where a picture is not enough and filming is safe. Repair costs are given as ranges with the assumptions written next to them. They help you plan, and they are not binding quotations.' },
+      { q: 'Can you check the roof and tell me whether the tiles can be reused?', a: 'We look at the structure, timbers and covering as far as they can be reached safely, and tell you whether reusing the tiles looks realistic and which repairs should not wait another winter. We do not open up any part of the building, so anything hidden stays outside what we can comment on.' },
+      { q: 'Can you confirm that the building is structurally safe?', a: 'No, and a visual visit cannot do that. We describe the foundations and walls as far as they are visible, along with any signs of movement, damp or decay, and tell you which buildings we think are worth keeping. A formal statement on structural safety comes from a licensed structural engineer. If you need one, we say so and list it separately. Nothing is commissioned without your agreement.' },
+      { q: 'How soon will I have the result?', a: 'The proposal states the timing of the visit and the written summary. Nothing is booked until you have agreed the scope and total fee.' },
+      { q: 'The house is rural, with a well and no sewer. Can you check the septic tank question?', a: 'On site we look at the space available, the distance to the well and to any stream, the ground as far as it can be judged, access for machinery, and any existing drainage we can see. Whether a system can be approved is for the competent authorities to decide, and it may need a soil test and a specialist planner. Whether the well water is safe to drink is a question for a laboratory. We tell you which of these you need and list them separately.' },
+      { q: 'There are several buildings on the plot. Can you start with the main house only?', a: 'Yes. If the house decides the purchase, it usually makes sense to start there. The journey is the same for one building or three, so we show you in the proposal what the others would add. You can then decide before anything is booked.' },
+      { q: 'Should I go and see the property first?', a: 'If you can travel, yes. Seeing it yourself first is the right order, and it costs you nothing to rule out a place that is wrong for you. Come to us once you have a property you want to take further. If you cannot travel, the visit is how you get a view you can rely on before you commit.' },
+      { q: 'You are a building contractor. Can I trust what you tell me, and will you tell me not to buy?', a: 'We are a building contractor, not a certified surveyor, and what you receive is not an official appraisal or a legal opinion. If what we see speaks against the purchase, we say so in writing, with photographs. If you later want the work done, you can choose anyone. If you choose us, that is a separate contract.' },
+      { q: 'What does it cost?', a: 'Price on request, because size, distance and the number of buildings differ. Before anything is booked you receive one total fee, including travel and any applicable tax, with any specialist work listed separately.' },
+      { q: 'Do you also look at new builds and apartments?', a: 'Yes: houses, apartments, older buildings and new builds. With a developer\'s unit, the most useful moment is before handover and final payment.' },
     ],
     finalCta: {
       headline: 'Buy with certainty, not with hope',
