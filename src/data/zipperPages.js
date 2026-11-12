@@ -45,6 +45,8 @@ export const zipperPages = [
       { q: 'Können Sie auch bei unbewohnten Objekten arbeiten?', a: 'Ja – das ist ein häufiger Fall. Wir koordinieren über Ihre Hausverwaltung oder einen Vertreter vor Ort. Die Videoanalyse klärt vorab den nächsten Schritt; das verbindliche schriftliche Angebot folgt nach der Begehung.' },
     ],
     internalLinks: [
+      { href: '/blog/schimmel-im-winter-erkennen', text: 'Schimmel im Winter erkennen' },
+      { href: '/blog/schimmelflecken-wand-entfernen-dauerhaft', text: 'Schimmelflecken an der Wand dauerhaft entfernen' },
       { href: '/blog/schimmel-keller-ursachen-beseitigung', text: 'Schimmel im Keller: Ursachen & dauerhafte Beseitigung' },
       { href: '/blog/feuchtigkeit-keller-ursachen-abdichtung', text: 'Feuchtigkeit im Keller: Abdichtung von innen und außen' },
       { href: '/service/gebaudesanierung-bansko', text: 'Gebäudesanierung Bansko – Komplettrenovierung' },
@@ -98,6 +100,9 @@ export const zipperPages = [
     internalLinks: [
       { href: '/blog/schimmel-keller-ursachen-beseitigung', text: 'Schimmel im Keller: Ursachen & Beseitigung' },
       { href: '/blog/schimmel-badezimmer-ursachen-loesungen', text: 'Schimmel im Badezimmer: Ursachen & dauerhafte Lösungen' },
+      { href: '/blog/schimmel-im-winter-erkennen', text: 'Schimmel im Winter erkennen' },
+      { href: '/blog/schimmelflecken-wand-entfernen-dauerhaft', text: 'Schimmelflecken an der Wand dauerhaft entfernen' },
+      { href: '/blog/schimmel-beseitigen-bulgarien', text: 'Schimmel beseitigen in Bulgarien' },
       { href: '/service/schimmelbeseitigung-bansko', text: 'Schimmelbeseitigung Bansko' },
       { href: '/technical-property-oversight-bulgaria', text: 'Technische Immobilienüberwachung Bulgarien – Peak Care' },
     ],
@@ -148,6 +153,7 @@ export const zipperPages = [
     internalLinks: [
       { href: '/blog/feuchtigkeit-keller-ursachen-abdichtung', text: 'Feuchtigkeit im Keller: Ursachen und Abdichtung' },
       { href: '/blog/schimmel-keller-ursachen-beseitigung', text: 'Schimmel im Keller beseitigen' },
+      { href: '/blog/rueckstauklappe-warum-jeder-hausbesitzer-eine-braucht', text: 'Rückstauklappe: Warum jeder Hausbesitzer eine braucht' },
       { href: '/service/schimmelbeseitigung-bansko', text: 'Schimmelbeseitigung Bansko' },
     ],
   },
@@ -296,6 +302,7 @@ export const zipperPages = [
       { q: 'How quickly can you come to Sofia?', a: 'After the video assessment, typical on-site appointment: 3–7 working days. Emergency appointments possible for active water damage.' },
     ],
     internalLinks: [
+      { href: '/service/building-renovation-bansko', text: 'Building Renovation Bansko' },
       { href: '/blog/mold-basement-removal-causes-solutions', text: 'Mold in the Basement: Causes and Solutions' },
       { href: '/blog/mold-bathroom-causes-permanent-solutions', text: 'Bathroom Mold: Causes and Permanent Solutions' },
       { href: '/service/mold-removal-bansko', text: 'Mold Removal Bansko' },

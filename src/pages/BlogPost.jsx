@@ -81,7 +81,15 @@ export default function BlogPost() {
   // Weitere Artikel in der Sprache des Artikels (01.11.2026: keine deutschen Titel unter englischen Artikeln)
   const others = listedPosts.filter((p) => p.slug !== slug)
   const sameLangOthers = others.filter((p) => (p.lang || 'de') === (post.lang || 'de'))
-  const related = (sameLangOthers.length >= 2 ? sameLangOthers : others).slice(0, 2)
+  // Auswahl: gleiche Kategorie zuerst, je Artikel leicht rotiert, damit jeder Beitrag intern verlinkt wird
+  // und nicht immer dieselben zwei Artikel erscheinen (SEO 12.11.2026, 4 statt 2 Verweise).
+  const pool = sameLangOthers.length >= 4 ? sameLangOthers : (sameLangOthers.length >= 2 ? sameLangOthers : others)
+  const relH = [...slug].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 9973, 7)
+  const relRot = (arr) => (arr.length ? [...arr.slice(relH % arr.length), ...arr.slice(0, relH % arr.length)] : arr)
+  const related = [
+    ...relRot(pool.filter((p) => p.category === post.category)),
+    ...relRot(pool.filter((p) => p.category !== post.category)),
+  ].slice(0, 4)
   const heroImg = POST_IMAGES[slug]
 
   return (
