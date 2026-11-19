@@ -121,6 +121,16 @@ Projects completed to a consistent standard, on time, with no surprises in the f
 
 ---
 
+## From Our Work: Clarify First, Then Renovate
+
+> Before a planned renovation, we inspected an older residential building. The written assessment documented the critical areas of the load-bearing structure and the moisture risks, and set out two possible ways to proceed. The owner had a clear basis for the next planning decisions.
+>
+> Planning a renovation and want to know what should be clarified first? We assess the building as it stands and show you the sensible next steps. **[Request a site visit](/#kontakt)**
+>
+> *Published with the owner's permission.*
+
+---
+
 ## Getting an Accurate Quote
 
 The first step for any renovation project is understanding exactly what needs to be done and at what standard. This requires an inspection of the property — to assess current condition, identify any issues that need addressing before or during renovation, and establish a clear baseline for quoting.

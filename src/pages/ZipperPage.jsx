@@ -28,7 +28,7 @@ export default function ZipperPage() {
 
   if (!page) return <Navigate to="/" replace />
 
-  const { schema, hero, problems, service, trust, faqs, internalLinks } = page
+  const { schema, hero, problems, service, practice, trust, faqs, internalLinks } = page
   const phone = '+359 89 843 6561'
   const email = 'peakcare@peak-care.com'
 
@@ -126,6 +126,24 @@ export default function ZipperPage() {
           </div>
         </div>
       </section>
+
+      {/* Aus der Praxis (optional) */}
+      {practice && (
+        <section className="bg-gray-50 py-14 px-4">
+          <div className="max-w-3xl mx-auto bg-white rounded-xl p-8 shadow-sm border border-gray-100 border-l-4 border-l-teal-500">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{practice.headline}</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">{practice.text}</p>
+            <p className="text-gray-700 leading-relaxed mb-6">{practice.invite}</p>
+            <a
+              href="/#kontakt"
+              className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            >
+              {practice.cta}
+            </a>
+            <p className="text-gray-500 text-sm italic mt-6">{practice.note}</p>
+          </div>
+        </section>
+      )}
 
       {/* Trust signals */}
       <section className="bg-teal-600 py-12 px-4">

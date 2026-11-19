@@ -394,6 +394,13 @@ export const zipperPages = [
         { step: '3', title: 'Komplettrenovierung', desc: 'Von der leeren Wohnung bis zum bezugsfertigen Objekt: Böden, Wände, Küche, Bad, komplette technische Installationen. Projektabnahme auch per Videokonferenz möglich.' },
       ],
     },
+    practice: {
+      headline: 'Aus der Praxis: erst klären, dann sanieren',
+      text: 'Vor einer geplanten Sanierung haben wir ein älteres Wohnhaus untersucht. Die schriftliche Beurteilung hielt die kritischen Bereiche der Tragstruktur und die Feuchterisiken fest und stellte zwei mögliche Wege gegenüber. Damit hatte der Eigentümer eine nachvollziehbare Grundlage für die nächsten Planungsentscheidungen.',
+      invite: 'Sie planen eine Sanierung und möchten wissen, was zuerst geklärt werden sollte? Wir prüfen den Bestand und zeigen Ihnen die nächsten sinnvollen Schritte.',
+      cta: 'Besichtigung anfragen',
+      note: 'Veröffentlicht mit Zustimmung des Eigentümers.',
+    },
     trust: [
       { icon: '🏆', title: '25+ Jahre Erfahrung', desc: 'Internationale Bauerfahrung, heute vor Ort in Bulgarien.' },
       { icon: '🇩🇪', title: 'DACH-Standard', desc: '25+ Jahre Erfahrung aus Deutschland, Österreich und der Schweiz – konsequent in Bulgarien angewendet.' },
