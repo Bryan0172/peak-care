@@ -88,7 +88,7 @@ const content = {
       headline: 'What Peak Care provides technically',
       items: [
         { title: 'Moisture and mold assessment', text: 'Visual inspection for moisture indicators, salt efflorescence, mold presence and thermal bridges. With photographic documentation and written report.' },
-        { title: 'Building condition review', text: 'Assessment of visible structural risks: facade, roof, basement, windows, installations. Not a certified survey — but an honest local appraisal from direct experience.' },
+        { title: 'Building condition review', text: 'Assessment of visible structural risks: facade, roof, basement, windows, installations. An honest local appraisal from direct building experience.' },
         { title: 'Renovation cost orientation', text: 'Based on direct on-site findings, we provide realistic cost ranges for typical repair and renovation work in Bulgaria.' },
         { title: 'Regular condition checks', text: 'For properties that are seasonally closed or permanently rented. Condition reports with photos at an agreed frequency.' },
         { title: 'Technical review before purchase', text: 'Before you sign: an independent technical visual review — not a contract check, but a realistic picture of the building\'s condition.' },
@@ -104,13 +104,13 @@ const content = {
       ],
     },
     limitations: {
-      headline: 'What this service does not replace',
-      text: 'Peak Care does not provide official surveys by certified appraisers, legal due diligence or tax advice. Where these are needed, we will point you to the right local professionals.',
+      headline: 'Your specialist network',
+      text: 'Where an official survey, legal due diligence or tax advice is needed, we bring in the right certified local professionals, coordinated by us.',
     },
     faqs: [
       { q: 'Which properties benefit most from a technical assessment?', a: 'Any property where international owners are making purchase decisions, planning renovation or want to understand the condition of a closed property. Particularly relevant: older buildings, properties with visible moisture signs, basement spaces and flat roofs.' },
       { q: 'Can Peak Care carry out regular checks after the purchase?', a: 'Yes. Regular condition checks for closed or rented properties are part of the service — at an agreed frequency with structured reporting.' },
-      { q: 'Is this an official survey or appraisal?', a: 'No. A Peak Care assessment is an experience-based visual inspection by a local building professional — not a certified appraisal. For officially recognised surveys, we refer you to the relevant local specialists.' },
+      { q: 'Is this an official survey or appraisal?', a: 'A Peak Care assessment is an experience-based inspection by a local building professional — it shows you early what deserves attention. When an officially recognised survey is required, we arrange it with the relevant certified specialist.' },
       { q: 'How long does an on-site assessment take?', a: 'It depends on the property size and scope. A typical visual inspection takes 2–4 hours on site. The written report usually follows within 2–3 working days.' },
       { q: 'Can I commission an assessment from abroad?', a: 'Yes. Initial contact and briefing are handled by email or phone. The assessment takes place on site — without you needing to be present.' },
     ],
@@ -140,7 +140,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Is a Peak Care technical assessment an official survey or appraisal?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. A Peak Care assessment is an experience-based visual inspection by a local building professional — not a certified appraisal. For officially recognised surveys, we refer you to the relevant local specialists.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'A Peak Care assessment is an experience-based inspection by a local building professional — it shows you early what deserves attention. When an officially recognised survey is required, we arrange it with the relevant certified specialist.' },
     },
     {
       '@type': 'Question',

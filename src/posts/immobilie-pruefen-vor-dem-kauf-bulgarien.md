@@ -71,9 +71,9 @@ Damit verhandeln Sie aus einer Position der Stärke – ein dokumentierter Befun
 
 ---
 
-## Was die Inspektion nicht ist
+## Wie die Inspektion mit Gutachten, Notar und Anwalt zusammenspielt
 
-Eine erfahrungsbasierte technische Sichtprüfung ersetzt kein behördlich zertifiziertes Sachverständigengutachten, keine rechtliche Due-Diligence und keine steuerliche Beratung. Wo ein zertifiziertes Gutachten, ein Notar oder ein Anwalt nötig ist, nennen wir Ihnen die zuständigen lokalen Fachleute. Der Wert der Bauinspektion liegt woanders: ein unabhängiger, ehrlicher technischer Blick auf das, was Sie kaufen – bevor es zu spät ist.
+Die Bauinspektion ist der unabhängige, ehrliche technische Blick auf das, was Sie kaufen – bevor es zu spät ist. Wo zusätzlich ein zertifiziertes Gutachten, ein Notar, ein Anwalt oder eine Steuerberatung gebraucht wird, bringen wir die zuständigen Fachleute vor Ort dazu. So haben Sie einen Ansprechpartner für den ganzen Kauf.
 
 ---
 
